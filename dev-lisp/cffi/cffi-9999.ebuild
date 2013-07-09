@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=3
-inherit common-lisp-3 git
+inherit common-lisp-3 git-2
 
 MY_P=${PN}_${PV}
 
@@ -41,7 +41,7 @@ src_install() {
 	dodoc README TODO doc/*.txt
 	if use doc; then
 		doinfo doc/*.info
-		rm doc/{spec,manual}/cffi*
+		rm doc/{spec,manual}/cffi* || die
 		insinto /usr/share/doc/${PF}/html
 		doins -r doc/{spec,manual}
 	fi
