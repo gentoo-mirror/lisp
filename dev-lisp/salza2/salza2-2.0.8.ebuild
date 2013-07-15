@@ -16,7 +16,7 @@ KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
 src_install() {
-	common-lisp-install-sources *.{lisp,asd}
+	common-lisp-install-sources *.lisp
 	common-lisp-install-asdf
 	dohtml doc/index.html
 }
