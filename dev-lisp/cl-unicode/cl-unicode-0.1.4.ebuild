@@ -17,10 +17,30 @@ SLOT="0"
 KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
+DEPEND="dev-lisp/flexi-streams"
 RDEPEND="dev-lisp/cl-ppcre"
+
+COMMONLISPS="sbcl clisp clozurecl cmucl ecls openmcl"
+
+find-lisp-impl() {
+	for lisp in ${COMMONLISPS} ; do
+		[[ "$(best_version dev-lisp/${lisp})" ]] && echo "${lisp}" && return
+	done
+	die "No CommonLisp implementation found"
+}
+
+src_compile() {
+	# cl-unicode builds parts of its source code automatically the first time it
+	# is compiled, so we compile it here.
+	local lispimpl=$(find-lisp-impl)
+	local initclunicode="(progn (push \"${S}/\" asdf:*central-registry*) (require :${PN}))"
+	common-lisp-export-impl-args "${lispimpl}"
+	${lispimpl} ${CL_EVAL} "${initclunicode}"
+}
 
 src_install() {
 	common-lisp-install-sources *.lisp test/
+	common-lisp-install-sources -t all build/
 	common-lisp-install-asdf
 	dodoc CHANGELOG.txt
 	dohtml doc/index.html
