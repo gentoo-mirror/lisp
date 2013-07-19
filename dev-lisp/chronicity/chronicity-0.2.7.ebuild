@@ -1,10 +1,10 @@
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright 1999-2010 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
 EAPI=5
 
-inherit common-lisp-2
+inherit common-lisp-3
 
 DESCRIPTION="A natural language date and time parser for Common Lisp."
 HOMEPAGE="http://chaitanyagupta.com/lisp/chronicity/"
@@ -22,7 +22,7 @@ RDEPEND=">=dev-lisp/cl-ppcre-2.0.0
 CLPACKAGES="${PN} ${PN}-test"
 
 src_install() {
-	common-lisp-install *.asd src test
-	common-lisp-symlink-asdf
+	common-lisp-install-sources src test
+	common-lisp-install-asdf
 	dodoc README
 }
