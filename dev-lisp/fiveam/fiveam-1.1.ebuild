@@ -10,7 +10,7 @@ MY_PV="v${PV}"
 
 DESCRIPTION="FiveAM is a simple regression testing framework designed for Common Lisp."
 HOMEPAGE="http://common-lisp.net/project/fiveam/"
-SRC_URI="https://github.com/cl-fiveam/fiveam/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/cl-fiveam/fiveam/archive/${MY_PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
