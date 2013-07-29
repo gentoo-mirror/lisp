@@ -14,7 +14,8 @@ SLOT="0"
 KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
-RDEPEND="dev-lisp/cl-utilities"
+RDEPEND="dev-lisp/alexandria
+	dev-lisp/let-plus"
 
 src_compile() { true; }
 
