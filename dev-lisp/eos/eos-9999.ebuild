@@ -13,7 +13,7 @@ EGIT_REPO_URI="git://github.com/adlai/Eos"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
 RDEPEND=""
