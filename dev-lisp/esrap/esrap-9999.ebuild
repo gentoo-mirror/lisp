@@ -13,7 +13,7 @@ EGIT_REPO_URI="git://github.com/nikodemus/${PN}"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
 RDEPEND="dev-lisp/alexandria
