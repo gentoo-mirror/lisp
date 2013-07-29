@@ -1,13 +1,16 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=2
+EAPI=5
+
 inherit common-lisp-3
 
-DESCRIPTION="Common Lisp dokuwiki parser."
+MY_PV="version-${PV}"
+
+DESCRIPTION="Wiki parser framework"
 HOMEPAGE="http://github.com/archimag/wiki-parser"
-SRC_URI="http://cl-closure-template.googlecode.com/files/${P}.tar.bz2"
+SRC_URI="https://github.com/archimag/${PN}/archive/${MY_PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="LLGPL-2.1"
 SLOT="0"
@@ -18,7 +21,4 @@ RDEPEND="dev-lisp/alexandria
 		dev-lisp/iterate
 		dev-lisp/cl-ppcre"
 
-src_install() {
-	common-lisp-install-sources src
-	common-lisp-install-asdf ${PN}.asd
-}
+S="${WORKDIR}/${PN}-${MY_PV}"
