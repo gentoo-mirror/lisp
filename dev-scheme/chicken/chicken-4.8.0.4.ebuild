@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/dev-scheme/chicken/chicken-4.8.0.1.ebuild,v 1.1 2013/02/05 23:51:45 pchrist Exp $
 
-EAPI="3"
+EAPI="5"
 
 inherit eutils multilib versionator
 
@@ -23,11 +23,8 @@ RDEPEND="emacs? ( virtual/emacs app-emacs/scheme-complete )"
 src_prepare() {
 	if use "parallel-build"
 	then
-		epatch "${FILESDIR}"/${P}-parallel-build.patch
+		epatch "${FILESDIR}"/parallel-build.patch
 	fi
-
-	#Fix Bug #462458
-	cp "${FILESDIR}"/${P}-csirc-inclusion-vuln.csi.c csi.c
 
 	#Because chicken's Upstream is in the habit of using variables that
 	#portage also uses :( eg. $ARCH and $A
@@ -46,17 +43,26 @@ src_prepare() {
 }
 
 src_compile() {
-	OPTIONS="PLATFORM=linux PREFIX=/usr"
 	if use "parallel-build"
 	then
-		emake ${OPTIONS} C_COMPILER_OPTIMIZATION_OPTIONS="${CFLAGS}" \
-			LINKER_OPTIONS="${LDFLAGS}" \
-			HOSTSYSTEM="${CBUILD}" || die "emake failed"
-	else
-		emake -j1 ${OPTIONS} C_COMPILER_OPTIMIZATION_OPTIONS="${CFLAGS}" \
-			LINKER_OPTIONS="${LDFLAGS}" \
-			HOSTSYSTEM="${CBUILD}" || die "emake failed"
+		OPTIONS="PLATFORM=linux PREFIX=/usr"
+	else 
+		OPTIONS="-j1 PLATFORM=linux PREFIX=/usr"
 	fi
+
+	# build a bootstrap Chicken compiler so we may apply patches to the Scheme
+	# sources
+	emake ${OPTIONS} C_COMPILER_OPTIMIZATION_OPTIONS="${CFLAGS}" \
+		LINKER_OPTIONS="${LDFLAGS}" \
+		HOSTSYSTEM="${CBUILD}" boot-chicken || die "emake failed"
+
+	# apply security patches to .scm files
+	EPATCH_SOURCE="${FILESDIR}/${PV}" EPATCH_SUFFIX="patch" epatch
+
+	# rebuild chicken from the patched sources using the (unpatched) bootstrap compiler
+	emake ${OPTIONS} C_COMPILER_OPTIMIZATION_OPTIONS="${CFLAGS}" \
+		LINKER_OPTIONS="${LDFLAGS}" \
+		HOSTSYSTEM="${CBUILD}" CHICKEN=./chicken-boot || die "emake failed"
 }
 
 # chicken's testsuite is not runnable before install
