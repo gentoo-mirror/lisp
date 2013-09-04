@@ -16,7 +16,8 @@ SLOT="0"
 KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
-RDEPEND="dev-lisp/split-sequence
+RDEPEND="dev-lisp/lml
+	dev-lisp/split-sequence
 	dev-lisp/usocket"
 
 S="${WORKDIR}/${PN}"
