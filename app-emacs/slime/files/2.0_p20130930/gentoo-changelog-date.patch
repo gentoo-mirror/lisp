@@ -1,5 +1,5 @@
 --- slime-2013-09-30-orig/slime.el	2013-02-13 18:27:14.000000000 +1100
-+++ slime-2013-09-30/slime.el	2013-09-30 13:32:11.690908669 +1000
++++ slime-2013-09-30/slime.el	2013-09-30 13:56:28.108894780 +1000
 @@ -119,16 +119,7 @@
      "Return the datestring of the latest entry in the ChangeLog file.
  Return nil if the ChangeLog file cannot be found."
@@ -14,7 +14,7 @@
 -      (when interactivep
 -        (message "Slime ChangeLog dates %s." date))
 -      date)))
-+   "2013-02-13"))
++   "@SLIME-CHANGELOG-DATE@"))
  
  (defvar slime-protocol-version nil)
  (setq slime-protocol-version
