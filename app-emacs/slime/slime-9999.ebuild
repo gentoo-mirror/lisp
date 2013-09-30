@@ -72,6 +72,8 @@ src_prepare() {
 		|| die "sed swank.lisp failed"
 	sed -i "s:@SLIME-CHANGELOG-DATE@:${SLIME_CHANGELOG_DATE}:" slime.el \
 		|| die "sed slime.el failed"
+	sed -i "s/@itemx INIT-FUNCTION/@item INIT-FUNCTION/" doc/slime.texi \
+		|| die "sed doc/slime.texi failed"
 
 	# Remove xref.lisp (which is non-free) unless USE flag is set
 	use xref || rm -f xref.lisp
