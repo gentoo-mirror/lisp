@@ -63,7 +63,13 @@ src_prepare() {
 	# SLIME uses the changelog date to make sure that the emacs side and the CL side
 	# are in sync. We hardcode it instead of letting slime determine it at runtime
 	# because ChangeLog doesn't get installed to $EMACSDIR
-	epatch "${FILESDIR}"/2.0_p20130214/gentoo-changelog-date.patch
+	if [[ ${PV} == *2.0_p20130214* ]]; then
+		epatch "${FILESDIR}"/2.0_p20130214/gentoo-changelog-date.patch
+	else
+		# lately upstream have not updated ChangeLog, so this patch contains
+		# an old date: 2013-02-13
+		epatch "${FILESDIR}"/2.0_p20130930/gentoo-changelog-date.patch
+	fi
 	sed -i "/(defvar \*swank-wire-protocol-version\*/s:nil:\"${SLIME_CHANGELOG_DATE}\":" swank.lisp \
 		|| die "sed swank.lisp failed"
 	sed -i "s:@SLIME-CHANGELOG-DATE@:${SLIME_CHANGELOG_DATE}:" slime.el \
@@ -74,7 +80,11 @@ src_prepare() {
 }
 
 src_compile() {
+	elisp-compile *.el || die
+	BYTECOMPFLAGS="${BYTECOMPFLAGS} -L contrib -l slime" \
+		elisp-compile contrib/*.el || die
 	emake -j1 -C doc slime.info || die "Cannot build info docs"
+
 	if use doc; then
 		VARTEXFONTS="${T}"/fonts \
 			emake -j1 -C doc slime.pdf || die "emake doc failed"
