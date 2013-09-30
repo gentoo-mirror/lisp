@@ -15,18 +15,19 @@ if [[ ${PV} != *9999* ]]; then
 	S="${WORKDIR}/slime-${PV:5:4}-${PV:9:2}-${PV:11:2}"
 fi
 
-LICENSE="GPL-2 xref.lisp"
+LICENSE="GPL-2 xref? ( xref.lisp )"
 SLOT="0"
 if [[ ${PV} == *9999* ]]; then
 	KEYWORDS=""
 else
 	KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 fi
-IUSE="doc"
+IUSE="doc xref"
 
 RDEPEND="virtual/commonlisp
 		dev-lisp/asdf"
-DEPEND="sys-apps/texinfo
+DEPEND="${RDEPEND}
+		sys-apps/texinfo
 		doc? ( virtual/texi2dvi )"
 
 CLPACKAGE=swank
@@ -67,6 +68,9 @@ src_prepare() {
 		|| die "sed swank.lisp failed"
 	sed -i "s:@SLIME-CHANGELOG-DATE@:${SLIME_CHANGELOG_DATE}:" slime.el \
 		|| die "sed slime.el failed"
+
+	# Remove xref.lisp (which is non-free) unless USE flag is set
+	use xref || rm -f xref.lisp
 }
 
 src_compile() {
