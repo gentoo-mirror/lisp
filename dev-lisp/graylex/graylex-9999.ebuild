@@ -20,10 +20,3 @@ RDEPEND="dev-lisp/alexandria
 		dev-lisp/trivial-gray-streams"
 
 CLSYSTEMS="${PN} ${PN}-test"
-
-#src_install() {
-	#common-lisp-install-sources *.lisp contrib
-	#common-lisp-install-asdf
-	#dodoc *.txt
-	#docinto examples && dodoc examples/*
-#}
