@@ -10,7 +10,7 @@ DESCRIPTION="Gray lexer input streams"
 HOMEPAGE="http://cliki.net/graylex"
 EGIT_REPO_URI="git://github.com/e-user/${PN}.git"
 
-LICENSE="GPL-3"
+LICENSE="GPL-3+"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
