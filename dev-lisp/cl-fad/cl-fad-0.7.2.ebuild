@@ -17,6 +17,9 @@ SLOT="0"
 KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
+RDEPEND="dev-lisp/alexandria
+		dev-lisp/bordeaux-threads"
+
 src_install() {
 	common-lisp-install-sources *.lisp
 	common-lisp-install-asdf
