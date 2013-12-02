@@ -1,11 +1,13 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-inherit common-lisp-2
+EAPI=5
+
+inherit common-lisp-3
 
 DESCRIPTION="A Common Lisp library for constructing and manipulating MIME objects."
-HOMEPAGE="http://www.cliki.net/cl-mime/"
+HOMEPAGE="http://www.cliki.net/cl-mime"
 SRC_URI="http://www.bobturf.org/software/${PN}/${P}.tar.gz"
 
 LICENSE="LLGPL-2.1"
