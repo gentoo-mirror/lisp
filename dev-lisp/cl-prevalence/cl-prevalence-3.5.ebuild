@@ -17,13 +17,3 @@ IUSE=""
 
 RDEPEND="dev-lisp/s-xml
 		dev-lisp/s-sysdeps"
-
-#src_unpack() {
-	#unpack ${A}
-	#test -f "${S}"/Makefile && rm -f "${S}"/Makefile
-#}
-
-#src_install() {
-	#common-lisp-install ${PN}.asd src test
-	#common-lisp-symlink-asdf
-#}
