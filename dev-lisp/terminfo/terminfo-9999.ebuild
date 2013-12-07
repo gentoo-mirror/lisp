@@ -1,0 +1,24 @@
+# Copyright 1999-2013 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Header: $
+
+EAPI=5
+
+inherit common-lisp-3 git-2
+
+DESCRIPTION="Common Lisp interface to the terminfo database."
+HOMEPAGE="http://users.actrix.co.nz/mycroft/cl.html"
+EGIT_REPO_URI="git://common-lisp.net/projects/linedit/linedit.git"
+
+LICENSE="BSD-2"
+SLOT="0"
+KEYWORDS="~amd64 ~ppc ~sparc ~x86"
+IUSE=""
+
+RDEPEND="!dev-lisp/cl-${PN}
+		sys-libs/ncurses"
+
+src_install() {
+	common-lisp-install-sources terminfo.lisp
+	common-lisp-install-asdf terminfo.asd
+}
