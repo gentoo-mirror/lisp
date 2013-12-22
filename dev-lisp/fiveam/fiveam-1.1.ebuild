@@ -19,7 +19,7 @@ IUSE=""
 
 RDEPEND="!dev-lisp/cl-${PN}
 		!dev-lisp/cl-${PN}-darcs
-		dev-lisp/arnesi"
+		dev-lisp/alexandria"
 
 src_install() {
 	common-lisp-install-sources -t all docs src t version.lisp-expr
