@@ -15,7 +15,8 @@ SLOT="0"
 KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
-RDEPEND="dev-lisp/s-xml
+RDEPEND="dev-lisp/fiveam
+		dev-lisp/s-xml
 		dev-lisp/s-sysdeps"
 
 S="${WORKDIR}"/skypher-${PN}-1edf5cd93bb9
