@@ -4,11 +4,11 @@
 
 EAPI=5
 
-inherit common-lisp-3 mercurial
+inherit common-lisp-3
 
 DESCRIPTION="CL-PREVALENCE is an implementation of Object Prevalence for Common Lisp."
 HOMEPAGE="http://www.common-lisp.net/project/cl-prevalence/"
-SRC_URI="http://bitbucket.org/skypher/cl-prevalence/get/${PV}.gz -> ${P}.gz"
+SRC_URI="http://bitbucket.org/skypher/${PN}/get/${PV}.gz -> ${P}.tar.gz"
 
 LICENSE="LLGPL-2.1"
 SLOT="0"
@@ -17,3 +17,5 @@ IUSE=""
 
 RDEPEND="dev-lisp/s-xml
 		dev-lisp/s-sysdeps"
+
+S="${WORKDIR}"/skypher-${PN}-1edf5cd93bb9
