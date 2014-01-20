@@ -42,8 +42,10 @@ src_configure() {
 		cp "${makefile}" makefile_build || die
 		sed -i 's/CFLAGS/MYCFLAGS/g' makefile_build || die
 		sed -i 's/-O2 -g/$(CFLAGS)/g' makefile_build || die
+		sed -i '/strip newlisp/d' makefile_build || die
 	else
 		./configure-alt --prefix="${D}/usr"
+		sed -i '/$(STRIP) $(TARG)/d' makefile_build || die
 	fi
 }
 
