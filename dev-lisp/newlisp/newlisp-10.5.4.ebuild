@@ -32,6 +32,13 @@ getmakefile() {
 	echo "makefile_linux${arch}${opts}"
 }
 
+getlibffipath() {
+	local version=$(best_version dev-libs/libffi)
+
+	version=$(echo ${version} | cut -d/ -f 2)
+	echo "/usr/$(get_libdir)/${version}"
+}
+
 src_prepare() {
 	epatch "${FILESDIR}/${PN}-makefile-install-${PV}.patch"
 }
@@ -47,6 +54,8 @@ src_configure() {
 		./configure-alt --prefix="${D}/usr"
 		sed -i '/$(STRIP) $(TARG)/d' makefile_build || die
 	fi
+	use libffi && sed -i "s|/usr/local/lib/libffi-3.0.13|$(getlibffipath)|" \
+		makefile_build || die
 }
 
 src_install() {
