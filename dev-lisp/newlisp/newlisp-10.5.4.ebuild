@@ -54,8 +54,9 @@ src_configure() {
 		./configure-alt --prefix="${D}/usr"
 		sed -i '/$(STRIP) $(TARG)/d' makefile_build || die
 	fi
-	use libffi && sed -i "s|/usr/local/lib/libffi-3.0.13|$(getlibffipath)|" \
-		makefile_build || die
+	if use libffi ; then
+		sed -i "s|/usr/local/lib/libffi-3.0.13|$(getlibffipath)|" makefile_build || die
+	fi
 }
 
 src_install() {
