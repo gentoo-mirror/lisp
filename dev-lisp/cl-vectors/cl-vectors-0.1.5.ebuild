@@ -2,6 +2,8 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
+EAPI=5
+
 inherit common-lisp-3
 
 DESCRIPTION="A pure Common Lisp library to create, transform and render anti-aliased vectorial paths."
