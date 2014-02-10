@@ -13,11 +13,4 @@ EGIT_REPO_URI="git://repo.or.cz/lisp-unit.git"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~ppc ~sparc ~x86"
-IUSE="doc"
-
-#src_install() {
-	#common-lisp-install-sources *.lisp
-	#common-lisp-install-asdf
-	#dodoc TODO
-	#use doc && dohtml documentation/*
-#}
+IUSE=""
