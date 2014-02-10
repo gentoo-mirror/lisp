@@ -1,10 +1,10 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=2
+EAPI=5
 
-inherit common-lisp-2 git
+inherit common-lisp-3 git-2
 
 DESCRIPTION="A Common Lisp library for unit testing."
 HOMEPAGE="http://www.cliki.net/lisp-unit/"
@@ -15,9 +15,9 @@ SLOT="0"
 KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE="doc"
 
-src_install() {
-	common-lisp-install *.{lisp,asd}
-	common-lisp-symlink-asdf
-	dodoc TODO
-	use doc && dohtml documentation/*
-}
+#src_install() {
+	#common-lisp-install-sources *.lisp
+	#common-lisp-install-asdf
+	#dodoc TODO
+	#use doc && dohtml documentation/*
+#}
