@@ -15,7 +15,8 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-RDEPEND="dev-lisp/bordeaux-threads
+RDEPEND="dev-db/mongodb
+	dev-lisp/bordeaux-threads
 	dev-lisp/documentation-template
 	dev-lisp/lisp-unit
 	dev-lisp/parenscript
