@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<herd>common-lisp</herd>
+	<upstream>
+		<maintainer status="active">
+			<email>abu@software-lab.de</email>
+			<name>Alexander Burger</name>
+		</maintainer>
+		<bugs-to>mailto:abu@software-lab.de</bugs-to>
+		<doc>http://picolisp.com/wiki/?Documentation</doc>
+	</upstream>
+	<longdescription lang="en">
+		A fast and lightweight Lisp interpreter, with a focus on databases.
+	</longdescription>
+</pkgmetadata>
