@@ -24,4 +24,18 @@ RDEPEND="${DEPEND}
 	emacs? ( app-emacs/slime )
 	!clisp? ( !sbcl? ( !amd64? ( dev-lisp/cmucl ) ) )
 	clisp? ( >=dev-lisp/clisp-2.38-r2[X,-new-clx] )
-	sbcl?  ( dev-lisp/sbcl dev-lisp/clx )"
+	sbcl?  ( >=dev-lisp/sbcl-1.1.15 dev-lisp/clx )
+	doc? ( sys-apps/texinfo )"
+
+do_doc() {
+	local pdffile="${PN}.pdf"
+
+	dodoc AUTHORS NEWS README.md
+	texi2pdf -o "${pdffile}" "${PN}.texi.in" && dodoc "${pdffile}" || die
+}
+
+src_install() {
+	common-lisp-install-sources *.lisp
+	common-lisp-install-asdf
+	use doc && do_doc
+}
