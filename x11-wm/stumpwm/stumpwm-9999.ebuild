@@ -4,7 +4,7 @@
 
 EAPI=5
 
-inherit common-lisp-3 git-2
+inherit autotools common-lisp-3 git-2
 
 DESCRIPTION="Stumpwm is a tiling, keyboard driven X11 Window Manager written entirely in Common Lisp."
 HOMEPAGE="http://www.nongnu.org/stumpwm/index.html"
@@ -34,8 +34,17 @@ do_doc() {
 	texi2pdf -o "${pdffile}" "${PN}.texi.in" && dodoc "${pdffile}" || die
 }
 
+src_prepare() {
+	eautoreconf
+}
+
+src_compile() {
+	emake -j1
+}
+
 src_install() {
 	common-lisp-install-sources *.lisp
 	common-lisp-install-asdf
+	dobin "${PN}"
 	use doc && do_doc
 }
