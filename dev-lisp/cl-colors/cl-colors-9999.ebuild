@@ -19,7 +19,7 @@ RDEPEND="dev-lisp/alexandria
 	dev-lisp/let-plus"
 
 src_install() {
-	common-lisp-install-sources
+	common-lisp-install-sources *.lisp
 	common-lisp-install-asdf
 	dodoc introduction.txt README.org
 }
