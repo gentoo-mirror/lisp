@@ -1,8 +1,10 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-inherit common-lisp-2
+EAPI=5
+
+inherit common-lisp-3
 
 DESCRIPTION="CL-YACC is a LALR(1) parser generator for Common Lisp"
 HOMEPAGE="http://www.pps.jussieu.fr/~jch/software/cl-yacc/
@@ -17,8 +19,6 @@ IUSE="doc"
 DEPEND="sys-apps/texinfo
 		doc? ( virtual/texi2dvi )"
 
-CLSYSTEMS="yacc"
-
 src_compile() {
 	makeinfo ${PN}.texi -o ${PN}.info || die "Cannot build info docs"
 	if use doc ; then
@@ -28,8 +28,8 @@ src_compile() {
 }
 
 src_install() {
-	common-lisp-install yacc{,-tests}.lisp yacc.asd
-	common-lisp-symlink-asdf
+	common-lisp-install-sources yacc{,-tests}.lisp
+	common-lisp-install-asdf
 	dodoc CHANGES README
 	doinfo ${PN}.info
 	use doc && dodoc ${PN}.pdf
