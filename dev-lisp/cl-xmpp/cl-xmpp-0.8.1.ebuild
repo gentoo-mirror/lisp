@@ -1,9 +1,10 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=2
-inherit common-lisp-2
+EAPI=5
+
+inherit common-lisp-3
 
 DESCRIPTION="A Common Lisp client implementation of the XMPP."
 HOMEPAGE="http://common-lisp.net/project/cl-xmpp/"
@@ -20,9 +21,3 @@ RDEPEND="dev-lisp/usocket
 		 dev-lisp/cl-base64
 		 dev-lisp/cl-sasl
 		 dev-lisp/cl-plus-ssl"
-
-CLSYSTEMS="cl-xmpp cl-xmpp-sasl cl-xmpp-tls"
-
-src_prepare() {
-	rm Makefile
-}
