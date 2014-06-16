@@ -15,7 +15,8 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="doc examples"
 
-RDEPEND="media-libs/glfw"
+RDEPEND="media-libs/ftgl
+	media-libs/glfw"
 
 src_install() {
 	common-lisp-install-sources lib
