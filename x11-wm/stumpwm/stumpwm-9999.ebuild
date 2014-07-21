@@ -18,14 +18,13 @@ IUSE="doc clisp emacs +sbcl"
 DEPEND="dev-lisp/common-lisp-controller
 	virtual/commonlisp
 	dev-lisp/cl-ppcre
-	doc? ( sys-apps/texinfo )"
+	doc? ( virtual/texi2dvi )"
 
 RDEPEND="${DEPEND}
 	emacs? ( app-emacs/slime )
 	!clisp? ( !sbcl? ( !amd64? ( dev-lisp/cmucl ) ) )
 	clisp? ( >=dev-lisp/clisp-2.38-r2[X,-new-clx] )
-	sbcl?  ( >=dev-lisp/sbcl-1.1.15 dev-lisp/clx )
-	doc? ( sys-apps/texinfo )"
+	sbcl?  ( >=dev-lisp/sbcl-1.1.15 dev-lisp/clx )"
 
 do_doc() {
 	local pdffile="${PN}.pdf"
