@@ -40,6 +40,12 @@ do_doc() {
 	docinto examples ; dodoc sample-stumpwmrc.lisp
 }
 
+src_prepare() {
+	# Upstream did not change version before packaging:
+	# https://github.com/stumpwm/stumpwm/issues/103
+	sed -i "${S}/${PN}.asd" -e 's/:version "0.9.7"/:version "0.9.8"/' || die
+}
+
 src_configure() {
 	eautoreconf
 	econf --with-lisp=$(glo_best_flag sbcl clisp ecl) \
