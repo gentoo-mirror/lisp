@@ -43,9 +43,6 @@ do_doc() {
 src_prepare() {
 	# Upstream didn't change the version before packaging
 	sed -i "${S}/${PN}.asd" -e 's/:version "0.9.8"/:version "0.9.9"/' || die
-}
-
-src_configure() {
 	eautoreconf
 	econf --with-lisp=$(glo_best_flag sbcl clisp ecl)
 }
