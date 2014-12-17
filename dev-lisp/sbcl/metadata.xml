@@ -22,5 +22,6 @@ SBCL 0.8.17 and later support Unicode.
 <use>
 <flag name='cobalt'>mips only: use mipsel binary instead of mips big endian
 binary to bootstrap</flag>
+<flag name='pax_kernel'>Enable if the user plans to run the package under a pax enabled hardened kernel</flag>
 </use>
 </pkgmetadata>
