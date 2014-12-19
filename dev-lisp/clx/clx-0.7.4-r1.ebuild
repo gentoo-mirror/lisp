@@ -1,15 +1,16 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=3
+EAPI=5
+
 inherit common-lisp-3 eutils
 
 DESCRIPTION="CLX is the Common Lisp interface to the X11 protocol primarily for SBCL."
 HOMEPAGE="http://www.cliki.net/CLX"
 SRC_URI="http://common-lisp.net/~abridgewater/dist/${PN}/${P}.tgz"
 
-LICENSE="as-is"
+LICENSE="HPND"
 SLOT="0"
 KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE="doc"
@@ -28,7 +29,7 @@ src_prepare() {
 }
 
 src_compile() {
-	cd manual
+	cd manual || die
 	makeinfo ${PN}.texinfo -o ${PN}.info || die "Cannot compile info docs"
 	if use doc ; then
 		VARTEXFONTS="${T}"/fonts \
