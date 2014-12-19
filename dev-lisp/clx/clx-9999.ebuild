@@ -10,7 +10,7 @@ DESCRIPTION="A fork of crhodes' fork of danb's fork of the CLX library, an X11 c
 HOMEPAGE="https://github.com/sharplispers/clx http://www.cliki.net/CLX"
 EGIT_REPO_URI="git://github.com/sharplispers/clx.git"
 
-LICENSE="as-is"
+LICENSE="HPND"
 SLOT="0"
 KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE=""
