@@ -1,1 +1,1 @@
-slime-9999.ebuild
+slime-2.0_p20130930.ebuild
