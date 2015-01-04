@@ -1,14 +1,14 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="3"
+EAPI="5"
 
 inherit multilib flag-o-matic #elisp-common
 
 DESCRIPTION="GNU/MIT-Scheme"
 HOMEPAGE="http://www.swiss.ai.mit.edu/projects/scheme/"
-SRC_URI="http://ftp.gnu.org/gnu/mit-scheme/stable.pkg/${PV}/${P}.tar.gz"
+SRC_URI="mirror://gnu/mit-scheme/stable.pkg/${PV}/${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -18,7 +18,7 @@ IUSE="doc" # emacs"
 #SITEFILE="50mitscheme-gentoo.el"
 
 RDEPEND="app-crypt/mhash
-	dev-db/postgresql-base
+	dev-db/postgresql
 	dev-libs/libmcrypt
 	dev-libs/openssl
 	sys-libs/gdbm
@@ -26,7 +26,7 @@ RDEPEND="app-crypt/mhash
 	x11-libs/libX11"
 
 DEPEND="${RDEPEND}
-	doc? ( dev-texlive/texlive-texinfo )"
+	doc? ( dev-texlive/texlive-plainextra )"
 
 src_prepare() {
 	sed "s:@for:@+for:" -i \
