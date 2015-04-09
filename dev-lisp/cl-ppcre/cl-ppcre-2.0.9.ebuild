@@ -28,7 +28,7 @@ src_unpack() {
 
 src_install() {
 	common-lisp-install-sources *.lisp test/
-	common-lisp-install-asdf
+	common-lisp-install-asdf ${PN}
 	dodoc CHANGELOG
 	dohtml doc/index.html
 }
