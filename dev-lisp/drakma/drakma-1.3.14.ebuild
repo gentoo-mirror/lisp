@@ -22,8 +22,3 @@ RDEPEND="!dev-lisp/cl-${PN}
 		>=dev-lisp/flexi-streams-1.0.7
 		>=dev-lisp/usocket-0.4.0
 		dev-lisp/cl-plus-ssl"
-
-#src_install() {
-	#common-lisp-3_src_install
-	#dohtml doc/index.html
-#}
