@@ -8,11 +8,10 @@ inherit common-lisp-3 eutils flag-o-matic git-2 multilib toolchain-funcs
 
 DESCRIPTION="Linedit is a readline-style library written in Common Lisp."
 HOMEPAGE="http://www.common-lisp.net/project/linedit/"
-EGIT_REPO_URI="git://common-lisp.net/projects/${PN}/${PN}.git"
+EGIT_REPO_URI="https://gitlab.common-lisp.net/${PN}/${PN}.git"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND="!dev-lisp/cl-${PN}
@@ -40,6 +39,11 @@ create_uffi_loader() {
 	EOF
 }
 
+cleanup_terminfo_files() {
+	rm "${D}/${CLSOURCEROOT}/${PN}/terminfo.lisp" || die
+	rm "${D}/${CLSYSTEMROOT}/terminfo.asd" || die
+}
+
 src_prepare() {
 	epatch "${FILESDIR}"/${PV}-${PN}.asd-uffi-glue-gentoo.patch
 	create_uffi_loader
@@ -57,6 +61,7 @@ src_compile() {
 src_install() {
 	common-lisp-install-sources *.lisp ports/
 	common-lisp-install-asdf
+	cleanup_terminfo_files
 	exeinto "/usr/$(get_libdir)/${PN}"
 	doexe *.so
 }
