@@ -4,7 +4,7 @@
 
 EAPI=5
 
-inherit common-lisp-3 eutils
+inherit common-lisp-3
 
 DESCRIPTION="Drakma is a Common Lisp HTTP client."
 HOMEPAGE="http://weitz.de/drakma/"
