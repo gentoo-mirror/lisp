@@ -1,4 +1,4 @@
-# Copyright 1999-2014 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -8,11 +8,10 @@ inherit common-lisp-3 git-2
 
 DESCRIPTION="A collection of public domain utilities."
 HOMEPAGE="http://common-lisp.net/project/alexandria/"
-EGIT_REPO_URI="git://common-lisp.net/projects/alexandria/alexandria.git"
+EGIT_REPO_URI="https://gitlab.common-lisp.net/alexandria/alexandria.git"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE="doc"
 
 DEPEND="doc? ( sys-apps/texinfo )"
