@@ -9,7 +9,7 @@ MY_P=${PN}_${PV}
 
 DESCRIPTION="The Common Foreign Function Interface (CFFI)"
 HOMEPAGE="http://common-lisp.net/project/cffi/"
-EGIT_REPO_URI="git://common-lisp.net/projects/cffi/cffi.git"
+EGIT_REPO_URI="git://github.com/${PN}/${PN}/"
 
 LICENSE="MIT"
 SLOT="0"
@@ -38,7 +38,7 @@ src_install() {
 	common-lisp-install-sources examples/ src/ uffi-compat/
 	common-lisp-install-sources -t all grovel/ tests/
 	common-lisp-install-asdf
-	dodoc README TODO doc/*.txt
+	dodoc README.md TODO doc/*.txt
 	if use doc; then
 		doinfo doc/*.info
 		rm doc/{spec,manual}/cffi* || die
