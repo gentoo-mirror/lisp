@@ -1,0 +1,26 @@
+#!/sbin/runscript
+
+HOPEXEC=/usr/bin/hop
+HOPUSER=hop
+HOPHOME=/var/lib/hop
+PIDFILE=/var/run/hop.pid
+
+depend() {
+    need localmount net
+}
+
+start() {
+    ebegin "Starting Hop Web Broker"
+    start-stop-daemon --start --background \
+	--make-pidfile --pidfile ${PIDFILE} \
+        --exec ${HOPEXEC} --user ${HOPUSER} \
+	--env HOME=${HOPHOME} -- ${HOP_OPTS}
+    eend $?
+}
+
+stop() {
+    ebegin "Stopping Hop Web Broker"
+    start-stop-daemon --signal 9 \
+	--exec ${HOPEXEC} --pidfile ${PIDFILE}
+    eend $?
+}
