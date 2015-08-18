@@ -1,15 +1,15 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
 EAPI="4"
 
-# for live ebuilds uncomment inherit git, comment SRC_URI and empty KEYWORDS
+# for live ebuilds uncomment inherit git-2, comment SRC_URI and empty KEYWORDS
 
 NEED_EMACS=23
 
 inherit elisp
-inherit git
+inherit git-2
 
 DESCRIPTION="Emacs modes for Scheme interaction"
 HOMEPAGE="http://www.nongnu.org/geiser/"
