@@ -1,9 +1,9 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
 EAPI="2"
-inherit common-lisp-2 git
+inherit common-lisp-2 git-2
 
 DESCRIPTION="CFFI Add-on: Foreign Structures By Value."
 HOMEPAGE="http://common-lisp.net/project/gsll/"
