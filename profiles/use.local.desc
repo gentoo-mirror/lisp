@@ -1,0 +1,67 @@
+# This file is deprecated as per GLEP 56 in favor of metadata.xml.
+# Please add your descriptions to your package's metadata.xml ONLY.
+# * generated automatically using pmaint *
+
+app-emacs/slime:xref - Install xref.lisp cross-referencing tool
+dev-lang/swig:ccache - build ccache-swig(a fast compiler cache)
+dev-lisp/abcl:jad - Enable support for disassembling compiled code using JAD
+dev-lisp/gcl:ansi - Build a GCL with ANSI support (else build a traditional CLtL1 image)
+dev-lisp/sbcl:cobalt - mips only: use mipsel binary instead of mips big endian binary to bootstrap
+dev-lisp/sbcl:pax_kernel - Enable if the user plans to run the package under a pax enabled hardened kernel
+dev-scheme/bigloo:bglpkg - Build the bglpkg tool to access scmpkg servers (requires web)
+dev-scheme/bigloo:calendar - Build the embedded library for calendar programming
+dev-scheme/bigloo:crypto - Build the embedded cryptographic library
+dev-scheme/bigloo:csv - bigloo-csv is a library for parsing csv and csv-like data
+dev-scheme/bigloo:doc - Install Bigloo Manual (HTML docs of Bigloo and r5rs)
+dev-scheme/bigloo:emacs - Build and install the Bigloo Developement Environment for Emacs (aka bee-mode)
+dev-scheme/bigloo:gstreamer - Adds support for media-libs/gstreamer (requires threads and multimedia)
+dev-scheme/bigloo:java - Enable the JVM backend for the Bigloo compiler
+dev-scheme/bigloo:mail - Mail library for email management (e.g. maildir and imap support)
+dev-scheme/bigloo:mp3 - Enable mp3 support through media-sound/mpg123
+dev-scheme/bigloo:multimedia - Build multimedia library (e.g. for managing images). Needed for dev-scheme/hop
+dev-scheme/bigloo:openpgp - Build OpenPGP support (requires crypto)
+dev-scheme/bigloo:packrat - Bigloo port of Tony Garnock-Jones' packrat parser (requires srfi1)
+dev-scheme/bigloo:sqlite - Use the system-wide dev-db/sqlite
+dev-scheme/bigloo:srfi1 - Build the srfi1 library: List library
+dev-scheme/bigloo:srfi27 - Build the srfi27 library: Source of Random Bits (32bit-arch only, requires gmp)
+dev-scheme/bigloo:ssl - Adds support for SSL connections through dev-libs/openssl
+dev-scheme/bigloo:text - Library for dealing with text (e.g. BibTeX parser)
+dev-scheme/bigloo:threads - Enable thread support; requires dev-libs/boehm-gc with threads support
+dev-scheme/bigloo:web - Library for web programming (e.g. XML, CGI parsers). Needed for dev-scheme/hop
+dev-scheme/gambit:gbootstrap - Rebuild some C sources
+dev-scheme/gambit:noopts - Disable upstream's optimizations
+dev-scheme/guile:debug-freelist - Include garbage collector freelist debugging code
+dev-scheme/guile:debug-malloc - Include malloc debugging code
+dev-scheme/guile:deprecated - Enable deprecated features
+dev-scheme/guile:discouraged - (implied by deprecated) enable merely discouraged features
+dev-scheme/guile:networking - Include networking interfaces
+dev-scheme/guile:regex - Include regular expression interfaces
+dev-scheme/hop:debug - Enables building with debug symbols
+dev-scheme/hop:ssl - Enable SSL support for hop, it depends on dev-scheme/bigloo built with ssl use flag
+dev-scheme/hop:threads - Enable thread support for hop, it depends on dev-scheme/bigloo built with threads use flag
+dev-scheme/kawa:awt - Assume AWT is available
+dev-scheme/kawa:echo2 - Enable support for the Echo2 web toolkit with dev-java/echo2
+dev-scheme/kawa:frontend - Build "kawa" front-end program using readline
+dev-scheme/kawa:jemacs - Build JEmacs
+dev-scheme/kawa:krl - Build BRL emulation and KRL
+dev-scheme/kawa:sax - Assume SAX2 is available with dev-java/sax
+dev-scheme/kawa:servlets - Build support for generating servlets with dev-java/servletapi:2.4
+dev-scheme/kawa:swing - Assume Swing is available
+dev-scheme/kawa:swt - Assume SWT is available with dev-java/swt:3
+dev-scheme/kawa:xqtests - Support XQuery Test Suite
+dev-scheme/racket:backtrace - Support GC backtrace dumps
+dev-scheme/racket:futures - Enable racket/future library for fine-grained hardware parallelism
+dev-scheme/racket:jit - Enable just-in-time compiler
+dev-scheme/racket:places - Enable racket/place library for share-nothing parallelism and message-passing communication. Compared to futures, places are heavyweight, but they have a simpler performance model.
+dev-scheme/racket:plot - Enable plot libraries
+dev-scheme/racket:threads - Enable support for green threads
+dev-scheme/scm:arrays - Support for arrays, uniform-arrays and uniform-vectors.
+dev-scheme/scm:bignums - Support for large precision integers.
+dev-scheme/scm:cautious - SCM will always check the number of arguments to interpreted closures.
+dev-scheme/scm:dynamic-linking - Be able to load compiled files while running.
+dev-scheme/scm:engineering-notation - Floats to display in engineering notation (exponents always multiples of 3) instead of scientific notation.
+dev-scheme/scm:gsubr - generalized c arguments: for arbitrary (more then 11) arguments to C functions.
+dev-scheme/scm:inexact - Support for floating point numbers.
+dev-scheme/scm:ioext - Commonly available I/O extensions: line I/O, file positioning, file delete and rename, and directory functions.
+dev-scheme/scm:macro - C level support for hygienic and referentially transparent macros (syntax-rules macros).
+dev-scheme/scm:unix - Support for: nice, acct, lstat, readlink, symlink, mknod and sync.
