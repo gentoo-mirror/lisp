@@ -1,8 +1,8 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-inherit git
+inherit git-2
 
 DESCRIPTION="JazzScheme is an open source programming language based on Scheme."
 HOMEPAGE="http://www.jazzscheme.org/"
@@ -12,7 +12,7 @@ EGIT_REPO_URI="git://github.com/jazzscheme/jazz.git"
 
 LICENSE="|| ( MPL-1.1 GPL-2 )"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 DEPEND="dev-scheme/gambit x11-libs/cairo"
@@ -26,6 +26,6 @@ src_compile() {
 }
 
 src_install() {
-	mkdir "${D}"/opt/
-	mv * "${D}"/opt/
+	mkdir "${D}"/opt/ || die
+	mv * "${D}"/opt/ || die
 }
