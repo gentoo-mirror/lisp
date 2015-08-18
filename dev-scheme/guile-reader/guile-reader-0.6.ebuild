@@ -1,8 +1,10 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-inherit autotools eutils git
+EAPI=5
+
+inherit autotools eutils git-2
 
 DESCRIPTION="Guile-reader is a simple framework for building readers for GNU Guile."
 HOMEPAGE="http://www.nongnu.org/guile-reader/"
@@ -21,13 +23,12 @@ RDEPEND="${DEPEND}"
 
 #S="${WORKDIR}/${P}"
 
-src_unpack() {
-	git_src_unpack
+src_configure() {
 	eautoreconf -i
+	econf --with-guilemoduledir=/usr/share/guile/site || die "econf failed"
 }
 
 src_compile() {
-	econf --with-guilemoduledir=/usr/share/guile/site || die "econf failed"
 	emake || die "emake failed"
 }
 
