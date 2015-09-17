@@ -1,6 +1,6 @@
 app-admin/eselect-guile 1.2-r1: Manage multiple Guile versions on one system
 app-emacs/geiser 999: Emacs modes for Scheme interaction
-app-emacs/slime 2.0_p20110617 2.0_p20130214 2.0_p20130930 2.11 2.12 9999: SLIME, the Superior Lisp Interaction Mode (Extended)
+app-emacs/slime 2.0_p20110617 2.0_p20130214 2.0_p20130930 2.11 2.12 2.15 9999: SLIME, the Superior Lisp Interaction Mode (Extended)
 app-office/texmacs 1.0.7.16-r2: Wysiwyg text processor with high-quality maths
 app-text/lout 3.38: high-level language for document formatting
 app-text/skribe 1.2l-r1: Skribe is a text processor for technical documents written in scheme.
