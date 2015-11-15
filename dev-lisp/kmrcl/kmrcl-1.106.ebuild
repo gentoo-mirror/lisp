@@ -1,6 +1,6 @@
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 EAPI=5
 
@@ -8,7 +8,7 @@ inherit common-lisp-3
 
 DESCRIPTION="General Utilities for Common Lisp Programs from Kevin Rosenberg"
 HOMEPAGE="http://www.cliki.net/kmrcl"
-SRC_URI="http://files.b9.com/${PN}/${P}.tar.gz"
+SRC_URI="http://files.kpe.io/${PN}/${PF}.tar.gz"
 
 LICENSE="LLGPL-2.1"
 SLOT="0"
