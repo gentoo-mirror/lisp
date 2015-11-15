@@ -1,12 +1,12 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
-inherit common-lisp-2
+inherit common-lisp-3
 
 DESCRIPTION="A Common Lisp test harness based on the Franz, Inc. tester module."
-HOMEPAGE="http://www.b9.com"
-SRC_URI="http://files.b9.com/${PN}/${P}.tar.gz"
+HOMEPAGE="http://www.cliki.net/ptester"
+SRC_URI="http://files.kpe.io/${PN}/${P}.tar.gz"
 
 LICENSE="LLGPL-2.1"
 SLOT="0"
@@ -16,7 +16,7 @@ IUSE=""
 RDEPEND="!dev-lisp/cl-${PN}"
 
 src_install() {
-	common-lisp-install *.{lisp,asd}
-	common-lisp-symlink-asdf
+	common-lisp-install-sources *.lisp
+	common-lisp-install-asdf
 	dohtml tester.html
 }
