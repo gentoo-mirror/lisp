@@ -1,12 +1,12 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
-inherit common-lisp-2
+inherit common-lisp-3
 
 DESCRIPTION="Common Lisp package to encode and decode base64 with URI support"
 HOMEPAGE="http://www.cliki.net/cl-base64"
-SRC_URI="http://files.b9.com/${PN}/${P}.tar.gz"
+SRC_URI="http://files.kpe.io/${PN}/${PF}.tar.gz"
 LICENSE="BSD"
 
 SLOT="0"
