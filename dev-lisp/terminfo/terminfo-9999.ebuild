@@ -1,6 +1,6 @@
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 EAPI=5
 
@@ -19,6 +19,6 @@ RDEPEND="!dev-lisp/cl-${PN}
 		sys-libs/ncurses"
 
 src_install() {
-	common-lisp-install-sources terminfo.lisp
-	common-lisp-install-asdf terminfo.asd
+	common-lisp-install-sources "${PN}.lisp"
+	common-lisp-install-asdf "${PN}.asd"
 }
