@@ -24,7 +24,7 @@ RDEPEND="!dev-lisp/cl-${PN}
 		dev-lisp/trivial-features"
 
 CLSYSTEMS="cffi.asd cffi-tests.asd cffi-examples.asd cffi-grovel.asd \
-		cffi-uffi-compat.asd"
+		cffi-uffi-compat.asd cffi-toolchain.asd"
 
 S="${WORKDIR}"/${MY_P}
 
@@ -36,7 +36,7 @@ src_compile() {
 }
 
 src_install() {
-	common-lisp-install-sources examples/ src/ uffi-compat/
+	common-lisp-install-sources examples/ src/ uffi-compat/ toolchain/
 	common-lisp-install-sources -t all grovel/ tests/
 	common-lisp-install-asdf
 	dodoc README.md TODO doc/*.txt
