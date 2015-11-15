@@ -7,7 +7,7 @@ EAPI=5
 inherit common-lisp-3
 
 DESCRIPTION="Portable URI library for Common Lisp based on the Franz, Inc. :net.uri module."
-HOMEPAGE="http://puri.b9.com/"
+HOMEPAGE="http://files.kpe.io/puri/"
 SRC_URI="http://files.kpe.io/${PN}/${PF}.tar.gz"
 
 LICENSE="LLGPL-2.1"
