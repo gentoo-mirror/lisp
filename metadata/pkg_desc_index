@@ -65,7 +65,7 @@ dev-lisp/chipz 0.7.4-r1 0.8: A library for decompressing deflate, zlib, and gzip
 dev-lisp/chronicity 0.2.6 0.2.7: A natural language date and time parser for Common Lisp.
 dev-lisp/chunga 1.1.1 1.1.5 1.1.6: Portable chunked streams for Common Lisp
 dev-lisp/cl-aima 1.0.4-r1: Common Lisp source code from Peter Norvig's Artificial Intelligence: A Modern Approach
-dev-lisp/cl-base64 3.3.3: Common Lisp package to encode and decode base64 with URI support
+dev-lisp/cl-base64 3.3.3 3.3.4: Common Lisp package to encode and decode base64 with URI support
 dev-lisp/cl-berkeley-db 0.3.0: A common-lisp wrapper to the Berkeley database library.
 dev-lisp/cl-cairo2 9999: Comon Lisp bindings for the Cairo API
 dev-lisp/cl-charms 9999: A set of CFFI bindings for libcurses (ncurses), a GUI-like console
