@@ -228,7 +228,7 @@ dev-lisp/org-davep-dict 2.3: An RFC2229 client library for Common Lisp
 dev-lisp/org-davep-dictrepl 2.2: An RFC2229 client REPL for Common Lisp
 dev-lisp/org-davep-newsrc 2.0: Common Lisp class for reading the Unix-style ~/.newsrc file
 dev-lisp/org-davep-nntp 2.0: Common Lisp class for talking to a NNTP news server
-dev-lisp/osicat 0.5.0-r1 0.6.0: osicat is a lightweight operating system interface for Common Lisp on Unix-platforms.
+dev-lisp/osicat 0.5.0-r1 0.6.0 0.7.0: osicat is a lightweight operating system interface for Common Lisp on Unix-platforms.
 dev-lisp/parenscript 2.2 2.5 9999: Parenscript is a small lispy language that can be compiled to JavaScript.
 dev-lisp/parse-js 9999: parse-js is a Common Lisp package for parsing JavaScript
 dev-lisp/parse-number 1.2 1.3: Common Lisp library for parsing any number string
