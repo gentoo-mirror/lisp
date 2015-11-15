@@ -1,13 +1,14 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
-EAPI=2
-inherit common-lisp-2
+EAPI=5
+
+inherit common-lisp-3
 
 DESCRIPTION="Portable URI library for Common Lisp based on the Franz, Inc. :net.uri module."
 HOMEPAGE="http://puri.b9.com/"
-SRC_URI="http://files.b9.com/${PN}/${P}.tar.gz"
+SRC_URI="http://files.kpe.io/${PN}/${PF}.tar.gz"
 
 LICENSE="LLGPL-2.1"
 SLOT="0"
@@ -18,8 +19,8 @@ RDEPEND="!dev-lisp/cl-${PN}
 		dev-lisp/ptester"
 
 src_install() {
-	common-lisp-install *.{lisp,asd}
-	common-lisp-symlink-asdf
+	common-lisp-install-sources *.lisp
+	common-lisp-install-asdf
 	dohtml uri.html
 	dodoc README
 }
