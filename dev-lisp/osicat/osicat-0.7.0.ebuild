@@ -1,8 +1,10 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
-inherit common-lisp-2 eutils
+EAPI=5
+
+inherit common-lisp-3 eutils
 
 MY_P="${PN}_${PV}"
 
@@ -16,17 +18,8 @@ KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
 RDEPEND="!dev-lisp/cl-${PN}
-		dev-lisp/uffi"
+		dev-lisp/alexandria
+		dev-lisp/cffi
+		dev-lisp/trivial-features"
 
 S="${WORKDIR}/${MY_P}"
-
-src_unpack() {
-	unpack ${A}
-	epatch "${FILESDIR}"/${PV}-gentoo.patch
-}
-
-src_install() {
-	common-lisp-install *.{lisp,asd} *.c version.txt
-	common-lisp-symlink-asdf
-	dodoc README
-}
