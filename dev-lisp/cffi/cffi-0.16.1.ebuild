@@ -39,7 +39,7 @@ src_install() {
 	common-lisp-install-sources examples/ src/ uffi-compat/
 	common-lisp-install-sources -t all grovel/ tests/
 	common-lisp-install-asdf
-	dodoc README TODO doc/*.txt
+	dodoc README.md TODO doc/*.txt
 	if use doc; then
 		doinfo doc/*.info
 		rm doc/{spec,manual}/cffi*
