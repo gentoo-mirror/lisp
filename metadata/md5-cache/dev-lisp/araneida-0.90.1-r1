@@ -1,0 +1,13 @@
+DEFINED_PHASES=install
+DESCRIPTION=Araneida is small, highly-portable web server for Common Lisp
+EAPI=0
+HOMEPAGE=http://www.cliki.net/Araneida
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=BSD
+RDEPEND=!dev-lisp/cl-araneida dev-lisp/split-sequence dev-lisp/net-telent-date virtual/commonlisp
+RESTRICT=mirror
+SLOT=0
+SRC_URI=http://common-lisp.net/project/araneida/release/araneida-version-0.90.1.tar.gz
+_eclass_exported_funcs=src_install:-
+_eclasses_=common-lisp-2	d3c4d1f1a7df32a406b6352a87a6639d	eutils	f20548a2f7b0128068388cd2ec26708a	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
+_md5_=46786088de50bcb4a57ac31a6d33b12f

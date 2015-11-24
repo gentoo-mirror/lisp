@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile install
+DEPEND=sys-apps/texinfo doc? ( virtual/texi2dvi )
+DESCRIPTION=CL-DARCS is a client for the darcs version control system written in Common Lisp.
+EAPI=0
+HOMEPAGE=http://common-lisp.net/project/cl-darcs http://www.cliki.net/CL-DARCS
+IUSE=doc
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=dev-lisp/split-sequence dev-lisp/drakma dev-lisp/puri dev-lisp/trivial-gray-streams dev-lisp/ironclad dev-lisp/flexi-streams dev-lisp/cl-fad dev-lisp/cl-ppcre dev-lisp/cl-difflib virtual/commonlisp
+RESTRICT=mirror
+SLOT=0
+SRC_URI=http://common-lisp.net/~sionescu/files/cl-darcs-0.2_p20080314.tar.bz2
+_eclass_exported_funcs=src_compile:- src_install:-
+_eclasses_=common-lisp-2	d3c4d1f1a7df32a406b6352a87a6639d	eutils	f20548a2f7b0128068388cd2ec26708a	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
+_md5_=aadc2337088c22bb102589848457aee9

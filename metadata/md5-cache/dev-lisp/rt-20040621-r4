@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install prepare
+DESCRIPTION=Common Lisp regression tester from MIT
+EAPI=2
+HOMEPAGE=http://www-2.cs.cmu.edu/afs/cs/project/ai-repository/ai/lang/lisp/code/testing/rt/ http://packages.debian.org/unstable/devel/cl-rt.html http://www.cliki.net/rt
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=MIT
+PDEPEND=virtual/commonlisp
+RDEPEND=!dev-lisp/cl-rt
+RESTRICT=mirror
+SLOT=0
+SRC_URI=mirror://debian/pool/main/c/cl-rt/cl-rt_20040621.orig.tar.gz mirror://debian/pool/main/c/cl-rt/cl-rt_20040621-4.diff.gz
+_eclass_exported_funcs=src_prepare:- src_compile:common-lisp-3 src_install:-
+_eclasses_=common-lisp-3	0dfca5a19b650487be7f56f5dd530c10	eutils	f20548a2f7b0128068388cd2ec26708a	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
+_md5_=0e8730a0dd614d97bbd3f911f8d528c8

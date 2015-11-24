@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install
+DEPEND=zlib? ( >=sys-libs/zlib-1.1.4 )
+DESCRIPTION=high-level language for document formatting
+EAPI=0
+HOMEPAGE=http://lout.sourceforge.net/
+IUSE=zlib doc
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=zlib? ( >=sys-libs/zlib-1.1.4 )
+SLOT=0
+SRC_URI=mirror://sourceforge/lout/lout-3.38.tar.gz
+_eclass_exported_funcs=src_compile:- src_install:-
+_md5_=66a31d9f17f180568fe806a9c0bf24ca

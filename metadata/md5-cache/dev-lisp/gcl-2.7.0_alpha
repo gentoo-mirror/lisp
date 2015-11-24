@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install
+DEPEND=readline? ( sys-libs/readline ) dev-libs/gmp sys-devel/autoconf virtual/latex-base
+DESCRIPTION=GCL is the official Common Lisp for the GNU project.
+EAPI=1
+HOMEPAGE=http://www.gnu.org/software/gcl/
+IUSE=+readline +ansi
+LICENSE=GPL-2
+RDEPEND=readline? ( sys-libs/readline ) dev-libs/gmp sys-devel/autoconf
+RESTRICT=strip
+SLOT=0
+SRC_URI=mirror://debian/pool/main/g/gclcvs/gclcvs_2.7.0-84.1.tar.gz
+_eclass_exported_funcs=src_compile:- src_install:-
+_md5_=5391d49d2117d22358cee6ee3e6c65b6

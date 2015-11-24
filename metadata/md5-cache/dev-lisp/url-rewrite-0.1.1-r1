@@ -1,0 +1,13 @@
+DEFINED_PHASES=install
+DESCRIPTION=Rewrite (X)HTML attributes with Common Lisp.
+EAPI=0
+HOMEPAGE=http://www.weitz.de/url-rewrite/
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=BSD-2
+RDEPEND=!dev-lisp/cl-url-rewrite virtual/commonlisp
+RESTRICT=mirror
+SLOT=0
+SRC_URI=http://common-lisp.net/~sionescu/files/url-rewrite_0.1.1.orig.tar.gz
+_eclass_exported_funcs=src_install:-
+_eclasses_=common-lisp-2	d3c4d1f1a7df32a406b6352a87a6639d	eutils	f20548a2f7b0128068388cd2ec26708a	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
+_md5_=59c9b35a91bade9f536d373aa9d56d36

@@ -1,0 +1,14 @@
+DEFINED_PHASES=install
+DESCRIPTION=A Common Lisp implementation of XSLT 1.0
+EAPI=0
+HOMEPAGE=http://common-lisp.net/project/xuriella/
+IUSE=doc
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=BSD-2
+RDEPEND=dev-lisp/cxml dev-lisp/cxml-stp dev-lisp/closure-html dev-lisp/plexippus-xpath dev-lisp/split-sequence virtual/commonlisp
+RESTRICT=mirror
+SLOT=0
+SRC_URI=http://common-lisp.net/project/xuriella/download/xuriella-2009-04-04.tgz
+_eclass_exported_funcs=src_install:-
+_eclasses_=common-lisp-2	d3c4d1f1a7df32a406b6352a87a6639d	eutils	f20548a2f7b0128068388cd2ec26708a	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
+_md5_=f17c9544410c1b7a24a9f15bae0f5391

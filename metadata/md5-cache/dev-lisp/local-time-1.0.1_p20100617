@@ -1,0 +1,16 @@
+DEFINED_PHASES=compile install prepare
+DEPEND=sys-apps/texinfo doc? ( virtual/texi2dvi )
+DESCRIPTION=LOCAL-TIME is a development library for manipulating date and time information.
+EAPI=3
+HOMEPAGE=http://common-lisp.net/project/local-time/
+IUSE=doc postgres
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=MIT
+PDEPEND=postgres? ( dev-lisp/postmodern ) virtual/commonlisp
+RDEPEND=sys-libs/timezone-data dev-lisp/cl-fad
+RESTRICT=mirror
+SLOT=0
+SRC_URI=http://common-lisp.net/~sionescu/files/local-time-1.0.1_p20100617.tar.gz
+_eclass_exported_funcs=src_prepare:- src_compile:- src_install:-
+_eclasses_=common-lisp-3	0dfca5a19b650487be7f56f5dd530c10	eutils	f20548a2f7b0128068388cd2ec26708a	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
+_md5_=e6de0466ce0a47210bdfbecfd45ca4af

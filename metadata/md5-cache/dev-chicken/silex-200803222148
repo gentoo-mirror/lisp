@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install test unpack
+DEPEND=>=dev-scheme/chicken-3.1.0
+DESCRIPTION=An efficient and powerful lexer generator.
+EAPI=0
+HOMEPAGE=http://chicken.wiki.br/silex
+KEYWORDS=~x86 ~amd64
+LICENSE=BSD
+RDEPEND=>=dev-scheme/chicken-3.1.0
+RESTRICT=primaryuri
+SLOT=0
+SRC_URI=http://cleo.uwindsor.ca/cgi-bin/gentoo-eggs/silex-3-200803222148.tar.gz
+_eclass_exported_funcs=src_unpack:eggs src_compile:eggs src_test:eggs src_install:eggs
+_eclasses_=eggs	790b6c231826dfb6e370bee731d5bdf9	eutils	f20548a2f7b0128068388cd2ec26708a	flag-o-matic	85dc1eac3c64d8141374490ed64122e5	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
+_md5_=0840509b009bd70e574e8f8fb1f89db0

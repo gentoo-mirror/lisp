@@ -1,10 +1,10 @@
-app-admin/eselect-guile 1.2-r1: Manage multiple Guile versions on one system
+app-admin/eselect-guile 1.2-r1: 
 app-emacs/geiser 999: Emacs modes for Scheme interaction
-app-emacs/slime 2.0_p20110617 2.0_p20130214 2.0_p20130930 2.11 2.12 2.15 9999: SLIME, the Superior Lisp Interaction Mode (Extended)
+app-emacs/slime 2.0_p20110617 2.0_p20130214 2.0_p20130930 2.11 2.12 2.15 9999: 
 app-office/texmacs 1.0.7.16-r2: Wysiwyg text processor with high-quality maths
 app-text/lout 3.38: high-level language for document formatting
 app-text/skribe 1.2l-r1: Skribe is a text processor for technical documents written in scheme.
-app-text/skribilo 0.9.1 0.9.2: Skribilo is a free document production tool.
+app-text/skribilo 0.9.1 0.9.2: 
 dev-chicken/9pfs 200804142117: A pure Scheme implementation of the 9p networked filesystem protocol.
 dev-chicken/F-operator 200803110916: A facility for creating and deconstructing variant records (from EOPL).
 dev-chicken/advice 200801221415: Allows modifying the behaviour of existing procedures by specifying code that should run before, after or instead of the original procedure.
@@ -45,102 +45,102 @@ dev-lang/swig 9999: Simplified Wrapper and Interface Generator
 dev-libs/lightning 1.2: A library that generates assembly language code at run-time.
 dev-lisp/abcl 1.1.1 1.3.1: Armed Bear Common Lisp is a Common Lisp implementation for the JVM.
 dev-lisp/acl-compat 1.2.42.20070507: Compatibility layer for Allegro Common Lisp
-dev-lisp/alexandria 0.1_p20100411 9999: A collection of public domain utilities.
+dev-lisp/alexandria 0.1_p20100411 9999: 
 dev-lisp/anaphora 0.9.4: Anaphoric macro collection for Common Lisp
 dev-lisp/araneida 0.90.1-r1: Araneida is small, highly-portable web server for Common Lisp
-dev-lisp/archive 0.8-r1 0.9: Archive is Nathan Froyd's tar/cpio package for CL.
+dev-lisp/archive 0.8-r1 0.9: 
 dev-lisp/arnesi 9999 20080413-r1: arnesi is a Common Lisp utility suite used with bese projects
-dev-lisp/asdf 2.33-r3: ASDF is Another System Definition Facility for Common Lisp
+dev-lisp/asdf 2.33-r3: 
 dev-lisp/asdf-system-connections 0.8.4 9999: Provides auto-loading of systems that only make sense when several other systems are loaded.
 dev-lisp/aspectl 0.74: AspectL is a library that provides aspect-oriented extensions for Common Lisp/CLOS.
 dev-lisp/atdoc 20081130: Atdoc generates documentation for Common Lisp packages.
-dev-lisp/babel 0.3.0 0.4.0: A charset encoding/decoding library.
+dev-lisp/babel 0.3.0 0.4.0: 
 dev-lisp/binary-types 0.90: Binary-types is a Library for accessing binary files with fixed bit-length code-words.
 dev-lisp/blowfish 0.6: Common Lisp implementation of the Blowfish encryption algorithm.
-dev-lisp/bordeaux-threads 0.8.1 0.8.2 0.8.3: A library meant to make writing portable multi-threaded apps simple.
+dev-lisp/bordeaux-threads 0.8.1 0.8.2 0.8.3: 
 dev-lisp/cffi 0.10.6-r1 0.11.1 0.11.2 0.14.0 0.16.1 9999: The Common Foreign Function Interface (CFFI)
 dev-lisp/ch-asdf 0.2.14: ASDF Extensions from Cyrus Harmon.
 dev-lisp/ch-util 0.3.10: Cyrus Harmon's Common Lisp utility library.
-dev-lisp/chipz 0.7.4-r1 0.8: A library for decompressing deflate, zlib, and gzip data.
-dev-lisp/chronicity 0.2.6 0.2.7: A natural language date and time parser for Common Lisp.
-dev-lisp/chunga 1.1.1 1.1.5 1.1.6: Portable chunked streams for Common Lisp
+dev-lisp/chipz 0.7.4-r1 0.8: 
+dev-lisp/chronicity 0.2.6 0.2.7: 
+dev-lisp/chunga 1.1.1 1.1.5 1.1.6: 
 dev-lisp/cl-aima 1.0.4-r1: Common Lisp source code from Peter Norvig's Artificial Intelligence: A Modern Approach
-dev-lisp/cl-base64 3.3.3 3.3.4: Common Lisp package to encode and decode base64 with URI support
+dev-lisp/cl-base64 3.3.3 3.3.4: 
 dev-lisp/cl-berkeley-db 0.3.0: A common-lisp wrapper to the Berkeley database library.
-dev-lisp/cl-cairo2 9999: Comon Lisp bindings for the Cairo API
-dev-lisp/cl-charms 9999: A set of CFFI bindings for libcurses (ncurses), a GUI-like console
-dev-lisp/cl-closure-template 0.1.9 0.2.1: Common Lisp implementation of Closure Template from Google
-dev-lisp/cl-colors 9999: A simple package for different color representations in Common Lisp.
+dev-lisp/cl-cairo2 9999: 
+dev-lisp/cl-charms 9999: 
+dev-lisp/cl-closure-template 0.1.9 0.2.1: 
+dev-lisp/cl-colors 9999: 
 dev-lisp/cl-cont 0.3.7: CL-CONT is a code walker that implements delimited continuations in Common Lisp.
 dev-lisp/cl-containers 0.11.5: CL-containers adds trees, sparse arrays, and other useful containers to CommonLisp.
 dev-lisp/cl-darcs 0.2_p20080314-r1: CL-DARCS is a client for the darcs version control system written in Common Lisp.
-dev-lisp/cl-difflib 0.1 9999: CL-DIFFLIB is a Lisp library for computing differences between sequences.
+dev-lisp/cl-difflib 0.1 9999: 
 dev-lisp/cl-emb 0.4.4: Embedded Common Lisp and template system
-dev-lisp/cl-fad 0.6.4 0.7.1 0.7.2: CL-FAD is a thin portability layer atop the Common Lisp standard pathname functions.
-dev-lisp/cl-ftp 1.3.3 1.5.0: FTP Client Functionality for Common Lisp
-dev-lisp/cl-gd 0.5.7-r1 0.6.0: CL-GD is a library for Common Lisp which interfaces to the GD Graphics Library
-dev-lisp/cl-glfw 9999: Set of CFFI bindings for the GLFW OpenGL helper library
+dev-lisp/cl-fad 0.6.4 0.7.1 0.7.2: 
+dev-lisp/cl-ftp 1.3.3 1.5.0: 
+dev-lisp/cl-gd 0.5.7-r1 0.6.0: 
+dev-lisp/cl-glfw 9999: 
 dev-lisp/cl-graph 0.10.2: Graph manipulation utilities for Common Lisp.
 dev-lisp/cl-graphviz 0.1_pre20081112: Common Lisp CFFI-based interface to graphviz.
 dev-lisp/cl-gtk2 0.1.1-r1: A Common Lisp interface to Gtk+.
-dev-lisp/cl-heredoc 9999: Common Lisp reader heredoc dispatcher
+dev-lisp/cl-heredoc 9999: 
 dev-lisp/cl-html-diff 0.1: A Common Lisp library for generating a human-readable diff of two HTML documents.
 dev-lisp/cl-html-parse 1.0: A parser that parses HTML documents and generates a sexp-based representation.
 dev-lisp/cl-i18n 0.4: A gettext-style internationalization framework for Common Lisp
-dev-lisp/cl-interpol 0.2.1 0.2.2 0.2.3: String interpolation for Common Lisp similar to Perl or Unix shell scripts.
-dev-lisp/cl-irc 0.8.1-r1 0.9.1: A Common Lisp IRC client library
-dev-lisp/cl-jpeg 1.033_p20080513 9999: A JPEG library for Common Lisp
-dev-lisp/cl-json 0.4.0 0.5.0: A Lisp parser and generator for the JSON data-interchange format
+dev-lisp/cl-interpol 0.2.1 0.2.2 0.2.3: 
+dev-lisp/cl-irc 0.8.1-r1 0.9.1: 
+dev-lisp/cl-jpeg 1.033_p20080513 9999: 
+dev-lisp/cl-json 0.4.0 0.5.0: 
 dev-lisp/cl-l10n 0.4: A portable library for handling program localization.
-dev-lisp/cl-launch 2.36 3.22.1 4.0.3: cl-launch is a unix utility to make your Lisp software easily invokable from the shell command-line.
+dev-lisp/cl-launch 2.36 3.22.1 4.0.3: 
 dev-lisp/cl-libxml2 0.3.4: High-level Common Lisp wrapper around libxml2 and libxslt.
-dev-lisp/cl-log 0.1.0 1.0.1: CL-LOG is a general purpose logging utility.
-dev-lisp/cl-m4 9999: Common Lisp re-implementation of GNU M4
+dev-lisp/cl-log 0.1.0 1.0.1: 
+dev-lisp/cl-m4 9999: 
 dev-lisp/cl-markdown 0.10.5: CL-Markdown is a Common Lisp rewrite of Markdown.
 dev-lisp/cl-mathstats 0.8.2-r1: Common Lisp math and statistics routines.
-dev-lisp/cl-mime 0.5.3: A Common Lisp library for constructing and manipulating MIME objects.
-dev-lisp/cl-mongo 9999: Lisp interface to mongo db
-dev-lisp/cl-opengl 0.1_p20090725-r1 9999: A set of CFFI bindings to the OpenGL, GLU and GLUT APIs.
-dev-lisp/cl-pdf 9999: CL-PDF is a cross-platform Common Lisp library for generating PDF files
+dev-lisp/cl-mime 0.5.3: 
+dev-lisp/cl-mongo 9999: 
+dev-lisp/cl-opengl 0.1_p20090725-r1 9999: 
+dev-lisp/cl-pdf 9999: 
 dev-lisp/cl-plus 1.0: Common Lisp extensions such as a DEFCONSTANT wrappers
 dev-lisp/cl-plus-ssl 20081104: A simple Common Lisp interface to OpenSSL.
-dev-lisp/cl-ppcre 2.0.2 2.0.4 2.0.9 2.0.11: CL-PPCRE is a portable regular expression library for Common Lisp.
-dev-lisp/cl-ppcre-unicode 2.0.2 2.0.4 2.0.9 2.0.11: CL-PPCRE is a portable regular expression library for Common Lisp.
+dev-lisp/cl-ppcre 2.0.2 2.0.4 2.0.9 2.0.11: 
+dev-lisp/cl-ppcre-unicode 2.0.2 2.0.4 2.0.9 2.0.11: 
 dev-lisp/cl-prevalence 3.5 9999 20070329: CL-PREVALENCE is an implementation of Object Prevalence for Common Lisp.
 dev-lisp/cl-qprint 0.2.1: A Common Lisp Library for encoding and decoding strings in quoted-printable format.
 dev-lisp/cl-recaptcha 1.0: Straightforward Common Lisp recaptcha.com interconnection
-dev-lisp/cl-routes 0.2.4 0.2.5: Common Lisp re-implementation of the Rails routes system for mapping URLs.
-dev-lisp/cl-sasl 0.3 0.3.1: SASL client implementation for Common Lisp
+dev-lisp/cl-routes 0.2.4 0.2.5: 
+dev-lisp/cl-sasl 0.3 0.3.1: 
 dev-lisp/cl-sendmail 0.5.5: A Common Lisp library for sending email.
 dev-lisp/cl-smtp 20100505.1: A Common Lisp client library for the SMTP network protocol.
-dev-lisp/cl-sqlite 0.1.5 0.2: A CommonLisp interface to the SQLite embedded relational database engine.
-dev-lisp/cl-store 0.8.10 9999: CL-STORE is a Common Lisp library for serializing and deserializing Common Lisp objects.
-dev-lisp/cl-typegraph 9999: Stand-alone Common Lisp graph typesetting system
-dev-lisp/cl-typesetting 9999: CL-TYPESETTING is a complete typesetting system written in Common Lisp.
-dev-lisp/cl-unicode 0.1.1 0.1.4 0.1.5: A library which provides Common Lisp implementations with knowledge about Unicode characters.
+dev-lisp/cl-sqlite 0.1.5 0.2: 
+dev-lisp/cl-store 0.8.10 9999: 
+dev-lisp/cl-typegraph 9999: 
+dev-lisp/cl-typesetting 9999: 
+dev-lisp/cl-unicode 0.1.1 0.1.4 0.1.5: 
 dev-lisp/cl-uri 0.4.0-r1: A library to parse/manipulate/use uris
 dev-lisp/cl-utilities 1.2.4: A Common Lisp library of semi-standard utilities.
 dev-lisp/cl-variates 0.9.0-r1: Portable Common Lisp Random Number Generation.
-dev-lisp/cl-vectors 0.1.4a 0.1.5: A pure Common Lisp library to create, transform and render anti-aliased vectorial paths.
-dev-lisp/cl-webdav 0.2.0-r1 0.2.1: A WebDAV server written in Common Lisp.
-dev-lisp/cl-who 0.11.1 1.1.1 1.1.3 1.1.4: CL-WHO (is yet another Lisp Markup Language).
-dev-lisp/cl-xmpp 0.8.1: A Common Lisp client implementation of the XMPP.
-dev-lisp/cl-yacc 0.3: CL-YACC is a LALR(1) parser generator for Common Lisp
+dev-lisp/cl-vectors 0.1.4a 0.1.5: 
+dev-lisp/cl-webdav 0.2.0-r1 0.2.1: 
+dev-lisp/cl-who 0.11.1 1.1.1 1.1.3 1.1.4: 
+dev-lisp/cl-xmpp 0.8.1: 
+dev-lisp/cl-yacc 0.3: 
 dev-lisp/cl-yahoo 0.5: CL-YAHOO is a Common Lisp interface to the Yahoo! API
 dev-lisp/clawk 20060313: An AWK-like text processing language with a Lispy implementation.
 dev-lisp/climacs 20080209-r1: Climacs is an Emacs-like text editor written in Common Lisp.
-dev-lisp/clinch 9999: Common Lisp 3D/2D Graphics Engine for OpenGL
-dev-lisp/clisp 2.49-r6 2.50_pre20130414: A portable, bytecode-compiled implementation of Common Lisp
+dev-lisp/clinch 9999: 
+dev-lisp/clisp 2.49-r6 2.50_pre20130414: 
 dev-lisp/clon 0.0.2: A Common Lisp task scheduler library similar to Unix cron.
-dev-lisp/closer-mop 0.61 1.0.0: Closer to MOP is a Common Lisp Metaobject Protocol compatibility layer.
+dev-lisp/closer-mop 0.61 1.0.0: 
 dev-lisp/closure 20080602: Closure is a web browser implemented in Common Lisp, implemented using CLIM.
 dev-lisp/closure-common 20081130: closure-common is a helper library for Closure and Closure XML implementing runes.
 dev-lisp/closure-html 20100920: An HTML parser written in Common Lisp.
-dev-lisp/clozurecl 1.9-r3: ClozureCL is a Common Lisp implementation, derived from Digitool's MCL product
-dev-lisp/clsql 5.4.0 6.4.0 6.4.1: A multi-platform SQL interface for Common Lisp
-dev-lisp/clx 0.7.4-r1 9999: A fork of crhodes' fork of danb's fork of the CLX library, an X11 client for Common Lisp
-dev-lisp/cmucl 20d-r3: CMU Common Lisp is an implementation of ANSI Common Lisp
-dev-lisp/colorize 1.0 9999: Colorize is a Common Lisp application for colorizing source code.
+dev-lisp/clozurecl 1.9-r3: 
+dev-lisp/clsql 5.4.0 6.4.0 6.4.1: 
+dev-lisp/clx 0.7.4-r1 9999: 
+dev-lisp/cmucl 20d-r3: 
+dev-lisp/colorize 1.0 9999: 
 dev-lisp/common-idioms 3: A small Common Lisp library implementing various Common Lisp idioms.
 dev-lisp/contextl 0.61: CLOS extension for context-oriented Programming
 dev-lisp/cxml 9999 20081130: A Common Lisp XML library implementing namespaces, a validating SAX-like XML 1.0 parser and the DOM Level 1 Core interfaces.
@@ -148,21 +148,21 @@ dev-lisp/cxml-rng 20081130: An implementation of Relax NG schema validation writ
 dev-lisp/cxml-stp 20081130: A Common Lisp alternative to the W3C's DOM.
 dev-lisp/defsystem-compatibility 0.1.2: A compatibility layer that helps make different system definitions play nicely using the same rules.
 dev-lisp/diff 0.4-r1: DIFF is a Common Lisp library for computing the unified or context difference between two files.
-dev-lisp/documentation-template 0.4.3: Prepare HTML documentation for Common Lisp libraries
-dev-lisp/drakma 1.2.3 1.2.5 1.3.0 1.3.2 1.3.14 2.0.2: Drakma is a Common Lisp HTTP client.
+dev-lisp/documentation-template 0.4.3: 
+dev-lisp/drakma 1.2.3 1.2.5 1.3.0 1.3.2 1.3.14 2.0.2: 
 dev-lisp/dynamic-classes 1.0.2: metabang.com's dynamic class utility.
-dev-lisp/ecls 12.12.1-r4: ECL is an embeddable Common Lisp implementation.
+dev-lisp/ecls 12.12.1-r4: 
 dev-lisp/elephant 0.9.1: Elephant is an object database for Common Lisp
 dev-lisp/environment 1.3: Provides an CLOS (CL Object System) encapsulation of the current CL implementation environment
-dev-lisp/eos 9999: Eos is a drop-in replacement for the FiveAM Test Framework
-dev-lisp/esrap 9999: ESRAP -- a packrat parser generator for Common Lisp
-dev-lisp/external-program 0: A portable Common Lisp library for running external programs from within Lisp
+dev-lisp/eos 9999: 
+dev-lisp/esrap 9999: 
+dev-lisp/external-program 0: 
 dev-lisp/f-underscore 0.1: F-underscore is a tiny library of functional programming utils.
 dev-lisp/fare-csv 20090925: FARE-CSV is a Common Lisp library for importing CSV (Common Separated Values) formatted text files
 dev-lisp/fare-matcher 20090115: A library of macros and functions by Fare Rideau.
 dev-lisp/fare-utils 20090115: A collection of small utilities by Fare Rideau.
 dev-lisp/filtered-functions 0.10: .
-dev-lisp/fiveam 0.1_p20080320 1.0 1.1: FiveAM is a simple regression testing framework designed for Common Lisp.
+dev-lisp/fiveam 0.1_p20080320 1.0 1.1: 
 dev-lisp/flexi-streams 1.0.7: FLEXI-STREAMS implements "virtual" bivalent streams that can be layered atop real binary or bivalent streams.
 dev-lisp/flexichain 1.5.1: Flexichain is an API for editable sequences.
 dev-lisp/fsbv 9999: CFFI Add-on: Foreign Structures By Value.
@@ -170,12 +170,12 @@ dev-lisp/garbage-pools 0.1.2: garbage-pools is a Common Lisp re-implementation o
 dev-lisp/gcc-xml-ffi 0.1.6: A system for automatically generating common lisp foreign function interface (FFI) bindings from C and C++ code.
 dev-lisp/gcl 2.6.8_pre20090419-r1 2.7.0_alpha: GCL is the official Common Lisp for the GNU project.
 dev-lisp/genhash 1.7: Common Lisp library providing support for generic hashtables.
-dev-lisp/graylex 9999: Gray lexer input streams
+dev-lisp/graylex 9999: 
 dev-lisp/gsd 9999: Grid Structured Data library.
 dev-lisp/gsll 9999: Common Lisp interface to the GNU Scientific Library.
-dev-lisp/html-encode 1.2: Common Lisp library for encoding text in various web-savvy formats.
+dev-lisp/html-encode 1.2: 
 dev-lisp/html-template 0.9.1: html-template is a portable templating library for Common Lisp
-dev-lisp/hunchentoot 1.2.15 1.2.17 1.2.18 1.2.19 1.2.21 1.2.22 1.2.26 1.2.29 1.2.31 1.2.32 1.2.34: Hunchentoot is a web server written in Common Lisp.
+dev-lisp/hunchentoot 1.2.15 1.2.17 1.2.18 1.2.19 1.2.21 1.2.22 1.2.26 1.2.29 1.2.31 1.2.32 1.2.34: 
 dev-lisp/hunchentoot-auth 0.2: HTTP authentication with Hunchentoot.
 dev-lisp/hunchentoot-cgi 0.2: CGI handlers for Hunchentoot.
 dev-lisp/hunchentoot-vhost 0.2: Virtual hosting with Hunchentoot.
@@ -184,43 +184,43 @@ dev-lisp/hyperspec 7.0-r2: Common Lisp ANSI-standard Hyperspec
 dev-lisp/ieee-floats 0.1_pre20080922: A library for converting values of type FLOAT and DOUBLE-FLOAT to and from their binary representation as defined by IEEE 754.
 dev-lisp/iolib 0.7.3: A Comm Lisp I/O library.
 dev-lisp/irc-logger 0.9.4: A Common Lisp IRC logger library
-dev-lisp/ironclad 0.28 0.33.0: Ironclad is a Common Lisp library similar to OpenSSL, GNU TLS or Crypto++
-dev-lisp/iterate 1.4.3 9999: ITERATE is a lispy and extensible replacement for the Common Lisp LOOP macro
-dev-lisp/kmrcl 1.106 1.109: General Utilities for Common Lisp Programs from Kevin Rosenberg
+dev-lisp/ironclad 0.28 0.33.0: 
+dev-lisp/iterate 1.4.3 9999: 
+dev-lisp/kmrcl 1.106 1.109: 
 dev-lisp/kr 2.3.4: KR is a highly flexible and dynamic prototype-based object system for Common Lisp.
-dev-lisp/let-plus 9999: LET+: destructuring extension of LET*
+dev-lisp/let-plus 9999: 
 dev-lisp/levenshtein 1.0: Implementation of the Levenshtein Distance.
 dev-lisp/lexer 20060301: Lexical-analyzer-generator package for Common Lisp
-dev-lisp/lift 1.7.0 9999: LIFT is yet another LIsp Framework for Testing
-dev-lisp/linedit 0.15.12-r1 0.17.0 9999: Linedit is a readline-style library written in Common Lisp.
-dev-lisp/lisp-unit 0.9.5 9999: A Common Lisp library for unit testing.
+dev-lisp/lift 1.7.0 9999: 
+dev-lisp/linedit 0.15.12-r1 0.17.0 9999: 
+dev-lisp/lisp-unit 0.9.5 9999: 
 dev-lisp/lispbuilder-sdl 0.9.8.1-r1: Lisp Application Builder Interface to libSDL
 dev-lisp/lispbuilder-sdl-gfx 0.7.0: Lisp Application Builder Interface to libSDL
 dev-lisp/lispbuilder-sdl-image 0.5.0: Lisp Application Builder Interface to libSDL
 dev-lisp/lispbuilder-sdl-ttf 0.3.0: Lisp Application Builder Interface to SDL_ttf
 dev-lisp/lml 2.5.7: Common Lisp package to provide a markup language for generation XHTML web pages
 dev-lisp/lml2 1.6.6-r1: A Common Lisp package for generating HTML and XHTML documents
-dev-lisp/local-time 1.0.1_p20100617 1.0.5: LOCAL-TIME is a development library for manipulating date and time information.
+dev-lisp/local-time 1.0.1_p20100617 1.0.5: 
 dev-lisp/log5 0.3.2: Log5 is a Common Lisp logging framework.
-dev-lisp/ltk 0.91 0.981: LTK is a Common Lisp binding for the Tk graphics toolkit
+dev-lisp/ltk 0.91 0.981: 
 dev-lisp/lw-compat 0.23: LispWorks compatibility library for the Closer to MOP project.
-dev-lisp/madeira-port 9999: Makes it easy to specify implementation (or feature) dependent files as part of an ASDF system
+dev-lisp/madeira-port 9999: 
 dev-lisp/mcclim 0.9.6-r3: McCLIM is a free software implementation of CLIM.
 dev-lisp/md5 1.8.5 2.0.1: A fast implementation of MD5 message-digests
 dev-lisp/mel-base 0.8.0-r1: A Common Lisp networking library for handling e-mail from Maildir, POP3, IMAP and SMTP
 dev-lisp/memoization 20060126: Memoization support to CMU Common Lisp
 dev-lisp/meta 0.1.2: A library of macros and functions by Fare Rideau.
-dev-lisp/metabang-bind 0.7.4 9999: BIND combines LET*, DESTRUCTURING-BIND and MULTIPLE-VALUE-BIND into a single form.
+dev-lisp/metabang-bind 0.7.4 9999: 
 dev-lisp/metacopy 0.2-r1: Flexible Common Lisp shallow/deep copy mechanism.
 dev-lisp/metatilities 0.6.18: Metatilities is metabang.com's set of core utilities.
 dev-lisp/metatilities-base 0.6.6-r1: metabang.com's base set of core utilities.
 dev-lisp/montezuma 0.1.3: A fast, useful text search engine library written entirely in pure Common Lisp.
 dev-lisp/mop-features 0.50: Provides a way to check what features a Common Lisp implementation supports.
 dev-lisp/moptilities 0.3.13: Moptilities provides a compatibility layer for minor MOP implmentation differences.
-dev-lisp/named-readtables 0.9-r1 9999: A Common Lisp library that provides a namespace for readtables.
+dev-lisp/named-readtables 0.9-r1 9999: 
 dev-lisp/net-telent-date 0.4.1-r1: Common Lisp utilities for printing and parsing date
-dev-lisp/newlisp 10.1.6 10.5.4 10.6.2: newLISP - a new generation of Lisp!
-dev-lisp/nibbles 0.9 0.12: A library for accessing multibyte integers from octet arrays and streams
+dev-lisp/newlisp 10.1.6 10.5.4 10.6.2: 
+dev-lisp/nibbles 0.9 0.12: 
 dev-lisp/nuclblog 0.5: Virtual hosting with Hunchentoot.
 dev-lisp/odd-streams 0.1.1: ODD-STREAMS is a library which implements binary streams with "odd" byte sizes.
 dev-lisp/org-davep-cldict 1.1: RFC2229 client for Common Lisp and CLIM
@@ -228,17 +228,17 @@ dev-lisp/org-davep-dict 2.3: An RFC2229 client library for Common Lisp
 dev-lisp/org-davep-dictrepl 2.2: An RFC2229 client REPL for Common Lisp
 dev-lisp/org-davep-newsrc 2.0: Common Lisp class for reading the Unix-style ~/.newsrc file
 dev-lisp/org-davep-nntp 2.0: Common Lisp class for talking to a NNTP news server
-dev-lisp/osicat 0.5.0-r1 0.6.0 0.7.0 9999: osicat is a lightweight operating system interface for Common Lisp on Unix-platforms.
-dev-lisp/parenscript 2.2 2.5 9999: Parenscript is a small lispy language that can be compiled to JavaScript.
-dev-lisp/parse-js 9999: parse-js is a Common Lisp package for parsing JavaScript
+dev-lisp/osicat 0.5.0-r1 0.6.0 0.7.0 9999: 
+dev-lisp/parenscript 2.2 2.5 9999: 
+dev-lisp/parse-js 9999: 
 dev-lisp/parse-number 1.2 1.3: Common Lisp library for parsing any number string
-dev-lisp/picolisp 3.1.6: A fast and lightweight Lisp interpreter
+dev-lisp/picolisp 3.1.6: 
 dev-lisp/plexippus-xpath 20081207: An XPath implementation written in Common Lisp.
 dev-lisp/png 0.4-r2: Common Lisp package to read and write png image files
 dev-lisp/portable-threads 0.9.6_p20071120: GBBopen project's portable-thread code.
 dev-lisp/postmodern 1.18-r1: A Common Lisp library for interacting with PostgreSQL databases.
 dev-lisp/ptester 2.1.2-r1: A Common Lisp test harness based on the Franz, Inc. tester module.
-dev-lisp/puri 1.5.5: Portable URI library for Common Lisp based on the Franz, Inc. :net.uri module.
+dev-lisp/puri 1.5.5: 
 dev-lisp/qi 9.1: Qi is a Lisp-based functional programming implemented in Common Lisp.
 dev-lisp/regex 20070506: Common Lisp regular expression compiler/matcher
 dev-lisp/rfc2388 1.2 1.5: An implementation of RFC 2388 in Common Lisp
@@ -267,23 +267,23 @@ dev-lisp/s-xml 20060521-r1: S-XML is a simple XML parser implemented in Common L
 dev-lisp/s-xml-rpc 20060521: S-XML-RPC is an implementation of XML-RPC in Common Lisp for both client and server.
 dev-lisp/salza 0.7.4: Salza is a Common Lisp Library that provides an FFI-less interface to the ZLIB and DEFLATE compressed data formats.
 dev-lisp/salza-png 1.0.1: Salza-png is a graphics library that writes PNG files using Salza.
-dev-lisp/salza2 2.0.7 2.0.8: A compression library for creating data in the ZLIB, DEFLATE, or GZIP data formats.
-dev-lisp/sb-cga 9999: Computer graphics algebra library for SBCL.
+dev-lisp/salza2 2.0.7 2.0.8: 
+dev-lisp/sb-cga 9999: 
 dev-lisp/sb-readline 0.1: Implementation of GNU Readline support for SBCL
-dev-lisp/sbcl 1.1.6-r3 1.1.7 1.2.6: Steel Bank Common Lisp (SBCL) is an implementation of ANSI Common Lisp
+dev-lisp/sbcl 1.1.6-r3 1.1.7 1.2.6: 
 dev-lisp/series 2.2.11: Common Lisp extension for general iteration
 dev-lisp/skippy 1.3.7: A graphics library that reads and writes GIF files. It is pure Common Lisp. It supports normal GIFs and animated GIFs.
 dev-lisp/spatial-trees 0.2-r1: A Common Lisp library providing access to dynamic index structures for spatially-extended data.
-dev-lisp/split-sequence 1.0 1.1 1.2: Functions to partition a Common Lisp sequence into multiple result sequences
+dev-lisp/split-sequence 1.0 1.1 1.2: 
 dev-lisp/telnetlib 20080103: A CommonLisp port from Python's telnetlib library.
-dev-lisp/terminfo 1.3-r1 9999: Common Lisp interface to the terminfo database.
+dev-lisp/terminfo 1.3-r1 9999: 
 dev-lisp/timer 0.4.0-r1: An event scheduling library for SBCL by Zach Beane. It implements an interface similar to LispWorks' timer and scheduling functions.
 dev-lisp/tinaa 0.5.9: Tinaa is a flexible and general purpose Lisp documentation system.
 dev-lisp/trees 0.11-r1: Package that implements binary trees of various kinds.
-dev-lisp/trivial-backtrace 1.0.2 1.1.0: A simple library for generating a backtrace portably.
+dev-lisp/trivial-backtrace 1.0.2 1.1.0: 
 dev-lisp/trivial-captcha 0.1: trivial-captcha is an exceptionally trivial library for creating images suitable for a CAPTCHA.
 dev-lisp/trivial-configuration-parser 1.1: TRIVIAL-CONFIGURATION-PARSER is a Common Lisp library for parsing its own syntax of configuration file
-dev-lisp/trivial-features 0.6-r1 0.7: TRIVIAL-FEATURES ensures consistent *FEATURES* across multiple Common Lisp implementations.
+dev-lisp/trivial-features 0.6-r1 0.7: 
 dev-lisp/trivial-garbage 0.19: trivial-garbage is a simple library that provides a portable API to finalizers, weak hash-tables and weak pointers.
 dev-lisp/trivial-gray-streams 20081102: A thin compatibility layer between Gray Stream Common Lisp implementations
 dev-lisp/trivial-http 1.3.0: TRIVIAL-HTTP is a library for doing HTTP POST, HEAD and GET over a socket interface.
@@ -293,39 +293,39 @@ dev-lisp/trivial-sockets 0.3_p20071124: A portable Common Lisp networking librar
 dev-lisp/trivial-timeout 0.1.5: Simple library for asynchronous timeouts.
 dev-lisp/trivial-timers 0.0: Trivial timer library.
 dev-lisp/trivial-utf8 0.1_pre20080922: A small library for doing UTF-8-based input and output.
-dev-lisp/uffi 2.0.0 2.1.2: Portable FFI library for Common Lisp.
+dev-lisp/uffi 2.0.0 2.1.2: 
 dev-lisp/uiop 2.33: UIOP is a portability layer spun off ASDF3
 dev-lisp/url-rewrite 0.1.1-r1: Rewrite (X)HTML attributes with Common Lisp.
-dev-lisp/usocket 0.5.3 0.6.0.1 0.6.1 0.6.3.2: Usocket is a universal socket library for Common Lisp.
+dev-lisp/usocket 0.5.3 0.6.0.1 0.6.1 0.6.3.2: 
 dev-lisp/uuid 20080727: A Common Lisp library for generation of UUIDs as described by RFC 4122.
 dev-lisp/vecto 1.4.3: Vecto is a simplified interface to the powerful CL-VECTORS vector rasterization library.
 dev-lisp/weblocks 0.8.2 9999: Weblocks is a continuations-based web framework written in Common Lisp.
-dev-lisp/wiki-parser 0.1.2: Wiki parser framework
+dev-lisp/wiki-parser 0.1.2: 
 dev-lisp/xlunit 0.6.3: XLUnit is a Test Framework based on XPTest and JUnit.
-dev-lisp/xmls 1.2 1.5 1.7.1: XMLS, a simple XML parser for Common Lisp.
+dev-lisp/xmls 1.2 1.5 1.7.1: 
 dev-lisp/xmls-tools 0.2.0: A library to supplement xmls which includes support for parsing with side effects, searching and validating XML.
 dev-lisp/xuriella 20090404: A Common Lisp implementation of XSLT 1.0
 dev-lisp/zip 20080103: A library for .zip-file reading and writing, written in Common Lisp.
-dev-lisp/zpb-ttf 1.0 1.0.3: TrueType font file access library for Common Lisp.
+dev-lisp/zpb-ttf 1.0 1.0.3: 
 dev-lisp/zpng 1.2: A Common Lisp library for creating PNG files.
 dev-lisp/zs3 1.1.3: A Common Lisp library for working with Amazon's Simple Storage Service (S3).
 dev-scheme/armpit 00.0098: ARMPIT SCHEME is an interpreter for the Scheme language (lexically-scoped dialect of Lisp) that runs on RISC microcontrollers with ARM core.
-dev-scheme/bigloo 3.9a 4.0a: Bigloo is a Scheme implementation.
-dev-scheme/chibi-scheme 0.6.1 0.7: A very tiny Scheme implementation with decent speed and native hygienic macros.
-dev-scheme/chicken 4.8.0.4 4.8.0.5 4.9.0 4.9.0.1: Chicken is a Scheme interpreter and native Scheme to C compiler
+dev-scheme/bigloo 3.9a 4.0a: 
+dev-scheme/chibi-scheme 0.6.1 0.7: 
+dev-scheme/chicken 4.8.0.4 4.8.0.5 4.9.0 4.9.0.1: 
 dev-scheme/dream 20071004 20080228 20090201 20090305 20101104: Dream is a scheme interpreter written entirely in x86 machine language, following the R4RS standard.
 dev-scheme/gambit 4.6.6 4.6.6-r1 4.6.6-r2: Gambit-C is a native Scheme to C compiler and interpreter.
 dev-scheme/guile 1.8.8-r3 2.0.9-r1 2.0.11 999: GNU Ubiquitous Intelligent Language for Extensions
 dev-scheme/guile-gnome-gtksourceview 1.8.0: Guile Scheme code that wraps the GNOME developer platform
-dev-scheme/guile-reader 0.6: Guile-reader is a simple framework for building readers for GNU Guile.
-dev-scheme/hop 2.1.1 2.2.0 2.3.1 2.4.0: Hop is a higher-order language for programming interactive web applications
+dev-scheme/guile-reader 0.6: 
+dev-scheme/hop 2.1.1 2.2.0 2.3.1 2.4.0: 
 dev-scheme/ikarus 0.0.1 0.0.2 9999: A free optimizing incremental native-code compiler for R6RS Scheme.
 dev-scheme/jazzscheme 999: JazzScheme is an open source programming language based on Scheme.
 dev-scheme/kawa 1.9.90 9999: Kawa, the Java-based Scheme system & Language Framework
 dev-scheme/ksm 0.3.2: KSM-Scheme is a Scheme interpreter that integrates easily with functions and variables defined in C language.
 dev-scheme/larceny 0.97 9999: Larceny is a Scheme Interpreter and a Scheme to IA32 and C Compiler
 dev-scheme/larceny-petit 0.97: Larceny is a Scheme Interpreter and a Scheme to IA32 and C Compiler
-dev-scheme/mit-scheme-c 9.2: GNU/MIT-Scheme
+dev-scheme/mit-scheme-c 9.2: 
 dev-scheme/mosh 0.2.2-r1 9999: A Fast R6RS Scheme interpreter.
 dev-scheme/psyntax-r6rs 4: A portable R6RS library and syntax-case system.
 dev-scheme/racket 999: Racket is a general-purpose programming language with strong support for domain-specific languages.
@@ -335,4 +335,4 @@ dev-scheme/snow-generic 1.1.2: A repository of Scheme packages that are portable
 dev-scheme/tinyscheme 1.39-r2: Lightweight scheme interpreter
 media-sound/lilypond 2.13.17: GNU Music Typesetter
 virtual/commonlisp 1: Virtual for Common Lisp
-x11-wm/stumpwm 0.9.7 0.9.8 0.9.9 9999: Stumpwm is a tiling, keyboard driven X11 Window Manager written entirely in Common Lisp.
+x11-wm/stumpwm 0.9.7 0.9.8 0.9.9 9999: 

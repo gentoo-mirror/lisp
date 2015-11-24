@@ -1,0 +1,14 @@
+DEFINED_PHASES=install prepare unpack
+DESCRIPTION=Hyperobject is a Common Lisp library for representing objects.
+EAPI=2
+HOMEPAGE=http://hyperobject.b9.com/ http://www.cliki.net/hyperobject
+IUSE=doc
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=BSD
+RDEPEND=!dev-lisp/cl-hyperobject dev-lisp/kmrcl dev-lisp/rt dev-lisp/clsql virtual/commonlisp
+RESTRICT=mirror
+SLOT=0
+SRC_URI=http://files.b9.com/hyperobject/hyperobject-2.11.0.tar.gz
+_eclass_exported_funcs=src_unpack:- src_prepare:- src_install:-
+_eclasses_=common-lisp-2	d3c4d1f1a7df32a406b6352a87a6639d	eutils	f20548a2f7b0128068388cd2ec26708a	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
+_md5_=34ffd5aa991f52308f0a60d29b3f298c

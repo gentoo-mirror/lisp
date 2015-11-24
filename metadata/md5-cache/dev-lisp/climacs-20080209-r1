@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile install postinst postrm
+DEPEND=sys-apps/texinfo doc? ( virtual/texi2dvi )
+DESCRIPTION=Climacs is an Emacs-like text editor written in Common Lisp.
+EAPI=0
+HOMEPAGE=http://common-lisp.net/project/climacs
+IUSE=doc
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=LGPL-2.1
+RDEPEND=>=dev-lisp/flexichain-0.4.1 >=dev-lisp/mcclim-0.9.5_p20080209 virtual/commonlisp
+RESTRICT=mirror
+SLOT=0
+SRC_URI=http://common-lisp.net/~sionescu/files/climacs-20080209.tar.bz2
+_eclass_exported_funcs=pkg_postrm:- pkg_postinst:- src_compile:- src_install:-
+_eclasses_=common-lisp-2	d3c4d1f1a7df32a406b6352a87a6639d	elisp-common	73c48c11ad6a6494eda0d0cca848c8fa	eutils	f20548a2f7b0128068388cd2ec26708a	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
+_md5_=e8589c73c693263f062c5483e8cf0c2f

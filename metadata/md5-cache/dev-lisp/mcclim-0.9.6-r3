@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile install postinst postrm unpack
+DEPEND=doc? ( virtual/texi2dvi )
+DESCRIPTION=McCLIM is a free software implementation of CLIM.
+EAPI=0
+HOMEPAGE=http://common-lisp.net/project/mcclim http://cliki.net/McCLIM
+IUSE=emacs doc
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=LLGPL-2.1
+RDEPEND=!dev-lisp/cl-mcclim dev-lisp/spatial-trees >=dev-lisp/flexichain-1.5.1 dev-lisp/clx dev-lisp/cffi dev-lisp/skippy dev-lisp/cl-jpeg dev-lisp/zpb-ttf dev-lisp/cl-vectors dev-lisp/rt dev-lisp/fiveam virtual/commonlisp
+RESTRICT=mirror
+SLOT=0
+SRC_URI=http://common-lisp.net/project/mcclim/downloads/mcclim-0.9.6.tar.gz
+_eclass_exported_funcs=pkg_postrm:- pkg_postinst:- src_unpack:- src_compile:- src_install:-
+_eclasses_=common-lisp-2	d3c4d1f1a7df32a406b6352a87a6639d	elisp-common	73c48c11ad6a6494eda0d0cca848c8fa	eutils	f20548a2f7b0128068388cd2ec26708a	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
+_md5_=d6cf280ab33c659c5b5dd45443d720de

@@ -1,0 +1,13 @@
+DEFINED_PHASES=install unpack
+DESCRIPTION=A Common Lisp implementation of Bse64 Encoding/Decoding.
+EAPI=0
+HOMEPAGE=http://homepage.mac.com/svc/s-base64/
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=LLGPL-2.1
+RDEPEND=!dev-lisp/cl-s-base64 virtual/commonlisp
+RESTRICT=mirror
+SLOT=0
+SRC_URI=mirror://gentoo/s-base64-20060521.tar.gz
+_eclass_exported_funcs=src_unpack:- src_install:-
+_eclasses_=common-lisp-2	d3c4d1f1a7df32a406b6352a87a6639d	eutils	f20548a2f7b0128068388cd2ec26708a	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
+_md5_=22085baf165efe81560334f73f13124a

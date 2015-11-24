@@ -1,0 +1,14 @@
+DEFINED_PHASES=install unpack
+DESCRIPTION=Elephant is an object database for Common Lisp
+EAPI=2
+HOMEPAGE=http://common-lisp.net/project/elephant/
+IUSE=doc postgres sqlite3
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2 LLGPL-2.1
+RDEPEND=!dev-lisp/cl-elephant sys-libs/db:4.5 dev-lisp/uffi dev-lisp/clsql dev-lisp/cl-base64 dev-lisp/fiveam postgres? ( dev-lisp/clsql[postgres] ) sqlite3? ( dev-lisp/clsql[sqlite3] ) virtual/commonlisp
+RESTRICT=mirror
+SLOT=0
+SRC_URI=http://common-lisp.net/~sionescu/files/elephant-0.9.1.tar.bz2 doc? ( http://www.common-lisp.net/project/elephant/doc/elephant.pdf )
+_eclass_exported_funcs=src_unpack:- src_install:-
+_eclasses_=common-lisp-2	d3c4d1f1a7df32a406b6352a87a6639d	eutils	f20548a2f7b0128068388cd2ec26708a	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
+_md5_=70b10a0a7da5dc877451539faef8476f
