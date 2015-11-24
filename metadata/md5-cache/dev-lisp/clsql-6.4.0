@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile install prepare
+DESCRIPTION=A multi-platform SQL interface for Common Lisp
+EAPI=5
+HOMEPAGE=http://clsql.b9.com/ http://www.cliki.net/CLSQL
+IUSE=doc examples mysql odbc oracle postgres sqlite sqlite3
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=LLGPL-2.1
+PDEPEND=virtual/commonlisp
+RDEPEND=!dev-lisp/cl-sql dev-lisp/md5 >=dev-lisp/uffi-2.0.0 mysql? ( virtual/mysql ) odbc? ( dev-db/unixODBC ) oracle? ( dev-db/oracle-instantclient-basic ) postgres? ( dev-db/postgresql-base ) sqlite? ( dev-db/sqlite:0 ) sqlite3? ( dev-db/sqlite:3 )
+RESTRICT=mirror
+SLOT=0
+SRC_URI=http://files.b9.com/clsql/clsql-6.4.0.tar.gz
+_eclass_exported_funcs=src_prepare:- src_compile:- src_install:-
+_eclasses_=common-lisp-3	0dfca5a19b650487be7f56f5dd530c10	eutils	f20548a2f7b0128068388cd2ec26708a	flag-o-matic	85dc1eac3c64d8141374490ed64122e5	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
+_md5_=42f9f199f05ac1187ca393154501085b

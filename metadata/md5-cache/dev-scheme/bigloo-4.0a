@@ -1,0 +1,16 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare pretend setup test
+DEPEND=>=dev-libs/boehm-gc-7.1[threads?] alsa? ( media-libs/alsa-lib ) avahi? ( net-dns/avahi ) emacs? ( virtual/emacs ) flac? ( media-libs/flac ) gmp? ( dev-libs/gmp ) gstreamer? ( media-libs/gstreamer:0.10 media-libs/gst-plugins-base:0.10 ) java? ( >=virtual/jdk-1.5 app-arch/zip ) mp3? ( media-sound/mpg123 ) sqlite? ( dev-db/sqlite:3 ) ssl? ( dev-libs/openssl ) java? ( >=dev-java/java-config-2.2.0 )
+DESCRIPTION=Bigloo is a Scheme implementation.
+EAPI=5
+HOMEPAGE=http://www-sop.inria.fr/indes/fp/Bigloo/bigloo.html
+IUSE=alsa avahi bglpkg calendar crypto csv debug doc emacs flac gmp gstreamer java mail mp3 multimedia openpgp packrat sqlite srfi1 srfi27 ssl text threads web elibc_FreeBSD java
+KEYWORDS=~amd64 ~ppc ~x86 ~amd64-linux
+LICENSE=GPL-2 LGPL-2
+RDEPEND=>=dev-libs/boehm-gc-7.1[threads?] alsa? ( media-libs/alsa-lib ) avahi? ( net-dns/avahi ) emacs? ( virtual/emacs ) flac? ( media-libs/flac ) gmp? ( dev-libs/gmp ) gstreamer? ( media-libs/gstreamer:0.10 media-libs/gst-plugins-base:0.10 ) java? ( >=virtual/jdk-1.5 app-arch/zip ) mp3? ( media-sound/mpg123 ) sqlite? ( dev-db/sqlite:3 ) ssl? ( dev-libs/openssl ) java? ( >=dev-java/java-config-2.2.0 )
+REQUIRED_USE=alsa? ( multimedia ) bglpkg? ( web ) flac? ( alsa ) gstreamer? ( multimedia threads ) mp3? ( alsa ) openpgp? ( crypto ) packrat? ( srfi1 ) srfi27? ( x86? ( gmp ) )
+RESTRICT=mirror
+SLOT=0/4.0a
+SRC_URI=ftp://ftp-sop.inria.fr/indes/fp/Bigloo/bigloo4.0a.tar.gz ftp://ftp.cnic.fr/gentoo-lisp-overlay/bigloo4.0a.tar.gz
+_eclass_exported_funcs=pkg_pretend:- pkg_preinst:- pkg_postrm:- pkg_postinst:- pkg_setup:java-pkg-opt-2 src_prepare:- src_configure:- src_compile:- src_test:- src_install:-
+_eclasses_=elisp-common	73c48c11ad6a6494eda0d0cca848c8fa	eutils	f20548a2f7b0128068388cd2ec26708a	flag-o-matic	85dc1eac3c64d8141374490ed64122e5	java-pkg-opt-2	40db73f27fc6458ec2105812a4f261c7	java-utils-2	a96633177f44ee992b3fce360d1c4f16	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85	versionator	99ae9d758cbe7cfed19170e7d48f5a9c
+_md5_=b7165165bcc5ef89572d7d8de9d6c0e4

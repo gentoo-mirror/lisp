@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install
+DESCRIPTION=A portable Common Lisp library for running external programs from within Lisp
+EAPI=5
+HOMEPAGE=http://common-lisp.net/project/external-program
+KEYWORDS=~amd64 ~x86
+LICENSE=LLGPL-2.1
+PDEPEND=virtual/commonlisp
+RDEPEND=dev-lisp/fiveam
+RESTRICT=mirror
+SLOT=0
+SRC_URI=https://github.com/sellout/external-program/archive/version-0.tar.gz -> external-program-0.tar.gz
+_eclass_exported_funcs=src_compile:common-lisp-3 src_install:common-lisp-3
+_eclasses_=common-lisp-3	0dfca5a19b650487be7f56f5dd530c10	eutils	f20548a2f7b0128068388cd2ec26708a	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
+_md5_=7c4e8a3db13923fa01a1e47bf48b4ed1

@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install
+DESCRIPTION=osicat is a lightweight operating system interface for Common Lisp on Unix-platforms.
+EAPI=5
+HOMEPAGE=http://www.common-lisp.net/project/osicat/
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=MIT
+PDEPEND=virtual/commonlisp
+RDEPEND=!dev-lisp/cl-osicat dev-lisp/alexandria dev-lisp/cffi dev-lisp/trivial-features
+RESTRICT=mirror
+SLOT=0
+SRC_URI=http://common-lisp.net/project/osicat/files/osicat_0.7.0.tar.gz
+_eclass_exported_funcs=src_compile:common-lisp-3 src_install:common-lisp-3
+_eclasses_=common-lisp-3	0dfca5a19b650487be7f56f5dd530c10	eutils	f20548a2f7b0128068388cd2ec26708a	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
+_md5_=67371b3a57199040e7889e6c7ddbd698

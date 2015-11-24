@@ -1,0 +1,16 @@
+DEFINED_PHASES=compile install
+DEPEND=doc? ( dev-libs/libxslt )
+DESCRIPTION=Hunchentoot is a web server written in Common Lisp.
+EAPI=5
+HOMEPAGE=http://weitz.de/hunchentoot/
+IUSE=doc
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=BSD-2
+PDEPEND=virtual/commonlisp
+RDEPEND=>=dev-lisp/bordeaux-threads-0.7.0 >=dev-lisp/chunga-1.1.1 >=dev-lisp/cl-base64-3.3.0 >=dev-lisp/cl-fad-0.6.3 >=dev-lisp/cl-plus-ssl-20081104 >=dev-lisp/cl-ppcre-2.0.0 >=dev-lisp/cl-who-0.11.1 >=dev-lisp/drakma-1.0.0 >=dev-lisp/flexi-streams-0.12.0 >=dev-lisp/md5-1.8.5 >=dev-lisp/rfc2388-1.2 >=dev-lisp/trivial-backtrace-1.0.2 >=dev-lisp/usocket-0.4.0
+RESTRICT=mirror
+SLOT=0
+SRC_URI=https://github.com/edicl/hunchentoot/archive/v1.2.19.tar.gz -> hunchentoot-1.2.19.tar.gz
+_eclass_exported_funcs=src_compile:- src_install:-
+_eclasses_=common-lisp-3	0dfca5a19b650487be7f56f5dd530c10	eutils	f20548a2f7b0128068388cd2ec26708a	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
+_md5_=6a717bb4062aa3daf045a1c2e8063294

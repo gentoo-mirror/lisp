@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=dev-vcs/darcs net-misc/rsync
+DESCRIPTION=arnesi is a Common Lisp utility suite
+EAPI=5
+HOMEPAGE=http://common-lisp.net/project/bese/arnesi.html
+IUSE=+slime
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=BSD
+PDEPEND=virtual/commonlisp
+RDEPEND=!dev-lisp/cl-arnesi !dev-lisp/cl-arnesi-darcs slime? ( app-emacs/slime ) dev-lisp/cl-ppcre
+RESTRICT=mirror
+SLOT=0
+_eclass_exported_funcs=src_unpack:darcs src_compile:common-lisp-3 src_install:-
+_eclasses_=common-lisp-3	0dfca5a19b650487be7f56f5dd530c10	darcs	25bcb4c9bede09580ffa4891aa70234d	eutils	f20548a2f7b0128068388cd2ec26708a	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
+_md5_=595d3ca1f6e496338dd440f08e47567b
