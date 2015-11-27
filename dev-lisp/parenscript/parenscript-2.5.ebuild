@@ -1,8 +1,9 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 EAPI=3
+
 inherit common-lisp-3
 
 DESCRIPTION="Parenscript is a small lispy language that can be compiled to JavaScript."
@@ -14,6 +15,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE="doc"
 
+DEPEND=""
 RDEPEND="!dev-lisp/cl-${PN}
 		!dev-lisp/cl-${PN}-darcs
 		!dev-lisp/${PN}-darcs
