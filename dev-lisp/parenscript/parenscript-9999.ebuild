@@ -1,6 +1,6 @@
 # Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 EAPI=5
 
@@ -15,11 +15,22 @@ SLOT="0"
 IUSE="doc"
 
 DEPEND=""
-RDEPEND=""
+RDEPEND="!dev-lisp/cl-${PN}
+		!dev-lisp/cl-${PN}-darcs
+		!dev-lisp/${PN}-darcs
+		dev-lisp/anaphora
+		dev-lisp/cl-ppcre
+		dev-lisp/fiveam
+		dev-lisp/named-readtables"
+
+CLSYSTEMS="parenscript parenscript.test"
 
 src_install() {
 	common-lisp-install-sources -t all src runtime extras t
 	common-lisp-install-asdf
 	dodoc contributors README
-	use doc && dohtml docs/reference.html
+	if use doc ; then
+		dodoc docs/introduction.lisp
+		dohtml -r docs
+	fi
 }
