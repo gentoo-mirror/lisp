@@ -73,6 +73,7 @@ dev-lisp/cl-closure-template 0.1.9 0.2.1: Common Lisp implementation of Closure 
 dev-lisp/cl-colors 9999: A simple package for different color representations in Common Lisp.
 dev-lisp/cl-cont 0.3.7: CL-CONT is a code walker that implements delimited continuations in Common Lisp.
 dev-lisp/cl-containers 0.11.5: CL-containers adds trees, sparse arrays, and other useful containers to CommonLisp.
+dev-lisp/cl-css 9999: Non-validating, inline CSS generator for Common Lisp
 dev-lisp/cl-darcs 0.2_p20080314-r1: CL-DARCS is a client for the darcs version control system written in Common Lisp.
 dev-lisp/cl-difflib 0.1 9999: CL-DIFFLIB is a Lisp library for computing differences between sequences.
 dev-lisp/cl-emb 0.4.4: Embedded Common Lisp and template system
