@@ -1,5 +1,5 @@
 DEFINED_PHASES=install
-DESCRIPTION=trivial-garbage is a simple library that provides a portable API to finalizers, weak hash-tables and weak pointers.
+DESCRIPTION=Simple library that provides a portable API to finalizers, weak hash-tables and weak pointers.
 EAPI=0
 HOMEPAGE=http://www.cliki.net/trivial-garbage
 KEYWORDS=~amd64 ~ppc ~sparc ~x86
@@ -10,4 +10,4 @@ SLOT=0
 SRC_URI=http://common-lisp.net/~loliveira/tarballs/trivial-garbage/trivial-garbage_0.19.tar.gz
 _eclass_exported_funcs=src_install:common-lisp-2
 _eclasses_=common-lisp-2	d3c4d1f1a7df32a406b6352a87a6639d	eutils	d9bd2ddd85a58e470b49ca997e255a4c	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
-_md5_=6891dfb85283940d94131b39cd648d6e
+_md5_=cf6c557c4f57dc9b860689c12f86a5dc
