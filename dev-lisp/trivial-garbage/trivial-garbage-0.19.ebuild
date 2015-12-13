@@ -1,10 +1,10 @@
 # Copyright 1999-2010 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 inherit common-lisp-2
 
-DESCRIPTION="trivial-garbage is a simple library that provides a portable API to finalizers, weak hash-tables and weak pointers."
+DESCRIPTION="Simple library that provides a portable API to finalizers, weak hash-tables and weak pointers."
 HOMEPAGE="http://www.cliki.net/trivial-garbage"
 SRC_URI="http://common-lisp.net/~loliveira/tarballs/${PN}/${PN}_${PV}.tar.gz"
 
