@@ -1,6 +1,6 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 inherit common-lisp-2
 
@@ -8,7 +8,7 @@ MY_PV=${PV:0:4}-${PV:4:2}-${PV:6:2}
 MY_P=${PN}-${MY_PV}
 
 DESCRIPTION="A thin compatibility layer between Gray Stream Common Lisp implementations"
-HOMEPAGE="http://common-lisp.net/project/cl-plus-ssl/#trivial-gray-streams"
+HOMEPAGE="https://common-lisp.net/project/trivial-gray-streams/"
 SRC_URI="http://common-lisp.net/project/cl-plus-ssl/download/${MY_P}.tar.gz"
 
 LICENSE="MIT"
