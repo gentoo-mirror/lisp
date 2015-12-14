@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
-inherit common-lisp-2
+inherit common-lisp-3
 
 MY_PV=${PV:0:4}-${PV:4:2}-${PV:6:2}
 MY_P=${PN}-${MY_PV}
