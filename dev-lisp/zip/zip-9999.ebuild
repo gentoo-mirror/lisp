@@ -2,23 +2,20 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
-inherit common-lisp-2
+EAPI=5
+
+inherit common-lisp-3 git-2
 
 DESCRIPTION="A library for .zip-file reading and writing, written in Common Lisp."
 HOMEPAGE="http://common-lisp.net/project/zip/"
-SRC_URI="http://common-lisp.net/~sionescu/files/${P}.tar.bz2"
+EGIT_REPO_URI="git://github.com/bluelisp/${PN}.git"
 
 LICENSE="LLGPL-2.1"
 SLOT="0"
 KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
-RDEPEND="dev-lisp/salza2
-		dev-lisp/flexi-streams
+RDEPEND="dev-lisp/babel
+		dev-lisp/cl-fad
+		dev-lisp/salza2
 		dev-lisp/trivial-gray-streams"
-
-src_install() {
-	common-lisp-install *.{lisp,asd}
-	common-lisp-symlink-asdf
-	dohtml README.html
-}

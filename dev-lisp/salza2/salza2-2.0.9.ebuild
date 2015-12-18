@@ -8,15 +8,11 @@ inherit common-lisp-3
 
 DESCRIPTION="A compression library for creating data in the ZLIB, DEFLATE, or GZIP data formats."
 HOMEPAGE="http://www.xach.com/lisp/salza2/"
-SRC_URI="mirror://gentoo/${P}.tar.gz"
+SRC_URI="https://github.com/xach/${PN}/archive/release-${PV}.tar.gz"
 
 LICENSE="BSD-2"
 SLOT="0"
 KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
-src_install() {
-	common-lisp-install-sources *.lisp
-	common-lisp-install-asdf
-	dohtml doc/index.html
-}
+S="${WORKDIR}/${PN}-release-${PV}"
