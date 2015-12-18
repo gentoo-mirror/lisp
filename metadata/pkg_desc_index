@@ -268,7 +268,7 @@ dev-lisp/s-xml 20060521-r1: S-XML is a simple XML parser implemented in Common L
 dev-lisp/s-xml-rpc 20060521: S-XML-RPC is an implementation of XML-RPC in Common Lisp for both client and server.
 dev-lisp/salza 0.7.4: Salza is a Common Lisp Library that provides an FFI-less interface to the ZLIB and DEFLATE compressed data formats.
 dev-lisp/salza-png 1.0.1: Salza-png is a graphics library that writes PNG files using Salza.
-dev-lisp/salza2 2.0.7 2.0.8: A compression library for creating data in the ZLIB, DEFLATE, or GZIP data formats.
+dev-lisp/salza2 2.0.7 2.0.8 2.0.9: A compression library for creating data in the ZLIB, DEFLATE, or GZIP data formats.
 dev-lisp/sb-cga 9999: Computer graphics algebra library for SBCL.
 dev-lisp/sb-readline 0.1: Implementation of GNU Readline support for SBCL
 dev-lisp/sbcl 1.1.6-r3 1.1.7 1.2.6: Steel Bank Common Lisp (SBCL) is an implementation of ANSI Common Lisp
@@ -306,7 +306,7 @@ dev-lisp/xlunit 0.6.3: XLUnit is a Test Framework based on XPTest and JUnit.
 dev-lisp/xmls 1.2 1.5 1.7.1: XMLS, a simple XML parser for Common Lisp.
 dev-lisp/xmls-tools 0.2.0: A library to supplement xmls which includes support for parsing with side effects, searching and validating XML.
 dev-lisp/xuriella 20090404: A Common Lisp implementation of XSLT 1.0
-dev-lisp/zip 20080103: A library for .zip-file reading and writing, written in Common Lisp.
+dev-lisp/zip 9999 20080103: A library for .zip-file reading and writing, written in Common Lisp.
 dev-lisp/zpb-ttf 1.0 1.0.3: TrueType font file access library for Common Lisp.
 dev-lisp/zpng 1.2: A Common Lisp library for creating PNG files.
 dev-lisp/zs3 1.1.3: A Common Lisp library for working with Amazon's Simple Storage Service (S3).
