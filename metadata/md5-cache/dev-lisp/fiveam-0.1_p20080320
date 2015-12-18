@@ -10,4 +10,4 @@ SLOT=0
 SRC_URI=http://common-lisp.net/~sionescu/files/fiveam-0.1_p20080320.tar.bz2
 _eclass_exported_funcs=src_install:-
 _eclasses_=common-lisp-2	d3c4d1f1a7df32a406b6352a87a6639d	eutils	d9bd2ddd85a58e470b49ca997e255a4c	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
-_md5_=33ada2bdf65df26a0d0b4f782529e8c1
+_md5_=490a13d510c0bd34fab90cc130af3b71

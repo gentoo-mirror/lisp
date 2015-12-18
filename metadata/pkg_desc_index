@@ -163,7 +163,7 @@ dev-lisp/fare-csv 20090925: FARE-CSV is a Common Lisp library for importing CSV 
 dev-lisp/fare-matcher 20090115: A library of macros and functions by Fare Rideau.
 dev-lisp/fare-utils 20090115: A collection of small utilities by Fare Rideau.
 dev-lisp/filtered-functions 0.10: .
-dev-lisp/fiveam 0.1_p20080320 1.0 1.1: FiveAM is a simple regression testing framework designed for Common Lisp.
+dev-lisp/fiveam 0.1_p20080320 1.0 1.1 1.2: FiveAM is a simple regression testing framework designed for Common Lisp.
 dev-lisp/flexi-streams 1.0.7 1.0.15: Flexible bivalent streams for Common Lisp
 dev-lisp/flexichain 1.5.1: Flexichain is an API for editable sequences.
 dev-lisp/fsbv 9999: CFFI Add-on: Foreign Structures By Value.
