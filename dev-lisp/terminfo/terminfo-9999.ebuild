@@ -12,7 +12,6 @@ EGIT_REPO_URI="https://gitlab.common-lisp.net/linedit/linedit.git"
 
 LICENSE="BSD-2"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
 RDEPEND="!dev-lisp/cl-${PN}
