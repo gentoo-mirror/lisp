@@ -13,4 +13,4 @@ SLOT=0
 SRC_URI=http://common-lisp.net/~abridgewater/dist/clx/clx-0.7.4.tgz
 _eclass_exported_funcs=src_prepare:- src_compile:- src_install:-
 _eclasses_=common-lisp-3	0dfca5a19b650487be7f56f5dd530c10	eutils	d9bd2ddd85a58e470b49ca997e255a4c	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
-_md5_=7b16ad3d08e212dce874a3e8f7b93c5f
+_md5_=d5599b3a6db14a8a650406b8f4945312
