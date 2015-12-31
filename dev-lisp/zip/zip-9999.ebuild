@@ -12,7 +12,6 @@ EGIT_REPO_URI="git://github.com/bluelisp/${PN}.git"
 
 LICENSE="LLGPL-2.1"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
 RDEPEND="dev-lisp/babel
