@@ -14,7 +14,6 @@ EGIT_REPO_URI="git://github.com/${PN}/${PN}/"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS=""
 IUSE="doc"
 
 DEPEND="doc? ( dev-lisp/sbcl virtual/texi2dvi )"
