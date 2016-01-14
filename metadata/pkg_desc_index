@@ -118,7 +118,7 @@ dev-lisp/cl-sqlite 0.1.5 0.2: A CommonLisp interface to the SQLite embedded rela
 dev-lisp/cl-store 0.8.10 9999: CL-STORE is a Common Lisp library for serializing and deserializing Common Lisp objects.
 dev-lisp/cl-typegraph 9999: Stand-alone Common Lisp graph typesetting system
 dev-lisp/cl-typesetting 9999: CL-TYPESETTING is a complete typesetting system written in Common Lisp.
-dev-lisp/cl-unicode 0.1.1 0.1.4 0.1.5: A library which provides Common Lisp implementations with knowledge about Unicode characters.
+dev-lisp/cl-unicode 0.1.1 0.1.4 0.1.5: Provides Common Lisp implementations with knowledge about Unicode characters.
 dev-lisp/cl-uri 0.4.0-r1: A library to parse/manipulate/use uris
 dev-lisp/cl-utilities 1.2.4: A Common Lisp library of semi-standard utilities.
 dev-lisp/cl-variates 0.9.0-r1: Portable Common Lisp Random Number Generation.
