@@ -8,7 +8,7 @@ inherit common-lisp-3
 
 MY_P="v${PV}"
 
-DESCRIPTION="A library which provides Common Lisp implementations with knowledge about Unicode characters."
+DESCRIPTION="Provides Common Lisp implementations with knowledge about Unicode characters."
 HOMEPAGE="http://weitz.de/cl-unicode/"
 SRC_URI="https://github.com/edicl/${PN}/archive/${MY_P}.tar.gz -> ${P}.tar.gz"
 
