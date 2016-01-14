@@ -1,10 +1,10 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
 inherit common-lisp-2
 
-DESCRIPTION="A library which provides Common Lisp implementations with knowledge about Unicode characters."
+DESCRIPTION="Provides Common Lisp implementations with knowledge about Unicode characters."
 HOMEPAGE="http://weitz.de/cl-unicode/"
 SRC_URI="http://common-lisp.net/~sionescu/files/${P}.tar.bz2"
 
