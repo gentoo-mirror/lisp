@@ -1,4 +1,4 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -17,7 +17,8 @@ SLOT="0"
 KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
-DEPEND="dev-lisp/flexi-streams"
+DEPEND="virtual/commonlisp
+		dev-lisp/flexi-streams"
 RDEPEND="dev-lisp/cl-ppcre"
 
 COMMONLISPS="sbcl clisp clozurecl cmucl ecls openmcl"
