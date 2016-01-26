@@ -1,9 +1,0 @@
-DEFINED_PHASES=-
-DESCRIPTION=Virtual for Common Lisp
-EAPI=0
-HOMEPAGE=http://www.gentoo.org/proj/en/lisp/index.xml
-KEYWORDS=alpha amd64 ia64 ppc sparc x86
-RDEPEND=|| ( dev-lisp/sbcl dev-lisp/clozure dev-lisp/cmucl dev-lisp/clisp dev-lisp/ecls )
-SLOT=0
-_eclass_exported_funcs=-
-_md5_=917341a55c7bdf3cc6f6862a0abbb369

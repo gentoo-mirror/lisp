@@ -3,7 +3,6 @@
 # * generated automatically using pmaint *
 
 app-emacs/slime:xref - Install xref.lisp cross-referencing tool
-dev-lang/swig:ccache - build ccache-swig(a fast compiler cache)
 dev-lisp/abcl:jad - Enable support for disassembling compiled code using JAD
 dev-lisp/gcl:ansi - Build a GCL with ANSI support (else build a traditional CLtL1 image)
 dev-lisp/sbcl:cobalt - mips only: use mipsel binary instead of mips big endian binary to bootstrap
