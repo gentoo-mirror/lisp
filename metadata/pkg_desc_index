@@ -214,7 +214,7 @@ dev-lisp/mop-features 0.50: Provides a way to check what features a Common Lisp 
 dev-lisp/moptilities 0.3.13: Moptilities provides a compatibility layer for minor MOP implmentation differences.
 dev-lisp/named-readtables 0.9-r1 9999: A Common Lisp library that provides a namespace for readtables.
 dev-lisp/net-telent-date 0.4.1-r1: Common Lisp utilities for printing and parsing date
-dev-lisp/newlisp 10.1.6 10.5.4 10.6.2: newLISP - a new generation of Lisp!
+dev-lisp/newlisp 10.1.6 10.5.4 10.6.2 10.7.0: newLISP - a new generation of Lisp!
 dev-lisp/nibbles 0.9 0.12: A library for accessing multibyte integers from octet arrays and streams
 dev-lisp/nuclblog 0.5: Virtual hosting with Hunchentoot.
 dev-lisp/odd-streams 0.1.1 0.1.2: ODD-STREAMS is a library which implements binary streams with "odd" byte sizes.
