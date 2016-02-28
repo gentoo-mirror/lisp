@@ -302,7 +302,7 @@ dev-lisp/xmls-tools 0.2.0: A library to supplement xmls which includes support f
 dev-lisp/xuriella 20090404: A Common Lisp implementation of XSLT 1.0
 dev-lisp/zip 9999 20080103: A library for .zip-file reading and writing, written in Common Lisp.
 dev-lisp/zpb-ttf 1.0 1.0.3: TrueType font file access library for Common Lisp.
-dev-lisp/zpng 1.2: A Common Lisp library for creating PNG files.
+dev-lisp/zpng 1.2 1.2.2: A Common Lisp library for creating PNG files.
 dev-lisp/zs3 1.1.3: A Common Lisp library for working with Amazon's Simple Storage Service (S3).
 dev-scheme/armpit 00.0098: ARMPIT SCHEME is an interpreter for the Scheme language (lexically-scoped dialect of Lisp) that runs on RISC microcontrollers with ARM core.
 dev-scheme/bigloo 3.9a 4.0a: Bigloo is a Scheme implementation.
