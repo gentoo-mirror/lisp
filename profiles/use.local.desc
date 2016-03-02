@@ -64,3 +64,9 @@ dev-scheme/scm:inexact - Support for floating point numbers.
 dev-scheme/scm:ioext - Commonly available I/O extensions: line I/O, file positioning, file delete and rename, and directory functions.
 dev-scheme/scm:macro - C level support for hygienic and referentially transparent macros (syntax-rules macros).
 dev-scheme/scm:unix - Support for: nice, acct, lstat, readlink, symlink, mknod and sync.
+x11-wm/stumpwm:clisp - Use CLISP for the runtime
+x11-wm/stumpwm:contrib - Install contrib modules
+x11-wm/stumpwm:doc - Include documentation
+x11-wm/stumpwm:ecl - Use SCL for the runtime
+x11-wm/stumpwm:emacs - Add support for GNU Emacs
+x11-wm/stumpwm:sbcl - Use SBCL for the runtime
