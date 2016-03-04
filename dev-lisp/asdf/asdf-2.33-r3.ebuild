@@ -1,8 +1,9 @@
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 EAPI=5
+
 inherit eutils common-lisp-3
 
 DESCRIPTION="ASDF is Another System Definition Facility for Common Lisp"
