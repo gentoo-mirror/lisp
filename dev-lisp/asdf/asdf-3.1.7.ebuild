@@ -8,7 +8,7 @@ inherit eutils prefix
 
 DESCRIPTION="ASDF is Another System Definition Facility for Common Lisp"
 HOMEPAGE="http://common-lisp.net/project/asdf/"
-SRC_URI="http://common-lisp.net/project/${PN}/archives/${P}.tar.gz"
+SRC_URI="http://common-lisp.net/project/${PN}/archives/${P}.tgz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -25,21 +25,22 @@ DEPEND="!dev-lisp/cl-${PN}
 RDEPEND=""
 PDEPEND="~dev-lisp/uiop-${PV}"
 
-install_doc() {
-	doinfo doc/${PN}.info
-	dohtml -r -a html,css,png,pdf doc/*
-}
+S="${WORKDIR}"
 
 src_compile() {
-	emake
-	use doc && emake -C doc
+	make
+	use doc && make doc
 }
 
 src_install() {
 	insinto /usr/share/common-lisp/source/${PN}
 	doins -r build version.lisp-expr
 	dodoc README.md TODO
-	use doc && install_doc
+	dohtml doc/*.{html,css,ico,png}
+	if use doc; then
+		dohtml -r doc/index.html
+		insinto /usr/share/doc/${PF}
+	fi
 
 	insinto /etc/common-lisp
 	cd "${T}"
