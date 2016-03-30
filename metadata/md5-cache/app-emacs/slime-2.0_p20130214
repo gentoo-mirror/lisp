@@ -12,5 +12,5 @@ RESTRICT=mirror
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~gienah/snapshots/slime-2.0_p20130214.tgz
 _eclass_exported_funcs=pkg_postrm:elisp pkg_postinst:elisp pkg_setup:elisp src_unpack:elisp src_prepare:- src_configure:elisp src_compile:- src_install:-
-_eclasses_=common-lisp-3	0dfca5a19b650487be7f56f5dd530c10	elisp	7e36316fe822639d5a29fa10d5529eb9	elisp-common	9f56c4e9bf1282dbfc2a5a09e1124e74	eutils	9d81603248f2ba3ec59124320d123e5e	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
+_eclasses_=common-lisp-3	0dfca5a19b650487be7f56f5dd530c10	elisp	7e36316fe822639d5a29fa10d5529eb9	elisp-common	9f56c4e9bf1282dbfc2a5a09e1124e74	eutils	9d81603248f2ba3ec59124320d123e5e	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	d513d423d449877e49d99af3f7af7acb
 _md5_=6f86657bb160022e21ee44d0be566aea
