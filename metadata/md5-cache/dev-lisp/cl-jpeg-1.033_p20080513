@@ -9,5 +9,5 @@ RESTRICT=mirror
 SLOT=0
 SRC_URI=http://common-lisp.net/~sionescu/files/cl-jpeg-1.033_p20080513.tar.bz2
 _eclass_exported_funcs=src_install:common-lisp-2
-_eclasses_=common-lisp-2	d3c4d1f1a7df32a406b6352a87a6639d	eutils	9d81603248f2ba3ec59124320d123e5e	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	d513d423d449877e49d99af3f7af7acb
+_eclasses_=common-lisp-2	d3c4d1f1a7df32a406b6352a87a6639d	eutils	9d81603248f2ba3ec59124320d123e5e	multilib	23ae8c186171e6476af098d2a50d0ee0	toolchain-funcs	d513d423d449877e49d99af3f7af7acb
 _md5_=6b12ba14fef3aa4354f8daba946b3c77
