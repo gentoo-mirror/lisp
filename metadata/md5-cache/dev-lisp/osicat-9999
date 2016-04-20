@@ -9,5 +9,5 @@ RDEPEND=!dev-lisp/cl-osicat dev-lisp/alexandria dev-lisp/cffi dev-lisp/trivial-f
 RESTRICT=mirror
 SLOT=0
 _eclass_exported_funcs=src_unpack:git-2 src_compile:common-lisp-3 src_install:common-lisp-3
-_eclasses_=common-lisp-3	0dfca5a19b650487be7f56f5dd530c10	eutils	9d81603248f2ba3ec59124320d123e5e	git-2	672c3929a162f221a53b4ccb4d25d8a2	multilib	23ae8c186171e6476af098d2a50d0ee0	toolchain-funcs	d513d423d449877e49d99af3f7af7acb
+_eclasses_=common-lisp-3	0dfca5a19b650487be7f56f5dd530c10	eutils	792f83d5ec9536cb5ccef375469d8bde	git-2	672c3929a162f221a53b4ccb4d25d8a2	multilib	23ae8c186171e6476af098d2a50d0ee0	toolchain-funcs	d513d423d449877e49d99af3f7af7acb
 _md5_=026fcebd10292a4aa99b474f83cb730b
