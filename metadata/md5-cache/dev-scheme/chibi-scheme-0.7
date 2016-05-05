@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install prepare test
+DEPEND=boehm-gc? ( dev-libs/boehm-gc )
+DESCRIPTION=A very tiny Scheme implementation with decent speed and native hygienic macros.
+EAPI=5
+HOMEPAGE=http://synthcode.com/scheme/
+IUSE=boehm-gc
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD
+RDEPEND=boehm-gc? ( dev-libs/boehm-gc )
+SLOT=0
+SRC_URI=http://abrek.synthcode.com/chibi-scheme-0.7.tgz
+_eclass_exported_funcs=src_prepare:- src_compile:- src_test:- src_install:-
+_md5_=0bdeb45b8d70829e680fa3cd6627c650

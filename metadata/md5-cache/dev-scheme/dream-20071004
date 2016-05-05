@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install
+DESCRIPTION=Tiny (!) R4RS Scheme Interpreter, written in x86 Assembly, including its own Assembler (in Scheme)
+EAPI=0
+HOMEPAGE=http://www.stripedgazelle.org/joey/dream.html
+KEYWORDS=~x86 ~amd64
+LICENSE=MIT
+SLOT=0
+SRC_URI=http://www.stripedgazelle.org/cgi-bin/wiki_joey/dream20071004.tar.gz
+_eclass_exported_funcs=src_compile:- src_install:-
+_md5_=cc71e1b1c170b2ca6a5b4e617f65a29b

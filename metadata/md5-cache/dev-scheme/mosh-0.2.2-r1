@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install prepare
+DESCRIPTION=A Fast R6RS Scheme interpreter.
+EAPI=2
+HOMEPAGE=http://code.google.com/p/mosh-scheme/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+SLOT=0
+SRC_URI=http://mosh-scheme.googlecode.com/files/mosh-0.2.2.tar.gz
+_eclass_exported_funcs=src_prepare:- src_compile:- src_install:-
+_md5_=30bdef0901a47367db3c65d16d6e889f

@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install test unpack
+DEPEND=>=dev-scheme/chicken-3.1.0
+DESCRIPTION=test(1) equivalence procedures.
+EAPI=0
+HOMEPAGE=http://chicken.wiki.br/unix-test
+KEYWORDS=~x86
+LICENSE=BSD
+RDEPEND=>=dev-scheme/chicken-3.1.0
+RESTRICT=primaryuri
+SLOT=0
+SRC_URI=http://cleo.uwindsor.ca/cgi-bin/gentoo-eggs/unix-test-3-200804012117.tar.gz
+_eclass_exported_funcs=src_unpack:eggs src_compile:eggs src_test:eggs src_install:eggs
+_eclasses_=eggs	790b6c231826dfb6e370bee731d5bdf9	eutils	792f83d5ec9536cb5ccef375469d8bde	flag-o-matic	d270fa247153df66074f795fa42dba3e	multilib	23ae8c186171e6476af098d2a50d0ee0	toolchain-funcs	d513d423d449877e49d99af3f7af7acb
+_md5_=ca8f5ac77d47fe4184e918a6bdcdaebe
