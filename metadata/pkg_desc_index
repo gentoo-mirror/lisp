@@ -138,6 +138,7 @@ dev-lisp/cmucl 20d-r3: CMU Common Lisp is an implementation of ANSI Common Lisp
 dev-lisp/colorize 1.0 9999: Colorize is a Common Lisp application for colorizing source code.
 dev-lisp/common-idioms 3: A small Common Lisp library implementing various Common Lisp idioms.
 dev-lisp/contextl 0.61: CLOS extension for context-oriented Programming
+dev-lisp/css-lite 9999: A css grammar for lisp
 dev-lisp/cxml 9999 20081130: A Common Lisp XML library implementing namespaces, a validating SAX-like XML 1.0 parser and the DOM Level 1 Core interfaces.
 dev-lisp/cxml-rng 20081130: An implementation of Relax NG schema validation written in Common Lisp.
 dev-lisp/cxml-stp 20081130: A Common Lisp alternative to the W3C's DOM.
