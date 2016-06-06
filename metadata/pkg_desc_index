@@ -1,6 +1,10 @@
 app-admin/eselect-guile 1.2-r1: Manage multiple Guile versions on one system
 app-emacs/geiser 999: Emacs modes for Scheme interaction
 app-emacs/slime 2.0_p20110617 2.0_p20130214 2.0_p20130930 2.11 2.12 2.15 9999: SLIME, the Superior Lisp Interaction Mode (Extended)
+app-office/texmacs 1.0.7.16-r2: Wysiwyg text processor with high-quality maths
+app-text/lout 3.38: high-level language for document formatting
+app-text/skribe 1.2l-r1: Skribe is a text processor for technical documents written in scheme.
+app-text/skribilo 0.9.1 0.9.2: Skribilo is a free document production tool.
 dev-chicken/9pfs 200804142117: A pure Scheme implementation of the 9p networked filesystem protocol.
 dev-chicken/F-operator 200803110916: A facility for creating and deconstructing variant records (from EOPL).
 dev-chicken/advice 200801221415: Allows modifying the behaviour of existing procedures by specifying code that should run before, after or instead of the original procedure.
@@ -37,6 +41,8 @@ dev-chicken/tinyclos 200801162015: Chicken-Scheme port of Gregor Kiczales' TinyC
 dev-chicken/unix-sockets 200801162015-r1: Chicken-Scheme interface to UNIX domain sockets.
 dev-chicken/unix-test 9999 200804012117: test(1) equivalence procedures.
 dev-chicken/utf8 200803181518: Unicode support.
+dev-lang/swig 9999: Simplified Wrapper and Interface Generator
+dev-libs/lightning 1.2: A library that generates assembly language code at run-time.
 dev-lisp/abcl 1.1.1 1.3.1: Armed Bear Common Lisp is a Common Lisp implementation for the JVM.
 dev-lisp/acl-compat 1.2.42.20070507: Compatibility layer for Allegro Common Lisp
 dev-lisp/alexandria 0.1_p20100411 9999: A collection of public domain utilities.
@@ -329,4 +335,6 @@ dev-scheme/rscheme 0.7.3.4_beta7: RScheme is an implementation of the Scheme lan
 dev-scheme/scm 5.5.5-r2: SCM is a Scheme implementation conforming to Revised5 Report on the Algorithmic Language Scheme and the IEEE P1178 specification.
 dev-scheme/snow-generic 1.1.2: A repository of Scheme packages that are portable to several popular implementations of Scheme
 dev-scheme/tinyscheme 1.39-r2: Lightweight scheme interpreter
+media-sound/lilypond 2.13.17: GNU Music Typesetter
+virtual/commonlisp 1: Virtual for Common Lisp
 x11-wm/stumpwm 0.9.9 9999: Stumpwm is a Window Manager written entirely in Common Lisp.
