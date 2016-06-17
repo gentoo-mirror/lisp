@@ -1,8 +1,8 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
-inherit common-lisp-2
+inherit common-lisp-3
 
 MY_PV=${PV:0:4}-${PV:4:2}-${PV:6:2}
 MY_P=${PN}-${MY_PV}
@@ -26,8 +26,8 @@ RDEPEND="dev-lisp/cxml
 S="${WORKDIR}"/${MY_P}
 
 src_install() {
-	common-lisp-install *.{lisp,asd} css gif tex xsl
-	common-lisp-symlink-asdf
+	common-lisp-install-sources *.{lisp,asd} css gif tex xsl
+	common-lisp-install-asdf
 
 	dodoc README
 }
