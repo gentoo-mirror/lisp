@@ -1,6 +1,6 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 # @ECLASS: common-lisp-3.eclass
 # @MAINTAINER:
@@ -177,13 +177,14 @@ common-lisp-export-impl-args() {
 		eerror "Usage: ${FUNCNAME[0]} lisp-implementation"
 		die "${FUNCNAME[0]}: wrong number of arguments: $#"
 	fi
+	CL_BINARY="${1}"
 	case ${1} in
 		clisp)
 			CL_NORC="-norc"
 			CL_LOAD="-i"
 			CL_EVAL="-x"
 			;;
-		clozure | ccl | openmcl)
+		clozurecl | ccl | openmcl)
 			CL_NORC="--no-init"
 			CL_LOAD="--load"
 			CL_EVAL="--eval"
@@ -193,7 +194,8 @@ common-lisp-export-impl-args() {
 			CL_LOAD="-load"
 			CL_EVAL="-eval"
 			;;
-		ecl)
+		ecl | ecls)
+			CL_BINARY="ecl"
 			CL_NORC="-norc"
 			CL_LOAD="-load"
 			CL_EVAL="-eval"
@@ -207,5 +209,5 @@ common-lisp-export-impl-args() {
 			die ${1} is not supported by ${0}
 			;;
 	esac
-	export CL_NORC CL_LOAD CL_EVAL
+	export CL_BINARY CL_NORC CL_LOAD CL_EVAL
 }
