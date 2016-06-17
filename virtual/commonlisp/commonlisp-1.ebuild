@@ -2,6 +2,8 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
+EAPI=5
+
 DESCRIPTION="Virtual for Common Lisp"
 HOMEPAGE="http://www.gentoo.org/proj/en/lisp/index.xml"
 SRC_URI=""
