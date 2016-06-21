@@ -51,8 +51,8 @@ dev-lisp/araneida 0.90.1-r1: Araneida is small, highly-portable web server for C
 dev-lisp/archive 0.8-r1 0.9: Archive is Nathan Froyd's tar/cpio package for CL.
 dev-lisp/arnesi 9999 20080413-r1: arnesi is a Common Lisp utility suite used with bese projects
 dev-lisp/asdf 2.33-r3 3.1.7: ASDF is Another System Definition Facility for Common Lisp
-dev-lisp/asdf-system-connections 0.8.4 9999: Provides auto-loading of systems that only make sense when several other systems are loaded.
-dev-lisp/aspectl 0.74: AspectL is a library that provides aspect-oriented extensions for Common Lisp/CLOS.
+dev-lisp/asdf-system-connections 0.8.4 9999: Provides auto-loading of systems that only make sense when other systems are loaded.
+dev-lisp/aspectl 0.74: Library that provides aspect-oriented extensions for Common Lisp/CLOS.
 dev-lisp/atdoc 20081130: Atdoc generates documentation for Common Lisp packages.
 dev-lisp/babel 0.3.0 0.4.0 0.5.0: A charset encoding/decoding library.
 dev-lisp/binary-types 0.90: Binary-types is a Library for accessing binary files with fixed bit-length code-words.

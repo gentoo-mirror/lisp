@@ -1,5 +1,5 @@
 DEFINED_PHASES=install
-DESCRIPTION=AspectL is a library that provides aspect-oriented extensions for Common Lisp/CLOS.
+DESCRIPTION=Library that provides aspect-oriented extensions for Common Lisp/CLOS.
 EAPI=0
 HOMEPAGE=http://common-lisp.net/project/closer/
 KEYWORDS=~amd64 ~ppc ~sparc ~x86
@@ -10,4 +10,4 @@ SLOT=0
 SRC_URI=http://common-lisp.net/project/closer/ftp/aspectl_0.74.tar.gz
 _eclass_exported_funcs=src_install:-
 _eclasses_=common-lisp-2	d3c4d1f1a7df32a406b6352a87a6639d	eutils	792f83d5ec9536cb5ccef375469d8bde	multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	c9d9187f4caa4026a0ceddd8dfceb3c1
-_md5_=25b9acb6857a574148fddcd3c62064da
+_md5_=acb4b2b31a31dcd4edb68a984a23bc9b
