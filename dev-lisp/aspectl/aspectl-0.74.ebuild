@@ -1,12 +1,12 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 inherit common-lisp-2
 
 MY_P=${PN}_${PV}
 
-DESCRIPTION="AspectL is a library that provides aspect-oriented extensions for Common Lisp/CLOS."
+DESCRIPTION="Library that provides aspect-oriented extensions for Common Lisp/CLOS."
 HOMEPAGE="http://common-lisp.net/project/closer/"
 SRC_URI="http://common-lisp.net/project/closer/ftp/${MY_P}.tar.gz"
 
