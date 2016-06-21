@@ -10,4 +10,4 @@ SLOT=0
 SRC_URI=ftp://cnic.fr/gentoo-lisp-overlay/linedit_0.15.12.tar.gz
 _eclass_exported_funcs=src_unpack:- src_compile:- src_install:-
 _eclasses_=common-lisp-2	d3c4d1f1a7df32a406b6352a87a6639d	eutils	792f83d5ec9536cb5ccef375469d8bde	multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	c9d9187f4caa4026a0ceddd8dfceb3c1
-_md5_=71b0ea9286ed7b9762543c15b826f78f
+_md5_=0f4b173ce7588990cb6f3c825c7dc679
