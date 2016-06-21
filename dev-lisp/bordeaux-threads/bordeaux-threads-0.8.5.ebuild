@@ -8,7 +8,7 @@ inherit common-lisp-3
 
 DESCRIPTION="A library meant to make writing portable multi-threaded apps simple."
 HOMEPAGE="http://common-lisp.net/project/bordeaux-threads/"
-SRC_URI="http://common-lisp.net/project/${PN}/releases/${P}.tar.gz"
+SRC_URI="https://github.com/sionescu/${PN}/archive/v${PV}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -18,10 +18,8 @@ IUSE=""
 RDEPEND="dev-lisp/alexandria
 		dev-lisp/fiveam"
 
-CLSYSTEMS="bordeaux-threads bordeaux-threads-test"
-
 src_install() {
-	common-lisp-install-sources -t all *.asd src test version.lisp-expr
+	common-lisp-install-sources -t all *.asd src test version.sexp
 	common-lisp-install-asdf
 	dodoc CONTRIBUTORS README
 }
