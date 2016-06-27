@@ -10,5 +10,5 @@ RESTRICT=mirror
 SLOT=0
 SRC_URI=http://www.peter-herth.de/ltk/ltk-0.981.tgz
 _eclass_exported_funcs=src_compile:common-lisp-3 src_install:-
-_eclasses_=common-lisp-3	588da98647bfa3e0e017547c17761050	eutils	792f83d5ec9536cb5ccef375469d8bde	multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	bfd09e8e66991dd5ce9e57610d8d1e6c
+_eclasses_=common-lisp-3	588da98647bfa3e0e017547c17761050	eutils	792f83d5ec9536cb5ccef375469d8bde	multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	77f907363e91028a361ce5a3e9e7ed1e
 _md5_=5086c1c0be5f00de1c920f8e8254c1eb

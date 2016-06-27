@@ -9,5 +9,5 @@ RDEPEND=>=dev-lisp/cffi-0.10.5 dev-lisp/trivial-features virtual/libffi virtual/
 RESTRICT=mirror
 SLOT=0
 _eclass_exported_funcs=src_unpack:git-2 src_install:-
-_eclasses_=common-lisp-2	d3c4d1f1a7df32a406b6352a87a6639d	eutils	792f83d5ec9536cb5ccef375469d8bde	git-2	672c3929a162f221a53b4ccb4d25d8a2	multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	bfd09e8e66991dd5ce9e57610d8d1e6c
+_eclasses_=common-lisp-2	d3c4d1f1a7df32a406b6352a87a6639d	eutils	792f83d5ec9536cb5ccef375469d8bde	git-2	672c3929a162f221a53b4ccb4d25d8a2	multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	77f907363e91028a361ce5a3e9e7ed1e
 _md5_=0bc00055d8e8264d1942028800517d54
