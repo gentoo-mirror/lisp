@@ -10,5 +10,5 @@ RESTRICT=primaryuri
 SLOT=0
 SRC_URI=http://cleo.uwindsor.ca/cgi-bin/gentoo-eggs/regex-case-3-200801162015.tar.gz
 _eclass_exported_funcs=src_unpack:eggs src_compile:eggs src_test:eggs src_install:eggs
-_eclasses_=eggs	790b6c231826dfb6e370bee731d5bdf9	eutils	792f83d5ec9536cb5ccef375469d8bde	flag-o-matic	d270fa247153df66074f795fa42dba3e	multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	77f907363e91028a361ce5a3e9e7ed1e
+_eclasses_=eggs	790b6c231826dfb6e370bee731d5bdf9	eutils	792f83d5ec9536cb5ccef375469d8bde	flag-o-matic	d270fa247153df66074f795fa42dba3e	multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	e886935aae2b45a545665444ab0667cf
 _md5_=3e447bb11c2d01194d1324e73a3a8169
