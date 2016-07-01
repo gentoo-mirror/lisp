@@ -10,5 +10,5 @@ RESTRICT=mirror
 SLOT=0
 SRC_URI=http://common-lisp.net/~sionescu/files/arnesi-20080413.tar.bz2
 _eclass_exported_funcs=src_install:-
-_eclasses_=common-lisp-2	d3c4d1f1a7df32a406b6352a87a6639d	eutils	792f83d5ec9536cb5ccef375469d8bde	multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	e886935aae2b45a545665444ab0667cf
+_eclasses_=common-lisp-2	d3c4d1f1a7df32a406b6352a87a6639d	eutils	792f83d5ec9536cb5ccef375469d8bde	multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	82165206dedb2075f9a0fb8f9b1f9441
 _md5_=83f5b30cb5d41eac66a2d3d322c7bce5
