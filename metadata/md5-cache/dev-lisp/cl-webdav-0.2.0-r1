@@ -10,4 +10,4 @@ SLOT=0
 SRC_URI=http://common-lisp.net/~sionescu/files/cl-webdav-0.2.0.tar.bz2
 _eclass_exported_funcs=src_install:-
 _eclasses_=common-lisp-2	d3c4d1f1a7df32a406b6352a87a6639d	eutils	792f83d5ec9536cb5ccef375469d8bde	multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	6198c04daba0e1307bd844df7d37f423
-_md5_=438465d20fca30c644f3abb182b77bdf
+_md5_=718e14d7995103cd55282937d76d9993
