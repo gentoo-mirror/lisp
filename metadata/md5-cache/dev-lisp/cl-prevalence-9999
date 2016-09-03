@@ -9,5 +9,5 @@ RDEPEND=dev-lisp/fiveam dev-lisp/s-xml dev-lisp/s-sysdeps
 RESTRICT=mirror
 SLOT=0
 _eclass_exported_funcs=src_unpack:mercurial src_compile:common-lisp-3 src_install:common-lisp-3
-_eclasses_=common-lisp-3	588da98647bfa3e0e017547c17761050	eutils	b83a2420b796f7c6eff682679d08fe25	mercurial	789038b352d112bcff9dff083aa40d8d	multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	6198c04daba0e1307bd844df7d37f423
+_eclasses_=common-lisp-3	588da98647bfa3e0e017547c17761050	eutils	b83a2420b796f7c6eff682679d08fe25	mercurial	789038b352d112bcff9dff083aa40d8d	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	6198c04daba0e1307bd844df7d37f423
 _md5_=d1d4027b210ce8e2f1a85c4b14c49ce2
