@@ -10,7 +10,7 @@ MY_PV="release-${PV}"
 
 DESCRIPTION="Library for creating compressed data in the ZLIB, DEFLATE, or GZIP data formats"
 HOMEPAGE="http://www.xach.com/lisp/salza2/"
-SRC_URI="https://github.com/xach/${PN}/archive/${MY_PV}.tar.gz"
+SRC_URI="https://github.com/xach/${PN}/archive/${MY_PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="BSD-2"
 SLOT="0"
