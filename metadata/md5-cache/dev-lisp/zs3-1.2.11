@@ -1,13 +1,14 @@
 DEFINED_PHASES=compile install
-DESCRIPTION=CL-WHO (is yet another Lisp Markup Language).
+DESCRIPTION=A Common Lisp library for working with Amazon's Simple Storage Service (S3).
 EAPI=5
-HOMEPAGE=http://weitz.de/cl-who/
+HOMEPAGE=http://www.xach.com/lisp/zs3/
 KEYWORDS=~amd64 ~ppc ~sparc ~x86
 LICENSE=BSD-2
 PDEPEND=virtual/commonlisp
+RDEPEND=dev-lisp/alexandria dev-lisp/cxml dev-lisp/chunga >=dev-lisp/drakma-1.0.0 dev-lisp/ironclad dev-lisp/puri dev-lisp/cl-base64
 RESTRICT=mirror
 SLOT=0
-SRC_URI=https://github.com/edicl/cl-who/archive/v1.1.4.tar.gz -> cl-who-1.1.4.tar.gz
+SRC_URI=https://github.com/xach/zs3/archive/release-1.2.11.tar.gz -> zs3-1.2.11.tar.gz
 _eclass_exported_funcs=src_compile:common-lisp-3 src_install:-
 _eclasses_=common-lisp-3	588da98647bfa3e0e017547c17761050	eutils	b83a2420b796f7c6eff682679d08fe25	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	6198c04daba0e1307bd844df7d37f423
-_md5_=d05886312c6b1eca8701a1e638242528
+_md5_=1fda82dec417cb62d3d47282394e60b6
