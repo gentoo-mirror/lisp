@@ -6,7 +6,6 @@ app-emacs/slime:xref - Install xref.lisp cross-referencing tool
 dev-lang/swig:ccache - build ccache-swig(a fast compiler cache)
 dev-lisp/abcl:jad - Enable support for disassembling compiled code using JAD
 dev-lisp/gcl:ansi - Build a GCL with ANSI support (else build a traditional CLtL1 image)
-dev-lisp/sbcl:cobalt - mips only: use mipsel binary instead of mips big endian binary to bootstrap
 dev-lisp/sbcl:pax_kernel - Enable if the user plans to run the package under a pax enabled hardened kernel
 dev-scheme/bigloo:bglpkg - Build the bglpkg tool to access scmpkg servers (requires web)
 dev-scheme/bigloo:calendar - Build the embedded library for calendar programming
