@@ -1,17 +1,17 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 EAPI=5
 
 inherit common-lisp-3
 
-MY_P=${PN}_${PV}
+MY_P="${PN}_${PV}"
 
 DESCRIPTION="Ironclad is a Common Lisp library similar to OpenSSL, GNU TLS or Crypto++"
 HOMEPAGE="http://method-combination.net/lisp/ironclad/
 		http://www.cliki.net/Ironclad"
-SRC_URI="http://method-combination.net/lisp/files/${MY_P}.tar.gz"
+SRC_URI="http://method-combination.net/lisp/files/${MY_P}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
