@@ -6,11 +6,11 @@ EAPI=5
 
 inherit common-lisp-3
 
-MY_P="release-${PV}"
+MY_PV="release-${PV}"
 
 DESCRIPTION="A Common Lisp library for creating PNG files."
 HOMEPAGE="http://www.xach.com/lisp/zpng/"
-SRC_URI="https://github.com/xach/${PN}/archive/${MY_P}.tar.gz"
+SRC_URI="https://github.com/xach/${PN}/archive/${MY_PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="BSD-2"
 SLOT="0"
@@ -19,7 +19,7 @@ IUSE=""
 
 RDEPEND="dev-lisp/salza2"
 
-S="${WORKDIR}/${PN}-${MY_P}"
+S="${WORKDIR}/${PN}-${MY_PV}"
 
 src_install() {
 	common-lisp-install-sources *.lisp
