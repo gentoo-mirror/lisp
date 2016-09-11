@@ -1,4 +1,4 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -6,7 +6,7 @@ EAPI=5
 
 inherit common-lisp-3
 
-DESCRIPTION="A compression library for creating data in the ZLIB, DEFLATE, or GZIP data formats."
+DESCRIPTION="Library for creating compressed data in the ZLIB, DEFLATE, or GZIP data formats"
 HOMEPAGE="http://www.xach.com/lisp/salza2/"
 SRC_URI="mirror://gentoo/${P}.tar.gz"
 

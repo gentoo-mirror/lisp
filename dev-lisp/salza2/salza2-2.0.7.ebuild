@@ -1,10 +1,10 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
 inherit common-lisp-2
 
-DESCRIPTION="A compression library for creating data in the DEFLATE, ZLIB, or GZIP compression formats."
+DESCRIPTION="Library for creating compressed data in the ZLIB, DEFLATE, or GZIP data formats"
 HOMEPAGE="http://www.xach.com/lisp/salza2/"
 SRC_URI="http://common-lisp.net/~sionescu/files/${P}.tar.bz2"
 
