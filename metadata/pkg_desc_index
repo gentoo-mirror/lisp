@@ -269,7 +269,7 @@ dev-lisp/s-xml 20060521-r1: S-XML is a simple XML parser implemented in Common L
 dev-lisp/s-xml-rpc 20060521: S-XML-RPC is an implementation of XML-RPC in Common Lisp for both client and server.
 dev-lisp/salza 0.7.4: Salza is a Common Lisp Library that provides an FFI-less interface to the ZLIB and DEFLATE compressed data formats.
 dev-lisp/salza-png 1.0.1: Salza-png is a graphics library that writes PNG files using Salza.
-dev-lisp/salza2 2.0.7 2.0.8 2.0.9: A compression library for creating data in the ZLIB, DEFLATE, or GZIP data formats.
+dev-lisp/salza2 2.0.7 2.0.8 2.0.9: Library for creating compressed data in the ZLIB, DEFLATE, or GZIP data formats
 dev-lisp/sb-cga 9999: Computer graphics algebra library for SBCL.
 dev-lisp/sb-readline 0.1: Implementation of GNU Readline support for SBCL
 dev-lisp/sbcl 1.1.6-r3 1.1.7 1.2.6: Steel Bank Common Lisp (SBCL) is an implementation of ANSI Common Lisp
