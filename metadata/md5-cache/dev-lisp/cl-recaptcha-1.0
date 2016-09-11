@@ -1,6 +1,6 @@
 DEFINED_PHASES=compile install
 DESCRIPTION=Straightforward Common Lisp recaptcha.com interconnection
-EAPI=3
+EAPI=5
 HOMEPAGE=http://github.com/madnificent/cl-recaptcha/
 KEYWORDS=~amd64 ~ppc ~sparc ~x86
 LICENSE=MIT
@@ -8,7 +8,7 @@ PDEPEND=virtual/commonlisp
 RDEPEND=>=dev-lisp/drakma-1.0.0 dev-lisp/split-sequence dev-lisp/cl-ppcre
 RESTRICT=mirror
 SLOT=0
-SRC_URI=http://github.com/downloads/madnificent/cl-recaptcha/cl-recaptcha-1.0.tar.gz
+SRC_URI=https://github.com/madnificent/cl-recaptcha/archive/v1.0.tar.gz -> cl-recaptcha-1.0.tar.gz
 _eclass_exported_funcs=src_compile:common-lisp-3 src_install:common-lisp-3
 _eclasses_=common-lisp-3	588da98647bfa3e0e017547c17761050	eutils	b83a2420b796f7c6eff682679d08fe25	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	6198c04daba0e1307bd844df7d37f423
-_md5_=10e134e4c7f3ec8a6f29771b7b9317d4
+_md5_=2cc501f8350b8de40056b0a713f801b5

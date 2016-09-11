@@ -89,7 +89,7 @@ dev-lisp/cl-html-diff 0.1: A Common Lisp library for generating a human-readable
 dev-lisp/cl-html-parse 1.0: A parser that parses HTML documents and generates a sexp-based representation.
 dev-lisp/cl-i18n 0.4: A gettext-style internationalization framework for Common Lisp
 dev-lisp/cl-interpol 0.2.1 0.2.2 0.2.3 0.2.5: String interpolation for Common Lisp similar to Perl or Unix shell scripts.
-dev-lisp/cl-irc 0.8.1-r1 0.9.1: A Common Lisp IRC client library
+dev-lisp/cl-irc 0.8.1-r1 0.9.1 0.9.2: A Common Lisp IRC client library
 dev-lisp/cl-jpeg 1.033_p20080513 9999: A JPEG library for Common Lisp
 dev-lisp/cl-json 0.4.0 0.5.0: A Lisp parser and generator for the JSON data-interchange format
 dev-lisp/cl-l10n 0.4: A portable library for handling program localization.
