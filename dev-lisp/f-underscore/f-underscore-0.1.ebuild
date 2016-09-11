@@ -1,13 +1,13 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 inherit common-lisp-2
 
 MY_P=${PN}_${PV}
 
 DESCRIPTION="F-underscore is a tiny library of functional programming utils."
-HOMEPAGE="http://groups.google.com/group/cl-terrace/web/f-underscore"
+HOMEPAGE="http://www.cliki.net/f-underscore"
 SRC_URI="http://common-lisp.net/project/bpm/release/${MY_P}.tar.gz"
 
 LICENSE="public-domain"
