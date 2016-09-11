@@ -1,4 +1,4 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -7,7 +7,7 @@ EAPI=5
 inherit common-lisp-3
 
 DESCRIPTION="Portable FFI library for Common Lisp."
-HOMEPAGE="http://www.cliki.net/UFFI"
+HOMEPAGE="http://www.cliki.net/UFFI http://uffi.kpe.io/"
 SRC_URI="http://files.kpe.io/${PN}/${PF}.tar.gz"
 
 LICENSE="BSD"
