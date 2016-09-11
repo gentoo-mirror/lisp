@@ -1,4 +1,4 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -16,6 +16,7 @@ KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
 RDEPEND="!dev-lisp/cl-${PN}
+		dev-lisp/chipz
 		>=dev-lisp/chunga-1.1.0
 		>=dev-lisp/cl-base64-3.3.2
 		dev-lisp/cl-plus-ssl
