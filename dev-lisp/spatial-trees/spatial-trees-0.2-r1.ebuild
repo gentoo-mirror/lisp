@@ -1,10 +1,10 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 inherit common-lisp-2
 
-DESCRIPTION="A Common Lisp library providing access to dynamic index structures for spatially-extended data."
+DESCRIPTION="A set of dynamic index data structures for spatially-extended data"
 HOMEPAGE="http://www.cliki.net/spatial-trees"
 SRC_URI="http://ftp.linux.org.uk/pub/lisp/cclan/${P}.tar.gz"
 
