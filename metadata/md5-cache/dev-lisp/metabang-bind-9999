@@ -1,6 +1,6 @@
 DEFINED_PHASES=compile install unpack
 DEPEND=dev-vcs/git
-DESCRIPTION=BIND combines LET*, DESTRUCTURING-BIND and MULTIPLE-VALUE-BIND into a single form.
+DESCRIPTION=Combines LET*, DESTRUCTURING-BIND and MULTIPLE-VALUE-BIND into a single form.
 EAPI=5
 HOMEPAGE=http://common-lisp.net/project/metabang-bind http://www.cliki.net/bind
 KEYWORDS=~amd64 ~ppc ~sparc ~x86
@@ -11,4 +11,4 @@ RESTRICT=mirror
 SLOT=0
 _eclass_exported_funcs=src_unpack:git-2 src_compile:common-lisp-3 src_install:-
 _eclasses_=common-lisp-3	588da98647bfa3e0e017547c17761050	eutils	b83a2420b796f7c6eff682679d08fe25	git-2	7af5d170bfc02983b4bcd3167dc5edd4	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	6198c04daba0e1307bd844df7d37f423
-_md5_=9aabe7cb1843ee5f4d5225e775bcae2f
+_md5_=541b96d8dcdfde323f5488290a1816a9
