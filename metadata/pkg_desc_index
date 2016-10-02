@@ -55,7 +55,7 @@ dev-lisp/asdf-system-connections 0.8.4 9999: Provides auto-loading of systems th
 dev-lisp/aspectl 0.74: Library that provides aspect-oriented extensions for Common Lisp/CLOS.
 dev-lisp/atdoc 20081130: Atdoc generates documentation for Common Lisp packages.
 dev-lisp/babel 0.3.0 0.4.0 0.5.0: A charset encoding/decoding library.
-dev-lisp/binary-types 0.90: Binary-types is a Library for accessing binary files with fixed bit-length code-words.
+dev-lisp/binary-types 0.90: Library for accessing binary files with fixed bit-length code-words.
 dev-lisp/blowfish 0.6: Common Lisp implementation of the Blowfish encryption algorithm.
 dev-lisp/bordeaux-threads 0.8.1 0.8.2 0.8.3 0.8.5: A library meant to make writing portable multi-threaded apps simple.
 dev-lisp/cffi 0.10.6-r1 0.11.1 0.11.2 0.14.0 0.16.1 0.17.1 9999: The Common Foreign Function Interface (CFFI)
