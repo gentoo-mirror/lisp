@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-	<herd>common-lisp</herd>
+	<maintainer type="project">
+		<email>common-lisp@gentoo.org</email>
+	</maintainer>
 	<upstream>
 		<maintainer status="active">
 			<email>abu@software-lab.de</email>
@@ -13,4 +15,10 @@
 	<longdescription lang="en">
 		A fast and lightweight Lisp interpreter, with a focus on databases.
 	</longdescription>
+  <use>
+	  <flag name="bash-completion">Enable bash-completion support</flag>
+	  <flag name="doc">Add extra documentation</flag>
+	  <flag name="examples">Install examples</flag>
+	  <flag name="src">Install to src</flag>
+  </use>
 </pkgmetadata>
