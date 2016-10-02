@@ -10,4 +10,4 @@ SLOT=0
 SRC_URI=http://dev.gentoo.org/~nimiux/dev-lisp/trivial-backtrace/trivial-backtrace-1.1.0.tar.gz
 _eclass_exported_funcs=src_compile:common-lisp-3 src_install:-
 _eclasses_=common-lisp-3	588da98647bfa3e0e017547c17761050	eutils	b83a2420b796f7c6eff682679d08fe25	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	6198c04daba0e1307bd844df7d37f423
-_md5_=4570f639042ab18c8333f5eaae184e52
+_md5_=50c4253a496bad5479b431c2e8955a8e
