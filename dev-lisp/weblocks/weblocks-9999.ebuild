@@ -1,6 +1,6 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 WEBLOCKS_BRANCH=stable
 MY_P=${PN}-${WEBLOCKS_BRANCH}
@@ -9,7 +9,7 @@ EHG_REPO_URI=http://bitbucket.org/skypher/${MY_P}/
 inherit common-lisp-2 mercurial
 
 DESCRIPTION="Weblocks is a continuations-based web framework written in Common Lisp."
-HOMEPAGE="http://common-lisp.net/project/cl-weblocks/"
+HOMEPAGE="http://weblocks-framework.info/"
 
 LICENSE="LLGPL-2.1"
 SLOT="0"
@@ -40,13 +40,13 @@ RDEPEND="dev-lisp/closer-mop
 		dev-lisp/lift"
 
 CLSYSTEMS="${PN} ${PN}-test ${PN}-scripts ${PN}-store-test
-		   src/store/clsql/${PN}-clsql
-		   src/store/elephant/${PN}-elephant
-		   src/store/memory/${PN}-memory
-		   src/store/prevalence/${PN}-prevalence
-		   examples/${PN}-clsql-demo/${PN}-clsql-demo
-		   examples/${PN}-demo/${PN}-demo
-		   examples/${PN}-elephant-demo/${PN}-elephant-demo"
+		src/store/clsql/${PN}-clsql
+		src/store/elephant/${PN}-elephant
+		src/store/memory/${PN}-memory
+		src/store/prevalence/${PN}-prevalence
+		examples/${PN}-clsql-demo/${PN}-clsql-demo
+		examples/${PN}-demo/${PN}-demo
+		examples/${PN}-elephant-demo/${PN}-elephant-demo"
 
 S="${WORKDIR}"/${MY_P}
 

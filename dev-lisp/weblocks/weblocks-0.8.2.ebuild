@@ -1,16 +1,16 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 inherit common-lisp-2
 
 DESCRIPTION="Weblocks is a continuations-based web framework written in Common Lisp."
-HOMEPAGE="http://common-lisp.net/project/cl-weblocks/"
+HOMEPAGE="http://weblocks-framework.info/"
 SRC_URI="http://common-lisp.net/~sionescu/files/${P}.tar.bz2"
 
 LICENSE="LLGPL-2.1"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~sparc ~x86"
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND="dev-lisp/closer-mop
@@ -35,13 +35,13 @@ RDEPEND="dev-lisp/closer-mop
 		dev-lisp/lift"
 
 CLSYSTEMS="${PN} ${PN}-test ${PN}-scripts ${PN}-store-test
-		   src/store/clsql/${PN}-clsql
-		   src/store/elephant/${PN}-elephant
-		   src/store/memory/${PN}-memory
-		   src/store/prevalence/${PN}-prevalence
-		   examples/${PN}-clsql-demo/${PN}-clsql-demo
-		   examples/${PN}-demo/${PN}-demo
-		   examples/${PN}-elephant-demo/${PN}-elephant-demo"
+		src/store/clsql/${PN}-clsql
+		src/store/elephant/${PN}-elephant
+		src/store/memory/${PN}-memory
+		src/store/prevalence/${PN}-prevalence
+		examples/${PN}-clsql-demo/${PN}-clsql-demo
+		examples/${PN}-demo/${PN}-demo
+		examples/${PN}-elephant-demo/${PN}-elephant-demo"
 
 src_install() {
 	dodir "${CLSOURCEROOT}"/${PN}/scripts
