@@ -1,12 +1,12 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 inherit common-lisp-2 eutils
 
 # binary-types moved to http://www.common-lisp.net/project/movitz recently
 
-DESCRIPTION="Binary-types is a Library for accessing binary files with fixed bit-length code-words."
+DESCRIPTION="Library for accessing binary files with fixed bit-length code-words."
 HOMEPAGE="http://www.cliki.net/Binary-types
 		http://www.cs.uit.no/~frodef/sw/binary-types/"
 SRC_URI="http://www.cs.uit.no/~frodef/sw/${PN}/${P}.tar.gz"
