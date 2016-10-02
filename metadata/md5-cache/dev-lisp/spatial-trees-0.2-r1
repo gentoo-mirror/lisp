@@ -1,5 +1,5 @@
 DEFINED_PHASES=install
-DESCRIPTION=A Common Lisp library providing access to dynamic index structures for spatially-extended data.
+DESCRIPTION=A set of dynamic index data structures for spatially-extended data
 EAPI=0
 HOMEPAGE=http://www.cliki.net/spatial-trees
 KEYWORDS=~amd64 ~ppc ~sparc ~x86
@@ -10,4 +10,4 @@ SLOT=0
 SRC_URI=http://ftp.linux.org.uk/pub/lisp/cclan/spatial-trees-0.2.tar.gz
 _eclass_exported_funcs=src_install:-
 _eclasses_=common-lisp-2	d3c4d1f1a7df32a406b6352a87a6639d	eutils	b83a2420b796f7c6eff682679d08fe25	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	6198c04daba0e1307bd844df7d37f423
-_md5_=dae44a86634e9645ce0db4c9ecf1acb8
+_md5_=35522454b2820dab5c87abe2341e5077
