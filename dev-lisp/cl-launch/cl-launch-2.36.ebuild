@@ -1,14 +1,14 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 inherit common-lisp-2
 
-DESCRIPTION="cl-launch is a utility to make Common Lisp software easily invokable from the command-line."
+DESCRIPTION="Utility to make your Lisp software easily invokable from the shell command-line"
 HOMEPAGE="http://www.cliki.net/cl-launch"
 SRC_URI="http://common-lisp.net/project/xcvb/${PN}/${PN}_${PV}.tar.gz"
 SRC_URI="http://common-lisp.net/~sionescu/files/${PN}_${PV}.tar.gz"
-LICENSE="No-Problem-Bugroff LLGPL-2.1"
+LICENSE="LLGPL-2.1"
 
 SLOT="0"
 KEYWORDS="~amd64 ~ppc ~sparc ~x86"
