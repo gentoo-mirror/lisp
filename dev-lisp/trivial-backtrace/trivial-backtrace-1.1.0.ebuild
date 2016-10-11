@@ -8,7 +8,7 @@ inherit common-lisp-3 eutils
 
 DESCRIPTION="A simple library for generating a backtrace portably."
 HOMEPAGE="http://common-lisp.net/project/trivial-backtrace"
-SRC_URI="http://dev.gentoo.org/~nimiux/dev-lisp/${PN}/${P}.tar.gz"
+SRC_URI="mirror://gentoo/${P}.tar.gz"
 
 LICENSE="MIT BSD"
 SLOT="0"
