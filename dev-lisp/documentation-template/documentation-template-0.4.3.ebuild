@@ -8,7 +8,7 @@ inherit common-lisp-3
 
 DESCRIPTION="Prepare HTML documentation for Common Lisp libraries"
 HOMEPAGE="http://weitz.de/documentation-template/"
-SRC_URI="http://dev.gentoo.org/~nimiux/dev-lisp/${PN}/${P}.tar.gz"
+SRC_URI="mirror://gentoo/${P}.tar.gz"
 
 LICENSE="BSD-2"
 SLOT="0"
