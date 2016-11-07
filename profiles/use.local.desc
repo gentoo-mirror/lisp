@@ -32,7 +32,6 @@ dev-scheme/bigloo:text - Library for dealing with text (e.g. BibTeX parser)
 dev-scheme/bigloo:threads - Enable thread support; requires dev-libs/boehm-gc with threads support
 dev-scheme/bigloo:web - Library for web programming (e.g. XML, CGI parsers). Needed for dev-scheme/hop
 dev-scheme/gambit:gbootstrap - Rebuild some C sources
-dev-scheme/gambit:noopts - Disable upstream's optimizations
 dev-scheme/guile:debug-freelist - Include garbage collector freelist debugging code
 dev-scheme/guile:debug-malloc - Include malloc debugging code
 dev-scheme/guile:deprecated - Enable deprecated features
