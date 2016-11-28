@@ -2,12 +2,11 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
-inherit common-lisp-2 eutils
+inherit common-lisp-3
 
 DESCRIPTION="Common Lisp implementation of the Blowfish encryption algorithm."
-HOMEPAGE="http://packages.debian.org/unstable/devel/cl-blowfish
-		http://members.optusnet.com.au/apicard/"
-SRC_URI="mirror://debian/pool/main/c/cl-${PN}/cl-${PN}_${PV}.orig.tar.gz"
+HOMEPAGE="http://members.optusnet.com.au/apicard/"
+SRC_URI="mirror://gentoo/${P}.tar.gz"
 
 LICENSE="LLGPL-2.1"
 SLOT="0"
@@ -16,4 +15,9 @@ IUSE=""
 
 RDEPEND="!dev-lisp/cl-${PN}"
 
-S="${WORKDIR}"/cl-${P}
+S="${WORKDIR}"/${PN}
+
+src_install() {
+	common-lisp-install-asdf
+	common-lisp-install-sources *.lisp
+}
