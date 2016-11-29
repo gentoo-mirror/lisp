@@ -275,6 +275,7 @@ dev-lisp/sb-readline 0.1: Implementation of GNU Readline support for SBCL
 dev-lisp/sbcl 1.1.6-r3 1.1.7 1.2.6: Steel Bank Common Lisp (SBCL) is an implementation of ANSI Common Lisp
 dev-lisp/series 2.2.11: Common Lisp extension for general iteration
 dev-lisp/skippy 1.3.7: A graphics library that reads and writes GIF files. It is pure Common Lisp. It supports normal GIFs and animated GIFs.
+dev-lisp/smackjack 9999: An Ajax Common Lisp Library using parenscript and hunchentoot
 dev-lisp/spatial-trees 0.2-r1: A set of dynamic index data structures for spatially-extended data
 dev-lisp/split-sequence 1.0 1.1 1.2: Functions to partition a Common Lisp sequence into multiple result sequences
 dev-lisp/telnetlib 20080103: A CommonLisp port from Python's telnetlib library.
