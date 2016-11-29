@@ -20,10 +20,3 @@ RDEPEND="dev-lisp/alexandria
 	dev-lisp/cl-json
 	dev-lisp/parenscript
 	dev-lisp/cl-containers"
-
-#src_install() {
-#	common-lisp-install-sources -t all *.lisp LICENCE
-#	common-lisp-install-asdf
-#	dodoc README AUTHORS
-#	use doc && doinfo doc/${PN}.info && dohtml doc/${PN}.html && dodoc doc/${PN}.pdf
-#}
