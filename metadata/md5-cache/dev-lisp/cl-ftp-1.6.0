@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install
+DESCRIPTION=FTP Client Functionality for Common Lisp
+EAPI=6
+HOMEPAGE=http://code.kepibu.org/cl-ftp/ http://www.cliki.net/CL-FTP
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=MIT
+PDEPEND=virtual/commonlisp
+RDEPEND=dev-lisp/split-sequence dev-lisp/usocket
+RESTRICT=mirror
+SLOT=0
+SRC_URI=https://github.com/pinterface/cl-ftp/archive/VERSION_1.6.0.tar.gz -> cl-ftp-1.6.0.tar.gz
+_eclass_exported_funcs=src_compile:common-lisp-3 src_install:common-lisp-3
+_eclasses_=common-lisp-3	588da98647bfa3e0e017547c17761050	eutils	b83a2420b796f7c6eff682679d08fe25	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783
+_md5_=4f075d62c139c35322d4195e2648a386
