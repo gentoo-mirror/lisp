@@ -2,12 +2,15 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
-EAPI=4
-inherit common-lisp-3 eutils
+EAPI=6
+
+inherit common-lisp-3
+
+MY_PN="Postmodern"
 
 DESCRIPTION="A Common Lisp library for interacting with PostgreSQL databases."
 HOMEPAGE="http://marijnhaverbeke.nl/postmodern/"
-SRC_URI="http://marijnhaverbeke.nl/${PN}/${P}.tgz"
+SRC_URI="https://github.com/marijnh/${MY_PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="ZLIB"
 SLOT="0"
@@ -24,8 +27,10 @@ RDEPEND="dev-lisp/md5
 
 CLSYSTEMS="cl-postgres postmodern simple-date s-sql"
 
+S="${WORKDIR}/${MY_PN}-${PV}"
+
 src_install() {
 	common-lisp-install-sources ${CLSYSTEMS}
 	common-lisp-install-asdf
-	dohtml doc/*
+	dodoc doc/*
 }
