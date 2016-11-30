@@ -1,12 +1,12 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 inherit common-lisp-2
 
 MY_P=${PN}_${PV}
 
-DESCRIPTION="CL-CONT is a code walker that implements delimited continuations in Common Lisp."
+DESCRIPTION="A code walker that implements delimited continuations in Common Lisp."
 HOMEPAGE="http://common-lisp.net/project/cl-cont/"
 SRC_URI="http://common-lisp.net/project/${PN}/releases/${MY_P}.tar.gz"
 
