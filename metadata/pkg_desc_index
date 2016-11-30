@@ -160,7 +160,7 @@ dev-lisp/eos 9999: Eos is a drop-in replacement for the FiveAM Test Framework
 dev-lisp/esrap 9999: ESRAP -- a packrat parser generator for Common Lisp
 dev-lisp/external-program 0: A portable Common Lisp library for running external programs from within Lisp
 dev-lisp/f-underscore 0.1: F-underscore is a tiny library of functional programming utils.
-dev-lisp/fare-csv 20090925: FARE-CSV is a Common Lisp library for importing CSV (Common Separated Values) formatted text files
+dev-lisp/fare-csv 9999 20090925: FARE-CSV is a Common Lisp library for importing CSV (Common Separated Values) formatted text files
 dev-lisp/fare-matcher 20090115: A library of macros and functions by Fare Rideau.
 dev-lisp/fare-utils 9999 20090115: A collection of small utilities by Fare Rideau.
 dev-lisp/filtered-functions 0.10: .

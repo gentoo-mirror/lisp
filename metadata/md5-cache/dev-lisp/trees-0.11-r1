@@ -10,4 +10,4 @@ SLOT=0
 SRC_URI=http://method-combination.net/lisp/files/trees_0.11.tar.gz
 _eclass_exported_funcs=src_compile:common-lisp-3 src_install:common-lisp-3
 _eclasses_=common-lisp-3	588da98647bfa3e0e017547c17761050	eutils	b83a2420b796f7c6eff682679d08fe25	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783
-_md5_=ae3bcf0b81f0cf5b15b9976fae0d10af
+_md5_=525d54508295cefbbc17d53cd50cd858
