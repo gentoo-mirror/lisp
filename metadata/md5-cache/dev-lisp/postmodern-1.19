@@ -1,6 +1,6 @@
 DEFINED_PHASES=compile install
 DESCRIPTION=A Common Lisp library for interacting with PostgreSQL databases.
-EAPI=4
+EAPI=6
 HOMEPAGE=http://marijnhaverbeke.nl/postmodern/
 KEYWORDS=~amd64 ~ppc ~sparc ~x86
 LICENSE=ZLIB
@@ -8,7 +8,7 @@ PDEPEND=virtual/commonlisp
 RDEPEND=dev-lisp/md5 dev-lisp/usocket dev-lisp/ieee-floats dev-lisp/trivial-utf8 dev-lisp/closer-mop dev-lisp/bordeaux-threads dev-lisp/fiveam
 RESTRICT=mirror
 SLOT=0
-SRC_URI=http://marijnhaverbeke.nl/postmodern/postmodern-1.18.tgz
+SRC_URI=https://github.com/marijnh/Postmodern/archive/v1.19.tar.gz -> postmodern-1.19.tar.gz
 _eclass_exported_funcs=src_compile:common-lisp-3 src_install:-
 _eclasses_=common-lisp-3	588da98647bfa3e0e017547c17761050	eutils	b83a2420b796f7c6eff682679d08fe25	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783
-_md5_=fcf7cf9f7f4b88b8c323a6381d783dc3
+_md5_=e2434cd284135a47c849714900243a7a
