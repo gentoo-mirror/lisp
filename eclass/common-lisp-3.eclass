@@ -118,7 +118,7 @@ common-lisp-install-sources() {
 		elif [[ -d ${path} ]] ; then
 			common-lisp-install-sources -t ${ftype} $(find "${path}" -type f)
 		else
-			die "${path} it neither a regular file nor a directory"
+			die "${path} is neither a regular file nor a directory"
 		fi
 	done
 }
