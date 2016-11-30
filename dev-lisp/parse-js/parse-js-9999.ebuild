@@ -11,7 +11,7 @@ HOMEPAGE="http://marijnhaverbeke.nl/parse-js/"
 EGIT_REPO_URI="http://marijnhaverbeke.nl//git/${PN}"
 
 LICENSE="ZLIB"
-SLOT=0
+SLOT="0"
 IUSE="doc"
 
 DEPEND=""
