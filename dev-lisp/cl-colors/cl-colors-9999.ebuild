@@ -1,18 +1,17 @@
-# Copyright 1999-2014 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
-EAPI=5
+EAPI=6
 
-inherit common-lisp-3 eutils git-2
+inherit common-lisp-3 git-r3
 
-DESCRIPTION="A simple package for different color representations in Common Lisp."
+DESCRIPTION="Simple color library for Common Lisp"
 HOMEPAGE="http://cliki.net/cl-colors"
 EGIT_REPO_URI="git://github.com/tpapp/${PN}.git"
 
-LICENSE="LLGPL-2.1"
+LICENSE="Boost-1.0"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
 RDEPEND="dev-lisp/alexandria
