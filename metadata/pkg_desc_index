@@ -202,7 +202,7 @@ dev-lisp/lispbuilder-sdl-gfx 0.7.0: Lisp Application Builder Interface to libSDL
 dev-lisp/lispbuilder-sdl-image 0.5.0: Lisp Application Builder Interface to libSDL
 dev-lisp/lispbuilder-sdl-ttf 0.3.0: Lisp Application Builder Interface to SDL_ttf
 dev-lisp/lml 2.5.7: Common Lisp package to provide a markup language for generation XHTML web pages
-dev-lisp/lml2 1.6.6-r1: A Common Lisp package for generating HTML and XHTML documents
+dev-lisp/lml2 1.6.6: LML2 is a package to generate HTML and XHTML from Common Lisp programs.
 dev-lisp/local-time 1.0.1_p20100617 1.0.5: LOCAL-TIME is a development library for manipulating date and time information.
 dev-lisp/log5 0.3.2: Log5 is a Common Lisp logging framework.
 dev-lisp/ltk 0.91 0.981: LTK is a Common Lisp binding for the Tk graphics toolkit
