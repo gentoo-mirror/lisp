@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=dev-vcs/darcs net-misc/rsync
+DESCRIPTION=A small library for doing UTF-8-based input and output.
+EAPI=6
+HOMEPAGE=http://common-lisp.net/project/trivial-utf-8/
+LICENSE=ZLIB
+PDEPEND=virtual/commonlisp
+RESTRICT=mirror
+SLOT=0
+_eclass_exported_funcs=src_unpack:darcs src_compile:common-lisp-3 src_install:-
+_eclasses_=common-lisp-3	935a84b9b3a5023518c70f5ec583850e	darcs	25bcb4c9bede09580ffa4891aa70234d	eutils	b83a2420b796f7c6eff682679d08fe25	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783
+_md5_=c443aafb28a8820c2310e3c9c1db1940
