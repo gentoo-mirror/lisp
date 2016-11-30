@@ -1,8 +1,8 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
-EAPI="2"
+EAPI=2
 
 MY_PV=${PV/./-}
 MY_P=HyperSpec-${MY_PV}
@@ -20,7 +20,7 @@ IUSE=""
 S="${WORKDIR}"
 
 src_install() {
-	dodir /usr/share/doc/${PF} || die
-	cp -a HyperSpec* ${D}/usr/share/doc/${PF} || die
-	dosym /usr/share/doc/${PF} /usr/share/doc/${PN} || die
+	dodir "/usr/share/doc/${PF}" || die
+	cp -a HyperSpec* "${D}/usr/share/doc/${PF}" || die
+	dosym "/usr/share/doc/${PF} /usr/share/doc/${PN}" || die
 }
