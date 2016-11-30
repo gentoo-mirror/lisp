@@ -1,10 +1,10 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 inherit common-lisp-2 eutils
 
-DESCRIPTION="CL-containers adds trees, sparse arrays, and other useful containers to CommonLisp."
+DESCRIPTION="Adds trees, sparse arrays, and other useful containers to CommonLisp."
 HOMEPAGE="http://common-lisp.net/project/cl-containers/"
 SRC_URI="http://common-lisp.net/~sionescu/files/${P}.tar.bz2"
 
