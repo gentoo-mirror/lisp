@@ -98,7 +98,7 @@ dev-lisp/cl-launch 2.36 3.22.1 4.0.3 4.1.4.1: Utility to make your Lisp software
 dev-lisp/cl-libxml2 0.3.4: High-level Common Lisp wrapper around libxml2 and libxslt.
 dev-lisp/cl-log 0.1.0 1.0.1: CL-LOG is a general purpose logging utility.
 dev-lisp/cl-m4 9999: Common Lisp re-implementation of GNU M4
-dev-lisp/cl-markdown 0.10.5: CL-Markdown is a Common Lisp rewrite of Markdown.
+dev-lisp/cl-markdown 0.10.5 0.10.6: CL-Markdown is a Common Lisp rewrite of Markdown.
 dev-lisp/cl-mathstats 0.8.2-r1: Common Lisp math and statistics routines.
 dev-lisp/cl-mime 0.5.3: A Common Lisp library for constructing and manipulating MIME objects.
 dev-lisp/cl-mongo 9999: Lisp interface to mongo db
