@@ -72,8 +72,8 @@ dev-lisp/cl-cairo2 9999: Comon Lisp bindings for the Cairo API
 dev-lisp/cl-charms 9999: A set of CFFI bindings for libcurses (ncurses), a GUI-like console
 dev-lisp/cl-closure-template 0.1.9 0.2.1: Common Lisp implementation of Closure Template from Google
 dev-lisp/cl-colors 9999: Simple color library for Common Lisp
-dev-lisp/cl-cont 0.3.7: CL-CONT is a code walker that implements delimited continuations in Common Lisp.
-dev-lisp/cl-containers 0.11.5: CL-containers adds trees, sparse arrays, and other useful containers to CommonLisp.
+dev-lisp/cl-cont 0.3.7: A code walker that implements delimited continuations in Common Lisp.
+dev-lisp/cl-containers 0.11.5: Adds trees, sparse arrays, and other useful containers to CommonLisp.
 dev-lisp/cl-css 9999: Non-validating, inline CSS generator for Common Lisp
 dev-lisp/cl-darcs 0.2_p20080314-r1: CL-DARCS is a client for the darcs version control system written in Common Lisp.
 dev-lisp/cl-difflib 0.1 9999: CL-DIFFLIB is a Lisp library for computing differences between sequences.
@@ -116,7 +116,7 @@ dev-lisp/cl-sasl 0.3 0.3.1: SASL client implementation for Common Lisp
 dev-lisp/cl-sendmail 0.5.5: A Common Lisp library for sending email.
 dev-lisp/cl-smtp 20100505.1: A Common Lisp client library for the SMTP network protocol.
 dev-lisp/cl-sqlite 0.1.5 0.2: A CommonLisp interface to the SQLite embedded relational database engine.
-dev-lisp/cl-store 0.8.10 9999: CL-STORE is a Common Lisp library for serializing and deserializing Common Lisp objects.
+dev-lisp/cl-store 0.8.10 9999: Library for serializing and deserializing Common Lisp objects from streams.
 dev-lisp/cl-typegraph 9999: Stand-alone Common Lisp graph typesetting system
 dev-lisp/cl-typesetting 9999: CL-TYPESETTING is a complete typesetting system written in Common Lisp.
 dev-lisp/cl-unicode 0.1.1 0.1.4 0.1.5: Provides Common Lisp implementations with knowledge about Unicode characters.

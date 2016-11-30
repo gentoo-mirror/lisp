@@ -1,15 +1,14 @@
 DEFINED_PHASES=compile install prepare unpack
-DEPEND=sys-apps/texinfo doc? ( virtual/texi2dvi ) dev-vcs/git
-DESCRIPTION=CL-STORE is a Common Lisp library for serializing and deserializing Common Lisp objects.
-EAPI=5
+DEPEND=sys-apps/texinfo doc? ( virtual/texi2dvi ) >=dev-vcs/git-1.8.2.1
+DESCRIPTION=Library for serializing and deserializing Common Lisp objects from streams.
+EAPI=6
 HOMEPAGE=http://common-lisp.net/project/cl-store
 IUSE=doc
-KEYWORDS=~amd64 ~ppc ~sparc ~x86
 LICENSE=MIT
 PDEPEND=virtual/commonlisp
 RDEPEND=dev-lisp/rt
 RESTRICT=mirror
 SLOT=0
-_eclass_exported_funcs=src_unpack:git-2 src_prepare:- src_compile:- src_install:-
-_eclasses_=common-lisp-3	935a84b9b3a5023518c70f5ec583850e	eutils	b83a2420b796f7c6eff682679d08fe25	git-2	7af5d170bfc02983b4bcd3167dc5edd4	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783
-_md5_=2f033d69def5a80f45cfac543e5254c1
+_eclass_exported_funcs=src_unpack:git-r3 src_prepare:- src_compile:- src_install:-
+_eclasses_=common-lisp-3	935a84b9b3a5023518c70f5ec583850e	eutils	b83a2420b796f7c6eff682679d08fe25	git-r3	e928b84a9f6f1d9076d1d27687876dc6	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783
+_md5_=78436f6c91563d4a3ba4df30e5e6a556
