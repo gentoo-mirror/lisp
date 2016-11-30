@@ -1,13 +1,14 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 EAPI=2
+
 inherit common-lisp-2 eutils
 
 MY_P=${PN}_${PV}
 
-DESCRIPTION="CL-STORE is a Common Lisp library for serializing and deserializing Common Lisp objects."
+DESCRIPTION="Library for serializing and deserializing Common Lisp objects from streams."
 HOMEPAGE="http://common-lisp.net/project/cl-store/"
 SRC_URI="http://common-lisp.net/project/${PN}/files/${MY_P}.tgz"
 
