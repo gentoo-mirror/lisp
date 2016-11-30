@@ -51,6 +51,7 @@ dev-lisp/araneida 0.90.1-r1: Araneida is small, highly-portable web server for C
 dev-lisp/archive 0.8-r1 0.9: Archive is Nathan Froyd's tar/cpio package for CL.
 dev-lisp/arnesi 9999 20080413-r1: arnesi is a Common Lisp utility suite used with bese projects
 dev-lisp/asdf 2.33-r3 3.1.7: ASDF is Another System Definition Facility for Common Lisp
+dev-lisp/asdf-flv 2.1: ASDF extension to provide support for file-local variables
 dev-lisp/asdf-system-connections 0.8.4 9999: Provides auto-loading of systems that only make sense when other systems are loaded.
 dev-lisp/aspectl 0.74: Library that provides aspect-oriented extensions for Common Lisp/CLOS.
 dev-lisp/atdoc 20081130: Atdoc generates documentation for Common Lisp packages.
@@ -164,7 +165,7 @@ dev-lisp/fare-csv 9999 20090925: FARE-CSV is a Common Lisp library for importing
 dev-lisp/fare-matcher 20090115: A library of macros and functions by Fare Rideau.
 dev-lisp/fare-utils 9999 20090115: A collection of small utilities by Fare Rideau.
 dev-lisp/filtered-functions 0.10: .
-dev-lisp/fiveam 0.1_p20080320 1.0 1.1 1.2: FiveAM is a simple regression testing framework designed for Common Lisp.
+dev-lisp/fiveam 0.1_p20080320 1.0 1.1 1.2 1.3: FiveAM is a simple regression testing framework designed for Common Lisp.
 dev-lisp/flexi-streams 1.0.7 1.0.15: Flexible bivalent streams for Common Lisp
 dev-lisp/flexichain 1.5.1: Flexichain is an API for editable sequences.
 dev-lisp/fsbv 9999: CFFI Add-on: Foreign Structures By Value.
@@ -183,7 +184,7 @@ dev-lisp/hunchentoot-cgi 0.2: CGI handlers for Hunchentoot.
 dev-lisp/hunchentoot-vhost 0.2: Virtual hosting with Hunchentoot.
 dev-lisp/hyperobject 2.11.0: Hyperobject is a Common Lisp library for representing objects.
 dev-lisp/hyperspec 7.0-r2: Common Lisp ANSI-standard Hyperspec
-dev-lisp/ieee-floats 0.1_pre20080922: A library for converting values of type FLOAT and DOUBLE-FLOAT to and from their binary representation as defined by IEEE 754.
+dev-lisp/ieee-floats 0.1_pre20080922 9999: Common Lisp IEEE-754 float en- and decoding
 dev-lisp/iolib 0.7.3: A Comm Lisp I/O library.
 dev-lisp/irc-logger 0.9.4: A Common Lisp IRC logger library
 dev-lisp/ironclad 0.28 0.33.0: Ironclad is a Common Lisp library similar to OpenSSL, GNU TLS or Crypto++
