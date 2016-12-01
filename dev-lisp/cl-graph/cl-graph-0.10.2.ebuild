@@ -1,17 +1,21 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
-inherit common-lisp-2 eutils
+EAPI=6
+
+inherit common-lisp-3 eutils
+
+MY_PV="version-${PV}"
 
 DESCRIPTION="Graph manipulation utilities for Common Lisp."
 HOMEPAGE="http://common-lisp.net/project/cl-graph"
-SRC_URI="http://common-lisp.net/~sionescu/files/${P}.tar.bz2"
+SRC_URI="https://github.com/gwkkwg/${PN}/archive/${MY_PV}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~ppc ~sparc ~x86"
-IUSE=""
+IUSE="doc"
 
 RDEPEND="dev-lisp/asdf-system-connections
 		>=dev-lisp/metatilities-base-0.6.0
@@ -22,13 +26,16 @@ RDEPEND="dev-lisp/asdf-system-connections
 
 CLSYSTEMS="${PN} ${PN}-test"
 
-src_unpack() {
-	unpack ${A} && cd "${S}"
-	epatch "${FILESDIR}"/fix-deps.patch
+S="${WORKDIR}/${PN}-${MY_PV}"
+
+src_prepare() {
+	epatch "${FILESDIR}"/${P}-fix-deps.patch
+	default
 }
 
 src_install() {
-	common-lisp-install *.asd dev/{*.lisp,graphviz} unit-tests
-	common-lisp-symlink-asdf
+	common-lisp-install-sources dev/{*.lisp,graphviz} unit-tests
+	common-lisp-install-asdf
+	use doc && dodoc -r website
 	docinto examples && dodoc dev/examples/*
 }
