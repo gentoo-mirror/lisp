@@ -212,7 +212,7 @@ dev-lisp/mcclim 0.9.6-r3: McCLIM is a free software implementation of CLIM.
 dev-lisp/md5 1.8.5 2.0.1 2.0.3: A fast implementation of MD5 message-digests
 dev-lisp/mel-base 0.8.0-r1: A Common Lisp networking library for handling e-mail from Maildir, POP3, IMAP and SMTP
 dev-lisp/memoization 20060126: Memoization support to CMU Common Lisp
-dev-lisp/meta 0.1.2: A library of macros and functions by Fare Rideau.
+dev-lisp/meta 0.1.2 9999: A library of macros and functions by Fare Rideau.
 dev-lisp/metabang-bind 0.7.4 9999: Combines LET*, DESTRUCTURING-BIND and MULTIPLE-VALUE-BIND into a single form.
 dev-lisp/metacopy 0.2-r1: Flexible Common Lisp shallow/deep copy mechanism.
 dev-lisp/metatilities 0.6.18: Metatilities is metabang.com's set of core utilities.
