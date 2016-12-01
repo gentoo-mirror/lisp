@@ -1,8 +1,9 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 EAPI=3
+
 inherit common-lisp-3
 
 DESCRIPTION="LOCAL-TIME is a development library for manipulating date and time information."
