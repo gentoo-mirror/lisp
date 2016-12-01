@@ -1,14 +1,14 @@
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
-EAPI=5
+EAPI=6
 
-inherit common-lisp-3 git-2
+inherit common-lisp-3 git-r3
 
 DESCRIPTION="A set of CFFI bindings for libcurses (ncurses), a GUI-like console"
 HOMEPAGE="http://www.cliki.net/cl-charms"
-EGIT_REPO_URI="git://gitorious.org/cl-charms/cl-charms.git"
+EGIT_REPO_URI="https://gitorious.org/cl-charms/${PN}.git"
 
 LICENSE="MIT"
 SLOT="0"
@@ -21,4 +21,5 @@ DEPEND="dev-lisp/alexandria
 
 src_prepare() {
 	sed -i -e '/:unix/s/ncurses.so/ncurses.so.5/' "${S}/src/charms.lisp" || die
+	default
 }
