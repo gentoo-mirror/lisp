@@ -13,8 +13,7 @@ HOMEPAGE="https://www.lrde.epita.fr/~didier/software/lisp/misc.php#asdf-flv
 	http://www.cliki.net/asdf-flv"
 SRC_URI="https://github.com/didierverna/${PN}/archive/${MY_PV}.tar.gz -> ${P}.tar.gz"
 
-# LICENSE.invalid while looking for it
-LICENSE="GNU_All_Permissive"
+LICENSE="FSFAP"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
