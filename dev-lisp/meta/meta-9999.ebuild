@@ -2,17 +2,16 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
-inherit common-lisp-2
+EAPI=6
+
+inherit common-lisp-3 git-r3
 
 DESCRIPTION="A library of macros and functions by Fare Rideau."
 HOMEPAGE="http://www.cliki.net/meta"
-SRC_URI="http://fare.tunes.org/files/asdf-packages/${P}.tar.gz"
+EGIT_REPO_URI="https://gitlab.common-lisp.net/frideau/${PN}.git"
 
 LICENSE="BSD-2"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
 RDEPEND="!dev-lisp/cl-${PN}"
-
-S="${WORKDIR}"/${PN}
