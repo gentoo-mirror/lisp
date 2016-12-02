@@ -1,10 +1,10 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 inherit common-lisp-2
 
-DESCRIPTION="A Common Lisp Library for encoding and decoding strings in quoted-printable format."
+DESCRIPTION="Common Lisp Library for encoding and decoding strings in quoted-printable format."
 HOMEPAGE="http://www.cliki.net/cl-qprint/"
 SRC_URI="http://www.bobturf.org/software/${PN}/${P}.tar.gz"
 
