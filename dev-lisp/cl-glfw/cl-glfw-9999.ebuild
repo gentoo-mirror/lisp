@@ -1,10 +1,10 @@
-# Copyright 1999-2014 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
-EAPI=5
+EAPI=6
 
-inherit common-lisp-3 git-2
+inherit common-lisp-3 git-r3
 
 DESCRIPTION="Set of CFFI bindings for the GLFW OpenGL helper library"
 HOMEPAGE="http://www.cliki.net/cl-glfw"
@@ -21,6 +21,6 @@ RDEPEND="media-libs/ftgl
 src_install() {
 	common-lisp-install-sources lib
 	common-lisp-install-asdf
-	use doc && dodoc README && dohtml index.html
+	use doc && dodoc README index.html
 	use examples && doins -r examples
 }
