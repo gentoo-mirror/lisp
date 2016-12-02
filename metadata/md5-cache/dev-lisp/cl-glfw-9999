@@ -1,7 +1,7 @@
 DEFINED_PHASES=compile install unpack
-DEPEND=dev-vcs/git
+DEPEND=>=dev-vcs/git-1.8.2.1
 DESCRIPTION=Set of CFFI bindings for the GLFW OpenGL helper library
-EAPI=5
+EAPI=6
 HOMEPAGE=http://www.cliki.net/cl-glfw
 IUSE=doc examples
 KEYWORDS=~amd64 ~x86
@@ -10,6 +10,6 @@ PDEPEND=virtual/commonlisp
 RDEPEND=media-libs/ftgl media-libs/glfw
 RESTRICT=mirror
 SLOT=0
-_eclass_exported_funcs=src_unpack:git-2 src_compile:common-lisp-3 src_install:-
-_eclasses_=common-lisp-3	935a84b9b3a5023518c70f5ec583850e	eutils	b83a2420b796f7c6eff682679d08fe25	git-2	7af5d170bfc02983b4bcd3167dc5edd4	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783
-_md5_=eda04945e398cbeb4ad85fd59b6852f6
+_eclass_exported_funcs=src_unpack:git-r3 src_compile:common-lisp-3 src_install:-
+_eclasses_=common-lisp-3	935a84b9b3a5023518c70f5ec583850e	eutils	b83a2420b796f7c6eff682679d08fe25	git-r3	e928b84a9f6f1d9076d1d27687876dc6	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783
+_md5_=2e047d13eae218d6a5e8be24e4e84ebb
