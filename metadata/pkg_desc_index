@@ -86,7 +86,7 @@ dev-lisp/cl-graph 0.10.2: Graph manipulation utilities for Common Lisp.
 dev-lisp/cl-graphviz 0.1_pre20081112: Common Lisp CFFI-based interface to graphviz.
 dev-lisp/cl-gtk2 0.1.1-r1: A Common Lisp interface to Gtk+.
 dev-lisp/cl-heredoc 9999: Common Lisp reader heredoc dispatcher
-dev-lisp/cl-html-diff 0.1: A Common Lisp library for generating a human-readable diff of two HTML documents.
+dev-lisp/cl-html-diff 0.1: Common Lisp library for generating a human-readable diff of two HTML documents.
 dev-lisp/cl-html-parse 9999: A portable version of Franz's Opensource HTML Parser
 dev-lisp/cl-i18n 0.4: A gettext-style internationalization framework for Common Lisp
 dev-lisp/cl-interpol 0.2.1 0.2.2 0.2.3 0.2.5: String interpolation for Common Lisp similar to Perl or Unix shell scripts.
