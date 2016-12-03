@@ -10,4 +10,4 @@ SLOT=0
 SRC_URI=http://common-lisp.net/~sionescu/files/cl-mathstats-0.8.2.tar.bz2
 _eclass_exported_funcs=src_unpack:- src_install:-
 _eclasses_=common-lisp-2	d3c4d1f1a7df32a406b6352a87a6639d	eutils	b83a2420b796f7c6eff682679d08fe25	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783
-_md5_=876d80fa11f8437910ad363eee40f168
+_md5_=89345a5681aa37d94325347ffa9c72f8
