@@ -1,7 +1,7 @@
 DEFINED_PHASES=compile install unpack
-DEPEND=dev-vcs/git
+DEPEND=>=dev-vcs/git-1.8.2.1
 DESCRIPTION=Common Lisp re-implementation of GNU M4
-EAPI=5
+EAPI=6
 HOMEPAGE=http://www.cliki.net/cl-m4
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-3+
@@ -9,6 +9,6 @@ PDEPEND=virtual/commonlisp
 RDEPEND=dev-lisp/alexandria dev-lisp/cffi dev-lisp/cl-fad dev-lisp/cl-ppcre dev-lisp/external-program dev-lisp/graylex
 RESTRICT=mirror
 SLOT=0
-_eclass_exported_funcs=src_unpack:git-2 src_compile:common-lisp-3 src_install:common-lisp-3
-_eclasses_=common-lisp-3	935a84b9b3a5023518c70f5ec583850e	eutils	b83a2420b796f7c6eff682679d08fe25	git-2	7af5d170bfc02983b4bcd3167dc5edd4	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783
-_md5_=ef54d496179ef68e511e9983dec14ee9
+_eclass_exported_funcs=src_unpack:git-r3 src_compile:common-lisp-3 src_install:common-lisp-3
+_eclasses_=common-lisp-3	935a84b9b3a5023518c70f5ec583850e	eutils	b83a2420b796f7c6eff682679d08fe25	git-r3	e928b84a9f6f1d9076d1d27687876dc6	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783
+_md5_=e95282737138ce24cf299f97885b2761
