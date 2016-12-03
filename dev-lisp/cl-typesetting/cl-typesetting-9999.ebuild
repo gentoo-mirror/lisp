@@ -1,13 +1,14 @@
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
-EAPI=5
+EAPI=6
 
-inherit common-lisp-3 git-2
+inherit common-lisp-3 git-r3
 
 DESCRIPTION="CL-TYPESETTING is a complete typesetting system written in Common Lisp."
-HOMEPAGE="http://www.fractalconcept.com:8000/asp/cl-typesetting"
+HOMEPAGE="http://www.fractalconcept.com/asp/html/cl-typesetting.html
+	http://www.cliki.net/cl-typesetting"
 EGIT_REPO_URI="git://github.com/mbattyani/${PN}.git"
 
 LICENSE="BSD-2"
