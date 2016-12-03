@@ -1,10 +1,10 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 inherit common-lisp-2
 
-DESCRIPTION="A Common Lisp library for generating a human-readable diff of two HTML documents."
+DESCRIPTION="Common Lisp library for generating a human-readable diff of two HTML documents."
 HOMEPAGE="http://www.cliki.net/CL-HTML-DIFF"
 SRC_URI="http://lemonodor.com/code/${PN}_${PV}.tar.gz"
 
