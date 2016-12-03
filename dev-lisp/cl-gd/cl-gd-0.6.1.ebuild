@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
-EAPI=5
+EAPI=6
 
 inherit common-lisp-3 toolchain-funcs
 
@@ -26,6 +26,7 @@ RDEPEND="${DEPEND}
 CLSYSTEMS="${PN} ${PN}-test"
 
 src_prepare() {
+	default
 	# Cleanup uneeded file
 	rm "${S}"/test/.gitignore || die
 }
@@ -43,5 +44,5 @@ src_install() {
 	common-lisp-install-asdf
 
 	dodoc CHANGELOG README
-	dohtml doc/*
+	dodoc doc/*
 }
