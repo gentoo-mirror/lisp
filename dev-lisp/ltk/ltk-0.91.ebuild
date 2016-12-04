@@ -1,10 +1,10 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 inherit common-lisp-2 eutils
 
-DESCRIPTION="LTK is a Common Lisp binding for the Tk graphics toolkit which does not require any Tk knowledge for its usage."
+DESCRIPTION="LTK is a Common Lisp binding for the Tk graphics toolkit"
 HOMEPAGE="http://www.peter-herth.de/ltk/"
 SRC_URI="http://www.peter-herth.de/ltk/${P}.tgz"
 
