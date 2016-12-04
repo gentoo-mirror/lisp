@@ -1,8 +1,9 @@
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 EAPI=5
+
 inherit eutils glo-utils toolchain-funcs
 
 MY_PV=${PV:0:3}
