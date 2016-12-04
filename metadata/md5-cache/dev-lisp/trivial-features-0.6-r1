@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install
-DESCRIPTION=TRIVIAL-FEATURES ensures consistent *FEATURES* across multiple Common Lisp implementations.
+DESCRIPTION=Ensures consistent *FEATURES* across multiple Common Lisp implementations.
 EAPI=2
 HOMEPAGE=http://www.cliki.net/trivial-features
 KEYWORDS=~amd64 ~ppc ~sparc ~x86
@@ -10,4 +10,4 @@ SLOT=0
 SRC_URI=http://common-lisp.net/~loliveira/tarballs/trivial-features/trivial-features_0.6.tar.gz
 _eclass_exported_funcs=src_compile:common-lisp-3 src_install:-
 _eclasses_=common-lisp-3	935a84b9b3a5023518c70f5ec583850e	eutils	b83a2420b796f7c6eff682679d08fe25	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783
-_md5_=527d0d7e85ee599d2843a522326c4886
+_md5_=036768d500bdc6fef268d88f68d10ecd

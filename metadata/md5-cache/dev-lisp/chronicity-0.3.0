@@ -1,13 +1,14 @@
 DEFINED_PHASES=compile install
-DESCRIPTION=Ensures consistent *FEATURES* across multiple Common Lisp implementations.
-EAPI=5
-HOMEPAGE=http://www.cliki.net/trivial-features
+DESCRIPTION=A natural language date and time parser for Common Lisp.
+EAPI=6
+HOMEPAGE=http://chaitanyagupta.com/lisp/chronicity/
 KEYWORDS=~amd64 ~ppc ~sparc ~x86
-LICENSE=MIT
+LICENSE=BSD
 PDEPEND=virtual/commonlisp
+RDEPEND=>=dev-lisp/cl-ppcre-2.0.0 dev-lisp/cl-interpol >=dev-lisp/local-time-1.0.1
 RESTRICT=mirror
 SLOT=0
-SRC_URI=https://github.com/trivial-features/trivial-features/archive/v0.7.tar.gz -> trivial-features-0.7.tar.gz
+SRC_URI=https://github.com/chaitanyagupta/chronicity/archive/v0.3.0.tar.gz -> chronicity-0.3.0.tar.gz
 _eclass_exported_funcs=src_compile:common-lisp-3 src_install:-
 _eclasses_=common-lisp-3	935a84b9b3a5023518c70f5ec583850e	eutils	b83a2420b796f7c6eff682679d08fe25	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783
-_md5_=bbaf3e74fad1a3d2b7477beda415baed
+_md5_=4af3e921fc3fc30f7278a2728ada1584
