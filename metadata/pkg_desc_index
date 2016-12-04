@@ -53,7 +53,7 @@ dev-lisp/arnesi 9999 20080413-r1: arnesi is a Common Lisp utility suite used wit
 dev-lisp/asdf 2.33-r3 3.1.7: ASDF is Another System Definition Facility for Common Lisp
 dev-lisp/asdf-flv 2.1: ASDF extension to provide support for file-local variables
 dev-lisp/asdf-system-connections 0.8.4 9999: Provides auto-loading of systems that only make sense when other systems are loaded.
-dev-lisp/aspectl 0.74: Library that provides aspect-oriented extensions for Common Lisp/CLOS.
+dev-lisp/aspectl 0.74 0.75.0: A CLOS extension for Aspect-oriented Programming.
 dev-lisp/atdoc 20081130: Atdoc generates documentation for Common Lisp packages.
 dev-lisp/babel 0.3.0 0.4.0 0.5.0: A charset encoding/decoding library.
 dev-lisp/binary-types 0.90: Library for accessing binary files with fixed bit-length code-words.
