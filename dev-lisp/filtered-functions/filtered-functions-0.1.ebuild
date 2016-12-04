@@ -8,7 +8,7 @@ inherit common-lisp-2
 
 MY_P=${PN}_${PV}
 
-DESCRIPTION="."
+DESCRIPTION="A CLOS extension for filtered dispatch. Requires Closer to MOP."
 HOMEPAGE="http://common-lisp.net/project/closer/filtered.html"
 SRC_URI="http://common-lisp.net/project/closer/ftp/${MY_P}.tar.gz -> ${P}.tar.gz"
 
