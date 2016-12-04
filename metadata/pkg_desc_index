@@ -238,7 +238,7 @@ dev-lisp/parse-number 1.2 1.3 1.5: Common Lisp library for parsing any number st
 dev-lisp/picolisp 3.1.6 16.6: A fast and lightweight Lisp interpreter
 dev-lisp/plexippus-xpath 20081207: An XPath implementation written in Common Lisp.
 dev-lisp/png 0.4-r2: Common Lisp package to read and write png image files
-dev-lisp/portable-threads 0.9.6_p20071120: GBBopen project's portable-thread code.
+dev-lisp/portable-threads 0.9.6_p20071120 2.3_p20161031: Portable threads API for Common Lisp (from GBBopen project)
 dev-lisp/postmodern 1.18-r1 1.19: A Common Lisp library for interacting with PostgreSQL databases.
 dev-lisp/ptester 2.1.2-r1: A Common Lisp test harness based on the Franz, Inc. tester module.
 dev-lisp/puri 1.5.5: Portable URI library for Common Lisp based on the Franz, Inc. :net.uri module.
