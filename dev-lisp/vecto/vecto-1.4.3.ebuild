@@ -1,10 +1,10 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 inherit common-lisp-2
 
-DESCRIPTION="Vecto is a simplified interface to the powerful CL-VECTORS vector rasterization library."
+DESCRIPTION="Simplified interface to the powerful CL-VECTORS vector rasterization library."
 HOMEPAGE="http://www.xach.com/lisp/vecto/"
 SRC_URI="http://common-lisp.net/~sionescu/files/${P}.tar.bz2"
 
