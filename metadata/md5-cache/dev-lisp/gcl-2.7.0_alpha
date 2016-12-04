@@ -10,4 +10,4 @@ RESTRICT=strip
 SLOT=0
 SRC_URI=mirror://debian/pool/main/g/gclcvs/gclcvs_2.7.0-84.1.tar.gz
 _eclass_exported_funcs=src_compile:- src_install:-
-_md5_=5391d49d2117d22358cee6ee3e6c65b6
+_md5_=bfc7e67713805492f966f521348e39dd
