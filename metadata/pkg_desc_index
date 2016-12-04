@@ -302,7 +302,7 @@ dev-lisp/uiop 2.33 3.1.7: UIOP is a portability layer spun off ASDF3
 dev-lisp/url-rewrite 0.1.1-r1: Rewrite (X)HTML attributes with Common Lisp.
 dev-lisp/usocket 0.5.3 0.6.0.1 0.6.1 0.6.3.2 0.6.4.1: Usocket is a universal socket library for Common Lisp.
 dev-lisp/uuid 20080727: A Common Lisp library for generation of UUIDs as described by RFC 4122.
-dev-lisp/vecto 1.4.3: Vecto is a simplified interface to the powerful CL-VECTORS vector rasterization library.
+dev-lisp/vecto 1.4.3: Simplified interface to the powerful CL-VECTORS vector rasterization library.
 dev-lisp/weblocks 0.8.2 9999: Weblocks is a continuations-based web framework written in Common Lisp.
 dev-lisp/wiki-parser 0.1.2: Wiki parser framework
 dev-lisp/xlunit 0.6.3: XLUnit is a Test Framework based on XPTest and JUnit.
