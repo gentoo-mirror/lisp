@@ -2,13 +2,15 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
+EAPI=5
+
 inherit common-lisp-2
 
-MY_P=${PN}_${PV:0:3}
+MY_P=${PN}_${PV}
 
-DESCRIPTION="."
+DESCRIPTION="A CLOS extension for filtered dispatch. Requires Closer to MOP."
 HOMEPAGE="http://common-lisp.net/project/closer/filtered.html"
-SRC_URI="http://common-lisp.net/project/closer/ftp/${MY_P}.tar.gz"
+SRC_URI="http://common-lisp.net/project/closer/ftp/${MY_P}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -18,8 +20,3 @@ IUSE=""
 RDEPEND="dev-lisp/closer-mop"
 
 S="${WORKDIR}"/${MY_P}
-
-src_install() {
-	common-lisp-install *.{lisp,asd} test/*.lisp
-	common-lisp-symlink-asdf
-}
