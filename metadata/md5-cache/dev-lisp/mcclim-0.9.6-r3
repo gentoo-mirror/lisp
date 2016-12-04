@@ -12,4 +12,4 @@ SLOT=0
 SRC_URI=http://common-lisp.net/project/mcclim/downloads/mcclim-0.9.6.tar.gz
 _eclass_exported_funcs=pkg_postrm:- pkg_postinst:- src_unpack:- src_compile:- src_install:-
 _eclasses_=common-lisp-2	d3c4d1f1a7df32a406b6352a87a6639d	elisp-common	9f56c4e9bf1282dbfc2a5a09e1124e74	eutils	b83a2420b796f7c6eff682679d08fe25	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783
-_md5_=d6cf280ab33c659c5b5dd45443d720de
+_md5_=2417f752a0e1a0eb0e5a1aad7b7dbe95

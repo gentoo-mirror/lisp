@@ -12,4 +12,4 @@ SLOT=0
 SRC_URI=http://common-lisp.net/project/cmucl/downloads/release/20d/cmucl-src-20d.tar.bz2 http://common-lisp.net/project/cmucl/downloads/release/20d/cmucl-20d-x86-linux.tar.bz2
 _eclass_exported_funcs=src_prepare:- src_compile:- src_install:-
 _eclasses_=eutils	b83a2420b796f7c6eff682679d08fe25	glo-utils	af1ebfb8909104d688e4c5a001a48a6d	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783
-_md5_=94c89184f0d1a186c5b1acddfb6d520b
+_md5_=8ca6ffca44d94876c333f11f6f7973ab
