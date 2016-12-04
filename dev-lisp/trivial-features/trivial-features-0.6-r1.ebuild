@@ -1,13 +1,14 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 EAPI=2
+
 inherit common-lisp-3 eutils
 
 MY_P=${PN}_${PV}
 
-DESCRIPTION="TRIVIAL-FEATURES ensures consistent *FEATURES* across multiple Common Lisp implementations."
+DESCRIPTION="Ensures consistent *FEATURES* across multiple Common Lisp implementations."
 HOMEPAGE="http://www.cliki.net/trivial-features"
 SRC_URI="http://common-lisp.net/~loliveira/tarballs/${PN}/${MY_P}.tar.gz"
 
