@@ -1,14 +1,13 @@
 DEFINED_PHASES=compile install unpack
-DEPEND=dev-lisp/eos dev-vcs/git
-DESCRIPTION=Makes it easy to specify implementation (or feature) dependent files as part of an ASDF system
-EAPI=5
+DEPEND=dev-lisp/eos >=dev-vcs/git-1.8.2.1
+DESCRIPTION=Makes easy to specify implementation dependent files as part of an ASDF system
+EAPI=6
 HOMEPAGE=https://github.com/nikodemus/madeira-port
-KEYWORDS=~amd64 ~x86
 LICENSE=MIT
 PDEPEND=virtual/commonlisp
 RDEPEND=dev-lisp/eos
 RESTRICT=mirror
 SLOT=0
-_eclass_exported_funcs=src_unpack:git-2 src_compile:common-lisp-3 src_install:common-lisp-3
-_eclasses_=common-lisp-3	935a84b9b3a5023518c70f5ec583850e	eutils	b83a2420b796f7c6eff682679d08fe25	git-2	7af5d170bfc02983b4bcd3167dc5edd4	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783
-_md5_=8319245deec2df816aee4f267574619a
+_eclass_exported_funcs=src_unpack:git-r3 src_compile:common-lisp-3 src_install:common-lisp-3
+_eclasses_=common-lisp-3	935a84b9b3a5023518c70f5ec583850e	eutils	b83a2420b796f7c6eff682679d08fe25	git-r3	e928b84a9f6f1d9076d1d27687876dc6	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783
+_md5_=b73b23633870ed2eefd8d5825e6297d7
