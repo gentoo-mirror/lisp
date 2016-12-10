@@ -10,4 +10,4 @@ SLOT=0
 SRC_URI=http://common-lisp.net/~sionescu/files/clawk-20060313.tar.bz2
 _eclass_exported_funcs=src_install:common-lisp-2
 _eclasses_=common-lisp-2	d3c4d1f1a7df32a406b6352a87a6639d	eutils	b83a2420b796f7c6eff682679d08fe25	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783
-_md5_=4681cddae21846da0d4c776bad876a83
+_md5_=31073be477100c6b87721048e01f8887
