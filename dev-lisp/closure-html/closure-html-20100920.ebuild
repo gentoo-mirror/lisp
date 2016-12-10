@@ -1,8 +1,9 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 EAPI=3
+
 inherit common-lisp-3
 
 MY_PV=${PV:0:4}-${PV:4:2}-${PV:6:2}
