@@ -1,12 +1,12 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 inherit common-lisp-2 eutils
 
 MY_P=${PN}_${PV:0:3}-${PV:4}
 
-DESCRIPTION="A Common Lisp networking library for handling e-mail from Maildir, POP3, IMAP and SMTP"
+DESCRIPTION="Common Lisp networking library for handling e-mail from Maildir, POP3, IMAP and SMTP"
 HOMEPAGE="http://common-lisp.net/project/mel-base/"
 SRC_URI="http://common-lisp.net/project/mel-base/release/${MY_P}.tar.gz"
 

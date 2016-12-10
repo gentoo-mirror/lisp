@@ -1,10 +1,10 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 inherit common-lisp-2
 
-DESCRIPTION="S-XML-RPC is an implementation of XML-RPC in Common Lisp for both client and server."
+DESCRIPTION="Implementation of XML-RPC in Common Lisp for both client and server."
 HOMEPAGE="http://www.common-lisp.net/project/s-xml-rpc/"
 SRC_URI="mirror://gentoo/${P}.tar.gz
 		http://common-lisp.net/project/${PN}/S-XML-RPC.html"
