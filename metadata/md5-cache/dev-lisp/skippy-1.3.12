@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install
+DESCRIPTION=Common Lis GIF library
+EAPI=6
+HOMEPAGE=http://www.xach.com/lisp/skippy/
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=BSD-2
+PDEPEND=virtual/commonlisp
+RESTRICT=mirror
+SLOT=0
+SRC_URI=https://github.com/xach/skippy/archive/release-1.3.12.tar.gz -> skippy-1.3.12.tar.gz
+_eclass_exported_funcs=src_compile:common-lisp-3 src_install:common-lisp-3
+_eclasses_=common-lisp-3	935a84b9b3a5023518c70f5ec583850e	eutils	b83a2420b796f7c6eff682679d08fe25	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783
+_md5_=e7c644b6ddefacbb768ce8610d99db66
