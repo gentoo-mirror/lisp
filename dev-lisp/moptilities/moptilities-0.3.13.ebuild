@@ -1,10 +1,10 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 inherit common-lisp-2 eutils
 
-DESCRIPTION="Moptilities provides a compatibility layer for minor MOP implmentation differences."
+DESCRIPTION="Provides a compatibility layer for minor MOP implmentation differences."
 HOMEPAGE="http://common-lisp.net/project/moptilities/"
 SRC_URI="http://common-lisp.net/~sionescu/files/${P}.tar.bz2"
 
