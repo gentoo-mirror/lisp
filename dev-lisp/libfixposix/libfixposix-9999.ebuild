@@ -12,7 +12,7 @@ EGIT_REPO_URI="git://github.com/sionescu/${PN}"
 
 LICENSE="Boost-1.0"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
 src_prepare() {
