@@ -2,19 +2,21 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
-EAPI=5
+EAPI=6
 
 inherit eutils multilib toolchain-funcs
 
 MY_PN=ccl
 MY_P=${MY_PN}-${PV}
 
-DESCRIPTION="ClozureCL is a Common Lisp implementation, derived from Digitool's MCL product"
+DESCRIPTION="Common Lisp implementation, derived from Digitool's MCL product"
 HOMEPAGE="http://ccl.clozure.com/"
-SRC_URI="x86?   ( ftp://ftp.clozure.com/pub/release/${PV}/${MY_P}-linuxx86.tar.gz )
-		 amd64? ( ftp://ftp.clozure.com/pub/release/${PV}/${MY_P}-linuxx86.tar.gz )"
-		 # ppc?   ( ftp://ftp.clozure.com/pub/release/${PV}/${MY_P}-linuxppc.tar.gz )
-		 # ppc64? ( ftp://ftp.clozure.com/pub/release/${PV}/${MY_P}-linuxppc.tar.gz )"
+SRC_URI="
+	x86?   ( ftp://ftp.clozure.com/pub/release/${PV}/${MY_P}-linuxx86.tar.gz )
+	amd64? ( ftp://ftp.clozure.com/pub/release/${PV}/${MY_P}-linuxx86.tar.gz )
+	doc? ( http://ccl.clozure.com/docs/ccl.html )"
+	# ppc?   ( ftp://ftp.clozure.com/pub/release/${PV}/${MY_P}-linuxppc.tar.gz )
+	# ppc64? ( ftp://ftp.clozure.com/pub/release/${PV}/${MY_P}-linuxppc.tar.gz )"
 
 LICENSE="LLGPL-2.1"
 SLOT="0"
@@ -22,14 +24,12 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="doc"
 
-CDEPEND=">=dev-lisp/asdf-2.33-r3:="
-DEPEND="${CDEPEND}
-		!dev-lisp/openmcl
-		dev-vcs/subversion"
-RDEPEND="${CDEPEND}"
+RDEPEND=">=dev-lisp/asdf-2.33-r3:="
+DEPEND="${RDEPEND}
+		!dev-lisp/openmcl"
 
 S="${WORKDIR}"/${MY_PN}
-
+PATCHES=( "${FILESDIR}"/ccl-format.patch )
 ENVD="${T}"/50ccl
 
 src_configure() {
@@ -45,22 +45,21 @@ src_configure() {
 }
 
 src_prepare() {
-	svn upgrade >/dev/null || die
+	default
 	cp /usr/share/common-lisp/source/asdf/build/asdf.lisp tools/ || die
 }
 
 src_compile() {
-	emake -C lisp-kernel/${CCL_KERNEL} clean || die
-	emake -C lisp-kernel/${CCL_KERNEL} all CC="$(tc-getCC)" || die
+	emake -C lisp-kernel/${CCL_KERNEL} clean
+	emake -C lisp-kernel/${CCL_KERNEL} all CC="$(tc-getCC)"
 
 	unset CCL_DEFAULT_DIRECTORY
 	./${CCL_RUNTIME} -n -b -Q -e '(ccl:rebuild-ccl :full t)' -e '(ccl:quit)' || die "Compilation failed"
 
 	# remove non-owner write permissions on the full-image
-	chmod go-w ${CCL_RUNTIME}{,.image}
+	chmod go-w ${CCL_RUNTIME}{,.image} || die
 
-	# remove .svn directories
-	find "${S}" -type d -name .svn -exec rm -rf {} ';' &>/dev/null
+	esvn_clean
 }
 
 src_install() {
@@ -77,10 +76,10 @@ src_install() {
 
 	# until we figure out which source files are necessary for runtime
 	# optional features and which aren't, we install all sources
-	find . -type f -name '*fsl' -delete
-	rm -f lisp-kernel/${CCL_KERNEL}/*.o
+	find . -type f -name '*fsl' -delete || die
+	rm -f lisp-kernel/${CCL_KERNEL}/*.o || die
 	cp -a compiler level-0 level-1 lib library \
-		lisp-kernel scripts tools xdump \
+		lisp-kernel scripts tools xdump contrib \
 		"${D}"/${install_dir} || die
 	cp -a ${CCL_HEADERS} "${D}"/${install_dir} || die
 
@@ -90,6 +89,6 @@ src_install() {
 	doenvd "${ENVD}"
 
 	dodoc doc/release-notes.txt
-	dohtml doc/ccl-documentation.html
-	use doc && dohtml -r examples
+	use doc && dodoc "${DISTDIR}"/ccl.html
+	use doc && dodoc -r examples
 }
