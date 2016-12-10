@@ -11,4 +11,4 @@ SLOT=0
 SRC_URI=http://lispbuilder.googlecode.com/files/lispbuilder-sdl-gfx-0.7.0.tgz
 _eclass_exported_funcs=src_prepare:- src_compile:common-lisp-3 src_install:-
 _eclasses_=common-lisp-3	935a84b9b3a5023518c70f5ec583850e	eutils	b83a2420b796f7c6eff682679d08fe25	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783
-_md5_=d10f1cf373e4c2bb0ecdb9ddaf7be710
+_md5_=de24fab36586af868b125d6abbf69153

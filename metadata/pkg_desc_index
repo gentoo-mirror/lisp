@@ -219,7 +219,7 @@ dev-lisp/metatilities 0.6.18: Metatilities is metabang.com's set of core utiliti
 dev-lisp/metatilities-base 0.6.6-r1: metabang.com's base set of core utilities.
 dev-lisp/montezuma 0.1.3: A fast, useful text search engine library written entirely in pure Common Lisp.
 dev-lisp/mop-features 0.50 1.0.0: Provides a way to check what features a Common Lisp implementation supports.
-dev-lisp/moptilities 0.3.13: Moptilities provides a compatibility layer for minor MOP implmentation differences.
+dev-lisp/moptilities 0.3.13: Provides a compatibility layer for minor MOP implmentation differences.
 dev-lisp/named-readtables 0.9-r1 9999: A Common Lisp library that provides a namespace for readtables.
 dev-lisp/net-telent-date 0.4.1-r1: Common Lisp utilities for printing and parsing date
 dev-lisp/newlisp 10.1.6 10.5.4 10.6.2 10.7.0: newLISP - a new generation of Lisp!

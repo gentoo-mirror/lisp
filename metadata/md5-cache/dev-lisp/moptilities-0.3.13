@@ -1,5 +1,5 @@
 DEFINED_PHASES=install
-DESCRIPTION=Moptilities provides a compatibility layer for minor MOP implmentation differences.
+DESCRIPTION=Provides a compatibility layer for minor MOP implmentation differences.
 EAPI=0
 HOMEPAGE=http://common-lisp.net/project/moptilities/
 KEYWORDS=~amd64 ~ppc ~sparc ~x86
@@ -10,4 +10,4 @@ SLOT=0
 SRC_URI=http://common-lisp.net/~sionescu/files/moptilities-0.3.13.tar.bz2
 _eclass_exported_funcs=src_install:-
 _eclasses_=common-lisp-2	d3c4d1f1a7df32a406b6352a87a6639d	eutils	b83a2420b796f7c6eff682679d08fe25	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783
-_md5_=a8553aea956165ba5cdbedd9b42fb862
+_md5_=855899507a36feb09c480bb25505af36
