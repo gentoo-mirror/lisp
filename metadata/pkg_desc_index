@@ -136,7 +136,7 @@ dev-lisp/clisp 2.49-r6 2.50_pre20130414: A portable, bytecode-compiled implement
 dev-lisp/clon 0.0.2: A Common Lisp task scheduler library similar to Unix cron.
 dev-lisp/closer-mop 0.61 1.0.0: Closer to MOP is a Common Lisp Metaobject Protocol compatibility layer.
 dev-lisp/closure 20080602: Closure is a web browser implemented in Common Lisp, implemented using CLIM.
-dev-lisp/closure-common 20081130: closure-common is a helper library for Closure and Closure XML implementing runes.
+dev-lisp/closure-common 20081130: Helper library for Closure and Closure XML implementing runes.
 dev-lisp/closure-html 20100920: An HTML parser written in Common Lisp.
 dev-lisp/clozurecl 1.9-r3 1.11-r1: Common Lisp implementation, derived from Digitool's MCL product
 dev-lisp/clsql 5.4.0 6.4.0 6.4.1: A multi-platform SQL interface for Common Lisp
