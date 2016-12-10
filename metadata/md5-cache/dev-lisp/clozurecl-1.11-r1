@@ -1,14 +1,14 @@
 DEFINED_PHASES=compile configure install prepare
-DEPEND=>=dev-lisp/asdf-2.33-r3:= !dev-lisp/openmcl dev-vcs/subversion
-DESCRIPTION=ClozureCL is a Common Lisp implementation, derived from Digitool's MCL product
-EAPI=5
+DEPEND=>=dev-lisp/asdf-2.33-r3:= !dev-lisp/openmcl
+DESCRIPTION=Common Lisp implementation, derived from Digitool's MCL product
+EAPI=6
 HOMEPAGE=http://ccl.clozure.com/
 IUSE=doc
 KEYWORDS=~amd64 ~x86
 LICENSE=LLGPL-2.1
 RDEPEND=>=dev-lisp/asdf-2.33-r3:=
 SLOT=0
-SRC_URI=x86? ( ftp://ftp.clozure.com/pub/release/1.9/ccl-1.9-linuxx86.tar.gz ) amd64? ( ftp://ftp.clozure.com/pub/release/1.9/ccl-1.9-linuxx86.tar.gz )
+SRC_URI=x86? ( ftp://ftp.clozure.com/pub/release/1.11/ccl-1.11-linuxx86.tar.gz ) amd64? ( ftp://ftp.clozure.com/pub/release/1.11/ccl-1.11-linuxx86.tar.gz ) doc? ( http://ccl.clozure.com/docs/ccl.html )
 _eclass_exported_funcs=src_prepare:- src_configure:- src_compile:- src_install:-
 _eclasses_=eutils	b83a2420b796f7c6eff682679d08fe25	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783
-_md5_=914113287e2cb82bfca1b3acd9b0bc18
+_md5_=090a35e1c3e38b5a16a81d9398625d43
