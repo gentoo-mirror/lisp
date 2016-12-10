@@ -2,7 +2,8 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
-EAPI="2"
+EAPI=2
+
 inherit common-lisp-2 git-2
 
 DESCRIPTION="Common Lisp interface to the GNU Scientific Library."
