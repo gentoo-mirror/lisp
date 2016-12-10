@@ -186,7 +186,7 @@ dev-lisp/hyperobject 2.11.0: Hyperobject is a Common Lisp library for representi
 dev-lisp/hyperspec 7.0-r2: Common Lisp ANSI-standard Hyperspec
 dev-lisp/idna 0.2.2: Common Lisp IDNA encding / decoding functions
 dev-lisp/ieee-floats 0.1_pre20080922 9999: Common Lisp IEEE-754 float en- and decoding
-dev-lisp/iolib 0.7.3: A Comm Lisp I/O library.
+dev-lisp/iolib 0.7.3 0.8.0: A Comm Lisp I/O library.
 dev-lisp/irc-logger 0.9.4: A Common Lisp IRC logger library
 dev-lisp/ironclad 0.28 0.33.0: Ironclad is a Common Lisp library similar to OpenSSL, GNU TLS or Crypto++
 dev-lisp/iterate 1.4.3 9999: ITERATE is a lispy and extensible replacement for the Common Lisp LOOP macro
