@@ -184,6 +184,7 @@ dev-lisp/hunchentoot-cgi 0.2: CGI handlers for Hunchentoot.
 dev-lisp/hunchentoot-vhost 0.2: Virtual hosting with Hunchentoot.
 dev-lisp/hyperobject 2.11.0: Hyperobject is a Common Lisp library for representing objects.
 dev-lisp/hyperspec 7.0-r2: Common Lisp ANSI-standard Hyperspec
+dev-lisp/idna 0.2.2: Common Lisp IDNA encding / decoding functions
 dev-lisp/ieee-floats 0.1_pre20080922 9999: Common Lisp IEEE-754 float en- and decoding
 dev-lisp/iolib 0.7.3: A Comm Lisp I/O library.
 dev-lisp/irc-logger 0.9.4: A Common Lisp IRC logger library
@@ -210,7 +211,7 @@ dev-lisp/lw-compat 0.23 1.0.0: A few utility functions from the LispWorks librar
 dev-lisp/madeira-port 9999: Makes easy to specify implementation dependent files as part of an ASDF system
 dev-lisp/mcclim 0.9.6-r3: McCLIM is a free software implementation of CLIM.
 dev-lisp/md5 1.8.5 2.0.1 2.0.3: A fast implementation of MD5 message-digests
-dev-lisp/mel-base 0.8.0-r1: A Common Lisp networking library for handling e-mail from Maildir, POP3, IMAP and SMTP
+dev-lisp/mel-base 0.8.0-r1: Common Lisp networking library for handling e-mail from Maildir, POP3, IMAP and SMTP
 dev-lisp/memoization 20060126: Memoization support to CMU Common Lisp
 dev-lisp/meta 0.1.2 9999: A library of macros and functions by Fare Rideau.
 dev-lisp/metabang-bind 0.7.4 9999: Combines LET*, DESTRUCTURING-BIND and MULTIPLE-VALUE-BIND into a single form.
@@ -267,7 +268,7 @@ dev-lisp/rt 20040621-r4: Common Lisp regression tester from MIT
 dev-lisp/s-base64 20060521: A Common Lisp implementation of Bse64 Encoding/Decoding.
 dev-lisp/s-sysdeps 9999 20080228: A Common Lisp abstraction layer over platform dependent functionality.
 dev-lisp/s-xml 20060521-r1: S-XML is a simple XML parser implemented in Common Lisp.
-dev-lisp/s-xml-rpc 20060521: S-XML-RPC is an implementation of XML-RPC in Common Lisp for both client and server.
+dev-lisp/s-xml-rpc 20060521: Implementation of XML-RPC in Common Lisp for both client and server.
 dev-lisp/salza 0.7.4: Salza is a Common Lisp Library that provides an FFI-less interface to the ZLIB and DEFLATE compressed data formats.
 dev-lisp/salza-png 1.0.1: Salza-png is a graphics library that writes PNG files using Salza.
 dev-lisp/salza2 2.0.7 2.0.8 2.0.9: Library for creating compressed data in the ZLIB, DEFLATE, or GZIP data formats
