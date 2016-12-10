@@ -195,6 +195,7 @@ dev-lisp/kr 2.3.4: KR is a highly flexible and dynamic prototype-based object sy
 dev-lisp/let-plus 9999: LET+: destructuring extension of LET*
 dev-lisp/levenshtein 1.0: Implementation of the Levenshtein Distance.
 dev-lisp/lexer 20060301: Lexical-analyzer-generator package for Common Lisp
+dev-lisp/libfixposix 9999: Thin wrapper over POSIX syscalls
 dev-lisp/lift 1.7.0 9999: LIFT is yet another LIsp Framework for Testing
 dev-lisp/linedit 0.15.12-r1 0.17.0 9999: Linedit is a readline-style library written in Common Lisp.
 dev-lisp/lisp-unit 0.9.5 1.0.0 9999: A Common Lisp library for unit testing.
