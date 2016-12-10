@@ -2,9 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
-EAPI=5
+EAPI=6
 
-inherit common-lisp-3 git-2
+inherit common-lisp-3 git-r3 eutils
 
 DESCRIPTION="A collection of public domain utilities."
 HOMEPAGE="http://common-lisp.net/project/alexandria/"
@@ -17,20 +17,18 @@ IUSE="doc"
 DEPEND="doc? ( sys-apps/texinfo )"
 RDEPEND=""
 
-builddoc() {
-	if use doc ; then
-		cd doc || die
-		emake
-	fi
+src_prepare() {
+	default
+	epatch "${FILESDIR}/${PN}-fix-docstrings.patch"
 }
 
 src_compile() {
-	use doc && builddoc
+	use doc && emake -C doc
 }
 
 src_install() {
 	common-lisp-install-sources -t all *.lisp LICENCE
 	common-lisp-install-asdf
 	dodoc README AUTHORS
-	use doc && doinfo doc/${PN}.info && dohtml doc/${PN}.html && dodoc doc/${PN}.pdf
+	use doc && doinfo doc/${PN}.info && dodoc doc/{"${PN}.html","${PN}.pdf"}
 }
