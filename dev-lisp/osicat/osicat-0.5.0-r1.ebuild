@@ -1,4 +1,4 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -6,7 +6,7 @@ inherit common-lisp-2 eutils
 
 MY_P="${PN}_${PV}"
 
-DESCRIPTION="${PN} is a lightweight operating system interface for Common Lisp on Unix-platforms."
+DESCRIPTION="Lightweight operating system interface for Common Lisp on Unix-platforms."
 HOMEPAGE="http://www.common-lisp.net/project/osicat/"
 SRC_URI="http://common-lisp.net/project/${PN}/files/${MY_P}.tar.gz"
 
