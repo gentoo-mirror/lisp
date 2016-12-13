@@ -2,9 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
-EAPI=5
+EAPI=6
 
-inherit common-lisp-3 git-2
+inherit common-lisp-3 git-r3
 
 DESCRIPTION="CL-DIFFLIB is a Lisp library for computing differences between sequences."
 HOMEPAGE="http://www.cliki.net/CL-DIFFLIB"
