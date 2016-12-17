@@ -184,7 +184,7 @@ dev-lisp/hunchentoot-auth 0.2: HTTP authentication with Hunchentoot.
 dev-lisp/hunchentoot-cgi 0.2: CGI handlers for Hunchentoot.
 dev-lisp/hunchentoot-vhost 0.2: Virtual hosting with Hunchentoot.
 dev-lisp/hyperobject 2.11.0: Hyperobject is a Common Lisp library for representing objects.
-dev-lisp/hyperspec 7.0-r2: Common Lisp ANSI-standard Hyperspec
+dev-lisp/hyperspec 7.0-r1: Common Lisp ANSI-standard Hyperspec
 dev-lisp/idna 0.2.2: Common Lisp IDNA encding / decoding functions
 dev-lisp/ieee-floats 0.1_pre20080922 9999: Common Lisp IEEE-754 float en- and decoding
 dev-lisp/iolib 0.7.3 0.8.0: A Comm Lisp I/O library.
