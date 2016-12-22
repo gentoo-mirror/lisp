@@ -112,7 +112,7 @@ dev-lisp/cl-prevalence 3.5 9999 20070329: CL-PREVALENCE is an implementation of 
 dev-lisp/cl-qprint 0.2.1: Common Lisp Library for encoding and decoding strings in quoted-printable format.
 dev-lisp/cl-recaptcha 1.0: Straightforward Common Lisp recaptcha.com interconnection
 dev-lisp/cl-routes 0.2.4 0.2.5: Common Lisp re-implementation of the Rails routes system for mapping URLs.
-dev-lisp/cl-sasl 0.3 0.3.1: SASL client implementation for Common Lisp
+dev-lisp/cl-sasl 0.3 0.3.1 0.3.2: SASL client implementation for Common Lisp
 dev-lisp/cl-sendmail 0.5.5: A Common Lisp library for sending email.
 dev-lisp/cl-smtp 20100505.1: A Common Lisp client library for the SMTP network protocol.
 dev-lisp/cl-sqlite 0.1.5 0.2: A CommonLisp interface to the SQLite embedded relational database engine.
