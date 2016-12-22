@@ -20,7 +20,7 @@ RDEPEND=">=dev-lisp/bordeaux-threads-0.7.0
 	>=dev-lisp/chunga-1.1.1
 	>=dev-lisp/cl-base64-3.3.0
 	>=dev-lisp/cl-fad-0.6.3
-	>=dev-lisp/cl-plus-ssl-20081104
+	dev-lisp/cl-plus-ssl
 	>=dev-lisp/cl-ppcre-2.0.0
 	>=dev-lisp/cl-who-0.11.1
 	>=dev-lisp/drakma-1.0.0
