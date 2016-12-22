@@ -199,7 +199,7 @@ dev-lisp/lexer 20060301: Lexical-analyzer-generator package for Common Lisp
 dev-lisp/libfixposix 9999: Thin wrapper over POSIX syscalls
 dev-lisp/lift 1.7.0 9999: LIFT is yet another LIsp Framework for Testing
 dev-lisp/linedit 0.15.12-r1 0.17.0 9999: Linedit is a readline-style library written in Common Lisp.
-dev-lisp/lisp-unit 0.9.5 1.0.0 9999: A Common Lisp library for unit testing.
+dev-lisp/lisp-unit 0.9.5 1.0.0 1.0.1 9999: A Common Lisp library for unit testing.
 dev-lisp/lispbuilder-sdl 0.9.8.1-r1: Lisp Application Builder Interface to libSDL
 dev-lisp/lispbuilder-sdl-gfx 0.7.0: Lisp Application Builder Interface to libSDL
 dev-lisp/lispbuilder-sdl-image 0.5.0: Lisp Application Builder Interface to libSDL
