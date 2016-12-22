@@ -1,0 +1,16 @@
+DEFINED_PHASES=compile install
+DEPEND=doc? ( dev-lisp/sbcl virtual/texi2dvi )
+DESCRIPTION=The Common Foreign Function Interface (CFFI)
+EAPI=6
+HOMEPAGE=http://common-lisp.net/project/cffi/
+IUSE=doc
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=MIT
+PDEPEND=virtual/commonlisp
+RDEPEND=!dev-lisp/cl-cffi dev-lisp/alexandria dev-lisp/babel dev-lisp/trivial-features
+RESTRICT=mirror
+SLOT=0
+SRC_URI=http://common-lisp.net/project/cffi/releases/cffi_0.18.0.tar.gz -> cffi.tar.gz
+_eclass_exported_funcs=src_compile:- src_install:-
+_eclasses_=common-lisp-3	935a84b9b3a5023518c70f5ec583850e	eutils	b83a2420b796f7c6eff682679d08fe25	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783
+_md5_=c0ffc32c0a16fadac55f13efb485d8f5
