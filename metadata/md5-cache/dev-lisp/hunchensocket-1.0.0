@@ -10,5 +10,5 @@ RESTRICT=mirror
 SLOT=0
 SRC_URI=https://github.com/joaotavora/hunchensocket/archive/1.0.0.tar.gz -> hunchensocket-1.0.0.tar.gz
 _eclass_exported_funcs=src_compile:common-lisp-3 src_install:-
-_eclasses_=common-lisp-3	935a84b9b3a5023518c70f5ec583850e	eutils	b83a2420b796f7c6eff682679d08fe25	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783
+_eclasses_=common-lisp-3	935a84b9b3a5023518c70f5ec583850e	eutils	017377e73405d964cd0137088cddb9c3	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783
 _md5_=ea6ae1d0d24d862b5a8ed32dbb6157cf
