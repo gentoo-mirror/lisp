@@ -50,7 +50,7 @@ dev-lisp/anaphora 0.9.4: Anaphoric macro collection for Common Lisp
 dev-lisp/araneida 0.90.1-r1: Araneida is small, highly-portable web server for Common Lisp
 dev-lisp/archive 0.8-r1 0.9: Archive is Nathan Froyd's tar/cpio package for CL.
 dev-lisp/arnesi 9999 20080413-r1: arnesi is a Common Lisp utility suite used with bese projects
-dev-lisp/asdf 2.33-r3 3.1.7: ASDF is Another System Definition Facility for Common Lisp
+dev-lisp/asdf 2.33-r3 3.1.7 3.2.0: ASDF is Another System Definition Facility for Common Lisp
 dev-lisp/asdf-flv 2.1: ASDF extension to provide support for file-local variables
 dev-lisp/asdf-system-connections 0.8.4 9999: Provides auto-loading of systems that only make sense when other systems are loaded.
 dev-lisp/aspectl 0.74 0.75.0: A CLOS extension for Aspect-oriented Programming.
@@ -301,7 +301,7 @@ dev-lisp/trivial-timeout 0.1.5: Simple library for asynchronous timeouts.
 dev-lisp/trivial-timers 0.0: Trivial timer library.
 dev-lisp/trivial-utf8 0.1_pre20080922 9999: A small library for doing UTF-8-based input and output.
 dev-lisp/uffi 2.0.0 2.1.2: Portable FFI library for Common Lisp.
-dev-lisp/uiop 2.33 3.1.7: UIOP is a portability layer spun off ASDF3
+dev-lisp/uiop 2.33 3.1.7 3.2.0: UIOP is a portability layer spun off ASDF3
 dev-lisp/url-rewrite 0.1.1-r1: Rewrite (X)HTML attributes with Common Lisp.
 dev-lisp/usocket 0.5.3 0.6.0.1 0.6.1 0.6.3.2 0.6.4.1: Usocket is a universal socket library for Common Lisp.
 dev-lisp/uuid 20080727: A Common Lisp library for generation of UUIDs as described by RFC 4122.
