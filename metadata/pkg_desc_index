@@ -208,7 +208,7 @@ dev-lisp/lml 2.5.7: Common Lisp package to provide a markup language for generat
 dev-lisp/lml2 1.6.6: LML2 is a package to generate HTML and XHTML from Common Lisp programs.
 dev-lisp/local-time 1.0.1_p20100617 1.0.5 1.0.6: LOCAL-TIME is a development library for manipulating date and time information.
 dev-lisp/log5 0.3.2: Log5 is a Common Lisp logging framework.
-dev-lisp/ltk 0.91 0.981: LTK is a Common Lisp binding for the Tk graphics toolkit
+dev-lisp/ltk 0.981: LTK is a Common Lisp binding for the Tk graphics toolkit
 dev-lisp/lw-compat 0.23 1.0.0: A few utility functions from the LispWorks library
 dev-lisp/madeira-port 9999: Makes easy to specify implementation dependent files as part of an ASDF system
 dev-lisp/mcclim 0.9.6-r3: McCLIM is a free software implementation of CLIM.
