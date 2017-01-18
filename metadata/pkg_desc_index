@@ -166,7 +166,7 @@ dev-lisp/fare-matcher 20090115: A library of macros and functions by Fare Rideau
 dev-lisp/fare-utils 9999 20090115: A collection of small utilities by Fare Rideau.
 dev-lisp/filtered-functions 0.1 0.2.0: A CLOS extension for filtered dispatch. Requires Closer to MOP.
 dev-lisp/fiveam 0.1_p20080320 1.0 1.1 1.2 1.3: FiveAM is a simple regression testing framework designed for Common Lisp.
-dev-lisp/flexi-streams 1.0.7 1.0.15 1.0.16: Flexible bivalent streams for Common Lisp
+dev-lisp/flexi-streams 1.0.15 1.0.16: Flexible bivalent streams for Common Lisp
 dev-lisp/flexichain 1.5.1: Flexichain is an API for editable sequences.
 dev-lisp/fsbv 9999: CFFI Add-on: Foreign Structures By Value.
 dev-lisp/garbage-pools 0.1.2: garbage-pools is a Common Lisp re-implementation of the APR Pools for resource management.
