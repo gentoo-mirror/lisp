@@ -10,5 +10,5 @@ RESTRICT=primaryuri
 SLOT=0
 SRC_URI=http://cleo.uwindsor.ca/cgi-bin/gentoo-eggs/utf8-3-200803181518.tar.gz
 _eclass_exported_funcs=src_unpack:eggs src_compile:eggs src_test:eggs src_install:eggs
-_eclasses_=eggs	790b6c231826dfb6e370bee731d5bdf9	eutils	017377e73405d964cd0137088cddb9c3	flag-o-matic	7366202dd55cb8f018f5d450d54e7749	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783
+_eclasses_=eggs	790b6c231826dfb6e370bee731d5bdf9	eutils	ea170b525f6a38a006be05c9d9429f13	flag-o-matic	7366202dd55cb8f018f5d450d54e7749	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783
 _md5_=5821d8e3f39aad13d32c6ee536860082
