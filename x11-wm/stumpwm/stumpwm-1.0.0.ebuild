@@ -23,11 +23,12 @@ RDEPEND="dev-lisp/cl-ppcre
 		!sbcl? ( !clisp? ( !ecl? ( >=dev-lisp/sbcl-1.0.32 ) ) )
 		!sbcl? ( !clisp? (  ecl? ( >=dev-lisp/ecls-10.4.1 ) ) )
 		!sbcl? (  clisp? ( >=dev-lisp/clisp-2.44[X,new-clx] ) )
-		emacs? ( virtual/emacs app-emacs/slime )
-		contrib? ( x11-wm/stumpwm-contrib )"
+		emacs? ( virtual/emacs app-emacs/slime )"
 DEPEND="${RDEPEND}
 		sys-apps/texinfo
 		doc? ( virtual/texi2dvi )"
+
+PDEPEND="contrib? ( x11-wm/stumpwm-contrib )"
 
 SITEFILE=70${PN}-gentoo.el
 CLPKGDIR="${CLSOURCEROOT}/${CLPACKAGE}"
