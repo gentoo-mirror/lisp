@@ -309,6 +309,7 @@ dev-lisp/uuid 20080727: A Common Lisp library for generation of UUIDs as describ
 dev-lisp/vecto 1.4.3 1.4.10: Simplified interface to the powerful CL-VECTORS vector rasterization library.
 dev-lisp/weblocks 0.8.2 9999: Weblocks is a continuations-based web framework written in Common Lisp.
 dev-lisp/wiki-parser 0.1.2: Wiki parser framework
+dev-lisp/xkeyboard 9999: X11 XKeyboard extension for common lisp x client (clx)
 dev-lisp/xlunit 0.6.3: XLUnit is a Test Framework based on XPTest and JUnit.
 dev-lisp/xmls 1.2 1.5 1.7.1: XMLS, a simple XML parser for Common Lisp.
 dev-lisp/xmls-tools 0.2.0: A library to supplement xmls which includes support for parsing with side effects, searching and validating XML.
