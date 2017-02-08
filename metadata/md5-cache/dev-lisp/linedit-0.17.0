@@ -1,6 +1,6 @@
 DEFINED_PHASES=compile install prepare
 DESCRIPTION=Linedit is a readline-style library written in Common Lisp.
-EAPI=5
+EAPI=6
 HOMEPAGE=http://www.common-lisp.net/project/linedit/
 KEYWORDS=~amd64 ~ppc ~sparc ~x86
 LICENSE=MIT
@@ -11,4 +11,4 @@ SLOT=0
 SRC_URI=http://common-lisp.net/project/linedit/files/linedit_0.17.0.tar.gz
 _eclass_exported_funcs=src_prepare:- src_compile:- src_install:-
 _eclasses_=common-lisp-3	935a84b9b3a5023518c70f5ec583850e	eutils	ea170b525f6a38a006be05c9d9429f13	flag-o-matic	7366202dd55cb8f018f5d450d54e7749	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783
-_md5_=baf44efe66a41e849bff95e2c539fd98
+_md5_=ed8cd806d67b56ae0ab8e563c057eb10

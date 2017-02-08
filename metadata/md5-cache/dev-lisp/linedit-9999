@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install prepare unpack
-DEPEND=dev-vcs/git
+DEPEND=>=dev-vcs/git-1.8.2.1
 DESCRIPTION=Linedit is a readline-style library written in Common Lisp.
-EAPI=5
+EAPI=6
 HOMEPAGE=http://www.common-lisp.net/project/linedit/
 LICENSE=MIT
 PDEPEND=virtual/commonlisp
 RDEPEND=!dev-lisp/cl-linedit dev-lisp/alexandria dev-lisp/madeira-port >=dev-lisp/osicat-0.6.0 dev-lisp/terminfo dev-lisp/uffi
 RESTRICT=mirror
 SLOT=0
-_eclass_exported_funcs=src_unpack:git-2 src_prepare:- src_compile:- src_install:-
-_eclasses_=common-lisp-3	935a84b9b3a5023518c70f5ec583850e	eutils	ea170b525f6a38a006be05c9d9429f13	flag-o-matic	7366202dd55cb8f018f5d450d54e7749	git-2	7af5d170bfc02983b4bcd3167dc5edd4	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783
-_md5_=0c658089fb1383ea7504875a1be1233e
+_eclass_exported_funcs=src_unpack:git-r3 src_prepare:- src_compile:- src_install:-
+_eclasses_=common-lisp-3	935a84b9b3a5023518c70f5ec583850e	eutils	ea170b525f6a38a006be05c9d9429f13	flag-o-matic	7366202dd55cb8f018f5d450d54e7749	git-r3	e928b84a9f6f1d9076d1d27687876dc6	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783
+_md5_=975957b02da7452873a33268947be14a
