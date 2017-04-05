@@ -1,6 +1,5 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
 EAPI=6
 
@@ -18,8 +17,8 @@ DEPEND="doc? ( sys-apps/texinfo )"
 RDEPEND=""
 
 src_prepare() {
-	default
-	epatch "${FILESDIR}/${PN}-fix-docstrings.patch"
+	eapply "${FILESDIR}/${PN}-fix-docstrings.patch"
+	eapply_user
 }
 
 src_compile() {
