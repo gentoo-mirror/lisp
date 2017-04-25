@@ -11,5 +11,5 @@ RESTRICT=mirror
 SLOT=0
 SRC_URI=http://common-lisp.net/project/cmucl/downloads/release/20d/cmucl-src-20d.tar.bz2 http://common-lisp.net/project/cmucl/downloads/release/20d/cmucl-20d-x86-linux.tar.bz2
 _eclass_exported_funcs=src_prepare:- src_compile:- src_install:-
-_eclasses_=epatch	8233751dc5105a6ae8fcd86ce2bb0247	epunt-cxx	f8073339d152f56626493f43d8ba4691	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	e7491451996e8b54c3caeb713285b0fb	glo-utils	af1ebfb8909104d688e4c5a001a48a6d	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	0236be304ee52e7f179ed2f337075515	toolchain-funcs	6eb35f81556258a4bc9182ad3dfd58ee
+_eclasses_=epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	9c113d6a64826c40154cad7be15d95ea	glo-utils	af1ebfb8909104d688e4c5a001a48a6d	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	0236be304ee52e7f179ed2f337075515	toolchain-funcs	6eb35f81556258a4bc9182ad3dfd58ee
 _md5_=8ca6ffca44d94876c333f11f6f7973ab
