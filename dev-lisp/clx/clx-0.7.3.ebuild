@@ -25,7 +25,7 @@ src_compile() {
 }
 
 src_install() {
-	common-lisp-install-sources *.lisp debug demo test
+	common-lisp-install-sources *.lisp debug demo extensions test
 	common-lisp-install-asdf
 	dodoc NEWS CHANGES README*
 	doinfo manual/${PN}.info
