@@ -343,7 +343,7 @@ dev-scheme/scm 5.5.5-r2: SCM is a Scheme implementation conforming to Revised5 R
 dev-scheme/snow-generic 1.1.2: A repository of Scheme packages that are portable to several popular implementations of Scheme
 dev-scheme/tinyscheme 1.39-r2: Lightweight scheme interpreter
 media-sound/lilypond 2.13.17: GNU Music Typesetter
-virtual/commonlisp 0 1: Virtual for Common Lisp
+virtual/commonlisp 0: Virtual for Common Lisp
 x11-wm/clfswm 1106.2: 100% Common Lisp X11 window manager (based on Tinywm and Stumpwm)
 x11-wm/stumpwm 1.0.0 9999: Stumpwm is a Window Manager written entirely in Common Lisp.
 x11-wm/stumpwm-contrib 20170314 99999999: Extension Modules for StumpWM
