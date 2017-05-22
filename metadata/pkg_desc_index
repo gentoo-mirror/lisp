@@ -138,7 +138,7 @@ dev-lisp/closer-mop 0.61 1.0.0: Closer to MOP is a Common Lisp Metaobject Protoc
 dev-lisp/closure 20080602: Closure is a web browser implemented in Common Lisp, implemented using CLIM.
 dev-lisp/closure-common 9999 20081130: Helper library for Closure and Closure XML implementing runes.
 dev-lisp/closure-html 20100920: An HTML parser written in Common Lisp.
-dev-lisp/clozurecl 1.9-r3 1.11-r1: Common Lisp implementation, derived from Digitool's MCL product
+dev-lisp/clozurecl 1.9-r3 1.11-r1 1.11-r2: Common Lisp implementation, derived from Digitool's MCL product
 dev-lisp/clsql 5.4.0 6.4.0 6.4.1: A multi-platform SQL interface for Common Lisp
 dev-lisp/clx 0.7.3 9999: A fork of crhodes' fork of danb's fork of CLX, an X11 client for Common Lisp
 dev-lisp/clx-truetype 9999: Pure Common Lisp TrueType font renderer for CLX
