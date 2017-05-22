@@ -28,7 +28,6 @@ DEPEND="${RDEPEND}
 		!dev-lisp/openmcl"
 
 S="${WORKDIR}"/${MY_PN}
-PATCHES=( "${FILESDIR}"/ccl-format.patch )
 ENVD="${T}"/50ccl
 
 src_configure() {
@@ -45,6 +44,7 @@ src_configure() {
 
 src_prepare() {
 	default
+	epatch "${FILESDIR}"/ccl-format.patch
 	cp /usr/share/common-lisp/source/asdf/build/asdf.lisp tools/ || die
 }
 
