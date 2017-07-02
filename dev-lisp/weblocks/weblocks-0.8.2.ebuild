@@ -1,8 +1,7 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2
+inherit common-lisp-3
 
 DESCRIPTION="Weblocks is a continuations-based web framework written in Common Lisp."
 HOMEPAGE="http://weblocks-framework.info/"
@@ -45,9 +44,9 @@ CLSYSTEMS="${PN} ${PN}-test ${PN}-scripts ${PN}-store-test
 
 src_install() {
 	dodir "${CLSOURCEROOT}"/${PN}/scripts
-	cp -a scripts/weblocks-core "${D}/${CLSOURCEROOT}"/${PN}/scripts
+	cp -a scripts/weblocks-core "${D}/${CLSOURCEROOT}"/${PN}/scripts || die
 	rm -rf scripts/weblocks-core
-	common-lisp-install *.asd examples pub scripts src test
-	common-lisp-symlink-asdf
+	common-lisp-install-sources examples pub scripts src test
+	common-lisp-install-asdf
 	dodoc docs/*
 }
