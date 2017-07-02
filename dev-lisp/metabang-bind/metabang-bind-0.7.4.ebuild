@@ -1,8 +1,7 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2 eutils
+inherit common-lisp-3 eutils
 
 DESCRIPTION="Combines LET*, DESTRUCTURING-BIND and MULTIPLE-VALUE-BIND into a single form."
 HOMEPAGE="http://www.cliki.net/bind
@@ -20,7 +19,7 @@ RDEPEND="!dev-lisp/cl-bind
 CLSYSTEMS="${PN} ${PN}-test"
 
 src_install() {
-	common-lisp-install *.asd {unit-tests,dev}/*.lisp
-	common-lisp-symlink-asdf
+	common-lisp-install-sources {unit-tests,dev}/*.lisp
+	common-lisp-install-asdf
 	dodoc *.config
 }
