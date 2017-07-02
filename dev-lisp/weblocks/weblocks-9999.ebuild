@@ -1,15 +1,13 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-WEBLOCKS_BRANCH=stable
-MY_P=${PN}-${WEBLOCKS_BRANCH}
-EHG_REPO_URI=http://bitbucket.org/skypher/${MY_P}/
+EAPI=6
 
-inherit common-lisp-2 mercurial
+inherit common-lisp-3 git-r3
 
 DESCRIPTION="Weblocks is a continuations-based web framework written in Common Lisp."
 HOMEPAGE="http://weblocks-framework.info/"
+EGIT_REPO_URI="https://github.com/weblocks-framework/weblocks"
 
 LICENSE="LLGPL-2.1"
 SLOT="0"
@@ -39,22 +37,15 @@ RDEPEND="dev-lisp/closer-mop
 		dev-lisp/rt
 		dev-lisp/lift"
 
-CLSYSTEMS="${PN} ${PN}-test ${PN}-scripts ${PN}-store-test
-		src/store/clsql/${PN}-clsql
-		src/store/elephant/${PN}-elephant
-		src/store/memory/${PN}-memory
-		src/store/prevalence/${PN}-prevalence
-		examples/${PN}-clsql-demo/${PN}-clsql-demo
-		examples/${PN}-demo/${PN}-demo
-		examples/${PN}-elephant-demo/${PN}-elephant-demo"
+CLSYSTEMS="${PN} ${PN}-test ${PN}-scripts ${PN}-util"
 
-S="${WORKDIR}"/${MY_P}
+S="${WORKDIR}"/${P}
 
 src_install() {
 	dodir "${CLSOURCEROOT}"/${PN}/scripts
 	cp -a scripts/weblocks-core "${D}/${CLSOURCEROOT}"/${PN}/scripts
 	rm -rf scripts/weblocks-core
-	common-lisp-install *.asd examples pub scripts src test
-	common-lisp-symlink-asdf
-	dodoc docs/*
+	common-lisp-install-sources scripts src test
+	common-lisp-install-asdf
+	dodoc -r docs/*
 }
