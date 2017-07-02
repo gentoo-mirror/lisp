@@ -1,14 +1,15 @@
-DEFINED_PHASES=install unpack
-DEPEND=dev-vcs/git
+DEFINED_PHASES=compile install unpack
+DEPEND=>=dev-vcs/git-1.8.2.1
 DESCRIPTION=Grid Structured Data library.
-EAPI=2
+EAPI=6
 HOMEPAGE=http://common-lisp.net/project/gsll/
 IUSE=doc
 KEYWORDS=~amd64 ~ppc ~sparc ~x86
 LICENSE=GPL-3
-RDEPEND=>=dev-lisp/cffi-0.10.5 dev-lisp/trivial-garbage dev-lisp/fsbv dev-lisp/asdf-system-connections dev-lisp/iterate dev-lisp/alexandria dev-lisp/lisp-unit virtual/commonlisp
+PDEPEND=virtual/commonlisp
+RDEPEND=>=dev-lisp/cffi-0.10.5 dev-lisp/trivial-garbage dev-lisp/fsbv dev-lisp/asdf-system-connections dev-lisp/iterate dev-lisp/alexandria dev-lisp/lisp-unit
 RESTRICT=mirror
 SLOT=0
-_eclass_exported_funcs=src_unpack:git-2 src_install:-
-_eclasses_=common-lisp-2	d3c4d1f1a7df32a406b6352a87a6639d	epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	9c113d6a64826c40154cad7be15d95ea	git-2	195a672bfaf52d868442171c9469bbb6	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	8fec6b1eb195836560e70b66d98fb163
-_md5_=b389623cc8c8ba2cbc48b92c8c0b058b
+_eclass_exported_funcs=src_unpack:git-r3 src_compile:common-lisp-3 src_install:-
+_eclasses_=common-lisp-3	935a84b9b3a5023518c70f5ec583850e	epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	9c113d6a64826c40154cad7be15d95ea	git-r3	e928b84a9f6f1d9076d1d27687876dc6	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	8fec6b1eb195836560e70b66d98fb163
+_md5_=7d41b05394f1b3dc886f9f0e56157bc0
