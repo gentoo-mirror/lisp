@@ -1,10 +1,11 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2
+EAPI=6
 
-DESCRIPTION="CL-DARCS is a client for the darcs version control system written in Common Lisp."
+inherit common-lisp-3
+
+DESCRIPTION="A client for the darcs version control system written in Common Lisp."
 HOMEPAGE="http://common-lisp.net/project/cl-darcs
 		http://www.cliki.net/CL-DARCS"
 SRC_URI="http://common-lisp.net/~sionescu/files/${P}.tar.bz2"
@@ -27,7 +28,7 @@ RDEPEND="dev-lisp/split-sequence
 		dev-lisp/cl-difflib"
 
 src_compile() {
-	cd doc
+	cd doc || die
 	makeinfo ${PN}.texi -o ${PN}.info || die "Cannot build info docs"
 	if use doc ; then
 		VARTEXFONTS="${T}"/fonts \
@@ -36,8 +37,8 @@ src_compile() {
 }
 
 src_install() {
-	common-lisp-install *.{lisp,asd}
-	common-lisp-symlink-asdf
+	common-lisp-install-sources *.lisp
+	common-lisp-install-asdf
 	dodoc README
 	dodoc doc/${PN}.info
 	use doc && dodoc doc/${PN}.pdf
