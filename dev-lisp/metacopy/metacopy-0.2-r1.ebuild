@@ -1,8 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2 eutils
+EAPI=6
+
+inherit common-lisp-3 eutils
 
 DESCRIPTION="Flexible Common Lisp shallow/deep copy mechanism."
 HOMEPAGE="http://common-lisp.net/project/metacopy/"
@@ -19,10 +20,14 @@ CLSYSTEMS="${PN} ${PN}-test"
 
 src_unpack() {
 	unpack ${A}
-	epatch "${FILESDIR}"/${PV}-fix-asd.patch
+}
+
+src_prepare() {
+	eapply "${FILESDIR}"/${PV}-fix-asd.patch
+	eapply_user
 }
 
 src_install() {
-	common-lisp-install *.asd dev/*.lisp unit-tests
-	common-lisp-symlink-asdf
+	common-lisp-install-sources dev/*.lisp unit-tests
+	common-lisp-install-asdf
 }

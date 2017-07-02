@@ -1,8 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2 eutils
+EAPI=6
+
+inherit common-lisp-3 eutils
 
 DESCRIPTION="A compatibility layer that helps make different system definitions play nicely using the same rules."
 HOMEPAGE="http://common-lisp.net/project/cl-containers/defsystem-compatibility"
@@ -19,6 +20,6 @@ RDEPEND=">=dev-lisp/metatilities-base-0.6.0
 CLSYSTEMS="${PN} ${PN}-test"
 
 src_install() {
-	common-lisp-install *.asd dev unit-tests
-	common-lisp-symlink-asdf
+	common-lisp-install-sources dev unit-tests
+	common-lisp-install-asdf
 }
