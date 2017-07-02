@@ -59,7 +59,7 @@ dev-lisp/atdoc 20081130: Atdoc generates documentation for Common Lisp packages.
 dev-lisp/babel 0.3.0 0.4.0 0.5.0: A charset encoding/decoding library.
 dev-lisp/binary-types 0.90: Library for accessing binary files with fixed bit-length code-words.
 dev-lisp/blowfish 0.6: Common Lisp implementation of the Blowfish encryption algorithm.
-dev-lisp/bordeaux-threads 0.8.1 0.8.2 0.8.3 0.8.5: A library meant to make writing portable multi-threaded apps simple.
+dev-lisp/bordeaux-threads 0.8.2 0.8.3 0.8.5: A library meant to make writing portable multi-threaded apps simple.
 dev-lisp/cffi 0.10.6-r1 0.11.1 0.11.2 0.14.0 0.16.1 0.17.1 0.18.0 9999: The Common Foreign Function Interface (CFFI)
 dev-lisp/ch-asdf 0.2.14: ASDF Extensions from Cyrus Harmon.
 dev-lisp/ch-util 0.3.10: Cyrus Harmon's Common Lisp utility library.
@@ -109,7 +109,7 @@ dev-lisp/cl-plus 1.0: Common Lisp extensions such as a DEFCONSTANT wrappers
 dev-lisp/cl-plus-ssl 9999 20081104: A simple Common Lisp interface to OpenSSL.
 dev-lisp/cl-ppcre 2.0.2 2.0.4 2.0.9 2.0.11: CL-PPCRE is a portable regular expression library for Common Lisp.
 dev-lisp/cl-ppcre-unicode 2.0.2 2.0.4 2.0.9 2.0.11: CL-PPCRE is a portable regular expression library for Common Lisp.
-dev-lisp/cl-prevalence 3.5 9999 20070329: CL-PREVALENCE is an implementation of Object Prevalence for Common Lisp.
+dev-lisp/cl-prevalence 3.5 9999: CL-PREVALENCE is an implementation of Object Prevalence for Common Lisp.
 dev-lisp/cl-qprint 0.2.1: Common Lisp Library for encoding and decoding strings in quoted-printable format.
 dev-lisp/cl-recaptcha 1.0: Straightforward Common Lisp recaptcha.com interconnection
 dev-lisp/cl-routes 0.2.4 0.2.5: Common Lisp re-implementation of the Rails routes system for mapping URLs.
@@ -135,7 +135,7 @@ dev-lisp/climacs 20080209-r1: Climacs is an Emacs-like text editor written in Co
 dev-lisp/clinch 9999: Common Lisp 3D/2D Graphics Engine for OpenGL
 dev-lisp/clisp 2.49-r6 2.50_pre20130414: A portable, bytecode-compiled implementation of Common Lisp
 dev-lisp/clon 0.0.2: A Common Lisp task scheduler library similar to Unix cron.
-dev-lisp/closer-mop 0.61 1.0.0: Closer to MOP is a Common Lisp Metaobject Protocol compatibility layer.
+dev-lisp/closer-mop 1.0.0: Closer to MOP is a Common Lisp Metaobject Protocol compatibility layer.
 dev-lisp/closure 20080602: Closure is a web browser implemented in Common Lisp, implemented using CLIM.
 dev-lisp/closure-common 9999 20081130: Helper library for Closure and Closure XML implementing runes.
 dev-lisp/closure-html 20100920: An HTML parser written in Common Lisp.
