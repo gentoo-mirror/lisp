@@ -1,8 +1,7 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2
+inherit common-lisp-3
 
 DESCRIPTION="A set of dynamic index data structures for spatially-extended data"
 HOMEPAGE="http://www.cliki.net/spatial-trees"
@@ -16,7 +15,7 @@ IUSE=""
 RDEPEND="!dev-lisp/cl-${PN}"
 
 src_install() {
-	common-lisp-install *.{lisp,asd} LICENCE TODO
-	common-lisp-symlink-asdf
+	common-lisp-install-sources *.lisp LICENCE TODO
+	common-lisp-install-asdf
 	dodoc BUGS TODO
 }
