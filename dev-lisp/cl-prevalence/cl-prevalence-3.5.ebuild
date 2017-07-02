@@ -1,8 +1,7 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-EAPI=5
+EAPI=6
 
 inherit common-lisp-3
 
@@ -16,7 +15,7 @@ KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
 RDEPEND="dev-lisp/fiveam
-		dev-lisp/s-xml
-		dev-lisp/s-sysdeps"
+	dev-lisp/s-xml
+	dev-lisp/s-sysdeps"
 
 S="${WORKDIR}"/skypher-${PN}-1edf5cd93bb9
