@@ -1,10 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-EAPI=2
+EAPI=6
 
-inherit common-lisp-2 git-2
+inherit common-lisp-3 git-r3
 
 DESCRIPTION="Grid Structured Data library."
 HOMEPAGE="http://common-lisp.net/project/gsll/"
@@ -26,7 +25,7 @@ RDEPEND=">=dev-lisp/cffi-0.10.5
 CLSYSTEMS="c-array/c-array grid/grid grid/grid-tests"
 
 src_install() {
-	common-lisp-install c-array grid
-	common-lisp-symlink-asdf
+	common-lisp-install-sources c-array grid
+	common-lisp-install-asdf
 	use doc && dohtml -r documentation/grid
 }
