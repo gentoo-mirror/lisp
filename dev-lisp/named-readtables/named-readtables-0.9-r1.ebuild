@@ -1,9 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-EAPI=2
-inherit common-lisp-2
+EAPI=6
+
+inherit common-lisp-3
 
 DESCRIPTION="A Common Lisp library that provides a namespace for readtables."
 HOMEPAGE="http://common-lisp.net/project/editor-hints/"
@@ -15,7 +15,7 @@ KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
 src_install() {
-	common-lisp-install *.{lisp,asd} tests/*.lisp
-	common-lisp-symlink-asdf
+	common-lisp-install-sources *.lisp tests/*.lisp
+	common-lisp-install-asdf
 	dohtml doc/${PN}.html
 }
