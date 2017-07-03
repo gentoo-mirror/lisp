@@ -1,8 +1,9 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2 eutils
+EAPI=6
+
+inherit common-lisp-3 eutils
 
 DESCRIPTION="ITERATE is a lispy and extensible replacement for the Common Lisp LOOP macro"
 HOMEPAGE="http://common-lisp.net/project/iterate/"
@@ -17,6 +18,9 @@ RDEPEND="!dev-lisp/cl-${PN}"
 
 src_unpack() {
 	unpack ${A}
+}
+
+src_prepare() {
 	rm "${S}"/Makefile
 }
 
