@@ -1,8 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2
+EAPI=6
+
+inherit common-lisp-3
 
 DESCRIPTION="A Common Lisp library for sending email."
 HOMEPAGE="http://www.cliki.net/cl-mime/"
@@ -23,5 +24,9 @@ S="${WORKDIR}"/${PN}
 src_unpack() {
 	unpack ${A} && cd "${S}"
 
-	epatch "${FILESDIR}"/fix-asd-deps.patch
+}
+
+src_prepare() {
+	eapply "${FILESDIR}"/fix-asd-deps.patch
+	eapply_user
 }
