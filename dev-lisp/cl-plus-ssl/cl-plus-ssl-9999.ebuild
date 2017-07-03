@@ -1,6 +1,5 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
 EAPI=6
 
@@ -15,6 +14,7 @@ SLOT="0"
 IUSE=""
 
 RDEPEND=">=dev-lisp/cffi-0.9.2_p20080723
+		dev-lisp/trivial-garbage
 		dev-lisp/trivial-gray-streams
 		dev-lisp/flexi-streams
 		dev-libs/openssl"
