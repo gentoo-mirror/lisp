@@ -1,8 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2
+EAPI=6
+
+inherit common-lisp-3
 
 DESCRIPTION="Closure is a web browser implemented in Common Lisp, implemented using CLIM."
 HOMEPAGE="http://common-lisp.net/project/closure"
@@ -24,6 +25,6 @@ RDEPEND="dev-lisp/cxml
 		media-libs/jpeg"
 
 src_install() {
-	common-lisp-install ${PN}.asd resources src
-	common-lisp-symlink-asdf
+	common-lisp-install-sources resources src
+	common-lisp-install-asdf
 }
