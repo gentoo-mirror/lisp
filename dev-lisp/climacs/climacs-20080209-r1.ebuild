@@ -1,8 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2 elisp-common eutils
+EAPI=6
+
+inherit common-lisp-3 elisp-common eutils
 
 DESCRIPTION="Climacs is an Emacs-like text editor written in Common Lisp."
 HOMEPAGE="http://common-lisp.net/project/climacs"
