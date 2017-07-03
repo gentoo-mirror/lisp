@@ -1,10 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-EAPI=2
+EAPI=6
 
-inherit common-lisp-2 eutils
+inherit common-lisp-3 eutils
 
 DESCRIPTION="A JPEG library for Common Lisp"
 HOMEPAGE="http://www.cliki.net/cl-jpeg"

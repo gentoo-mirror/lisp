@@ -1,8 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2 eutils multilib
+EAPI=6
+
+inherit common-lisp-3 eutils multilib
 
 MY_PN=cl+ssl
 MY_P=${MY_PN}-${PV:0:4}-${PV:4:2}-${PV:6:2}
@@ -28,12 +29,15 @@ S="${WORKDIR}"/${MY_P}
 
 src_unpack() {
 	unpack ${A}
-	rm "${S}"/Makefile
-	sed -i "s,/usr/lib,/usr/$(get_libdir),g" "${S}"/${MY_PN}.asd
+}
+
+src_prepare() {
+	rm "${S}"/Makefile || die
+	sed -i "s,/usr/lib,/usr/$(get_libdir),g" "${S}"/${MY_PN}.asd || die
 }
 
 src_install() {
-	common-lisp-install *.{lisp,asd}
-	common-lisp-symlink-asdf
+	common-lisp-install-sources *.lisp
+	common-lisp-install-asdf
 	dohtml index.{css,html}
 }
