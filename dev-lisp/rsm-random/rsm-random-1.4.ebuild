@@ -1,8 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2
+EAPI=6
+
+inherit common-lisp-3
 
 DESCRIPTION="R. Scott McIntire's Common Lisp Random Number Library."
 HOMEPAGE="http://packages.debian.org/unstable/devel/cl-rsm-random"
@@ -25,7 +26,7 @@ src_compile() {
 src_install() {
 	exeinto /usr/$(get_libdir)/${PN}
 	doexe random.so
-	common-lisp-install *.{lisp,asd}
-	common-lisp-symlink-asdf
+	common-lisp-install-sources *.lisp
+	common-lisp-install-asdf
 	dohtml ${PN}.html ob01.jpg
 }
