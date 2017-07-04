@@ -1,8 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2 eutils
+EAPI=6
+
+inherit common-lisp-3 eutils
 
 DESCRIPTION="A library for converting values of type FLOAT and DOUBLE-FLOAT to and from their binary representation as defined by IEEE 754."
 HOMEPAGE="http://common-lisp.net/project/ieee-floats/"
@@ -16,7 +17,7 @@ IUSE=""
 RDEPEND="dev-lisp/fiveam"
 
 src_install() {
-	common-lisp-install *.{lisp,asd}
-	common-lisp-symlink-asdf
+	common-lisp-install-sources *.lisp
+	common-lisp-install-asdf
 	dohtml doc/*
 }
