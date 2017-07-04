@@ -1,8 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2 eutils
+EAPI=6
+
+inherit common-lisp-3 eutils
 
 DESCRIPTION="R. Scott McIntire's Common Lisp Filter Library."
 HOMEPAGE="http://packages.debian.org/unstable/devel/cl-rsm-filter"
@@ -20,11 +21,15 @@ S="${WORKDIR}"/cl-${PN/_beta/b}
 
 src_unpack() {
 	unpack ${A}
-	epatch "${FILESDIR}"/${PV}-gentoo-fix-ftype-declarations.patch
+}
+
+src_prepare() {
+	eapply "${FILESDIR}"/${PV}-gentoo-fix-ftype-declarations.patch
+	eapply_user
 }
 
 src_install() {
-	common-lisp-install *.{lisp,asd}
-	common-lisp-symlink-asdf
+	common-lisp-install-sources *.lisp
+	common-lisp-install-asdf
 	dohtml ${PN}.html
 }
