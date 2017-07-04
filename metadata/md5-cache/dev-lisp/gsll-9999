@@ -1,13 +1,14 @@
-DEFINED_PHASES=install unpack
-DEPEND=dev-vcs/git
+DEFINED_PHASES=compile install unpack
+DEPEND=>=dev-vcs/git-1.8.2.1
 DESCRIPTION=Common Lisp interface to the GNU Scientific Library.
-EAPI=2
+EAPI=6
 HOMEPAGE=http://common-lisp.net/project/gsll/
 KEYWORDS=~amd64 ~ppc ~sparc ~x86
 LICENSE=GPL-3 FDL-1.2
-RDEPEND=>=sci-libs/gsl-1.9 >=dev-lisp/cffi-0.10.5 dev-lisp/fsbv dev-lisp/gsd dev-lisp/trivial-garbage dev-lisp/cl-utilities dev-lisp/asdf-system-connections dev-lisp/iterate dev-lisp/lisp-unit virtual/commonlisp
+PDEPEND=virtual/commonlisp
+RDEPEND=>=sci-libs/gsl-1.9 >=dev-lisp/cffi-0.10.5 dev-lisp/fsbv dev-lisp/gsd dev-lisp/trivial-garbage dev-lisp/cl-utilities dev-lisp/asdf-system-connections dev-lisp/iterate dev-lisp/lisp-unit
 RESTRICT=mirror
 SLOT=0
-_eclass_exported_funcs=src_unpack:git-2 src_install:-
-_eclasses_=common-lisp-2	d3c4d1f1a7df32a406b6352a87a6639d	epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	9c113d6a64826c40154cad7be15d95ea	git-2	195a672bfaf52d868442171c9469bbb6	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	8fec6b1eb195836560e70b66d98fb163
-_md5_=939e1eef85981208448f78b6908b7783
+_eclass_exported_funcs=src_unpack:git-r3 src_compile:common-lisp-3 src_install:-
+_eclasses_=common-lisp-3	935a84b9b3a5023518c70f5ec583850e	epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	9c113d6a64826c40154cad7be15d95ea	git-r3	e928b84a9f6f1d9076d1d27687876dc6	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	8fec6b1eb195836560e70b66d98fb163
+_md5_=13b4c8a344989f411fcb2e88b989f6a7

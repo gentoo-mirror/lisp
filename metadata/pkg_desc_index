@@ -93,7 +93,7 @@ dev-lisp/cl-i18n 0.4: A gettext-style internationalization framework for Common 
 dev-lisp/cl-interpol 0.2.5 0.2.6: String interpolation for Common Lisp similar to Perl or Unix shell scripts.
 dev-lisp/cl-irc 0.9.1 0.9.2: A Common Lisp IRC client library
 dev-lisp/cl-jpeg 1.033_p20080513 9999: A JPEG library for Common Lisp
-dev-lisp/cl-json 0.4.0 0.5.0: A Lisp parser and generator for the JSON data-interchange format
+dev-lisp/cl-json 0.5.0: A Lisp parser and generator for the JSON data-interchange format
 dev-lisp/cl-l10n 0.4: A portable library for handling program localization.
 dev-lisp/cl-launch 3.22.1 4.0.3 4.1.4.1: Utility to make your Lisp software easily invokable from the shell command-line
 dev-lisp/cl-libxml2 0.3.4: High-level Common Lisp wrapper around libxml2 and libxslt.
