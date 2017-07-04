@@ -1,10 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-EAPI=2
+EAPI=6
 
-inherit common-lisp-2 git-2
+inherit common-lisp-3 git-r3
 
 DESCRIPTION="Common Lisp interface to the GNU Scientific Library."
 HOMEPAGE="http://common-lisp.net/project/gsll/"
@@ -28,12 +27,12 @@ RDEPEND=">=sci-libs/gsl-1.9
 CLSYSTEMS="${PN} ${PN}-tests"
 
 src_install() {
-	common-lisp-install *.{lisp,asd} calculus/ data/ eigensystems/ \
+	common-lisp-install-sources *.lisp calculus/ data/ eigensystems/ \
 		fast-fourier-transforms/ floating-point/ histogram/ init/ \
 		interpolation/ linear-algebra/ mathematical/ \
 		ordinary-differential-equations/ physical-constants/ random/ \
 		solve-minimize-fit/ special-functions/ statistics/ tests/ test-unit/
-	common-lisp-symlink-asdf
+	common-lisp-install-asdf
 	dohtml documentation/*.{html,css}
 	dodoc documentation/*.text
 }
