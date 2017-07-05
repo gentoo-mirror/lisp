@@ -230,7 +230,7 @@ dev-lisp/net-telent-date 0.4.1-r1: Common Lisp utilities for printing and parsin
 dev-lisp/newlisp 10.1.6 10.5.4 10.6.2 10.7.0: newLISP - a new generation of Lisp!
 dev-lisp/nibbles 0.9 0.12: A library for accessing multibyte integers from octet arrays and streams
 dev-lisp/nuclblog 0.5: Virtual hosting with Hunchentoot.
-dev-lisp/odd-streams 0.1.1 0.1.2: ODD-STREAMS is a library which implements binary streams with "odd" byte sizes.
+dev-lisp/odd-streams 0.1.2: ODD-STREAMS is a library which implements binary streams with "odd" byte sizes.
 dev-lisp/org-davep-cldict 1.1: RFC2229 client for Common Lisp and CLIM
 dev-lisp/org-davep-dict 2.3: An RFC2229 client library for Common Lisp
 dev-lisp/org-davep-dictrepl 2.2: An RFC2229 client REPL for Common Lisp
