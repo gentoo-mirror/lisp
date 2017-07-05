@@ -1,8 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2 eutils
+EAPI=6
+
+inherit common-lisp-3 eutils
 
 DESCRIPTION="Implementation of GNU Readline support for SBCL"
 HOMEPAGE="http://www.cliki.net/sb-readline"
@@ -19,11 +20,15 @@ RDEPEND="!dev-lisp/cl-${PN}
 
 src_unpack() {
 	unpack ${A}
-	epatch "${FILESDIR}"/${PV}-load-foreign-library-gentoo.patch
+}
+
+src_prepare() {
+	eapply "${FILESDIR}"/${PV}-load-foreign-library-gentoo.patch
+	eapply_user
 }
 
 src_install() {
-	common-lisp-install sb-readline.{lisp,asd}
-	common-lisp-symlink-asdf
+	common-lisp-install-sources sb-readline.lisp
+	common-lisp-install-asdf
 	dohtml README.html
 }
