@@ -1,8 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2 eutils
+EAPI=6
+
+inherit common-lisp-3 eutils
 
 DESCRIPTION="Provides a compatibility layer for minor MOP implmentation differences."
 HOMEPAGE="http://common-lisp.net/project/moptilities/"
@@ -19,6 +20,6 @@ RDEPEND=">=dev-lisp/closer-mop-0.55
 CLSYSTEMS="${PN} ${PN}-test"
 
 src_install() {
-	common-lisp-install *.asd dev/*.lisp tests
-	common-lisp-symlink-asdf
+	common-lisp-install-sources dev/*.lisp tests
+	common-lisp-install-asdf
 }
