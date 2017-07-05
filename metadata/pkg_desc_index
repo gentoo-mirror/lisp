@@ -81,7 +81,7 @@ dev-lisp/cl-difflib 0.1 9999: CL-DIFFLIB is a Lisp library for computing differe
 dev-lisp/cl-emb 0.4.4: Embedded Common Lisp and template system
 dev-lisp/cl-fad 0.6.4 0.7.1 0.7.2 0.7.3 0.7.4: CL-FAD is a thin layer atop the Common Lisp's standard pathname functions.
 dev-lisp/cl-ftp 1.3.3 1.5.0 1.6.0: FTP Client Functionality for Common Lisp
-dev-lisp/cl-gd 0.5.7-r1 0.6.0 0.6.1: CL-GD is a library for Common Lisp which interfaces to the GD Graphics Library
+dev-lisp/cl-gd 0.6.0 0.6.1: CL-GD is a library for Common Lisp which interfaces to the GD Graphics Library
 dev-lisp/cl-glfw 9999: Set of CFFI bindings for the GLFW OpenGL helper library
 dev-lisp/cl-graph 0.10.2: Graph manipulation utilities for Common Lisp.
 dev-lisp/cl-graphviz 0.1_pre20081112: Common Lisp CFFI-based interface to graphviz.
