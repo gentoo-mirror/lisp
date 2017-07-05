@@ -312,7 +312,7 @@ dev-lisp/weblocks 0.8.2 9999: Weblocks is a continuations-based web framework wr
 dev-lisp/wiki-parser 0.1.2: Wiki parser framework
 dev-lisp/xkeyboard 9999: X11 XKeyboard extension for common lisp x client (clx)
 dev-lisp/xlunit 0.6.3: XLUnit is a Test Framework based on XPTest and JUnit.
-dev-lisp/xmls 1.2 1.5 1.7.1: XMLS, a simple XML parser for Common Lisp.
+dev-lisp/xmls 1.5 1.7.1: XMLS, a simple XML parser for Common Lisp.
 dev-lisp/xmls-tools 0.2.0: A library to supplement xmls which includes support for parsing with side effects, searching and validating XML.
 dev-lisp/xuriella 20090404: A Common Lisp implementation of XSLT 1.0
 dev-lisp/zip 9999 20080103: A library for .zip-file reading and writing, written in Common Lisp.
