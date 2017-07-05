@@ -1,8 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2 eutils
+EAPI=6
+
+inherit common-lisp-3 eutils
 
 DESCRIPTION="metabang.com's base set of core utilities."
 HOMEPAGE="http://common-lisp.net/project/metatilities-base/"
@@ -19,7 +20,6 @@ RDEPEND="dev-lisp/moptilities
 CLSYSTEMS="${PN} ${PN}-test"
 
 src_install() {
-	common-lisp-install ${PN}.asd ${PN}-test.asd
-	common-lisp-install dev/*.lisp
-	common-lisp-symlink-asdf
+	common-lisp-install-sources dev/*.lisp
+	common-lisp-install-asdf
 }

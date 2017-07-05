@@ -1,10 +1,9 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-EAPI=2
+EAPI=6
 
-inherit common-lisp-2
+inherit common-lisp-3
 
 DESCRIPTION="arnesi is a Common Lisp utility suite used with bese projects"
 HOMEPAGE="http://common-lisp.net/project/bese/arnesi.html"
@@ -21,6 +20,6 @@ RDEPEND="!dev-lisp/cl-${PN}
 		dev-lisp/cl-ppcre"
 
 src_install() {
-	common-lisp-install ${PN}.asd src t
-	common-lisp-symlink-asdf
+	common-lisp-install-sources src t
+	common-lisp-install-asdf
 }
