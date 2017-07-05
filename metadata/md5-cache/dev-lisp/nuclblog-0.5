@@ -1,13 +1,14 @@
-DEFINED_PHASES=install unpack
+DEFINED_PHASES=compile install prepare unpack
 DESCRIPTION=Virtual hosting with Hunchentoot.
-EAPI=0
+EAPI=6
 HOMEPAGE=http://www.cyrusharmon.org/projects?project=hunchentoot-vhost
 KEYWORDS=~amd64 ~ppc ~sparc ~x86
 LICENSE=BSD-2
-RDEPEND=>=dev-lisp/hunchentoot-1.0.0 dev-lisp/cl-who dev-lisp/cl-store dev-lisp/md5 dev-lisp/bordeaux-threads >=dev-lisp/hunchentoot-vhost-0.2 >=dev-lisp/hunchentoot-auth-0.2 virtual/commonlisp
+PDEPEND=virtual/commonlisp
+RDEPEND=>=dev-lisp/hunchentoot-1.0.0 dev-lisp/cl-who dev-lisp/cl-store dev-lisp/md5 dev-lisp/bordeaux-threads >=dev-lisp/hunchentoot-vhost-0.2 >=dev-lisp/hunchentoot-auth-0.2
 RESTRICT=mirror
 SLOT=0
 SRC_URI=http://cyrusharmon.org/static/releases/nuclblog_0.5.tar.gz
-_eclass_exported_funcs=src_unpack:- src_install:-
-_eclasses_=common-lisp-2	d3c4d1f1a7df32a406b6352a87a6639d	epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	9c113d6a64826c40154cad7be15d95ea	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	8fec6b1eb195836560e70b66d98fb163
-_md5_=48777ec4f7f39e6acafa701d431f6dd5
+_eclass_exported_funcs=src_unpack:- src_prepare:- src_compile:common-lisp-3 src_install:-
+_eclasses_=common-lisp-3	935a84b9b3a5023518c70f5ec583850e	epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	9c113d6a64826c40154cad7be15d95ea	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	8fec6b1eb195836560e70b66d98fb163
+_md5_=767847bae0af8fc0d3b905d225b45450

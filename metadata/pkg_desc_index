@@ -56,7 +56,7 @@ dev-lisp/asdf-flv 2.1: ASDF extension to provide support for file-local variable
 dev-lisp/asdf-system-connections 0.8.4 9999: Provides auto-loading of systems that only make sense when other systems are loaded.
 dev-lisp/aspectl 0.74 0.75.0: A CLOS extension for Aspect-oriented Programming.
 dev-lisp/atdoc 20081130: Atdoc generates documentation for Common Lisp packages.
-dev-lisp/babel 0.3.0 0.4.0 0.5.0: A charset encoding/decoding library.
+dev-lisp/babel 0.4.0 0.5.0: A charset encoding/decoding library.
 dev-lisp/binary-types 0.90: Library for accessing binary files with fixed bit-length code-words.
 dev-lisp/blowfish 0.6: Common Lisp implementation of the Blowfish encryption algorithm.
 dev-lisp/bordeaux-threads 0.8.2 0.8.3 0.8.5: A library meant to make writing portable multi-threaded apps simple.
@@ -64,7 +64,7 @@ dev-lisp/cffi 0.10.6-r1 0.11.1 0.11.2 0.14.0 0.16.1 0.17.1 0.18.0 9999: The Comm
 dev-lisp/ch-asdf 0.2.14: ASDF Extensions from Cyrus Harmon.
 dev-lisp/ch-util 0.3.10: Cyrus Harmon's Common Lisp utility library.
 dev-lisp/chipz 0.7.4-r1 0.8: A library for decompressing deflate, zlib, and gzip data.
-dev-lisp/chronicity 0.2.6 0.2.7 0.3.0: A natural language date and time parser for Common Lisp.
+dev-lisp/chronicity 0.2.7 0.3.0: A natural language date and time parser for Common Lisp.
 dev-lisp/chunga 1.1.5 1.1.6: Portable chunked streams for Common Lisp
 dev-lisp/cl-aima 1.0.4-r1: Common Lisp source code from Peter Norvig's Artificial Intelligence: A Modern Approach
 dev-lisp/cl-base64 3.3.3 3.3.4: Common Lisp package to encode and decode base64 with URI support
