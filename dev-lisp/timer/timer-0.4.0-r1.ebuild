@@ -1,8 +1,7 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2
+inherit common-lisp-3
 
 DESCRIPTION="An event scheduling library for SBCL by Zach Beane. It implements an interface similar to LispWorks' timer and scheduling functions."
 HOMEPAGE="http://www.cliki.net/TIMER"
