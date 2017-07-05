@@ -1,9 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-EAPI=2
-inherit common-lisp-2
+EAPI=6
+
+inherit common-lisp-3
 
 DESCRIPTION="Hyperobject is a Common Lisp library for representing objects."
 HOMEPAGE="http://hyperobject.b9.com/
@@ -30,8 +30,8 @@ src_prepare() {
 }
 
 src_install() {
-	common-lisp-install *.{lisp,asd} examples
-	common-lisp-symlink-asdf
+	common-lisp-install-sources *.lisp examples
+	common-lisp-install-asdf
 	dodoc README
 	use doc && dohtml -r "${WORKDIR}"/html/
 }
