@@ -1,8 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2 eutils
+EAPI=6
+
+inherit common-lisp-3 eutils
 
 DESCRIPTION="RFC2229 client for Common Lisp and CLIM"
 HOMEPAGE="http://www.davep.org/lisp/"
@@ -20,5 +21,9 @@ RDEPEND="!dev-lisp/cl-${PN}
 
 src_unpack() {
 	unpack ${A}
-	epatch "${FILESDIR}"/${PV}-gentoo.patch
+}
+
+src_prepare() {
+	eapply "${FILESDIR}"/${PV}-gentoo.patch
+	eapply_user
 }
