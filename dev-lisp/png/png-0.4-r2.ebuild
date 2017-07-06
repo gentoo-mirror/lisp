@@ -1,8 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2
+EAPI=6
+
+inherit common-lisp-3
 
 DEB_PV=2
 
@@ -25,13 +26,17 @@ S="${WORKDIR}/cl-${P}"
 
 src_unpack() {
 	unpack ${A}
-	epatch cl-${PN}_${PV}-${DEB_PV}.diff
-	epatch "${FILESDIR}"/libz-path-gentoo.patch
+}
+
+src_prepare() {
+	eapply cl-${PN}_${PV}-${DEB_PV}.diff
+	eapply "${FILESDIR}"/libz-path-gentoo.patch
+	eapply_user
 }
 
 src_install() {
-	common-lisp-install *.{cl,asd}
-	common-lisp-symlink-asdf
+	common-lisp-install-sources *.cl
+	common-lisp-install-asdf
 	dodoc AUTHORS BUGS NEWS README
 	dohtml doc/index.html
 }
