@@ -1,8 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2
+EAPI=6
+
+inherit common-lisp-3
 
 MY_PV=${PV:0:4}-${PV:4:2}-${PV:6:2}
 
@@ -25,13 +26,15 @@ S="${WORKDIR}"/${PN}-${MY_PV}
 
 src_unpack() {
 	unpack ${A} && cd "${S}"
+}
 
+src_prepare() {
 	rm "${S}"/GNUmakefile
 }
 
 src_install() {
-	common-lisp-install *.{lisp,asd,rng,rnc}
-	common-lisp-symlink-asdf
+	common-lisp-install-sources *.{lisp,rng,rnc}
+	common-lisp-install-asdf
 	dodoc README NEWS NIST *TEST
 	dohtml -r doc/* || die "Cannot install HTML documentation"
 }
