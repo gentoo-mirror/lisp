@@ -1,8 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2
+EAPI=6
+
+inherit common-lisp-3
 
 MY_PV=${PV:0:4}-${PV:4:2}-${PV:6:2}
 
@@ -23,12 +24,15 @@ S="${WORKDIR}"/${PN}-${MY_PV}
 
 src_unpack() {
 	unpack ${A}
+}
+
+src_prepare() {
 	rm "${S}"/{tutorial,}/GNUmakefile "${S}"/tutorial/tutorial.{xml,xsl}
 }
 
 src_install() {
-	common-lisp-install *.{lisp,asd}
-	common-lisp-symlink-asdf
+	common-lisp-install-sources *.lisp
+	common-lisp-install-asdf
 	dodoc DOM-COMPARISON README
 	dohtml -r doc || die "Cannot install HTML documentation"
 	dohtml -r tutorial || die "Cannot install tutorial"
