@@ -1,7 +1,9 @@
 # Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-inherit common-lisp-2
+EAPI=6
+
+inherit common-lisp-3
 
 DESCRIPTION="Embedded Common Lisp and template system"
 HOMEPAGE="http://common-lisp.net/project/cl-emb/"
@@ -15,8 +17,8 @@ IUSE=""
 RDEPEND="dev-lisp/cl-ppcre"
 
 src_install() {
-	common-lisp-install *.{lisp,asd}
-	common-lisp-symlink-asdf
+	common-lisp-install-sources *.lisp
+	common-lisp-install-asdf
 	dohtml examples.*
 	dodoc TODO README
 }
