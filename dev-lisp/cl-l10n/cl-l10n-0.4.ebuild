@@ -1,8 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2 eutils
+EAPI=6
+
+inherit common-lisp-3 eutils
 
 MY_P=${PN}_${PV}
 
@@ -26,6 +27,9 @@ S="${WORKDIR}"/${MY_P}
 
 src_unpack() {
 	unpack ${A}
+}
+
+src_prepare() {
 	rm -rf "${S}"/{,locales}/CVS
 }
 
@@ -39,8 +43,8 @@ src_compile() {
 }
 
 src_install() {
-	common-lisp-install *.{lisp,asd} languages locales resources
-	common-lisp-symlink-asdf
+	common-lisp-install-sources *.lisp languages locales resources
+	common-lisp-install-asdf
 	dodoc ChangeLog README
 	doinfo doc/${PN}.info
 	use docs && dodoc doc/${PN}.pdf

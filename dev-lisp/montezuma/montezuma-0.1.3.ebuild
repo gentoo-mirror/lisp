@@ -1,10 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-EAPI=2
+EAPI=6
 
-inherit common-lisp-2
+inherit common-lisp-3
 
 DESCRIPTION="A fast, useful text search engine library written entirely in pure Common Lisp."
 HOMEPAGE="http://code.google.com/p/montezuma/"
@@ -26,7 +25,7 @@ src_prepare() {
 }
 
 src_install() {
-	common-lisp-install ${PN}.asd src/ contrib/ tests/
-	common-lisp-symlink-asdf
+	common-lisp-install-sources src/ contrib/ tests/
+	common-lisp-install-asdf
 	dodoc BUGS.txt README.txt TUTORIAL.txt
 }
