@@ -1,14 +1,13 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-EAPI=5
+EAPI=6
 
 inherit common-lisp-3
 
 MY_P="v${PV}"
 
-DESCRIPTION="CL-FAD is a thin portability layer atop the Common Lisp standard pathname functions."
+DESCRIPTION="CL-FAD is a thin layer atop the Common Lisp's standard pathname functions."
 HOMEPAGE="http://weitz.de/cl-fad/"
 SRC_URI="https://github.com/edicl/${PN}/archive/${MY_P}.tar.gz -> ${P}.tar.gz"
 
