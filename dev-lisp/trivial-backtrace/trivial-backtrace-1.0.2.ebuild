@@ -1,8 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2 eutils
+EAPI=6
+
+inherit common-lisp-3 eutils
 
 DESCRIPTION="A simple library for generating a backtrace portably."
 HOMEPAGE="http://common-lisp.net/project/trivial-backtrace"
@@ -16,7 +17,7 @@ IUSE=""
 CLSYSTEMS="${PN} ${PN}-test"
 
 src_install() {
-	common-lisp-install *.asd dev test
-	common-lisp-symlink-asdf
+	common-lisp-install-sources dev test
+	common-lisp-install-asdf
 	dodoc *.config
 }
