@@ -1,7 +1,7 @@
 DEFINED_PHASES=compile install unpack
-DEPEND=dev-vcs/git
-DESCRIPTION=Provides auto-loading of systems that only make sense when other systems are loaded.
-EAPI=0
+DEPEND=>=dev-vcs/git-1.8.2.1
+DESCRIPTION=Provides auto-loading of systems that only make sense when others are loaded.
+EAPI=6
 HOMEPAGE=http://common-lisp.net/project/cl-containers/asdf-system-connections/
 KEYWORDS=~amd64 ~ppc ~sparc ~x86
 LICENSE=MIT
@@ -9,6 +9,6 @@ PDEPEND=virtual/commonlisp
 RDEPEND=!dev-lisp/cl-asdf-system-connections
 RESTRICT=mirror
 SLOT=0
-_eclass_exported_funcs=src_unpack:git-2 src_compile:common-lisp-3 src_install:common-lisp-3
-_eclasses_=common-lisp-3	935a84b9b3a5023518c70f5ec583850e	epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	9c113d6a64826c40154cad7be15d95ea	git-2	195a672bfaf52d868442171c9469bbb6	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	8fec6b1eb195836560e70b66d98fb163
-_md5_=791349dff763f05c6a86b718b702dd60
+_eclass_exported_funcs=src_unpack:git-r3 src_compile:common-lisp-3 src_install:common-lisp-3
+_eclasses_=common-lisp-3	935a84b9b3a5023518c70f5ec583850e	epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	9c113d6a64826c40154cad7be15d95ea	git-r3	e928b84a9f6f1d9076d1d27687876dc6	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	8fec6b1eb195836560e70b66d98fb163
+_md5_=e30d43020c78d95ed94de80ada91ca14

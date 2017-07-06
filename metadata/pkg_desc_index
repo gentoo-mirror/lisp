@@ -53,7 +53,7 @@ dev-lisp/archive 0.8-r1 0.9: Archive is Nathan Froyd's tar/cpio package for CL.
 dev-lisp/arnesi 9999 20080413-r1: arnesi is a Common Lisp utility suite used with bese projects
 dev-lisp/asdf 3.1.7 3.2.0 3.2.0-r1 3.2.1: ASDF is Another System Definition Facility for Common Lisp
 dev-lisp/asdf-flv 2.1: ASDF extension to provide support for file-local variables
-dev-lisp/asdf-system-connections 0.8.4 9999: Provides auto-loading of systems that only make sense when other systems are loaded.
+dev-lisp/asdf-system-connections 0.8.4 9999: Provides auto-loading of systems that only make sense when others are loaded.
 dev-lisp/aspectl 0.74 0.75.0: A CLOS extension for Aspect-oriented Programming.
 dev-lisp/atdoc 20081130: Atdoc generates documentation for Common Lisp packages.
 dev-lisp/babel 0.4.0 0.5.0: A charset encoding/decoding library.
@@ -290,7 +290,7 @@ dev-lisp/timer 0.4.0-r1: An event scheduling library for SBCL by Zach Beane. It 
 dev-lisp/tinaa 0.5.9: Tinaa is a flexible and general purpose Lisp documentation system.
 dev-lisp/trees 0.11-r1: Package that implements binary trees of various kinds.
 dev-lisp/trivial-backtrace 1.0.2 1.1.0: A simple library for generating a backtrace portably.
-dev-lisp/trivial-captcha 0.1: trivial-captcha is an exceptionally trivial library for creating images suitable for a CAPTCHA.
+dev-lisp/trivial-captcha 0.1: An exceptionally trivial library for creating images suitable for a CAPTCHA.
 dev-lisp/trivial-configuration-parser 1.1: Common Lisp library for parsing its own syntax of configuration file
 dev-lisp/trivial-features 0.6-r1 0.7 0.8: Ensures consistent *FEATURES* across multiple Common Lisp implementations.
 dev-lisp/trivial-garbage 0.20: Provides a portable library to finalizers, weak hash-tables and weak pointers.
