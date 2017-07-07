@@ -20,5 +20,5 @@ DEPEND="dev-lisp/alexandria
 
 src_prepare() {
 	sed -i -e '/:unix/s/ncurses.so/ncurses.so.5/' "${S}/src/charms.lisp" || die
-	default
+	eapply_user
 }
