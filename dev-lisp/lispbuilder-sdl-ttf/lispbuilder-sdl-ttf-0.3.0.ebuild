@@ -1,8 +1,7 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-EAPI=3
+EAPI=6
 
 inherit common-lisp-3
 
@@ -25,7 +24,8 @@ CLSYSTEMS="lispbuilder-sdl-ttf lispbuilder-sdl-ttf-binaries \
 		lispbuilder-sdl-ttf-cffi lispbuilder-sdl-ttf-examples"
 
 src_prepare() {
-	epatch "${FILESDIR}"/gentoo-fix-asd.patch
+	eapply "${FILESDIR}"/gentoo-fix-asd.patch
+	eapply_user
 }
 
 src_compile() {
