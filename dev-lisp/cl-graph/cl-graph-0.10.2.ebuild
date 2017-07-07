@@ -1,6 +1,5 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
 EAPI=6
 
@@ -29,8 +28,8 @@ CLSYSTEMS="${PN} ${PN}-test"
 S="${WORKDIR}/${PN}-${MY_PV}"
 
 src_prepare() {
-	epatch "${FILESDIR}"/${P}-fix-deps.patch
-	default
+	eapply "${FILESDIR}"/${P}-fix-deps.patch
+	eapply_user
 }
 
 src_install() {
