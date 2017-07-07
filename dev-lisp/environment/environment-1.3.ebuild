@@ -1,8 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2
+EAPI=6
+
+inherit common-lisp-3
 
 DESCRIPTION="Provides an CLOS (CL Object System) encapsulation of the current CL implementation environment"
 HOMEPAGE="http://packages.debian.org/unstable/devel/cl-environment"
@@ -21,11 +22,14 @@ S="${WORKDIR}"/cl-${PN}-${PV}.orig
 
 src_unpack() {
 	unpack ${A}
-	cp "${FILESDIR}"/${PN}.asd "${S}"
+}
+
+src_prepare() {
+	cp "${FILESDIR}"/${PN}.asd "${S}" || die
 }
 
 src_install() {
-	common-lisp-install *.{lisp,asd} impl-dependent
-	common-lisp-symlink-asdf
+	common-lisp-install-sources *.lisp impl-dependent
+	common-lisp-install-asdf
 	dodoc README
 }
