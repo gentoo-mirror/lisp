@@ -29,7 +29,7 @@ src_prepare() {
 }
 
 src_install() {
-	common-lisp-install-sources src test ${PN}.asd
+	common-lisp-install-sources src test
 	common-lisp-install-asdf
 	dohtml "${DISTDIR}"/S-XML-RPC.html
 	dodoc ChangeLog
