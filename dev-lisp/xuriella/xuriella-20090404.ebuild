@@ -1,8 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2
+EAPI=6
+
+inherit common-lisp-3
 
 MY_P=${PN}-${PV:0:4}-${PV:4:2}-${PV:6:2}
 
@@ -24,8 +25,8 @@ RDEPEND="dev-lisp/cxml
 S="${WORKDIR}"/${MY_P}
 
 src_install() {
-	common-lisp-install *.{lisp,asd}
-	common-lisp-symlink-asdf
+	common-lisp-install-sources *.lisp
+	common-lisp-install-asdf
 	dodoc SYNTAX
 	use doc && dohtml -r doc/{atdoc,index.css,*.html}
 }
