@@ -1,8 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2
+EAPI=6
+
+inherit common-lisp-3
 
 DESCRIPTION="Flexichain is an API for editable sequences."
 HOMEPAGE="http://common-lisp.net/project/flexichain/"
@@ -16,8 +17,8 @@ KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE="doc"
 
 src_install() {
-	common-lisp-install *.{lisp,asd} version.lisp-expr
-	common-lisp-symlink-asdf
+	common-lisp-install-sources *.lisp version.lisp-expr
+	common-lisp-install-asdf
 	if use doc ; then
 		dodoc "${DISTDIR}"/{StrandhVilleneuveMoore,${PN}}.pdf
 	fi
