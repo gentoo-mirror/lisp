@@ -54,7 +54,7 @@ dev-lisp/arnesi 9999 20080413-r1: arnesi is a Common Lisp utility suite used wit
 dev-lisp/asdf 3.1.7 3.2.0 3.2.0-r1 3.2.1: ASDF is Another System Definition Facility for Common Lisp
 dev-lisp/asdf-flv 2.1: ASDF extension to provide support for file-local variables
 dev-lisp/asdf-system-connections 0.8.4 9999: Provides auto-loading of systems that only make sense when others are loaded.
-dev-lisp/aspectl 0.74 0.75.0: A CLOS extension for Aspect-oriented Programming.
+dev-lisp/aspectl 0.75.0: A CLOS extension for Aspect-oriented Programming.
 dev-lisp/atdoc 20081130: Atdoc generates documentation for Common Lisp packages.
 dev-lisp/babel 0.4.0 0.5.0: A charset encoding/decoding library.
 dev-lisp/binary-types 0.90: Library for accessing binary files with fixed bit-length code-words.
@@ -146,7 +146,7 @@ dev-lisp/clx-truetype 9999: Pure Common Lisp TrueType font renderer for CLX
 dev-lisp/cmucl 20d-r3: CMU Common Lisp is an implementation of ANSI Common Lisp
 dev-lisp/colorize 1.0 9999: Colorize is a Common Lisp application for colorizing source code.
 dev-lisp/common-idioms 3: A small Common Lisp library implementing various Common Lisp idioms.
-dev-lisp/contextl 0.61 1.0.0: CLOS extension for context-oriented Programming
+dev-lisp/contextl 1.0.0: CLOS extension for context-oriented Programming
 dev-lisp/css-lite 9999: A css grammar for lisp
 dev-lisp/cxml 9999 20081130: A Common Lisp XML library implementing namespaces, a validating SAX-like XML 1.0 parser and the DOM Level 1 Core interfaces.
 dev-lisp/cxml-rng 20081130: An implementation of Relax NG schema validation written in Common Lisp.
@@ -194,7 +194,7 @@ dev-lisp/irc-logger 0.9.4: A Common Lisp IRC logger library
 dev-lisp/ironclad 0.28 0.33.0: Ironclad is a Common Lisp library similar to OpenSSL, GNU TLS or Crypto++
 dev-lisp/iterate 1.4.3 9999: ITERATE is a lispy and extensible replacement for the Common Lisp LOOP macro
 dev-lisp/kmrcl 1.106 1.109: General Utilities for Common Lisp Programs from Kevin Rosenberg
-dev-lisp/kr 2.3.4: KR is a highly flexible and dynamic prototype-based object system for Common Lisp.
+dev-lisp/kr 2.3.4: A highly flexible and dynamic prototype-based object system for Common Lisp.
 dev-lisp/let-plus 9999: LET+: destructuring extension of LET*
 dev-lisp/levenshtein 1.0: Implementation of the Levenshtein Distance.
 dev-lisp/lexer 20060301: Lexical-analyzer-generator package for Common Lisp
@@ -317,7 +317,7 @@ dev-lisp/xmls-tools 0.2.0: A library to supplement xmls which includes support f
 dev-lisp/xuriella 20090404: A Common Lisp implementation of XSLT 1.0
 dev-lisp/zip 9999 20080103: A library for .zip-file reading and writing, written in Common Lisp.
 dev-lisp/zpb-ttf 1.0.3: TrueType font file access library for Common Lisp.
-dev-lisp/zpng 1.2 1.2.2: A Common Lisp library for creating PNG files.
+dev-lisp/zpng 1.2.2: A Common Lisp library for creating PNG files.
 dev-lisp/zs3 1.2.11 1.3: A Common Lisp library for working with Amazon's Simple Storage Service (S3).
 dev-scheme/armpit 00.0098: ARMPIT SCHEME is an interpreter for the Scheme language (lexically-scoped dialect of Lisp) that runs on RISC microcontrollers with ARM core.
 dev-scheme/bigloo 3.9a 4.0a: Bigloo is a Scheme implementation.
