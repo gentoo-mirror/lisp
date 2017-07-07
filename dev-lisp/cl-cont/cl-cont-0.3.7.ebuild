@@ -3,7 +3,7 @@
 
 EAPI=6
 
-inherit common-lisp-2
+inherit common-lisp-3
 
 MY_P=${PN}_${PV}
 
@@ -25,7 +25,7 @@ CLSYSTEMS="${PN} ${PN}-test"
 S="${WORKDIR}"/${MY_P}
 
 src_install() {
-	common-lisp-install *.asd src test
-	common-lisp-symlink-asdf
+	common-lisp-install-sources src test
+	common-lisp-install-asdf
 	dodoc doc/*
 }
