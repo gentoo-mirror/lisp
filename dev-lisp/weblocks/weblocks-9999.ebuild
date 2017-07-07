@@ -43,7 +43,7 @@ S="${WORKDIR}"/${P}
 
 src_install() {
 	dodir "${CLSOURCEROOT}"/${PN}/scripts
-	cp -a scripts/weblocks-core "${D}/${CLSOURCEROOT}"/${PN}/scripts
+	cp -a scripts/weblocks-core "${D}/${CLSOURCEROOT}"/${PN}/scripts || die
 	rm -rf scripts/weblocks-core
 	common-lisp-install-sources scripts src test
 	common-lisp-install-asdf
