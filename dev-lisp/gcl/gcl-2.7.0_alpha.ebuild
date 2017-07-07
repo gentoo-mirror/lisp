@@ -1,8 +1,7 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-EAPI=1
+EAPI=6
 
 DEB_PV="84.1"
 MY_PN="${PN}cvs"
@@ -15,21 +14,20 @@ SRC_URI="mirror://debian/pool/main/g/${MY_PN}/${MY_PN}_${MY_PV}-${DEB_PV}.tar.gz
 
 LICENSE="GPL-2"
 SLOT="0"
-#KEYWORDS="~amd64"
-KEYWORDS=""
+KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE="+readline +ansi"
 
 RESTRICT="strip"
 
-RDEPEND="readline? ( sys-libs/readline )
-	dev-libs/gmp
-	sys-devel/autoconf"
+RDEPEND="readline? ( sys-libs/readline:0 )
+	dev-libs/gmp:0
+	sys-devel/autoconf:2.59"
 DEPEND="${RDEPEND}
 	virtual/latex-base"
 
 S="${WORKDIR}/${MY_P}"
 
-src_compile() {
+src_configure() {
 	pwd
 	econf \
 		$(use_enable readline) \
