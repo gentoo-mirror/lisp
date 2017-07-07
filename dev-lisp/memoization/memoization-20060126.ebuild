@@ -1,8 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2
+EAPI=6
+
+inherit common-lisp-3
 
 DESCRIPTION="Memoization support to CMU Common Lisp"
 HOMEPAGE="http://packages.debian.org/unstable/libs/cl-memoization"
@@ -19,11 +20,14 @@ S="${WORKDIR}"/cl-${PN}
 
 src_unpack() {
 	unpack ${A}
-	rm "${S}"/Makefile
+}
+
+src_prepare() {
+	rm -r "${S}"/Makefile
 }
 
 src_install() {
-	common-lisp-install *.{lisp,asd}
-	common-lisp-symlink-asdf
+	common-lisp-install-sources *.lisp
+	common-lisp-install-asdf
 	dodoc docs/*.{ps,text} docs/README Memo-Tables/fib.lisp
 }
