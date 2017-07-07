@@ -27,7 +27,7 @@ RDEPEND="dev-lisp/cxml
 S="${WORKDIR}"/${MY_P}
 
 src_install() {
-	common-lisp-install-sources *.{lisp,asd} css gif tex xsl
+	common-lisp-install-sources *.lisp css gif tex xsl
 	common-lisp-install-asdf
 
 	dodoc README
