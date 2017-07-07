@@ -1,8 +1,8 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-EAPI=3
+EAPI=6
+
 inherit common-lisp-3 eutils toolchain-funcs flag-o-matic multilib
 
 DESCRIPTION="A multi-platform SQL interface for Common Lisp"
@@ -15,7 +15,7 @@ RESTRICT="mirror"
 LICENSE="LLGPL-2.1"
 SLOT="0"
 KEYWORDS="~amd64 ~ppc ~sparc ~x86"
-IUSE="doc oracle mysql postgres sqlite sqlite3 odbc"
+IUSE="doc oracle mysql postgres sqlite odbc"
 
 DEPEND="mysql? ( virtual/mysql )"
 RDEPEND="${DEPEND}
@@ -23,14 +23,13 @@ RDEPEND="${DEPEND}
 		dev-lisp/md5
 		>=dev-lisp/uffi-2.0.0
 		oracle? ( dev-db/oracle-instantclient-basic )
-		postgres? ( dev-db/postgresql-base )
-		sqlite? ( dev-db/sqlite:0 )
-		sqlite3? ( dev-db/sqlite:3 )
+		postgres? ( dev-db/postgresql )
+		sqlite? ( dev-db/sqlite:3 )
 		odbc? ( dev-db/unixODBC )"
 
 src_prepare() {
-	sed -i "s,/usr/lib,/usr/$(get_libdir),g" "${S}"/${PN}-{mysql,uffi}.asd
-	sed -i 's,"usr" "lib","usr" "'$(get_libdir)'",g' "${S}"/${PN}-{mysql,uffi}.asd
+	sed -i "s,/usr/lib,/usr/$(get_libdir),g" "${S}"/${PN}-{mysql,uffi}.asd || die
+	sed -i 's,"usr" "lib","usr" "'$(get_libdir)'",g' "${S}"/${PN}-{mysql,uffi}.asd || die
 }
 
 @cc() {
@@ -54,7 +53,7 @@ src_compile() {
 }
 
 install_clsql_pkg() {
-	cd "${S}"
+	cd "${S}" || die
 	common-lisp-install-sources db-${1}
 	common-lisp-install-asdf ${PN}-${1}
 	if [ -f db-${1}/${PN}_${1}.so ]; then
