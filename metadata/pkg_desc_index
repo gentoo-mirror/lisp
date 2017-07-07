@@ -116,7 +116,7 @@ dev-lisp/cl-routes 0.2.4 0.2.5: Common Lisp re-implementation of the Rails route
 dev-lisp/cl-sasl 0.3.1 0.3.2: SASL client implementation for Common Lisp
 dev-lisp/cl-sendmail 0.5.5: A Common Lisp library for sending email.
 dev-lisp/cl-smtp 20100505.1: A Common Lisp client library for the SMTP network protocol.
-dev-lisp/cl-sqlite 0.1.5 0.2: A CommonLisp interface to the SQLite embedded relational database engine.
+dev-lisp/cl-sqlite 0.2: A CommonLisp interface to the SQLite embedded relational database engine.
 dev-lisp/cl-store 0.8.10 9999: Library for serializing and deserializing Common Lisp objects from streams.
 dev-lisp/cl-typegraph 9999: Stand-alone Common Lisp graph typesetting system
 dev-lisp/cl-typesetting 9999: CL-TYPESETTING is a complete typesetting system written in Common Lisp.
