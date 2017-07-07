@@ -1,8 +1,7 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-EAPI=5
+EAPI=6
 
 inherit eutils glo-utils toolchain-funcs
 
@@ -30,10 +29,11 @@ S="${WORKDIR}"
 TARGET=linux-4
 
 src_prepare() {
-	epatch "${FILESDIR}"/${MY_PV}-execstack-fixes.patch
-	epatch "${FILESDIR}"/${MY_PV}-customize-lisp-implementation-version.patch
+	eapply "${FILESDIR}"/${MY_PV}-execstack-fixes.patch
+	eapply "${FILESDIR}"/${MY_PV}-customize-lisp-implementation-version.patch
 
 	cp /usr/share/common-lisp/source/asdf/build/asdf.lisp src/contrib/asdf/ || die
+	eapply_user
 }
 
 src_compile() {
