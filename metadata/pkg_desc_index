@@ -60,7 +60,7 @@ dev-lisp/babel 0.4.0 0.5.0: A charset encoding/decoding library.
 dev-lisp/binary-types 0.90: Library for accessing binary files with fixed bit-length code-words.
 dev-lisp/blowfish 0.6: Common Lisp implementation of the Blowfish encryption algorithm.
 dev-lisp/bordeaux-threads 0.8.2 0.8.3 0.8.5: A library meant to make writing portable multi-threaded apps simple.
-dev-lisp/cffi 0.10.6-r1 0.11.1 0.11.2 0.14.0 0.16.1 0.17.1 0.18.0 9999: The Common Foreign Function Interface (CFFI)
+dev-lisp/cffi 0.11.1 0.11.2 0.14.0 0.16.1 0.17.1 0.18.0 9999: The Common Foreign Function Interface (CFFI)
 dev-lisp/ch-asdf 0.2.14: ASDF Extensions from Cyrus Harmon.
 dev-lisp/ch-util 0.3.10: Cyrus Harmon's Common Lisp utility library.
 dev-lisp/chipz 0.7.4-r1 0.8: A library for decompressing deflate, zlib, and gzip data.
@@ -240,7 +240,7 @@ dev-lisp/osicat 0.6.0 0.7.0 9999: Lightweight operating system interface for Com
 dev-lisp/parenscript 2.2 2.5 2.6 9999: Parenscript is a small lispy language that can be compiled to JavaScript.
 dev-lisp/parse-js 9999: parse-js is a Common Lisp package for parsing JavaScript
 dev-lisp/parse-number 1.2 1.3 1.5 1.6: Common Lisp library for parsing any number string
-dev-lisp/picolisp 3.1.6 16.6: A fast and lightweight Lisp interpreter
+dev-lisp/picolisp 16.6 17.6: A fast and lightweight Lisp interpreter
 dev-lisp/plexippus-xpath 20081207: An XPath implementation written in Common Lisp.
 dev-lisp/png 0.4-r2: Common Lisp package to read and write png image files
 dev-lisp/portable-threads 0.9.6_p20071120 2.3_p20161031: Portable threads API for Common Lisp (from GBBopen project)
@@ -283,7 +283,7 @@ dev-lisp/series 2.2.11: Common Lisp extension for general iteration
 dev-lisp/skippy 1.3.7 1.3.12: Common Lis GIF library
 dev-lisp/smackjack 9999: An Ajax Common Lisp Library using parenscript and hunchentoot
 dev-lisp/spatial-trees 0.2-r1: A set of dynamic index data structures for spatially-extended data
-dev-lisp/split-sequence 1.0 1.1 1.2: Functions to partition a Common Lisp sequence into multiple result sequences
+dev-lisp/split-sequence 1.1 1.2: Functions to partition a Common Lisp sequence into multiple result sequences
 dev-lisp/telnetlib 20080103: A CommonLisp port from Python's telnetlib library.
 dev-lisp/terminfo 1.3-r1 9999: Common Lisp interface to the terminfo database.
 dev-lisp/timer 0.4.0-r1: An event scheduling library for SBCL by Zach Beane. It implements an interface similar to LispWorks' timer and scheduling functions.
