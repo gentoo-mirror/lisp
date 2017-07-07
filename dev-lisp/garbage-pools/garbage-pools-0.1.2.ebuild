@@ -1,10 +1,11 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2 eutils
+EAPI=6
 
-DESCRIPTION="garbage-pools is a Common Lisp re-implementation of the APR Pools for resource management."
+inherit common-lisp-3 eutils
+
+DESCRIPTION="A Common Lisp re-implementation of the APR Pools for resource management."
 HOMEPAGE="http://code.google.com/p/garbage-pools/ http://www.cliki.net/garbage-pools"
 SRC_URI="http://garbage-pools.googlecode.com/files/${P}.tar.bz2"
 
@@ -18,6 +19,6 @@ RDEPEND="dev-lisp/lift"
 CLSYSTEMS="${PN} ${PN}-test"
 
 src_install() {
-	common-lisp-install *.{lisp,asd}
-	common-lisp-symlink-asdf
+	common-lisp-install-sources *.lisp
+	common-lisp-install-asdf
 }
