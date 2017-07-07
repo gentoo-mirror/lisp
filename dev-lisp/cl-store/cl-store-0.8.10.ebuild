@@ -1,10 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-EAPI=2
+EAPI=6
 
-inherit common-lisp-2 eutils
+inherit common-lisp-3 eutils
 
 MY_P=${PN}_${PV}
 
@@ -23,22 +22,22 @@ DEPEND="sys-apps/texinfo
 S="${WORKDIR}"/${PN}
 
 src_prepare() {
-	rm xml* */custom-xml.lisp
+	rm -f xml* */custom-xml.lisp
 }
 
 src_compile() {
-	cd doc
-	makeinfo ${PN}.texi -o ${PN}.info || die "Cannot build info docs"
+	cd doc || die
+	makeinfo ${PN}.texi -o ${PN}.info || die
 	if use doc ; then
 		VARTEXFONTS="${T}"/fonts \
-			texi2pdf ${PN}.texi -o ${PN}.pdf || die "Cannot build PDF docs"
+			texi2pdf ${PN}.texi -o ${PN}.pdf || die
 	fi
 }
 
 src_install() {
-	common-lisp-install *.{lisp,asd} \
-		abcl acl allegrocl clisp cmucl ecl lispworks mcl openmcl sbcl
-	common-lisp-symlink-asdf
+	common-lisp-install-sources *.lisp abcl acl allegrocl clisp cmucl \
+								ecl lispworks mcl openmcl sbcl
+	common-lisp-install-asdf
 	dodoc ChangeLog
 	doinfo doc/${PN}.info
 	use doc && dodoc doc/${PN}.pdf
