@@ -1,10 +1,9 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-EAPI=3
+EAPI=6
 
-inherit common-lisp-3 git-2
+inherit common-lisp-3 git-r3
 
 MY_P=${PN}_${PV}
 
