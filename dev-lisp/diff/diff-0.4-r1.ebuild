@@ -1,8 +1,7 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-EAPI=2
+EAPI=6
 
 inherit common-lisp-3 eutils
 
@@ -22,6 +21,7 @@ RDEPEND="!dev-lisp/cl-${PN}"
 S="${WORKDIR}"/${MY_P}
 
 src_prepare() {
-	epatch "${FILESDIR}"/gentoo-fix-asd.patch
-	epatch "${FILESDIR}"/gentoo-fix-compilation.patch
+	eapply "${FILESDIR}"/gentoo-fix-asd.patch
+	eapply "${FILESDIR}"/gentoo-fix-compilation.patch
+	eapply_user
 }
