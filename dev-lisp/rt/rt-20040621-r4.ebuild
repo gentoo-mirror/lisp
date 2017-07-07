@@ -1,8 +1,8 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-EAPI=2
+EAPI=6
+
 inherit common-lisp-3 eutils
 
 DEB_PV=4
@@ -24,8 +24,9 @@ RDEPEND="!dev-lisp/cl-${PN}"
 S="${WORKDIR}/cl-${P}"
 
 src_prepare() {
-	epatch "${WORKDIR}"/cl-${PN}_${PV}-${DEB_PV}.diff
-	cp "${FILESDIR}"/${PN}.asd "${S}"
+	eapply "${WORKDIR}"/cl-${PN}_${PV}-${DEB_PV}.diff
+	cp "${FILESDIR}"/${PN}.asd "${S}" || die
+	eapply_user
 }
 
 src_install() {
