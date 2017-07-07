@@ -1,12 +1,13 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2 eutils
+EAPI=6
+
+inherit common-lisp-3 eutils
 
 MY_P="${PN}_${PV}"
 
-DESCRIPTION="KR is a highly flexible and dynamic prototype-based object system for Common Lisp."
+DESCRIPTION="A highly flexible and dynamic prototype-based object system for Common Lisp."
 HOMEPAGE="http://www.cliki.net/KR"
 SRC_URI="mirror://gentoo/${MY_P}.tar.gz"
 
@@ -20,7 +21,7 @@ RDEPEND="!dev-lisp/cl-${PN}"
 S="${WORKDIR}"/${MY_P}
 
 src_install() {
-	common-lisp-install *.{lisp,asd}
-	common-lisp-symlink-asdf
+	common-lisp-install-sources *.lisp
+	common-lisp-install-asdf
 	dodoc ${PN}-manual.ps ${PN}.changes
 }
