@@ -18,7 +18,7 @@ RDEPEND="dev-lisp/alexandria
 		dev-lisp/fiveam"
 
 src_install() {
-	common-lisp-install-sources -t all *.asd src test version.sexp
+	common-lisp-install-sources -t all src test version.sexp
 	common-lisp-install-asdf
 	dodoc CONTRIBUTORS README
 }
