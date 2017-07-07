@@ -1,7 +1,7 @@
 # Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=5
+EAPI=6
 
 inherit common-lisp-3
 
@@ -20,7 +20,7 @@ RDEPEND="dev-lisp/alexandria
 CLSYSTEMS="bordeaux-threads bordeaux-threads-test"
 
 src_install() {
-	common-lisp-install-sources -t all *.asd src test version.lisp-expr
+	common-lisp-install-sources -t all src test version.lisp-expr
 	common-lisp-install-asdf
 	dodoc CONTRIBUTORS README
 }
