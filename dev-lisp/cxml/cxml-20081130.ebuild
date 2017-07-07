@@ -1,8 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2
+EAPI=6
+
+inherit common-lisp-3
 
 MY_PV=${PV:0:4}-${PV:4:2}-${PV:6:2}
 
@@ -26,14 +27,17 @@ S="${WORKDIR}"/${PN}-${MY_PV}
 
 src_unpack() {
 	unpack ${A}
-	rm "${S}"/GNUmakefile
-	cp "${FILESDIR}"/${PN}-contrib.asd "${S}"
+}
+
+src_prepare() {
+	rm "${S}"/GNUmakefile || die
+	cp "${FILESDIR}"/${PN}-contrib.asd "${S}" || die
 }
 
 src_install() {
-	common-lisp-install *.{dtd,asd}
-	common-lisp-install {contrib,dom,klacks,test,xml,xml/sax-tests}/*.lisp
-	common-lisp-symlink-asdf
+	common-lisp-install-sources *.dtd
+	common-lisp-install-sources {contrib,dom,klacks,test,xml,xml/sax-tests}/*.lisp
+	common-lisp-install-asdf
 
 	dodoc README OLDNEWS TIMES
 	dohtml doc/*.{html,css,png}
