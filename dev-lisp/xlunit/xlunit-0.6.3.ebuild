@@ -1,9 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-EAPI=2
-inherit common-lisp-2
+EAPI=6
+
+inherit common-lisp-3
 
 DESCRIPTION="XLUnit is a Test Framework based on XPTest and JUnit."
 HOMEPAGE="http://www.cliki.net/xlunit"
@@ -17,5 +17,5 @@ IUSE=""
 RDEPEND="!dev-lisp/cl-${PN}"
 
 src_prepare() {
-	rm Makefile
+	rm -f Makefile
 }
