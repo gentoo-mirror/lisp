@@ -94,7 +94,7 @@ src_install() {
 	if use doc; then
 		DDOC=/usr/share/doc/${PF}
 		insinto $DDOC
-		doins doc/quine doc/db doc/travel doc/utf8 doc/vim-tsm
+		doins doc/quine doc/travel doc/vim-tsm
 		dohtml doc/*
 		insinto $DDOC/html
 		doins doc/family.l doc/shape.l doc/fun.l doc/hello.l
