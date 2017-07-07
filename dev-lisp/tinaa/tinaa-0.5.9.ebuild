@@ -1,8 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2 eutils
+EAPI=6
+
+inherit common-lisp-3 eutils
 
 DESCRIPTION="Tinaa is a flexible and general purpose Lisp documentation system."
 HOMEPAGE="http://common-lisp.net/project/tinaa http://www.cliki.net/TINAA"
@@ -21,7 +22,7 @@ RDEPEND=">=dev-lisp/defsystem-compatibility-0.1.2
 		dev-lisp/anaphora"
 
 src_install() {
-	common-lisp-install *.asd dev/{*.lisp,tinaa.css} unit-tests
-	common-lisp-symlink-asdf
+	common-lisp-install-sources dev/{*.lisp,tinaa.css} unit-tests
+	common-lisp-install-asdf
 	dodoc RELNOTES
 }
