@@ -1,8 +1,7 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-EAPI=5
+EAPI=6
 
 inherit common-lisp-3 eutils
 
@@ -20,7 +19,8 @@ IUSE=""
 S="${WORKDIR}"/${MY_P}
 
 src_prepare() {
-	epatch "${FILESDIR}"/gentoo-fix-asd-"${PV}".patch
+	eapply "${FILESDIR}"/gentoo-fix-asd-"${PV}".patch
+	eapply_user
 }
 
 src_install() {
