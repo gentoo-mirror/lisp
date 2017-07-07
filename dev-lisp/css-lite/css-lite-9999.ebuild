@@ -1,10 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-EAPI=5
+EAPI=6
 
-inherit common-lisp-3 git-2
+inherit common-lisp-3 git-r3
 
 DESCRIPTION="A css grammar for lisp"
 HOMEPAGE="https://github.com/paddymul/css-lite"
