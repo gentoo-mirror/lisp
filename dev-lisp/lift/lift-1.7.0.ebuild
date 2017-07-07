@@ -1,8 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2 eutils
+EAPI=6
+
+inherit common-lisp-3 eutils
 
 DESCRIPTION="LIFT is an SUnit variant and much much more."
 HOMEPAGE="http://common-lisp.net/project/lift/"
@@ -16,8 +17,8 @@ IUSE=""
 CLSYSTEMS="${PN} ${PN}-test"
 
 src_install() {
-	common-lisp-install *.asd {dev,timeout,test}/*.lisp
-	common-lisp-symlink-asdf
+	common-lisp-install-sources {dev,timeout,test}/*.lisp
+	common-lisp-install-asdf
 	for i in compare data examples resources; do
 		docinto ${i} && dodoc ${i}/*
 	done
