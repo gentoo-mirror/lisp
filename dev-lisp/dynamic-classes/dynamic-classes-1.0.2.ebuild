@@ -18,6 +18,6 @@ RDEPEND="dev-lisp/metatilities-base
 		dev-lisp/lift"
 
 src_install() {
-	common-lisp-install ${PN}.asd dev/*.lisp
-	common-lisp-symlink-asdf
+	common-lisp-install-sources dev/*.lisp
+	common-lisp-install-asdf
 }
