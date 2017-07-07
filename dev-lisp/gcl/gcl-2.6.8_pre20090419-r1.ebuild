@@ -1,8 +1,7 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-EAPI=2
+EAPI=6
 
 #removing flag-o-matic results in make install failing due to a segfault
 inherit elisp-common flag-o-matic
@@ -20,15 +19,15 @@ IUSE="+ansi debug doc emacs +readline tk X"
 RESTRICT="strip"
 
 RDEPEND="emacs? ( virtual/emacs )
-	readline? ( sys-libs/readline )
-	>=dev-libs/gmp-4.1
-	tk? ( dev-lang/tk )
+	readline? ( sys-libs/readline:0 )
+	dev-libs/gmp:0
+	tk? ( dev-lang/tk:0 )
 	X? ( x11-libs/libXt x11-libs/libXext x11-libs/libXmu x11-libs/libXaw )
 	virtual/latex-base"
 DEPEND="${RDEPEND}
 	doc? ( virtual/texi2dvi )
 	>=app-text/texi2html-1.64
-	>=sys-devel/autoconf-2.52"
+	>=sys-devel/autoconf-2.59"
 
 src_prepare() {
 	# The LANG vars aren't reset early enough so when sed tries to use [a-zA-Z] in
