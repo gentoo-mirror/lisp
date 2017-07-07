@@ -1,8 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2 elisp-common eutils
+EAPI=6
+
+inherit common-lisp-3 elisp-common eutils
 
 DESCRIPTION="McCLIM is a free software implementation of CLIM."
 HOMEPAGE="http://common-lisp.net/project/mcclim
@@ -42,27 +43,31 @@ ELISP_SOURCES="Tools/Emacs/indent-clim.el Tools/Emacs/hyperclim.el"
 
 src_unpack() {
 	unpack ${A} && cd "${S}"
-	epatch "${FILESDIR}"/${PV}-mcclim.asd-cmucl.patch
+}
+
+src_prepare() {
+	eapply "${FILESDIR}"/${PV}-mcclim.asd-cmucl.patch
+	eapply_user
 }
 
 src_compile() {
 	if use emacs ; then
-		mv ${ELISP_SOURCES} .
+		mv ${ELISP_SOURCES} . || die
 		rm -rf Tools/Emacs
 		elisp-compile *.el
 	fi
 	if use doc ; then
-		cd Spec/src
+		cd Spec/src || die
 		VARTEXFONTS="${T}"/fonts \
 			texi2pdf clim.tex -o clim.pdf || die "Cannot build PDF docs"
 	fi
 }
 
 src_install() {
-	common-lisp-install *.{lisp,asd} Apps Backends Drei \
-		ESA Examples Experimental Extensions Goatee \
-		Images Lisp-Dep Looks Tests Tools
-	common-lisp-symlink-asdf
+	common-lisp-install-sources *.lisp Apps Backends Drei ESA Examples \
+								Experimental Extensions Goatee Images \
+								Lisp-Dep Looks Tests Tools
+	common-lisp-install-asdf
 	if use emacs; then
 		elisp-install ${PN} *.el{,c}
 		elisp-site-file-install ${SITEFILE}
