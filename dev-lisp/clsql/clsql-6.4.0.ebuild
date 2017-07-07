@@ -1,8 +1,7 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-EAPI=5
+EAPI=6
 
 inherit common-lisp-3 flag-o-matic multilib toolchain-funcs
 
@@ -14,7 +13,7 @@ SRC_URI="http://files.b9.com/clsql/${P}.tar.gz"
 LICENSE="LLGPL-2.1"
 SLOT="0"
 KEYWORDS="~amd64 ~ppc ~sparc ~x86"
-IUSE="doc examples mysql odbc oracle postgres sqlite sqlite3"
+IUSE="doc examples mysql odbc oracle postgres sqlite"
 
 RDEPEND="!dev-lisp/cl-sql
 	dev-lisp/md5
@@ -22,13 +21,12 @@ RDEPEND="!dev-lisp/cl-sql
 	mysql? ( virtual/mysql )
 	odbc? ( dev-db/unixODBC )
 	oracle? ( dev-db/oracle-instantclient-basic )
-	postgres? ( dev-db/postgresql-base )
-	sqlite? ( dev-db/sqlite:0 )
-	sqlite3? ( dev-db/sqlite:3 )"
+	postgres? ( dev-db/postgresql )
+	sqlite? ( dev-db/sqlite:3 )"
 
 src_prepare() {
-	sed -i "s,/usr/lib,/usr/$(get_libdir),g" "${S}"/${PN}-{mysql,uffi}.asd
-	sed -i 's,"usr" "lib","usr" "'$(get_libdir)'",g' "${S}"/${PN}-{mysql,uffi}.asd
+	sed -i "s,/usr/lib,/usr/$(get_libdir),g" "${S}"/${PN}-{mysql,uffi}.asd || die
+	sed -i 's,"usr" "lib","usr" "'$(get_libdir)'",g' "${S}"/${PN}-{mysql,uffi}.asd || die
 }
 
 @cc() {
