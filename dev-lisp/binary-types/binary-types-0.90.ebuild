@@ -1,8 +1,9 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2 eutils
+EAPI=6
+
+inherit common-lisp-3 eutils
 
 # binary-types moved to http://www.common-lisp.net/project/movitz recently
 
@@ -20,12 +21,16 @@ RDEPEND="!dev-lisp/cl-${PN}"
 
 src_unpack() {
 	unpack ${A}
-	epatch "${FILESDIR}"/${PV}-gentoo.patch
+}
+
+src_prepare() {
+	eapply "${FILESDIR}"/${PV}-gentoo.patch
+	eapply_user
 }
 
 src_install() {
-	cp "${FILESDIR}"/binary-types.asd "${S}"
-	common-lisp-install *.{lisp,asd}
-	common-lisp-symlink-asdf
+	cp "${FILESDIR}"/binary-types.asd "${S}" || die
+	common-lisp-install-sources *.lisp
+	common-lisp-install-asdf
 	dodoc example.lisp README README-bitfield ChangeLog type-hierarchy.{ps,png}
 }
