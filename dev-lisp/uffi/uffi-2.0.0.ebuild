@@ -1,8 +1,8 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-EAPI=2
+EAPI=6
+
 inherit common-lisp-3 multilib
 
 DESCRIPTION="Portable FFI library for Common Lisp."
