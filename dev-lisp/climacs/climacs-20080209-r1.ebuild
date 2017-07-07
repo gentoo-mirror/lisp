@@ -20,10 +20,10 @@ RDEPEND=">=dev-lisp/flexichain-0.4.1
 		>=dev-lisp/mcclim-0.9.5_p20080209"
 
 src_compile() {
-	cd Doc
-	makeinfo --force ${PN}-internals.texi -o ${PN}-internals.info
+	cd Doc || die
+	makeinfo --force ${PN}-internals.texi -o ${PN}-internals.info || die
 	[[ -e ${PN}-internals.info ]] || die "Cannot build info docs(internals)"
-	makeinfo --force ${PN}-user.texi -o ${PN}-user.info
+	makeinfo --force ${PN}-user.texi -o ${PN}-user.info || die
 	[[ -e ${PN}-user.info ]] || die "Cannot build info docs(user manual)"
 	if use doc ; then
 		VARTEXFONTS="${T}"/fonts \
@@ -36,8 +36,8 @@ src_compile() {
 }
 
 src_install() {
-	common-lisp-install *.{lisp,asd}
-	common-lisp-symlink-asdf
+	common-lisp-install-sources *.lisp
+	common-lisp-install-asdf
 	dodoc INSTALL* README TODO
 	doinfo Doc/${PN}-{internals,user}.info
 	use doc && dodoc Doc/${PN}-{internals,user}.pdf
