@@ -1,8 +1,8 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-EAPI=5
+EAPI=6
+
 inherit eutils multilib
 
 MY_P=ecl-${PV}
@@ -17,13 +17,13 @@ SLOT="0"
 KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE="debug emacs gengc precisegc sse +threads +unicode X"
 
-CDEPEND="dev-libs/gmp
+CDEPEND="dev-libs/gmp:0
 		virtual/libffi
 		>=dev-libs/boehm-gc-7.1[threads?]
 		>=dev-lisp/asdf-2.33-r3:="
 DEPEND="${CDEPEND}
 		app-text/texi2html
-		emacs? ( virtual/emacs >=app-admin/eselect-emacs-1.12 )"
+		emacs? ( virtual/emacs >=app-eselect/eselect-emacs-1.12 )"
 RDEPEND="${CDEPEND}"
 
 S="${WORKDIR}"/${MY_P}
