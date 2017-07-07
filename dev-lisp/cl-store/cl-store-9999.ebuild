@@ -1,6 +1,5 @@
 # Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
 EAPI=6
 
@@ -19,8 +18,8 @@ DEPEND="sys-apps/texinfo
 RDEPEND="dev-lisp/rt"
 
 src_prepare() {
-	default
-	rm xml* */custom-xml.lisp || die
+	rm -f xml* */custom-xml.lisp
+	eapply_user
 }
 
 src_compile() {
@@ -33,8 +32,8 @@ src_compile() {
 }
 
 src_install() {
-	common-lisp-install-sources *.lisp \
-		acl allegrocl clisp cmucl ecl lispworks openmcl sbcl
+	common-lisp-install-sources *.lisp acl allegrocl clisp \
+								cmucl ecl lispworks openmcl sbcl
 	common-lisp-install-asdf
 	doinfo doc/${PN}.info
 	use doc && dodoc doc/{index.html,style.css,${PN}.pdf}
