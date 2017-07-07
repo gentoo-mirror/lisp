@@ -21,11 +21,11 @@ src_unpack() {
 }
 
 src_prepare() {
-	rm "${S}"/Makefile
+	rm -f "${S}"/Makefile
 }
 
 src_install() {
-	common-lisp-install *.{lisp,asd}
-	common-lisp-symlink-asdf
+	common-lisp-install-sources *.lisp
+	common-lisp-install-asdf
 	dodoc doc/*.pdf
 }
