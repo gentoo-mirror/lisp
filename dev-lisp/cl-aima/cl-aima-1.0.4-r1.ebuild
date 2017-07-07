@@ -1,14 +1,14 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-inherit common-lisp-2 eutils
+EAPI=6
+
+inherit common-lisp-3 eutils
 
 DEB_PV=1
 
 DESCRIPTION="Common Lisp source code from Peter Norvig's Artificial Intelligence: A Modern Approach"
-HOMEPAGE="http://aima.cs.berkeley.edu/lisp/doc/overview.html
-		http://packages.debian.org/unstable/devel/cl-aima.html"
+HOMEPAGE="http://aima.cs.berkeley.edu/lisp/doc/overview.html"
 SRC_URI="mirror://gentoo/${PN}_${PV}.orig.tar.gz
 		mirror://gentoo/${PN}_${PV}-${DEB_PV}.diff.gz"
 
@@ -22,19 +22,23 @@ CLSYSTEMS="aima"
 
 src_unpack() {
 	unpack ${A}
-	epatch ${PN}_${PV}-${DEB_PV}.diff
-	epatch "${FILESDIR}"/${PV}-defsystem-and-package-lock-gentoo.patch
+}
+
+src_prepare() {
+	eapply ${PN}_${PV}-${DEB_PV}.diff
+	eapply "${FILESDIR}"/${PV}-defsystem-and-package-lock-gentoo.patch
+	eapply_user
 }
 
 src_install() {
-	common-lisp-install aima.{asd,lisp}
+	common-lisp-install-sources aima.lisp
 	for module in agents language learning logic search uncertainty utilities; do
 		find ${module} -type f -name \*.lisp -print | while read lisp; do \
-			common-lisp-install "${lisp}"
+			common-lisp-install-sources "${lisp}"
 		done
 		mv ${module}/README.html README-${module}.html && dohtml README-${module}.html
 	done
-	common-lisp-symlink-asdf
+	common-lisp-install-asdf
 	dohtml doc/*
 	find "${D}" -type f -exec chmod 644 '{}' \;
 }
