@@ -16,6 +16,7 @@ IUSE="doc examples"
 
 src_prepare() {
 	rm -f tests/*dylib
+	eapply_user
 }
 
 src_install() {
