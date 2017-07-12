@@ -43,5 +43,5 @@ src_install() {
 	common-lisp-install-sources -t all build/
 	common-lisp-install-asdf
 	dodoc CHANGELOG
-	dohtml doc/index.html
+	dodoc doc/index.html
 }
