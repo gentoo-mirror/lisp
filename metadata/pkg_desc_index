@@ -283,7 +283,7 @@ dev-lisp/series 2.2.11: Common Lisp extension for general iteration
 dev-lisp/skippy 1.3.7 1.3.12: Common Lis GIF library
 dev-lisp/smackjack 9999: An Ajax Common Lisp Library using parenscript and hunchentoot
 dev-lisp/spatial-trees 0.2-r1: A set of dynamic index data structures for spatially-extended data
-dev-lisp/split-sequence 1.1 1.2: Functions to partition a Common Lisp sequence into multiple result sequences
+dev-lisp/split-sequence 1.1 1.2 1.4.1: Functions to partition a Common Lisp sequence into multiple result sequences
 dev-lisp/telnetlib 20080103: A CommonLisp port from Python's telnetlib library.
 dev-lisp/terminfo 1.3-r1 9999: Common Lisp interface to the terminfo database.
 dev-lisp/timer 0.4.0-r1: An event scheduling library for SBCL by Zach Beane. It implements an interface similar to LispWorks' timer and scheduling functions.
