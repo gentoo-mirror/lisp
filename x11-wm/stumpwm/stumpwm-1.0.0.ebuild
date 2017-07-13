@@ -52,8 +52,6 @@ install_docs() {
 
 src_prepare() {
 	default
-	## Bug 534592. Does not build with asdf:oos, using require to load the package
-	#sed -i "load-${PN}.lisp.in" -e "s/asdf:oos 'asdf:load-op/require/" || die
 	eautoreconf
 }
 
