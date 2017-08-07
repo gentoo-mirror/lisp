@@ -7,7 +7,7 @@ inherit common-lisp-3 git-r3
 
 DESCRIPTION="A Common Lisp library that provides a namespace for readtables."
 HOMEPAGE="http://common-lisp.net/project/editor-hints/"
-EGIT_REPO_URI="git://github.com/melisgl/named-readtables"
+EGIT_REPO_URI="https://github.com/melisgl/${PN}"
 
 LICENSE="BSD"
 SLOT="0"
