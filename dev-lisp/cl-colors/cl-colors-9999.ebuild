@@ -7,7 +7,7 @@ inherit common-lisp-3 git-r3
 
 DESCRIPTION="Simple color library for Common Lisp"
 HOMEPAGE="http://cliki.net/cl-colors"
-EGIT_REPO_URI="git://github.com/tpapp/${PN}.git"
+EGIT_REPO_URI="https://github.com/tpapp/${PN}"
 
 LICENSE="Boost-1.0"
 SLOT="0"
