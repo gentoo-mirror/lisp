@@ -7,7 +7,7 @@ inherit common-lisp-3 git-r3
 
 DESCRIPTION="Common Lisp 3D/2D Graphics Engine for OpenGL"
 HOMEPAGE="https://github.com/BradWBeer/CLinch"
-EGIT_REPO_URI="git://github.com/BradWBeer/CLinch.git"
+EGIT_REPO_URI="https://github.com/BradWBeer/CLinch"
 
 LICENSE="BSD-2"
 SLOT="0"
