@@ -7,7 +7,7 @@ inherit common-lisp-3 git-r3
 
 DESCRIPTION="An Ajax Common Lisp Library using parenscript and hunchentoot"
 HOMEPAGE="https://github.com/aarvid/SmackJack"
-EGIT_REPO_URI="git://github.com/aarvid/SmackJack"
+EGIT_REPO_URI="https://github.com/aarvid/SmackJack"
 
 LICENSE="MIT"
 SLOT="0"
