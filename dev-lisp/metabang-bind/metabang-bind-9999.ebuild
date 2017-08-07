@@ -8,7 +8,7 @@ inherit common-lisp-3 git-r3
 DESCRIPTION="Combines LET*, DESTRUCTURING-BIND and MULTIPLE-VALUE-BIND into a single form."
 HOMEPAGE="http://common-lisp.net/project/metabang-bind
 	http://www.cliki.net/bind"
-EGIT_REPO_URI="git://github.com/gwkkwg/${PN}"
+EGIT_REPO_URI="https://github.com/gwkkwg/${PN}"
 
 LICENSE="BSD-2"
 SLOT="0"
