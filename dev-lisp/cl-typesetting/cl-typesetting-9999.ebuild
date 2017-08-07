@@ -8,7 +8,7 @@ inherit common-lisp-3 git-r3
 DESCRIPTION="CL-TYPESETTING is a complete typesetting system written in Common Lisp."
 HOMEPAGE="http://www.fractalconcept.com/asp/html/cl-typesetting.html
 	http://www.cliki.net/cl-typesetting"
-EGIT_REPO_URI="git://github.com/mbattyani/${PN}.git"
+EGIT_REPO_URI="https://github.com/mbattyani/cl-typesetting"
 
 LICENSE="BSD-2"
 SLOT="0"
