@@ -3,7 +3,7 @@
 
 EAPI=6
 
-inherit common-lisp-3 eutils
+inherit common-lisp-3
 
 DESCRIPTION="Combines LET*, DESTRUCTURING-BIND and MULTIPLE-VALUE-BIND into a single form."
 HOMEPAGE="http://www.cliki.net/bind
