@@ -7,7 +7,7 @@ inherit common-lisp-3 git-r3
 
 DESCRIPTION="Colorize is a Common Lisp application for colorizing source code."
 HOMEPAGE="http://www.cliki.net/colorize"
-EGIT_REPO_URI="git://github.com/redline6561/${PN}"
+EGIT_REPO_URI="https://github.com/redline6561/${PN}"
 
 LICENSE="MIT"
 SLOT="0"
