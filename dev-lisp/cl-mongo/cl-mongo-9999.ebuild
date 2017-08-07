@@ -7,7 +7,7 @@ inherit common-lisp-3 git-r3
 
 DESCRIPTION="Lisp interface to mongo db"
 HOMEPAGE="https://github.com/fons/cl-mongo"
-EGIT_REPO_URI="git://github.com/fons/${PN}.git"
+EGIT_REPO_URI="https://github.com/fons/cl-mongo"
 
 LICENSE="MIT"
 SLOT="0"
