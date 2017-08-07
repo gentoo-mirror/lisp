@@ -7,7 +7,7 @@ inherit common-lisp-3 git-r3
 
 DESCRIPTION="A portable version of Franz's Opensource HTML Parser"
 HOMEPAGE="http://www.cliki.net/CL-HTML-Parse"
-EGIT_REPO_URI="git://github.com/gwkkwg/${PN}.git"
+EGIT_REPO_URI="https://github.com/gwkkwg/${PN}"
 
 LICENSE="MIT"
 SLOT="0"
