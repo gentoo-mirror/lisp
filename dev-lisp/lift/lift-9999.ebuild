@@ -7,7 +7,7 @@ inherit common-lisp-3 git-r3
 
 DESCRIPTION="LIFT is yet another LIsp Framework for Testing"
 HOMEPAGE="http://common-lisp.net/project/lift/"
-EGIT_REPO_URI="git://github.com/gwkkwg/${PN}"
+EGIT_REPO_URI="https://github.com/gwkkwg/${PN}"
 
 LICENSE="MIT"
 SLOT="0"
