@@ -9,7 +9,7 @@ MY_P=${PN}_${PV}
 
 DESCRIPTION="The Common Foreign Function Interface (CFFI)"
 HOMEPAGE="http://common-lisp.net/project/cffi/"
-EGIT_REPO_URI="git://github.com/${PN}/${PN}/"
+EGIT_REPO_URI="https://github.com/${PN}/${PN}/"
 
 LICENSE="MIT"
 SLOT="0"
