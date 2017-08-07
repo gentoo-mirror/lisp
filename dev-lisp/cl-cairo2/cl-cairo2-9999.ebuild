@@ -7,7 +7,7 @@ inherit common-lisp-3 git-r3
 
 DESCRIPTION="Comon Lisp bindings for the Cairo API"
 HOMEPAGE="http://cliki.net/cl-cairo2"
-EGIT_REPO_URI="git://github.com/rpav/cl-cairo2.git"
+EGIT_REPO_URI="https://github.com/rpav/cl-cairo2"
 
 LICENSE="Boost-1.0"
 SLOT="0"
