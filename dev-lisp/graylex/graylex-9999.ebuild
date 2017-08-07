@@ -7,7 +7,7 @@ inherit common-lisp-3 git-r3
 
 DESCRIPTION="Gray lexer input streams"
 HOMEPAGE="http://cliki.net/graylex"
-EGIT_REPO_URI="git://github.com/e-user/${PN}.git"
+EGIT_REPO_URI="https://github.com/e-user/${PN}"
 
 LICENSE="GPL-3+"
 SLOT="0"
