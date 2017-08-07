@@ -16,5 +16,5 @@ IUSE="doc"
 src_install() {
 	common-lisp-install-sources src test
 	common-lisp-install-asdf
-	use doc && dohtml doc/${PN}.html
+	use doc && dodoc doc/${PN}.html
 }
