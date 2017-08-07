@@ -7,7 +7,7 @@ inherit common-lisp-3 git-r3
 
 DESCRIPTION="CL-PDF is a cross-platform Common Lisp library for generating PDF files"
 HOMEPAGE="http://www.fractalconcept.com/asp/cl-pdf"
-EGIT_REPO_URI="git://github.com/mbattyani/cl-pdf.git"
+EGIT_REPO_URI="https://github.com/mbattyani/cl-pdf"
 
 LICENSE="BSD-2"
 SLOT="0"
