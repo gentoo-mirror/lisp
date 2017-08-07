@@ -12,10 +12,10 @@ SRC_URI="http://common-lisp.net/project/editor-hints/releases/${P}.tar.gz"
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64 ~ppc ~sparc ~x86"
-IUSE=""
+IUSE="doc"
 
 src_install() {
 	common-lisp-install-sources *.lisp tests/*.lisp
 	common-lisp-install-asdf
-	dohtml doc/${PN}.html
+	use doc && dodoc doc/${PN}.html
 }
