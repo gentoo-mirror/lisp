@@ -7,7 +7,7 @@ inherit common-lisp-3 git-r3
 
 DESCRIPTION="A set of CFFI bindings to the OpenGL, GLU and GLUT APIs."
 HOMEPAGE="http://common-lisp.net/project/cl-opengl/"
-EGIT_REPO_URI="git://github.com/3b/${PN}"
+EGIT_REPO_URI="https://github.com/3b/${PN}"
 
 LICENSE="BSD"
 SLOT="0"
