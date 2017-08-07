@@ -7,7 +7,7 @@ inherit common-lisp-3 git-r3
 
 DESCRIPTION="LET+: destructuring extension of LET*"
 HOMEPAGE="http://www.cliki.net/let-plus"
-EGIT_REPO_URI="git://github.com/tpapp/${PN}"
+EGIT_REPO_URI="https://github.com/tpapp/${PN}"
 
 LICENSE="Boost-1.0"
 SLOT="0"
