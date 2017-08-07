@@ -7,7 +7,7 @@ inherit common-lisp-3 git-r3
 
 DESCRIPTION="Parenscript is a small lispy language that can be compiled to JavaScript."
 HOMEPAGE="http://common-lisp.net/project/parenscript/"
-EGIT_REPO_URI="git://github.com/vsedach/Parenscript"
+EGIT_REPO_URI="https://github.com/vsedach/Parenscript"
 
 LICENSE="BSD"
 SLOT="0"
@@ -30,6 +30,6 @@ src_install() {
 	dodoc contributors README
 	if use doc ; then
 		dodoc docs/introduction.lisp
-		dohtml -r docs
+		dodoc -r docs
 	fi
 }
