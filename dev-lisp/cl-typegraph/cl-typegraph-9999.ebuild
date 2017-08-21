@@ -7,7 +7,7 @@ inherit common-lisp-3 git-r3
 
 DESCRIPTION="Stand-alone Common Lisp graph typesetting system"
 HOMEPAGE="https://github.com/mbattyani/cl-typegraph"
-EGIT_REPO_URI="git://github.com/mbattyani/${PN}.git"
+EGIT_REPO_URI="https://github.com/mbattyani/${PN}"
 
 LICENSE="BSD-2"
 SLOT="0"
