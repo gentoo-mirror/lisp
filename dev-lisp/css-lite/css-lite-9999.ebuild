@@ -7,7 +7,7 @@ inherit common-lisp-3 git-r3
 
 DESCRIPTION="A css grammar for lisp"
 HOMEPAGE="https://github.com/paddymul/css-lite"
-EGIT_REPO_URI="git://github.com/paddymul/${PN}.git"
+EGIT_REPO_URI="https://github.com/paddymul/${PN}"
 
 LICENSE="BSD"
 SLOT="0"
