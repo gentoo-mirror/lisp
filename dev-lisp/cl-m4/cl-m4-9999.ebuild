@@ -7,8 +7,7 @@ inherit common-lisp-3 git-r3
 
 DESCRIPTION="Common Lisp re-implementation of GNU M4"
 HOMEPAGE="http://www.cliki.net/cl-m4"
-
-EGIT_REPO_URI="git://github.com/e-user/${PN}"
+EGIT_REPO_URI="https://github.com/e-user/${PN}"
 
 LICENSE="GPL-3+"
 SLOT="0"

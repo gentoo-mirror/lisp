@@ -7,7 +7,7 @@ inherit autotools git-r3
 
 DESCRIPTION="Thin wrapper over POSIX syscalls"
 HOMEPAGE="https://github.com/sionescu/libfixposix"
-EGIT_REPO_URI="git://github.com/sionescu/${PN}"
+EGIT_REPO_URI="https://github.com/sionescu/${PN}"
 
 LICENSE="Boost-1.0"
 SLOT="0"

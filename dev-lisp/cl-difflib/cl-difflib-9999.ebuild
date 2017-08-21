@@ -7,7 +7,7 @@ inherit common-lisp-3 git-r3
 
 DESCRIPTION="CL-DIFFLIB is a Lisp library for computing differences between sequences."
 HOMEPAGE="http://www.cliki.net/CL-DIFFLIB"
-EGIT_REPO_URI="git://github.com/wiseman/${PN}"
+EGIT_REPO_URI="https://github.com/wiseman/${PN}"
 
 LICENSE="MIT"
 SLOT="0"
