@@ -1,6 +1,5 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
 # @ECLASS: common-lisp-3.eclass
 # @MAINTAINER:
@@ -42,7 +41,9 @@ EXPORT_FUNCTIONS src_compile src_install
 # @DESCRIPTION:
 # Since there's nothing to build in most cases, default doesn't do
 # anything.
-common-lisp-3_src_compile() { true; }
+common-lisp-3_src_compile() {
+	true;
+}
 
 # @FUNCTION: absolute-path-p
 # @DESCRIPTION:
@@ -178,13 +179,14 @@ common-lisp-export-impl-args() {
 		die "${FUNCNAME[0]}: wrong number of arguments: $#"
 	fi
 	CL_BINARY="${1}"
-	case ${1} in
+	case "${CL_BINARY}" in
 		clisp)
 			CL_NORC="-norc"
 			CL_LOAD="-i"
 			CL_EVAL="-x"
 			;;
-		clozurecl | ccl | openmcl)
+		clozure | clozurecl | ccl | openmcl)
+			CL_BINARY="ccl"
 			CL_NORC="--no-init"
 			CL_LOAD="--load"
 			CL_EVAL="--eval"
@@ -206,7 +208,7 @@ common-lisp-export-impl-args() {
 			CL_EVAL="--eval"
 			;;
 		*)
-			die ${1} is not supported by ${0}
+			die "${CL_BINARY} is not supported by ${0}"
 			;;
 	esac
 	export CL_BINARY CL_NORC CL_LOAD CL_EVAL
