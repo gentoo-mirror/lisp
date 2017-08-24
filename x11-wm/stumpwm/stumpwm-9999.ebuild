@@ -3,26 +3,27 @@
 
 EAPI=6
 
-inherit autotools common-lisp-3 git-r3
+inherit autotools common-lisp-3 git-r3 xdg-utils
 
 DESCRIPTION="Stumpwm is a Window Manager written entirely in Common Lisp."
 HOMEPAGE="https://stumpwm.github.io/"
-EGIT_REPO_URI="git://github.com/stumpwm/stumpwm"
+EGIT_REPO_URI="https://github.com/${PN}/${PN}"
 
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="contrib doc emacs clisp ecl +sbcl"
 
-RDEPEND="dev-lisp/cl-ppcre
+DEPEND="dev-lisp/common-lisp-controller
+	virtual/commonlisp
+	dev-lisp/cl-ppcre
+	doc? ( virtual/texi2dvi )"
+
+RDEPEND="${DEPEND}
+	emacs? ( virtual/emacs app-emacs/slime )
 	!clisp? ( !sbcl? ( !amd64? ( dev-lisp/cmucl ) ) )
 	clisp? ( >=dev-lisp/clisp-2.38-r2[X,-new-clx] )
-	sbcl?  ( >=dev-lisp/sbcl-1.1.15 dev-lisp/clx )
-	emacs? ( virtual/emacs app-emacs/slime )"
-
-DEPEND="${RDEPEND}
-	sys-apps/texinfo
-	doc? ( virtual/texi2dvi )"
+	sbcl?  ( >=dev-lisp/sbcl-1.1.15 dev-lisp/clx )"
 
 CLPKGDIR="${CLSOURCEROOT}/${CLPACKAGE}"
 CONTRIBDIR="${CLPKGDIR}/contrib"
@@ -44,6 +45,7 @@ do_contrib() {
 
 src_prepare() {
 	default
+	xdg_environment_reset
 	if use contrib ; then
 		# Fix contrib directory
 		sed -i -e "s|@CONTRIB_DIR@|@MODULE_DIR@|" make-image.lisp.in || die
