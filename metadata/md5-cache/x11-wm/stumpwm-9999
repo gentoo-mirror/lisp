@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install prepare unpack
-DEPEND=dev-lisp/cl-ppcre !clisp? ( !sbcl? ( !amd64? ( dev-lisp/cmucl ) ) ) clisp? ( >=dev-lisp/clisp-2.38-r2[X,-new-clx] ) sbcl? ( >=dev-lisp/sbcl-1.1.15 dev-lisp/clx ) emacs? ( virtual/emacs app-emacs/slime ) sys-apps/texinfo doc? ( virtual/texi2dvi ) >=app-portage/elt-patches-20170422 !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 >=dev-vcs/git-1.8.2.1
+DEPEND=dev-lisp/common-lisp-controller virtual/commonlisp dev-lisp/cl-ppcre doc? ( virtual/texi2dvi ) >=app-portage/elt-patches-20170422 !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 >=dev-vcs/git-1.8.2.1
 DESCRIPTION=Stumpwm is a Window Manager written entirely in Common Lisp.
 EAPI=6
 HOMEPAGE=https://stumpwm.github.io/
@@ -7,9 +7,9 @@ IUSE=contrib doc emacs clisp ecl +sbcl
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
 PDEPEND=virtual/commonlisp
-RDEPEND=dev-lisp/cl-ppcre !clisp? ( !sbcl? ( !amd64? ( dev-lisp/cmucl ) ) ) clisp? ( >=dev-lisp/clisp-2.38-r2[X,-new-clx] ) sbcl? ( >=dev-lisp/sbcl-1.1.15 dev-lisp/clx ) emacs? ( virtual/emacs app-emacs/slime )
+RDEPEND=dev-lisp/common-lisp-controller virtual/commonlisp dev-lisp/cl-ppcre doc? ( virtual/texi2dvi ) emacs? ( virtual/emacs app-emacs/slime ) !clisp? ( !sbcl? ( !amd64? ( dev-lisp/cmucl ) ) ) clisp? ( >=dev-lisp/clisp-2.38-r2[X,-new-clx] ) sbcl? ( >=dev-lisp/sbcl-1.1.15 dev-lisp/clx )
 RESTRICT=mirror
 SLOT=0
 _eclass_exported_funcs=src_unpack:git-r3 src_prepare:- src_compile:- src_install:-
-_eclasses_=autotools	7027963e8e8cc12c91117bdb9225dc26	common-lisp-3	58450e8d23972eaeb8cdb466865cce08	epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	9c113d6a64826c40154cad7be15d95ea	git-r3	cbafa3261c37c7e3af44bb16a34ea390	libtool	0081a71a261724730ec4c248494f044d	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	185a06792159ca143528e7010368e8af
-_md5_=ac6a3f51dbf19564b30f02a9bf0b8924
+_eclasses_=autotools	7027963e8e8cc12c91117bdb9225dc26	common-lisp-3	58450e8d23972eaeb8cdb466865cce08	epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	9c113d6a64826c40154cad7be15d95ea	git-r3	cbafa3261c37c7e3af44bb16a34ea390	libtool	0081a71a261724730ec4c248494f044d	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	185a06792159ca143528e7010368e8af	xdg-utils	f2c8335407f0b935b0a96d4adf23ef25
+_md5_=9c0f95e51877259f70f059aaf0abe833
