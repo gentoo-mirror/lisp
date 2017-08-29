@@ -170,6 +170,7 @@ common-lisp-3_src_install() {
 # @DESCRIPTION:
 #   Export a few variables containing the switches necessary
 #   to make the CL implementation perform basic functions:
+#   * CL_BINARY: Common Lisp implementation
 #   * CL_NORC: don't load syste-wide or user-specific initfiles
 #   * CL_LOAD: load a certain file
 #   * CL_EVAL: eval a certain expression at startup
