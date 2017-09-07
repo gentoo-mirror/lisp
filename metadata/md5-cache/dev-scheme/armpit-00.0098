@@ -6,5 +6,4 @@ KEYWORDS=~arm
 LICENSE=MIT
 SLOT=0
 SRC_URI=mirror://sourceforge/armpit/armpit_00.0098.tar.gz
-_eclass_exported_funcs=src_compile:- src_install:-
 _md5_=a998904f21393e4f51b4b2bb956646bb
