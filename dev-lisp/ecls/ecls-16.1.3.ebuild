@@ -1,24 +1,26 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
-
+EAPI=5
 inherit eutils multilib
+
+# test phase only works if ecls already installed #516876
+RESTRICT="test"
 
 MY_P=ecl-${PV}
 
-DESCRIPTION="ECL is an embeddable Common Lisp implementation."
-HOMEPAGE="http://ecls.sourceforge.net/"
-SRC_URI="mirror://sourceforge/${PN}/${MY_P}.tgz"
-RESTRICT="mirror"
+DESCRIPTION="ECL is an embeddable Common Lisp implementation"
+HOMEPAGE="https://common-lisp.net/project/ecl/"
+SRC_URI="https://common-lisp.net/project/ecl/static/files/release/${MY_P}.tgz"
 
 LICENSE="BSD LGPL-2"
-SLOT="0"
+SLOT="0/${PV}"
 KEYWORDS="~amd64 ~ppc ~sparc ~x86"
-IUSE="debug emacs gengc precisegc sse +threads +unicode X"
+IUSE="cxx debug emacs gengc precisegc cpu_flags_x86_sse +threads +unicode +libatomic X"
 
 CDEPEND="dev-libs/gmp:0
 		virtual/libffi
+		libatomic? ( dev-libs/libatomic_ops )
 		>=dev-libs/boehm-gc-7.1[threads?]
 		>=dev-lisp/asdf-2.33-r3:="
 DEPEND="${CDEPEND}
@@ -39,22 +41,26 @@ pkg_setup () {
 
 src_prepare() {
 	epatch "${FILESDIR}"/${PV}-headers-gentoo.patch
-	cp /usr/share/common-lisp/source/asdf/build/asdf.lisp contrib/asdf/ || die
+	epatch "${FILESDIR}"/${PV}-build.patch
+	cp "${EPREFIX}"/usr/share/common-lisp/source/asdf/build/asdf.lisp contrib/asdf/ || die
 }
 
 src_configure() {
 	econf \
 		--with-system-gmp \
 		--enable-boehm=system \
-		--enable-longdouble \
+		--enable-longdouble=yes \
 		--with-dffi \
+		$(use_with cxx) \
 		$(use_enable gengc) \
 		$(use_enable precisegc) \
 		$(use_with debug debug-cflags) \
-		$(use_with sse) \
+		$(use_enable libatomic libatomic system) \
+		$(use_with cpu_flags_x86_sse sse) \
 		$(use_enable threads) \
 		$(use_with threads __thread) \
 		$(use_enable unicode) \
+		$(use_with unicode unicode-names) \
 		$(use_with X x) \
 		$(use_with X clx)
 }
@@ -77,7 +83,7 @@ src_compile() {
 src_install () {
 	emake DESTDIR="${D}" install || die "Installation failed"
 
-	dodoc ANNOUNCEMENT Copyright
+	dodoc README.md CHANGELOG
 	dodoc "${FILESDIR}"/README.Gentoo
 	pushd build/doc
 	newman ecl.man ecl.1
