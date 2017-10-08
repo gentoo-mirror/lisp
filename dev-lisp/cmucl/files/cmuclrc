@@ -3,5 +3,7 @@
 
 (in-package :common-lisp-user)
 
-;;; Setup ASDF3
-(load "/etc/common-lisp/gentoo-init.lisp")
+(if (probe-file "/etc/gentoo-init.lisp")
+	(load "/etc/gentoo-init.lisp")
+  (format t "~%;;; Warning: There is no /etc/gentoo-init.lisp file ~
+\(which should be provided by dev-lisp/gentoo-init"))
