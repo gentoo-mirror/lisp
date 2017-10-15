@@ -9,7 +9,7 @@ DESCRIPTION="Common Lisp interface to the terminfo database."
 HOMEPAGE="http://users.actrix.co.nz/mycroft/cl.html"
 EGIT_REPO_URI="https://gitlab.common-lisp.net/linedit/linedit.git"
 
-LICENSE="BSD-2"
+LICENSE="BSD"
 SLOT="0"
 IUSE=""
 
