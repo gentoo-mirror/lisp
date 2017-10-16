@@ -1,0 +1,21 @@
+diff -Nuar a/linedit.asd b/linedit.asd
+--- a/linedit.asd	2017-10-16 23:10:11.424173773 +0200
++++ b/linedit.asd	2017-10-16 23:10:48.764173614 +0200
+@@ -30,7 +30,6 @@
+   :licence "MIT"
+   :author "Nikodemus Siivola <nikodemus@random-state.net>"
+   :depends-on (:uffi :terminfo :osicat :alexandria)
+-  :defsystem-depends-on (:madeira-port)
+   :components
+   (
+    ;; Common
+@@ -60,6 +59,6 @@
+    (:module "ports"
+     :depends-on ("main")
+     :components
+-    ((:madeira-port "sbcl" :when :sbcl)
+-     (:madeira-port "ccl" :when :ccl)
+-     (:madeira-port "generic" :unless (:or :sbcl :ccl))))))
++    ((:file "sbcl" :if-feature :sbcl)
++    (:file "ccl" :if-feature :ccl)
++    (:file "generic" :if-feature (:not (:or :sbcl :ccl)))))))
