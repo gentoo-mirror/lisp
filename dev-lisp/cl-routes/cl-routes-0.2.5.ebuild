@@ -7,7 +7,7 @@ inherit common-lisp-3
 
 DESCRIPTION="Common Lisp re-implementation of the Rails routes system for mapping URLs."
 HOMEPAGE="http://code.google.com/p/cl-routes/"
-SRC_URI="http://cl-routes.googlecode.com/files/${P}.tar.bz2"
+SRC_URI="https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/cl-routes/${P}.tar.bz2"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
