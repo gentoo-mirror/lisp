@@ -22,6 +22,7 @@ src_unpack() {
 
 src_prepare() {
 	rm -f "${S}"/Makefile
+	eapply_user
 }
 
 src_install() {
