@@ -5,22 +5,22 @@ EAPI=6
 
 inherit common-lisp-3
 
-if [[ ${PV} == 9999* ]] ; then
-	inherit git-r3
-	EGIT_REPO_URI="https://github.com/stumpwm/${PN}"
-else
-	SRC_URI="https://dev.gentoo.org/~nimiux/${CATEGORY}/${PN}/${P}.tar.bz2"
-	KEYWORDS="~amd64 ~x86"
-fi
-
 DESCRIPTION="Extension Modules for StumpWM"
 HOMEPAGE="https://github.com/stumpwm/stumpwm-contrib/"
+
+if [[ ${PV} == 9999* ]] ; then
+	inherit git-r3
+	EGIT_REPO_URI="${HOMEPAGE}"
+else
+	SRC_URI="mirror://gentoo/${P}.tar.bz2"
+	KEYWORDS="~amd64 ~x86"
+fi
 
 LICENSE="GPL-2 GPL-3 BSD-2"
 SLOT="0"
 IUSE=""
 
-RDEPEND=">=x11-wm/stumpwm-0.9.9"
+RDEPEND=">=x11-wm/stumpwm-1.0.0"
 
 CONTRIBCATEGORIES="media modeline minor-mode util"
 
