@@ -5,7 +5,7 @@ EAPI=6
 
 inherit common-lisp-3 git-r3 eutils
 
-DESCRIPTION="A collection of public domain utilities."
+DESCRIPTION="A collection of portable utilities for Common Lisp"
 HOMEPAGE="http://common-lisp.net/project/alexandria/"
 EGIT_REPO_URI="https://gitlab.common-lisp.net/alexandria/alexandria.git"
 
