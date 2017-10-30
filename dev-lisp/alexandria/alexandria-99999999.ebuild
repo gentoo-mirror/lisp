@@ -9,7 +9,7 @@ DESCRIPTION="A collection of portable utilities for Common Lisp"
 HOMEPAGE="http://common-lisp.net/project/alexandria/"
 EGIT_REPO_URI="https://gitlab.common-lisp.net/alexandria/alexandria.git"
 
-LICENSE="MIT"
+LICENSE="public-domain"
 SLOT="0"
 IUSE="doc"
 
