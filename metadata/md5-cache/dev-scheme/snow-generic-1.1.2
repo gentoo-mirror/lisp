@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=impl? ( dev-scheme/bigloo ) impl? ( dev-scheme/chicken ) impl? ( dev-scheme/gambit ) impl? ( dev-scheme/gauche ) impl? ( dev-scheme/guile ) impl? ( dev-scheme/mit-scheme ) impl? ( dev-scheme/mzscheme ) impl? ( dev-scheme/scheme48 ) impl? ( dev-scheme/scm ) impl? ( dev-scheme/stklos )
+DESCRIPTION=A repository of Scheme packages that are portable to several popular implementations of Scheme
+EAPI=0
+HOMEPAGE=http://snow.iro.umontreal.ca/
+IUSE=bigloo chicken gambit gauche guile mit-scheme mzscheme scheme48 scm stklos
+KEYWORDS=~amd64 ~x86
+LICENSE=LGPL-2.1
+RDEPEND=impl? ( dev-scheme/bigloo ) impl? ( dev-scheme/chicken ) impl? ( dev-scheme/gambit ) impl? ( dev-scheme/gauche ) impl? ( dev-scheme/guile ) impl? ( dev-scheme/mit-scheme ) impl? ( dev-scheme/mzscheme ) impl? ( dev-scheme/scheme48 ) impl? ( dev-scheme/scm ) impl? ( dev-scheme/stklos )
+SLOT=0
+SRC_URI=http://snow.iro.umontreal.ca/?operation=download&pkg=snow-generic/v1.1.2&fakeoutput=/snow-generic-v1_1_2.tgz
+_eclasses_=epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	227b041a120d309fdefbebb3b8c1dfa9	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	185a06792159ca143528e7010368e8af
+_md5_=1705bd3ad931436ee1e635cace2a7bb9

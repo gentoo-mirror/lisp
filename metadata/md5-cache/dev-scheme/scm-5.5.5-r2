@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst test unpack
+DEPEND=app-arch/unzip >=dev-scheme/slib-3.1.5 ncurses? ( sys-libs/ncurses ) readline? ( sys-libs/libtermcap-compat )
+DESCRIPTION=SCM is a Scheme implementation conforming to Revised5 Report on the Algorithmic Language Scheme and the IEEE P1178 specification.
+EAPI=0
+HOMEPAGE=http://swiss.csail.mit.edu/~jaffer/SCM
+IUSE=arrays bignums cautious dynamic-linking engineering-notation gsubr inexact ioext macro ncurses posix readline regex sockets unix
+LICENSE=LGPL-3
+RDEPEND=app-arch/unzip >=dev-scheme/slib-3.1.5 ncurses? ( sys-libs/ncurses ) readline? ( sys-libs/libtermcap-compat )
+SLOT=0
+SRC_URI=http://groups.csail.mit.edu/mac/ftpdir/scm/scm-5e5.zip
+_eclasses_=epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	227b041a120d309fdefbebb3b8c1dfa9	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	185a06792159ca143528e7010368e8af	versionator	c80ccf29e90adea7c5cae94b42eb76d0
+_md5_=74d24d5d56f76509c78de7f8924ef0c6

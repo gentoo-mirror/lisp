@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install
+DESCRIPTION=A Common Lisp library for working with Amazon's Simple Storage Service (S3).
+EAPI=6
+HOMEPAGE=http://www.xach.com/lisp/zs3/
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=BSD-2
+PDEPEND=virtual/commonlisp
+RDEPEND=dev-lisp/alexandria dev-lisp/cxml dev-lisp/chunga >=dev-lisp/drakma-1.0.0 dev-lisp/ironclad dev-lisp/puri dev-lisp/cl-base64
+RESTRICT=mirror
+SLOT=0
+SRC_URI=https://github.com/xach/zs3/archive/release-1.2.11.tar.gz -> zs3-1.2.11.tar.gz
+_eclasses_=common-lisp-3	fd8ebbf7f9174270e4d5fdd820ea5771	epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	227b041a120d309fdefbebb3b8c1dfa9	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	185a06792159ca143528e7010368e8af
+_md5_=a0e9844c913fcb8bda5bbc6e7bc4dad5
