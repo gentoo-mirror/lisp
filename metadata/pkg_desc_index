@@ -133,7 +133,7 @@ dev-lisp/cl-yahoo 0.5: CL-YAHOO is a Common Lisp interface to the Yahoo! API
 dev-lisp/clawk 20060313: An AWK-like text processing language with a Lispy implementation.
 dev-lisp/climacs 20080209-r1: Climacs is an Emacs-like text editor written in Common Lisp.
 dev-lisp/clinch 9999: Common Lisp 3D/2D Graphics Engine for OpenGL
-dev-lisp/clisp 2.49-r6 2.49-r8 2.49-r100 2.50_pre20130414: A portable, bytecode-compiled implementation of Common Lisp
+dev-lisp/clisp 2.49-r6 2.49-r8 2.49-r100 2.49.60 2.50_pre20130414: A portable, bytecode-compiled implementation of Common Lisp
 dev-lisp/clon 0.0.2: A Common Lisp task scheduler library similar to Unix cron.
 dev-lisp/closer-mop 1.0.0: Closer to MOP is a Common Lisp Metaobject Protocol compatibility layer.
 dev-lisp/closure 20080602: Closure is a web browser implemented in Common Lisp, implemented using CLIM.
