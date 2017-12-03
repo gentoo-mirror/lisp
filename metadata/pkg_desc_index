@@ -181,7 +181,7 @@ dev-lisp/gsll 9999: Common Lisp interface to the GNU Scientific Library.
 dev-lisp/html-encode 1.2: Common Lisp library for encoding text in various web-savvy formats.
 dev-lisp/html-template 0.9.1 0.9.2: html-template is a portable templating library for Common Lisp
 dev-lisp/hunchensocket 1.0.0: WebSockets for Hunchentoot
-dev-lisp/hunchentoot 1.2.36 1.2.37: Hunchentoot is a web server written in Common Lisp.
+dev-lisp/hunchentoot 1.2.36 1.2.37 1.2.38: Hunchentoot is a web server written in Common Lisp.
 dev-lisp/hunchentoot-auth 0.2: HTTP authentication with Hunchentoot.
 dev-lisp/hunchentoot-cgi 0.2: CGI handlers for Hunchentoot.
 dev-lisp/hunchentoot-vhost 0.2: Virtual hosting with Hunchentoot.
