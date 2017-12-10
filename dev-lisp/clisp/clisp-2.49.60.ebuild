@@ -58,6 +58,7 @@ src_prepare() {
 	if use alpha || use ia64; then
 		sed -i -e 's/-O2//g' src/makemake.in || die
 	fi
+	eapply "${FILESDIR}"/"${P}"-after_glibc_cfree_bdb.patch
 	eapply_user
 }
 
