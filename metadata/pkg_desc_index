@@ -79,7 +79,7 @@ dev-lisp/cl-css 9999: Non-validating, inline CSS generator for Common Lisp
 dev-lisp/cl-darcs 0.2_p20080314-r1: A client for the darcs version control system written in Common Lisp.
 dev-lisp/cl-difflib 0.1 9999: CL-DIFFLIB is a Lisp library for computing differences between sequences.
 dev-lisp/cl-emb 0.4.4: Embedded Common Lisp and template system
-dev-lisp/cl-fad 0.7.3 0.7.4: CL-FAD is a thin layer atop the Common Lisp's standard pathname functions.
+dev-lisp/cl-fad 0.7.3 0.7.4 0.7.5: CL-FAD is a thin layer atop the Common Lisp's standard pathname functions.
 dev-lisp/cl-ftp 1.5.0 1.6.0: FTP Client Functionality for Common Lisp
 dev-lisp/cl-gd 0.6.0 0.6.1: CL-GD is a library for Common Lisp which interfaces to the GD Graphics Library
 dev-lisp/cl-glfw 9999: Set of CFFI bindings for the GLFW OpenGL helper library
