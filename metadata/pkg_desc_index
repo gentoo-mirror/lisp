@@ -133,13 +133,13 @@ dev-lisp/cl-yahoo 0.5: CL-YAHOO is a Common Lisp interface to the Yahoo! API
 dev-lisp/clawk 20060313: An AWK-like text processing language with a Lispy implementation.
 dev-lisp/climacs 20080209-r1: Climacs is an Emacs-like text editor written in Common Lisp.
 dev-lisp/clinch 9999: Common Lisp 3D/2D Graphics Engine for OpenGL
-dev-lisp/clisp 2.49-r6 2.49-r8 2.49-r100 2.49.60 2.50_pre20130414: A portable, bytecode-compiled implementation of Common Lisp
+dev-lisp/clisp 2.49-r100 2.49-r101 2.49.60 2.50_pre20130414: A portable, bytecode-compiled implementation of Common Lisp
 dev-lisp/clon 0.0.2: A Common Lisp task scheduler library similar to Unix cron.
 dev-lisp/closer-mop 1.0.0: Closer to MOP is a Common Lisp Metaobject Protocol compatibility layer.
 dev-lisp/closure 20080602: Closure is a web browser implemented in Common Lisp, implemented using CLIM.
 dev-lisp/closure-common 9999 20081130: Helper library for Closure and Closure XML implementing runes.
 dev-lisp/closure-html 20100920: An HTML parser written in Common Lisp.
-dev-lisp/clozurecl 1.9-r3 1.11-r1 1.11-r2: Common Lisp implementation, derived from Digitool's MCL product
+dev-lisp/clozurecl 1.9-r3 1.11-r3 1.11.5: Common Lisp implementation, derived from Digitool's MCL product
 dev-lisp/clsql 5.4.0 6.4.0 6.4.1: A multi-platform SQL interface for Common Lisp
 dev-lisp/clx 0.7.3 0.7.4 9999: A fork of crhodes' fork of danb's fork of CLX, an X11 client for Common Lisp
 dev-lisp/clx-truetype 9999: Pure Common Lisp TrueType font renderer for CLX
