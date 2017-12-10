@@ -63,9 +63,6 @@ src_prepare() {
 }
 
 src_configure() {
-	# Bug 618170. If anyone has a better idea...
-	append-flags -fno-pie
-
 	# We need this to build on alpha/ia64
 	if use alpha || use ia64; then
 		replace-flags -O? -O1
