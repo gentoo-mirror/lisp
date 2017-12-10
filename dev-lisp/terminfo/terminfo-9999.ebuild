@@ -18,5 +18,5 @@ RDEPEND="!dev-lisp/cl-${PN}
 
 src_install() {
 	common-lisp-install-sources "${PN}.lisp"
-	common-lisp-install-asdf
+	common-lisp-install-asdf "${PN}"
 }
