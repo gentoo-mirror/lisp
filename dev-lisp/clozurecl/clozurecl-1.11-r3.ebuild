@@ -56,6 +56,8 @@ src_configure() {
 src_prepare() {
 	default
 	eapply "${FILESDIR}/${MY_PN}-format.patch"
+	# bug #638304 https://github.com/Clozure/ccl/commit/a87d61b88e1f48a563335062668970f7e6290ecf
+	eapply "${FILESDIR}/${MY_P}-glibc-2.26.patch"
 	# https://lists.clozure.com/pipermail/openmcl-devel/2016-September/011399.html
 	sed -i "s/-dynamic/-no_pie/" "${S}/lisp-kernel/darwinx8664/Makefile" || die
 	cp "${EPREFIX}/usr/share/common-lisp/source/asdf/build/asdf.lisp" tools/ || die
