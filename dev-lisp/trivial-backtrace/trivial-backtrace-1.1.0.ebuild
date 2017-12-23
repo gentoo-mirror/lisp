@@ -14,8 +14,6 @@ SLOT="0"
 KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
-S="${WORKDIR}/${PN}"
-
 CLSYSTEMS="${PN} ${PN}-test"
 
 src_install() {
