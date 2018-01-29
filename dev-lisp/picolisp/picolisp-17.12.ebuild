@@ -1,7 +1,7 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=5
+EAPI=6
 
 inherit eutils bash-completion-r1 toolchain-funcs
 
@@ -41,7 +41,7 @@ pre_src_unpack() {
 src_prepare() {
 	find . -type f -executable -exec sed -i "s#!bin/picolisp lib.l#!/usr/bin/picolisp /usr/lib/picolisp/lib.l#" {} \;
 	sed -i "s# test -x /usr/bin/picolisp# false#" src64/mkAsm || die
-	epatch_user
+	eapply_user
 }
 
 src_compile() {
@@ -94,8 +94,8 @@ src_install() {
 	if use doc; then
 		DDOC=/usr/share/doc/${PF}
 		insinto $DDOC
-		doins doc/quine doc/db doc/travel doc/utf8 doc/vim-tsm
-		dohtml doc/*
+		doins doc/quine doc/travel doc/vim-tsm
+		dodoc -r doc/*
 		insinto $DDOC/html
 		doins doc/family.l doc/shape.l doc/fun.l doc/hello.l
 		if use amd64; then
