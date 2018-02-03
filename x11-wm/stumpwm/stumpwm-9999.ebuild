@@ -1,4 +1,4 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -14,16 +14,14 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="contrib doc emacs clisp ecl +sbcl"
 
-DEPEND="dev-lisp/common-lisp-controller
-	virtual/commonlisp
-	dev-lisp/cl-ppcre
-	doc? ( virtual/texi2dvi )"
-
-RDEPEND="${DEPEND}
-	emacs? ( virtual/emacs app-emacs/slime )
-	!clisp? ( !sbcl? ( !amd64? ( dev-lisp/cmucl ) ) )
-	clisp? ( >=dev-lisp/clisp-2.38-r2[X,-new-clx] )
-	sbcl?  ( >=dev-lisp/sbcl-1.1.15 dev-lisp/clx )"
+RDEPEND="dev-lisp/alexandria
+		dev-lisp/cl-ppcre
+		dev-lisp/clx
+		>=dev-lisp/sbcl-1.3.0
+		emacs? ( virtual/emacs app-emacs/slime )"
+DEPEND="${RDEPEND}
+		sys-apps/texinfo
+		doc? ( virtual/texi2dvi )"
 
 CLPKGDIR="${CLSOURCEROOT}/${CLPACKAGE}"
 CONTRIBDIR="${CLPKGDIR}/contrib"
