@@ -1,8 +1,7 @@
-diff --git a/modules/berkeley-db/bdb.c b/modules/berkeley-db/bdb.c
-index a266d41..942652a 100644
---- a/modules/berkeley-db/bdb.c
-+++ b/modules/berkeley-db/bdb.c
-@@ -2216,7 +2216,13 @@ DEFUN(BDB:DB-COMPACT, db &key TRANSACTION :START STOP FREE FILL TIMEOUT \
+diff -r -U3 clisp-2.49.90.orig/modules/berkeley-db/bdb.c clisp-2.49.90/modules/berkeley-db/bdb.c
+--- clisp-2.49.90.orig/modules/berkeley-db/bdb.c	2018-01-27 12:03:01.000000000 +0100
++++ clisp-2.49.90/modules/berkeley-db/bdb.c	2018-02-12 20:37:24.203803219 +0100
+@@ -2216,7 +2216,13 @@
    c_data.compact_timeout = timeout;
    c_data.compact_pages = pages;
    SYSCALL(db->compact,(db,txn,pstart,pstop,&c_data,flags,&end));
@@ -17,10 +16,9 @@ index a266d41..942652a 100644
    pushSTACK(uint32_to_I(c_data.compact_pages_free));
    pushSTACK(uint32_to_I(c_data.compact_pages_examine));
    pushSTACK(uint32_to_I(c_data.compact_levels));
-diff --git a/modules/bindings/glibc/linux.lisp b/modules/bindings/glibc/linux.lisp
-index c960753..2993990 100644
---- a/modules/bindings/glibc/linux.lisp
-+++ b/modules/bindings/glibc/linux.lisp
+diff -r -U3 clisp-2.49.90.orig/modules/bindings/glibc/linux.lisp clisp-2.49.90/modules/bindings/glibc/linux.lisp
+--- clisp-2.49.90.orig/modules/bindings/glibc/linux.lisp	2018-01-10 00:32:25.000000000 +0100
++++ clisp-2.49.90/modules/bindings/glibc/linux.lisp	2018-02-12 20:48:22.467775536 +0100
 @@ -1,7 +1,7 @@
  ;; Foreign functions provided by the Linux C library version 6,
  ;; i.e. the GNU C library version 2.0.7.
@@ -30,15 +28,7 @@ index c960753..2993990 100644
  
  ;; NB: quite a few functions here have more portable counterparts in POSIX
  
-@@ -649,7 +649,6 @@
- (def-call-out calloc (:arguments (nmemb size_t) (size size_t))
-   (:return-type c-pointer))
- (def-call-out free (:arguments (ptr c-pointer)) (:return-type nil))
--(def-call-out cfree (:arguments (ptr c-pointer)) (:return-type nil))
- (def-call-out valloc (:arguments (size size_t)) (:return-type c-pointer))
- 
- (def-call-out abort (:arguments) (:return-type nil))
-@@ -687,9 +686,8 @@
+@@ -686,9 +686,8 @@
  (def-call-out system? (:arguments (null c-string))
    (:return-type boolean) (:name "system"))
  
@@ -46,11 +36,11 @@ index c960753..2993990 100644
 -; (def-call-out canonicalize_file_name (:arguments (name c-string))
 -;  (:return-type c-string :malloc-free))
 +(def-call-out canonicalize_file_name (:arguments (name c-string))
-+  (:return-type c-string :malloc-free) (:guard "defined(__USE_GNU)"))
++ (:return-type c-string :malloc-free))
  
  (def-call-out realpath
      (:arguments (name c-string)
-@@ -1041,9 +1039,8 @@
+@@ -1040,9 +1039,8 @@
  (def-call-out access (:arguments (name c-string) (type int))
    (:return-type int))
  
@@ -58,11 +48,11 @@ index c960753..2993990 100644
 -; (def-call-out euidaccess (:arguments (name c-string) (type int))
 -;   (:return-type int))
 +(def-call-out euidaccess (:arguments (name c-string) (type int))
-+  (:return-type int) (:guard "defined(__USE_GNU)"))
++  (:return-type int))
  
  (defconstant SEEK_SET 0)
  (defconstant SEEK_CUR 1)
-@@ -1094,9 +1091,8 @@
+@@ -1093,9 +1091,8 @@
  ;(def-call-out getcwd (:arguments (buf c-string :out) (size size_t)) ; ??
  ;  (:return-type c-string))
  
@@ -70,33 +60,31 @@ index c960753..2993990 100644
 -; (def-call-out get_current_dir_name (:arguments)
 -;   (:return-type c-string :malloc-free))
 +(def-call-out get_current_dir_name (:arguments)
-+  (:return-type c-string :malloc-free) (:guard "defined(__USE_GNU)"))
++  (:return-type c-string :malloc-free))
  
  ;(def-call-out getwd (:arguments (buf c-string :out)) ; ??
  ;  (:return-type c-string))
-@@ -1324,8 +1320,8 @@
+@@ -1323,8 +1320,7 @@
  ;    (:arguments (size int) (list (c-ptr (c-array gid_t ??)) :out)) ; ??
  ;  (:return-type int))
  
 -; You can uncomment this if your compiler sets __USE_GNU
 -; (def-call-out group_member (:arguments (gid gid_t)) (:return-type boolean))
-+(def-call-out group_member (:arguments (gid gid_t)) (:return-type boolean)
-+   (:guard "defined(__USE_GNU)"))
++(def-call-out group_member (:arguments (gid gid_t)) (:return-type boolean))
  (def-call-out setuid (:arguments (uid uid_t)) (:return-type int))
  (def-call-out setreuid (:arguments (ruid uid_t) (euid uid_t))
    (:return-type int))
-@@ -1822,8 +1818,8 @@
+@@ -1821,8 +1817,7 @@
    (:return-type c-string :malloc-free))
  (def-call-out ungetc (:arguments (c int) (fp FILE))
    (:return-type int))
 -; You can uncomment this if your compiler sets __USE_GNU
 -; (def-call-out fcloseall (:arguments) (:return-type int))
-+(def-call-out fcloseall (:arguments) (:return-type int)
-+  (:guard "defined(__USE_GNU)"))
++(def-call-out fcloseall (:arguments) (:return-type int))
  (def-call-out fdopen (:arguments (fildes int) (mode c-string))
    (:return-type c-pointer))
  (def-call-out fileno (:arguments (fp FILE)) (:return-type int))
-@@ -1901,11 +1897,11 @@ typedef __off64_t clisp_dirent_off_t;
+@@ -1900,11 +1895,11 @@
    (:return-type (c-ptr-null dirent)))
  (def-call-out readdir64 (:arguments (dirp c-pointer))
    (:return-type (c-ptr-null dirent64)))
@@ -110,13 +98,12 @@ index c960753..2993990 100644
      (:arguments (dirp c-pointer) (entry (c-ptr dirent64) :out :alloca)
                  (result (c-ptr (c-ptr dirent64)) :out :alloca)) ; ??
    (:return-type int))
-diff --git a/modules/bindings/glibc/test.tst b/modules/bindings/glibc/test.tst
-index f807389..b2c1222 100644
---- a/modules/bindings/glibc/test.tst
-+++ b/modules/bindings/glibc/test.tst
-@@ -5,6 +5,16 @@
- (progn (require "linux") T) T
- (listp (show (multiple-value-list (ext:module-info "linux" t)) :pretty t)) T
+diff -r -U3 clisp-2.49.90.orig/modules/bindings/glibc/test.tst clisp-2.49.90/modules/bindings/glibc/test.tst
+--- clisp-2.49.90.orig/modules/bindings/glibc/test.tst	2018-01-10 00:04:26.000000000 +0100
++++ clisp-2.49.90/modules/bindings/glibc/test.tst	2018-02-12 20:50:48.225769407 +0100
+@@ -14,6 +14,16 @@
+ (= linux:DT_DIR (linux:dirent64-d_type (show (linux:readdir64 *d*)))) T
+ (linux:closedir *d*) 0
  
 +(stringp (show (linux:get-domain-name))) T
 +(stringp (show (linux:get-host-name))) T
@@ -129,20 +116,11 @@ index f807389..b2c1222 100644
 +T
 +
  (defparameter *d* (show (linux:opendir "."))) *D*
- (linux:dirent64-d_name (show (linux:readdir64 *d*))) "."
- (linux:dirent64-d_name (show (linux:readdir64 *d*))) ".."
-diff --git a/src/foreign1.lisp b/src/foreign1.lisp
-index 26a3ba5..0e43de7 100644
---- a/src/foreign1.lisp
-+++ b/src/foreign1.lisp
-@@ -1,6 +1,6 @@
- ;;; Foreign function interface for CLISP
- ;;; Bruno Haible 19.2.1995
--;;; Sam Steingold 1998-2010
-+;;; Sam Steingold 1998-2010, 2017
- 
- #+UNICODE
- (progn
+ (linux:dirent-d_name (show (linux:readdir *d*))) "."
+ (linux:dirent-d_name (show (linux:readdir *d*))) ".."
+diff -r -U3 clisp-2.49.90.orig/src/foreign1.lisp clisp-2.49.90/src/foreign1.lisp
+--- clisp-2.49.90.orig/src/foreign1.lisp	2018-01-10 00:04:26.000000000 +0100
++++ clisp-2.49.90/src/foreign1.lisp	2018-02-12 21:03:56.768736245 +0100
 @@ -805,14 +805,17 @@
                  c-name (to-c-string c-name) (third variable) (first variable))
          (when *foreign-guard* (format *coutput-stream* "# endif~%"))))
