@@ -1,15 +1,13 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
 
-EAPI="4"
+EAPI=6
 
 # for live ebuilds uncomment inherit git-2, comment SRC_URI and empty KEYWORDS
 
 NEED_EMACS=23
 
-inherit elisp
-inherit git-2
+inherit elisp git-r3
 
 DESCRIPTION="Emacs modes for Scheme interaction"
 HOMEPAGE="http://www.nongnu.org/geiser/"
@@ -35,14 +33,10 @@ src_configure() {
 	econf --with-lispdir="${SITELISP}/${PN}"
 }
 
-src_compile() {
-	emake || die
-}
-
 src_install() {
-	emake DESTDIR="${D}" install || die
+	emake DESTDIR="${D}" install
 
-	elisp-site-file-install "${FILESDIR}/${SITEFILE}" || die
+	elisp-site-file-install "${FILESDIR}/${SITEFILE}"
 	dodoc AUTHORS NEWS README THANKS
 }
 
