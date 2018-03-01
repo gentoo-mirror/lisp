@@ -1,8 +1,7 @@
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
 
-EAPI=4
+EAPI=6
 
 inherit autotools eutils fdo-mime gnome2-utils
 
@@ -15,7 +14,7 @@ SRC_URI="ftp://ftp.texmacs.org/pub/TeXmacs/tmftp/source/${MY_P}.tar.gz"
 LICENSE="GPL-3"
 SLOT="0"
 IUSE="imlib jpeg netpbm qt4 svg spell"
-KEYWORDS="~alpha ~amd64 ~ppc ~sparc ~x86 ~x86-interix ~amd64-linux ~x86-linux"
+KEYWORDS="~alpha ~amd64 ~ppc ~sparc ~x86 ~amd64-linux ~x86-linux"
 
 RDEPEND=">=dev-scheme/guile-1.8.8-r2:12[deprecated]
 	virtual/latex-base
@@ -44,6 +43,7 @@ src_prepare() {
 	# Force building against SLOTed guile-1.8
 	epatch "${FILESDIR}"/${PN}-force-guile-18.patch
 
+	eapply_user
 	eautoreconf
 }
 
