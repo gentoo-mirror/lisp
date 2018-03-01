@@ -1,6 +1,7 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-text/lout/lout-3.31.ebuild,v 1.2 2008/01/22 21:32:11 grobian Exp $
+
+EAPI=6
 
 IUSE="zlib doc"
 
@@ -58,7 +59,7 @@ src_install() {
 		MANDIR=${mandir} \
 		install installdoc installman || die "make install failed"
 
-	lout -x -s ${D}/usr/share/lout/include/init || die "lout init failed"
+	lout -x -s "${D}"/usr/share/lout/include/init || die "lout init failed"
 
 	mv ${docdir}/README{,.docs}
 	dodoc README READMEPDF blurb blurb.short whatsnew
