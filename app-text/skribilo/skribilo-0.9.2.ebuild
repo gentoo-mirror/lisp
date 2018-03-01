@@ -1,8 +1,7 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
 
-EAPI=5
+EAPI=6
 
 inherit eutils
 
@@ -25,17 +24,17 @@ RDEPEND="${DEPEND}"
 
 src_unpack() {
 	unpack ${A}
-	cd "${S}"
+	cd "${S}" || die
 }
 
 src_configure() {
-	econf --with-guilemoduledir=/usr/share/guile/site || die "econf failed"
+	econf --with-guilemoduledir=/usr/share/guile/site
 }
 
 src_compile() {
-	emake -j1 || die "emake failed"
+	emake -j1
 }
 
 src_install() {
-	emake DESTDIR="${D}" install || die "emake install failed"
+	emake DESTDIR="${D}" install
 }
