@@ -1,9 +1,9 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
 
-inherit eutils multilib
+inherit eutils multilib toolchain-funcs
 
 DESCRIPTION="newLISP - a new generation of Lisp!"
 HOMEPAGE="http://www.newlisp.org/"
@@ -17,6 +17,11 @@ IUSE="libffi unicode"
 RDEPEND="sys-libs/readline:=
 	libffi? ( dev-libs/libffi )"
 DEPEND="${RDEPEND}"
+
+PATCHES=(
+	"${FILESDIR}/${P}-fix-makefiles.patch"
+	"${FILESDIR}/${P}-fix-paths.patch"
+)
 
 getmakefile() {
 	local arch=""
@@ -38,10 +43,6 @@ getlibffipath() {
 	echo "/usr/$(get_libdir)/${version}"
 }
 
-src_prepare() {
-	epatch "${FILESDIR}/${PN}-makefile-install-${PV}.patch"
-}
-
 src_configure() {
 	local makefile=$(getmakefile)
 	if [[ -f ${makefile} ]] ; then
@@ -58,6 +59,9 @@ src_configure() {
 	fi
 }
 
+src_compile() {
+	emake CC=$(tc-getCC)
+}
 src_install() {
 	make prefix="${D}/usr" install
 }
