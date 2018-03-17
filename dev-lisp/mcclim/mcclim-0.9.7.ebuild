@@ -1,14 +1,16 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
 
 inherit common-lisp-3 elisp-common eutils
 
+MY_PV="${PV}-imbolc"
+
 DESCRIPTION="McCLIM is a free software implementation of CLIM."
 HOMEPAGE="http://common-lisp.net/project/mcclim
 		http://cliki.net/McCLIM"
-SRC_URI="http://common-lisp.net/project/${PN}/downloads/${P}.tar.gz"
+SRC_URI="https://github.com/robert-strandh/McCLIM/archive/${MY_PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="LLGPL-2.1"
 SLOT="0"
@@ -41,14 +43,7 @@ CLSYSTEMS="Apps/Functional-Geometry/functional-geometry
 SITEFILE="${FILESDIR}"/50mcclim-gentoo.el
 ELISP_SOURCES="Tools/Emacs/indent-clim.el Tools/Emacs/hyperclim.el"
 
-src_unpack() {
-	unpack ${A} && cd "${S}"
-}
-
-src_prepare() {
-	eapply "${FILESDIR}"/${PV}-mcclim.asd-cmucl.patch
-	eapply_user
-}
+S="${WORKDIR}/McCLIM-${MY_PV}"
 
 src_compile() {
 	if use emacs ; then
@@ -56,11 +51,11 @@ src_compile() {
 		rm -rf Tools/Emacs
 		elisp-compile *.el
 	fi
-	if use doc ; then
-		cd Spec/src || die
-		VARTEXFONTS="${T}"/fonts \
-			texi2pdf clim.tex -o clim.pdf || die "Cannot build PDF docs"
-	fi
+	#if use doc ; then
+	#	cd Documentation/Specification || die
+	#	VARTEXFONTS="${T}"/fonts \
+	#		texi2pdf clim.tex -o clim.pdf || die "Cannot build PDF docs"
+	#fi
 }
 
 src_install() {
