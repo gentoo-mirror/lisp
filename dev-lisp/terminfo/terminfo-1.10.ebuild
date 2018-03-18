@@ -1,15 +1,16 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
 
 inherit common-lisp-3
 
-LINEDITVERSION="0.17.5"
+LINEDITPKG="linedit-0.17.5"
 
 DESCRIPTION="Common Lisp interface to the terminfo database."
-HOMEPAGE="http://users.actrix.co.nz/mycroft/cl.html"
-SRC_URI="https://dev.gentoo.org/~nimiux/${CATEGORY}/linedit/linedit-${LINEDITVERSION}.tar.bz2"
+HOMEPAGE="http://users.actrix.co.nz/mycroft/cl.html
+	https://github.com/nikodemus/linedit"
+SRC_URI="mirror://gentoo/${LINEDITPKG}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
@@ -18,7 +19,7 @@ IUSE=""
 
 RDEPEND="sys-libs/ncurses"
 
-S="${WORKDIR}"/linedit-"${LINEDITVERSION}"
+S="${WORKDIR}"/"${LINEDITPKG}"
 
 src_install() {
 	common-lisp-install-sources "${PN}.lisp"

@@ -1,4 +1,4 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -7,14 +7,14 @@ inherit common-lisp-3 eutils flag-o-matic multilib toolchain-funcs
 
 DESCRIPTION="Linedit is a readline-style library written in Common Lisp."
 HOMEPAGE="http://www.common-lisp.net/project/linedit/"
-SRC_URI="https://dev.gentoo.org/~nimiux/${CATEGORY}/${PN}/${P}.tar.bz2"
+SRC_URI="mirror://gentoo/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
-RDEPEND="!dev-lisp/cl-${PN}
+RDEPEND="dev-lisp/alexandria
 		dev-lisp/osicat
 		dev-lisp/terminfo
 		dev-lisp/uffi"
@@ -38,12 +38,12 @@ create_uffi_loader() {
 }
 
 src_prepare() {
-	default
 	# terminfo lives in a separate package
 	rm "${S}"/terminfo.* || die
 	eapply "${FILESDIR}"/${PV}-${PN}.asd-uffi-glue.patch
 	eapply "${FILESDIR}"/${PV}-${PN}.asd-drop-madeira-port.patch
 	create_uffi_loader
+	eapply_user
 }
 
 src_compile() {
