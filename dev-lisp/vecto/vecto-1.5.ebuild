@@ -7,7 +7,7 @@ inherit common-lisp-3
 
 DESCRIPTION="Simplified interface to the powerful CL-VECTORS vector rasterization library."
 HOMEPAGE="http://www.xach.com/lisp/vecto/"
-SRC_URI="mirror://gentoo/${P}.tar.gz"
+SRC_URI="mirror://gentoo/${P}.tgz"
 
 LICENSE="BSD-2"
 SLOT="0"
