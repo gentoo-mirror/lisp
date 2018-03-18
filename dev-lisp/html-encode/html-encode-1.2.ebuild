@@ -7,7 +7,7 @@ inherit common-lisp-3
 
 DESCRIPTION="Common Lisp library for encoding text in various web-savvy formats."
 HOMEPAGE="http://www.cliki.net/html-encode"
-SRC_URI="mirror://gentoo/${P}.tar.bz2"
+SRC_URI="mirror://gentoo/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
