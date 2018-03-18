@@ -1,16 +1,14 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
 
-inherit common-lisp-3
-
-MY_P=${PN}_${PV}
+inherit common-lisp-3 git-r3
 
 DESCRIPTION="A Common Lisp client library for the SMTP network protocol."
 HOMEPAGE="http://common-lisp.net/project/cl-smtp/
 		http://www.cliki.net/CL-SMTP"
-SRC_URI="http://common-lisp.net/project/${PN}/${MY_P}.tar.gz"
+EGIT_REPO_URI="https://gitlab.common-lisp.net/cl-smtp/cl-smtp"
 
 LICENSE="LLGPL-2.1"
 SLOT="0"
@@ -22,5 +20,3 @@ RDEPEND="dev-lisp/cl-base64
 		dev-lisp/trivial-gray-streams
 		dev-lisp/flexi-streams
 		dev-lisp/cl-plus-ssl"
-
-S="${WORKDIR}"/${PN}
