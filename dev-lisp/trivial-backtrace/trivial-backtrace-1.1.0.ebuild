@@ -1,4 +1,4 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -7,7 +7,7 @@ inherit common-lisp-3 eutils
 
 DESCRIPTION="A simple library for generating a backtrace portably."
 HOMEPAGE="http://common-lisp.net/project/trivial-backtrace"
-SRC_URI="https://dev.gentoo.org/~nimiux/${CATEGORY}/${PN}/${P}.tar.bz2"
+SRC_URI="mirror://gentoo.org/${P}.tar.bz2"
 
 LICENSE="MIT BSD"
 SLOT="0"
