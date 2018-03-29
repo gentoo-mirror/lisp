@@ -7,5 +7,5 @@ KEYWORDS=~amd64 ~x86
 LICENSE=|| ( MPL-1.1 GPL-2 )
 RDEPEND=dev-scheme/gambit x11-libs/cairo
 SLOT=0
-_eclasses_=git-2	195a672bfaf52d868442171c9469bbb6
+_eclasses_=git-2	45ff482316b52b3f96ff6b7309b77f03
 _md5_=da77eaefe4d472f826e2f06c51cba453
