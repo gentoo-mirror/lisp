@@ -3,22 +3,18 @@
 
 EAPI=6
 
-# for live ebuilds uncomment inherit git-2, comment SRC_URI and empty KEYWORDS
-
 NEED_EMACS=23
 
 inherit elisp git-r3
 
 DESCRIPTION="Emacs modes for Scheme interaction"
 HOMEPAGE="http://www.nongnu.org/geiser/"
-#SRC_URI="mirror://nongnu/${PN}/${PV}/${P}.tar.gz"
+#SRC_URI="https://github.com/jaor/geiser/archive/${PV}.tar.gz -> ${P}.tar.gz"
 EGIT_REPO_URI="git://git.sv.gnu.org/geiser.git"
 
 LICENSE="BSD"
-IUSE=""
-
-KEYWORDS=""
 SLOT="0"
+IUSE=""
 
 DEPEND=""
 RDEPEND=""
