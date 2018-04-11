@@ -11,7 +11,7 @@ SRC_URI="https://github.com/slime/slime/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-2 xref? ( xref.lisp )"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~sparc ~x86"
+KEYWORDS="amd64 ~ppc ~sparc ~x86"
 IUSE="doc xref"
 RESTRICT=test # tests fail to contact sbcl
 
@@ -41,6 +41,7 @@ src_compile() {
 	BYTECOMPFLAGS="${BYTECOMPFLAGS} -L contrib -l slime" \
 		elisp-compile contrib/*.el lib/*.el || die
 
+	emake -C doc slime.info || die
 	if use doc ; then
 		VARTEXFONTS="${T}"/fonts \
 			emake -C doc all
