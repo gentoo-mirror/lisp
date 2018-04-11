@@ -4,11 +4,11 @@ DESCRIPTION=SLIME, the Superior Lisp Interaction Mode (Extended)
 EAPI=6
 HOMEPAGE=http://common-lisp.net/project/slime/
 IUSE=doc xref
-KEYWORDS=~amd64 ~ppc ~sparc ~x86
+KEYWORDS=amd64 ~ppc ~sparc ~x86
 LICENSE=GPL-2 xref? ( xref.lisp )
 RDEPEND=virtual/commonlisp dev-lisp/asdf >=virtual/emacs-23
 RESTRICT=test
 SLOT=0
 SRC_URI=https://github.com/slime/slime/archive/v2.20.tar.gz -> slime-2.20.tar.gz
 _eclasses_=elisp	8a9eaaa38b2345593b1cbc5315dde83c	elisp-common	23f47b2e1de7abf387105eddd1318738
-_md5_=007c09aed4fbb7bb144d1c5d61cc052f
+_md5_=71fab08a56bba930e1b4c43108ccda3b
