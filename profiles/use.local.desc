@@ -3,6 +3,3 @@
 # * generated automatically using pmaint *
 
 app-emacs/slime:xref - Install xref.lisp cross-referencing tool
-dev-lisp/ecls:gengc - Use generational garbage collection (experimental)
-dev-lisp/ecls:libatomic - Use dev-libs/libatomic_ops library
-dev-lisp/ecls:precisegc - Use type information during garbage collection (experimental)
