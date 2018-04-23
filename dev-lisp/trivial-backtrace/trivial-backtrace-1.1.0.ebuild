@@ -6,8 +6,9 @@ EAPI=6
 inherit common-lisp-3 eutils
 
 DESCRIPTION="A simple library for generating a backtrace portably."
-HOMEPAGE="http://common-lisp.net/project/trivial-backtrace"
-SRC_URI="mirror://gentoo.org/${P}.tar.bz2"
+HOMEPAGE="http://common-lisp.net/project/trivial-backtrace
+	https://github.com/gwkkwg/trivial-backtrace"
+SRC_URI="mirror://gentoo/${P}.tar.bz2"
 
 LICENSE="MIT BSD"
 SLOT="0"
