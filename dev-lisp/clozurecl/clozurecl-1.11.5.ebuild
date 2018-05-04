@@ -58,6 +58,13 @@ src_configure() {
 	fi
 }
 
+src_prepare() {
+	default
+	# https://lists.clozure.com/pipermail/openmcl-devel/2016-September/011399.html
+	sed -i "s/-dynamic/-no_pie/" "${S}/lisp-kernel/darwinx8664/Makefile" || die
+	cp "${EPREFIX}/usr/share/common-lisp/source/asdf/build/asdf.lisp" tools/ || die
+}
+
 src_compile() {
 	emake -C lisp-kernel/${CCL_KERNEL} clean
 	emake -C lisp-kernel/${CCL_KERNEL} all CC="$(tc-getCC)"
