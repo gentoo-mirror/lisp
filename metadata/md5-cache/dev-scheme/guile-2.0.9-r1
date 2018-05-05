@@ -1,4 +1,4 @@
-DEFINED_PHASES=compile configure install postinst postrm
+DEFINED_PHASES=compile config configure install postinst postrm
 DEPEND=app-admin/eselect-guile >=dev-libs/boehm-gc-7.0[threads?] dev-libs/gmp dev-libs/libffi >=dev-libs/libunistring-0.9.3 sys-devel/gettext >=sys-devel/libtool-1.5.6 virtual/pkgconfig
 DESCRIPTION=GNU Ubiquitous Intelligent Language for Extensions
 EAPI=5

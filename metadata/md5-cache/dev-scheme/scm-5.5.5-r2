@@ -1,4 +1,4 @@
-DEFINED_PHASES=compile install postinst test unpack
+DEFINED_PHASES=compile config install postinst test unpack
 DEPEND=app-arch/unzip >=dev-scheme/slib-3.1.5 ncurses? ( sys-libs/ncurses ) readline? ( sys-libs/libtermcap-compat )
 DESCRIPTION=SCM is a Scheme implementation conforming to Revised5 Report on the Algorithmic Language Scheme and the IEEE P1178 specification.
 EAPI=0
