@@ -1,15 +1,13 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
 
 inherit common-lisp-3
 
-MY_P=${PN}_${PV}
-
 DESCRIPTION="The Common Foreign Function Interface (CFFI)"
 HOMEPAGE="http://common-lisp.net/project/cffi/"
-SRC_URI="http://common-lisp.net/project/${PN}/releases/${MY_P}.tar.gz"
+SRC_URI="https://github.com/cffi/cffi/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -23,9 +21,13 @@ RDEPEND="!dev-lisp/cl-${PN}
 		dev-lisp/trivial-features"
 
 CLSYSTEMS="cffi.asd cffi-tests.asd cffi-examples.asd cffi-grovel.asd \
-		cffi-uffi-compat.asd"
+		cffi-uffi-compat.asd cffi-toolchain cffi-libffi"
 
-S="${WORKDIR}"/${MY_P}
+install_docs() {
+	doinfo doc/*.info
+	insinto /usr/share/doc/${PF}/html
+	doins -r doc/{spec,manual}
+}
 
 src_compile() {
 	if use doc ; then
@@ -36,13 +38,8 @@ src_compile() {
 
 src_install() {
 	common-lisp-install-sources examples/ src/ uffi-compat/
-	common-lisp-install-sources -t all grovel/ tests/
+	common-lisp-install-sources -t all grovel/ tests/ toolchain/ libffi/
 	common-lisp-install-asdf
 	dodoc README.md TODO doc/*.txt
-	if use doc; then
-		doinfo doc/*.info
-		rm doc/{spec,manual}/cffi*
-		insinto /usr/share/doc/${PF}/html
-		doins -r doc/{spec,manual}
-	fi
+	use doc && install_docs
 }
