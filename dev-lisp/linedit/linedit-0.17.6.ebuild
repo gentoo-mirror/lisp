@@ -15,6 +15,7 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND="dev-lisp/alexandria
+		dev-lisp/babel
 		dev-lisp/cffi
 		dev-lisp/osicat
 		dev-lisp/terminfo"
