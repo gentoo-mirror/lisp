@@ -11,7 +11,7 @@ SRC_URI="https://github.com/slime/slime/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-2 xref? ( xref.lisp )"
 SLOT="0"
-KEYWORDS="amd64 ~ppc ~sparc ~x86"
+KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE="doc xref"
 RESTRICT=test # tests fail to contact sbcl
 
@@ -49,23 +49,26 @@ src_compile() {
 }
 
 src_install() {
-	## install core
+	# Install core
 	elisp-install ${PN} *.{el,elc,lisp} || die "Cannot install SLIME core"
 
-	## install contribs
+	# Install contribs
 	elisp-install ${PN}/contrib/ contrib/*.{el,elc,lisp,scm,goo} \
 		|| die "Cannot install contribs"
 
-	## install lib
+	# Install lib
 	elisp-install ${PN}/lib/ lib/*.{el,elc} || die "Cannot install libs"
 
-	## install swank
+	# Install swank
 	elisp-install ${PN}/swank/ swank/*.lisp || die "Cannot install swank"
 
-	elisp-site-file-install "${FILESDIR}"/${SITEFILE} || die
-	## install docs
+	elisp-site-file-install "${FILESDIR}"/${SITEFILE} || die "Cannon install site file"
+	# Install docs
 	dodoc README.md CONTRIBUTING.md NEWS PROBLEMS
 	newdoc contrib/README.md README-contrib.md
 	doinfo doc/slime.info
 	use doc && dodoc doc/*.pdf
+
+	# Bug #656760
+	touch "${ED}${SITELISP}/${PN}/lib/.nosearch" || die
 }
