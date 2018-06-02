@@ -25,11 +25,6 @@ CLPACKAGE=swank
 CLSYSTEMS=swank
 SITEFILE=70${PN}-gentoo.el
 
-PATCHES=(
-	# Should be fixed in >=app-emacs/slime-2.20
-	"${FILESDIR}/${PN}-2.20-fix-doc-build.patch"
-)
-
 src_prepare() {
 	default
 	# Remove xref.lisp (which is non-free) unless USE flag is set
