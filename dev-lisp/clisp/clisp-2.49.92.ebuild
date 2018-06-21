@@ -3,15 +3,15 @@
 
 EAPI=6
 
-inherit eutils flag-o-matic multilib toolchain-funcs
+inherit eutils flag-o-matic multilib toolchain-funcs xdg-utils
 
 DESCRIPTION="A portable, bytecode-compiled implementation of Common Lisp"
 HOMEPAGE="http://clisp.sourceforge.net/"
-SRC_URI="https://haible.de/bruno/gnu/${P}.tar.bz2"
+SRC_URI="mirror://gentoo/${P}.tar.bz2"
 
 LICENSE="GPL-2"
 SLOT="2/8"
-KEYWORDS="~amd64 ~ppc ~sparc ~x86"
+KEYWORDS="~amd64 ~ia64 ~ppc ~sparc ~x86"
 IUSE="hyperspec X berkdb dbus fastcgi gdbm gtk +pcre postgres +readline svm -threads +unicode +zlib"
 # "jit" disabled ATM
 
@@ -33,7 +33,7 @@ RDEPEND=">=dev-lisp/asdf-2.33-r3
 		 berkdb? ( sys-libs/db:4.8 )"
 
 DEPEND="${RDEPEND}
-	X? ( x11-misc/imake x11-proto/xextproto )"
+	X? ( x11-base/xorg-proto x11-misc/imake )"
 
 enable_modules() {
 	[[ $# = 0 ]] && die "${FUNCNAME[0]} must receive at least one argument"
@@ -59,6 +59,8 @@ src_prepare() {
 	fi
 	eapply "${FILESDIR}"/"${P}"-after_glibc_cfree_bdb.patch
 	eapply_user
+
+	xdg_environment_reset
 }
 
 src_configure() {
