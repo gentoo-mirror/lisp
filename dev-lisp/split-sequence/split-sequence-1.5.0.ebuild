@@ -1,4 +1,4 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -20,7 +20,7 @@ RDEPEND="!dev-lisp/cl-${PN}
 		dev-lisp/fiveam"
 
 src_install() {
-	common-lisp-install-sources -t all *.lisp version.lisp-expr
+	common-lisp-install-sources -t all *.lisp version.sexp
 	common-lisp-install-asdf
 	dodoc README.md
 }
