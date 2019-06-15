@@ -1,17 +1,19 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
 
 inherit eutils flag-o-matic multilib toolchain-funcs xdg-utils
+inherit git-r3
 
 DESCRIPTION="A portable, bytecode-compiled implementation of Common Lisp"
-HOMEPAGE="http://clisp.sourceforge.net/"
-SRC_URI="mirror://gentoo/${P}.tar.bz2"
+HOMEPAGE="http://clisp.sourceforge.net/ https://gitlab.com/gnu-clisp/clisp"
+#SRC_URI="mirror://gentoo/${P}.tar.bz2"
+EGIT_REPO_URI="https://gitlab.com/gnu-clisp/clisp.git"
 
 LICENSE="GPL-2"
 SLOT="2/8"
-KEYWORDS="~amd64 ~ia64 ~ppc ~sparc ~x86"
+KEYWORDS=""
 IUSE="hyperspec X berkdb dbus fastcgi gdbm gtk +pcre postgres +readline svm -threads +unicode +zlib"
 # "jit" disabled ATM
 
