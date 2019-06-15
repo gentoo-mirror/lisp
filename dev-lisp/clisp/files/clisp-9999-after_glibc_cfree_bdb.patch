@@ -1,0 +1,18 @@
+diff -r -U3 clisp-2.49.90.orig/modules/berkeley-db/bdb.c clisp-2.49.90/modules/berkeley-db/bdb.c
+--- clisp-2.49.90.orig/modules/berkeley-db/bdb.c	2018-01-27 12:03:01.000000000 +0100
++++ clisp-2.49.90/modules/berkeley-db/bdb.c	2018-02-12 20:37:24.203803219 +0100
+@@ -2216,7 +2216,13 @@
+   c_data.compact_timeout = timeout;
+   c_data.compact_pages = pages;
+   SYSCALL(db->compact,(db,txn,pstart,pstop,&c_data,flags,&end));
+-  pushSTACK(uint32_to_I(c_data.compact_empty_buckets));
++  /* ====
++   * compact_empty_buckets is in bdb-5.3 as part of output stats
++   * however this version use bdb-4.8 which does not have it
++   * ====
++   *
++   * pushSTACK(uint32_to_I(c_data.compact_empty_buckets));
++   * */
+   pushSTACK(uint32_to_I(c_data.compact_pages_free));
+   pushSTACK(uint32_to_I(c_data.compact_pages_examine));
+   pushSTACK(uint32_to_I(c_data.compact_levels));
