@@ -1,0 +1,14 @@
+BDEPEND=virtual/pkgconfig sys-devel/libtool sys-devel/gettext >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=configure install prepare unpack
+DEPEND=>=dev-libs/boehm-gc-7.2:=[threads?] >=dev-libs/gmp-4.2:= virtual/libffi:= >=dev-libs/libltdl-1.5.6:= >=dev-libs/libunistring-0.9.3:0= sys-libs/ncurses:0= sys-libs/readline:0=
+DESCRIPTION=GNU Ubiquitous Intelligent Language for Extensions
+EAPI=7
+HOMEPAGE=https://www.gnu.org/software/guile/
+IUSE=debug debug-malloc +deprecated +networking +regex +threads
+LICENSE=LGPL-3+
+RDEPEND=>=dev-libs/boehm-gc-7.2:=[threads?] >=dev-libs/gmp-4.2:= virtual/libffi:= >=dev-libs/libltdl-1.5.6:= >=dev-libs/libunistring-0.9.3:0= sys-libs/ncurses:0= sys-libs/readline:0=
+REQUIRED_USE=regex
+RESTRICT=strip
+SLOT=3.0
+_eclasses_=eutils	6e6c2737b59a4b982de6fb3ecefd87f8	flag-o-matic	a09389deba2c0a7108b581e02c7cecbf	git-r3	0d4635eeb5a96cd5315597a47eba25c9	multilib	1d91b03d42ab6308b5f4f6b598ed110e	toolchain-funcs	8c7f9d80beedd16f2e5a7f612c609529
+_md5_=c40d6c822100fcc3262c63592e38dff5
