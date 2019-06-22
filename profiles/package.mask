@@ -1,6 +1,5 @@
-# Cyprien Nicolas (fulax) <gentoo@fulax.fr> (16 Jun 2019)
-# Experimental SLOT support
-=dev-scheme/guile-2.2.4-r1
+# Cyprien Nicolas (fulax) <gentoo@fulax.fr> (22 Jun 2019)
+# guile-3 beta releases
 =dev-scheme/guile-2.9.2
 
 # Cyprien Nicolas (fulax) <gentoo@fulax.fr> (26 Jan 2013)
