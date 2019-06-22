@@ -18,6 +18,7 @@ REQUIRED_USE="regex" # workaround for bug 596322
 RESTRICT="strip"
 
 RDEPEND="
+	!>=dev-scheme/guile-2.2:12
 	>=dev-libs/boehm-gc-7.0:=[threads?]
 	dev-libs/gmp:=
 	virtual/libffi:=
