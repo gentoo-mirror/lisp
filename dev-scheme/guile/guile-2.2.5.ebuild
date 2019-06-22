@@ -64,8 +64,12 @@ src_configure() {
 src_install() {
 	default
 
-	# Maybe there is a proper way to do this? Symlink handled by eselect
+	# The guile.m4 macro files conflicts with other slots
 	mv "${ED}"/usr/share/aclocal/guile.m4 "${ED}"/usr/share/aclocal/guile-${MAJOR}.m4 || die "rename of guile.m4 failed"
+
+	# Bug #590904, LDFLAGS are copied within the pkg-config gile
+	sed -i "${ED}"/usr/$(get_libdir)/pkgconfig/guile-${MAJOR}.pc \
+		-e s:"${LDFLAGS}"::
 
 	# From Novell
 	# 	https://bugzilla.novell.com/show_bug.cgi?id=874028#c0
