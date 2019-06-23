@@ -1,39 +1,50 @@
 # Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=6
+inherit flag-o-matic autotools ltprune
 
-inherit flag-o-matic
-
-MAJOR="2.2"
 DESCRIPTION="GNU Ubiquitous Intelligent Language for Extensions"
 HOMEPAGE="https://www.gnu.org/software/guile/"
 SRC_URI="mirror://gnu/guile/${P}.tar.gz"
-
+KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos"
 LICENSE="LGPL-3+"
-SLOT="2.2/2.2-1" # libguile-2.2.so.1 => 2.2-1
-KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sh ~sparc ~x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos"
 IUSE="debug debug-malloc +deprecated +networking +nls +regex +threads" # upstream recommended +networking +nls
-REQUIRED_USE="regex" # workaround for bug 596322
-RESTRICT="strip"
+# emacs useflag removal not working
+
+# workaround for bug 596322
+REQUIRED_USE="regex"
 
 RDEPEND="
-	!>=dev-scheme/guile-2.2:12
 	>=dev-libs/boehm-gc-7.0:=[threads?]
 	dev-libs/gmp:=
 	virtual/libffi:=
 	dev-libs/libltdl:=
 	dev-libs/libunistring:0=
+	sys-devel/libtool
 	sys-libs/ncurses:0=
 	sys-libs/readline:0="
-DEPEND="${RDEPEND}"
-BDEPEND="
+DEPEND="${RDEPEND}
 	virtual/pkgconfig
-	sys-devel/libtool
+	sys-apps/texinfo
 	sys-devel/gettext"
 
-PATCHES=( "${FILESDIR}/${PN}-2.2.3-gentoo-sandbox.patch" )
+SLOT="12/22" # subslot is soname version
+MAJOR="2.0"
+
 DOCS=( GUILE-VERSION HACKING README )
+
+PATCHES=(
+	"${FILESDIR}/${PN}-2-snarf.patch"
+	"${FILESDIR}/${P}-darwin.patch"
+	"${FILESDIR}/${P}-ia64-fix-crash-thread-context-switch.patch"
+	"${FILESDIR}/${P}-tests-repl-server.patch"
+)
+
+src_prepare() {
+	default
+	eautoreconf
+}
 
 src_configure() {
 	# see bug #178499
@@ -42,8 +53,6 @@ src_configure() {
 	append-cflags $(test-flags-CC -fno-fast-math)
 
 	econf \
-		--program-suffix="-${MAJOR}" \
-		--infodir="${EPREFIX}"/usr/share/info/guile-${MAJOR} \
 		--disable-error-on-warning \
 		--disable-rpath \
 		--disable-static \
@@ -65,13 +74,7 @@ src_configure() {
 
 src_install() {
 	default
-
-	# The guile.m4 macro files conflicts with other slots
-	mv "${ED}"/usr/share/aclocal/guile.m4 "${ED}"/usr/share/aclocal/guile-${MAJOR}.m4 || die "rename of guile.m4 failed"
-
-	# Bug #590904, LDFLAGS are copied within the pkg-config gile
-	sed -i "${ED}"/usr/$(get_libdir)/pkgconfig/guile-${MAJOR}.pc \
-		-e s:"${LDFLAGS}"::
+	prune_libtool_files
 
 	# From Novell
 	# 	https://bugzilla.novell.com/show_bug.cgi?id=874028#c0
@@ -81,5 +84,6 @@ src_install() {
 	# necessary for registering slib, see bug 206896
 	keepdir /usr/share/guile/site
 
-	find "${D}" -name '*.la' -delete || die
+	# Dark magic necessary for some deps
+	dosym libguile-2.0.so /usr/$(get_libdir)/libguile.so
 }

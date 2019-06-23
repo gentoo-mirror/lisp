@@ -37,6 +37,8 @@ DOCS=( GUILE-VERSION HACKING README )
 src_configure() {
 	# see bug #178499
 	filter-flags -ftree-vectorize
+	# see bug #598986
+	append-cflags $(test-flags-CC -fno-fast-math)
 
 	econf \
 		--program-suffix="-${MAJOR}" \
