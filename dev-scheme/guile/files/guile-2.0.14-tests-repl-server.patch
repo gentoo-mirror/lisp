@@ -1,0 +1,25 @@
+--- guile-2.2.5/test-suite/tests/00-repl-server.test.old	2017-04-14 23:26:40.000000000 +0200
++++ guile-2.2.5/test-suite/tests/00-repl-server.test	2019-06-23 12:16:10.624115938 +0200
+@@ -27,7 +27,7 @@
+ (define (call-with-repl-server proc)
+   "Set up a REPL server in a separate process and call PROC with a
+ socket connected to that server."
+-  (let ((sockaddr      (make-socket-address AF_UNIX "/tmp/repl-server"))
++  (let ((sockaddr      (make-test-socket-address))
+         (client-socket (socket AF_UNIX SOCK_STREAM 0)))
+     (false-if-exception
+      (delete-file (sockaddr:path sockaddr)))
+@@ -86,6 +86,13 @@
+    (lambda (client-socket)
+      body ...)))
+ 
++(define (make-test-socket-address)
++  (catch 'unbound-variable
++	 (lambda ()
++	   (make-socket-address AF_UNIX "/tmp/repl-server"))
++	 (lambda (key . args)
++	   (throw 'unresolved))))
++
+ (define (read-until-prompt port str)
+   "Read from PORT until STR has been read or the end-of-file was
+ reached."
