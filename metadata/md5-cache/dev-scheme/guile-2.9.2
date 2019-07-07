@@ -1,5 +1,5 @@
-BDEPEND=virtual/pkgconfig sys-devel/libtool sys-devel/gettext
-DEFINED_PHASES=configure install
+BDEPEND=virtual/pkgconfig sys-devel/libtool sys-devel/gettext >=app-portage/elt-patches-20170815 !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+DEFINED_PHASES=configure install prepare
 DEPEND=>=dev-libs/boehm-gc-7.2:=[threads?] >=dev-libs/gmp-4.2:= virtual/libffi:= >=dev-libs/libltdl-1.5.6:= >=dev-libs/libunistring-0.9.3:0= sys-libs/ncurses:0= sys-libs/readline:0=
 DESCRIPTION=GNU Ubiquitous Intelligent Language for Extensions
 EAPI=7
@@ -12,5 +12,5 @@ REQUIRED_USE=regex
 RESTRICT=strip
 SLOT=3.0
 SRC_URI=mirror://gnu-alpha/guile/guile-2.9.2.tar.gz
-_eclasses_=eutils	6e6c2737b59a4b982de6fb3ecefd87f8	flag-o-matic	7ba73aee7fe4462b3a745e3645ab92ca	multilib	1d91b03d42ab6308b5f4f6b598ed110e	toolchain-funcs	8c7f9d80beedd16f2e5a7f612c609529
-_md5_=8020c7c6f3d8c57029f44c162835f2b7
+_eclasses_=autotools	1bf086cdd7356f5c9a4acd9727bd2065	eutils	6e6c2737b59a4b982de6fb3ecefd87f8	flag-o-matic	7ba73aee7fe4462b3a745e3645ab92ca	libtool	f143db5a74ccd9ca28c1234deffede96	multilib	1d91b03d42ab6308b5f4f6b598ed110e	toolchain-funcs	8c7f9d80beedd16f2e5a7f612c609529
+_md5_=7af41d806dfe7427a9e68ef0de7ac756
