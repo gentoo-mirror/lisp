@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit flag-o-matic
+inherit autotools flag-o-matic
 
 MAJOR="2.2"
 DESCRIPTION="GNU Ubiquitous Intelligent Language for Extensions"
@@ -32,8 +32,17 @@ BDEPEND="
 	sys-devel/libtool
 	sys-devel/gettext"
 
-PATCHES=( "${FILESDIR}/${PN}-2.2.3-gentoo-sandbox.patch" )
+PATCHES=(
+	"${FILESDIR}/${PN}-2.2.3-gentoo-sandbox.patch"
+	"${FILESDIR}/${P}-configure-ldflags.patch" # bug 590904
+	"${FILESDIR}/${P}-tests-00-repl-server.patch" # bug 629004
+)
 DOCS=( GUILE-VERSION HACKING README )
+
+src_prepare() {
+	default
+	eautoreconf
+}
 
 src_configure() {
 	# see bug #178499
@@ -68,10 +77,6 @@ src_install() {
 
 	# The guile.m4 macro files conflicts with other slots
 	mv "${ED}"/usr/share/aclocal/guile.m4 "${ED}"/usr/share/aclocal/guile-${MAJOR}.m4 || die "rename of guile.m4 failed"
-
-	# Bug #590904, LDFLAGS are copied within the pkg-config gile
-	sed -i "${ED}"/usr/$(get_libdir)/pkgconfig/guile-${MAJOR}.pc \
-		-e s:"${LDFLAGS}"::
 
 	# From Novell
 	# 	https://bugzilla.novell.com/show_bug.cgi?id=874028#c0
