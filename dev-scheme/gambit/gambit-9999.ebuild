@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit eutils elisp-common git-r3
+inherit autotools elisp-common git-r3
 
 MY_P="${PN}-v$(ver_rs 1-3 _)"
 
@@ -28,6 +28,11 @@ BDEPEND="emacs? ( virtual/emacs )"
 SITEFILE="50gambit-gentoo.el"
 
 IUSE="emacs libressl ssl static"
+
+src_prepare() {
+	default
+	eautoreconf
+}
 
 src_configure() {
 	econf \
