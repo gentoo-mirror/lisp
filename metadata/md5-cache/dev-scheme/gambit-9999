@@ -1,0 +1,12 @@
+BDEPEND=emacs? ( virtual/emacs ) >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure install postinst postrm unpack
+DEPEND=ssl? ( !libressl? ( dev-libs/openssl:0= ) libressl? ( dev-libs/libressl:0= ) )
+DESCRIPTION=Gambit-C is a native Scheme to C compiler and interpreter
+EAPI=7
+HOMEPAGE=http://gambitscheme.org/wiki/index.php/Main_Page
+IUSE=emacs libressl ssl static
+LICENSE=|| ( Apache-2.0 LGPL-2.1 )
+RDEPEND=ssl? ( !libressl? ( dev-libs/openssl:0= ) libressl? ( dev-libs/libressl:0= ) )
+SLOT=0
+_eclasses_=elisp-common	23f47b2e1de7abf387105eddd1318738	eutils	6e6c2737b59a4b982de6fb3ecefd87f8	git-r3	0d4635eeb5a96cd5315597a47eba25c9
+_md5_=c1dbe18dae170cb84074d84a9bb0a146
