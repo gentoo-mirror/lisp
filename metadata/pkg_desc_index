@@ -263,7 +263,7 @@ dev-scheme/bigloo 3.9a 4.0a: Bigloo is a Scheme implementation.
 dev-scheme/chicken 4.8.0.4 4.8.0.5 4.9.0 4.9.0.1: Chicken is a Scheme interpreter and native Scheme to C compiler
 dev-scheme/dream 20071004 20080228 20090201 20090305 20101104: Dream is a scheme interpreter written entirely in x86 machine language, following the R4RS standard.
 dev-scheme/gambit 4.9.3 9999: Gambit-C is a native Scheme to C compiler and interpreter
-dev-scheme/guile 2.0.14-r4 2.2.6 2.9.2 9999: GNU Ubiquitous Intelligent Language for Extensions
+dev-scheme/guile 2.0.14-r4 2.2.6 2.9.3 9999: GNU Ubiquitous Intelligent Language for Extensions
 dev-scheme/guile-gnome-gtksourceview 1.8.0: Guile Scheme code that wraps the GNOME developer platform
 dev-scheme/guile-lib 0.2.5.1-r1 0.2.6.1: An accumulation place for pure-scheme Guile modules
 dev-scheme/guile-reader 0.6.2: Guile-reader is a simple framework for building readers for GNU Guile.
