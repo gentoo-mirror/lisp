@@ -33,7 +33,6 @@ BDEPEND="
 
 PATCHES=(
 	"${FILESDIR}/${PN}-2.2.3-gentoo-sandbox.patch"
-	"${FILESDIR}/${PN}-2.2.6-configure-ldflags.patch"
 	"${FILESDIR}/${PN}-2.2.6-tests-00-repl-server.patch"
 )
 DOCS=( GUILE-VERSION HACKING README )
