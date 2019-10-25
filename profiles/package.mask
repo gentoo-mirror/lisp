@@ -1,6 +1,6 @@
-# Cyprien Nicolas (fulax) <gentoo@fulax.fr> (22 Jun 2019)
+# Cyprien Nicolas (fulax) <cyprien@nicolas.tf> (25 Oct 2019)
 # guile-3 beta releases
-=dev-scheme/guile-2.9.2
+=dev-scheme/guile-2.9.4
 
 # Cyprien Nicolas (fulax) <gentoo@fulax.fr> (26 Jan 2013)
 # Mask texmacs imported in the overlay to test buildtime patches
