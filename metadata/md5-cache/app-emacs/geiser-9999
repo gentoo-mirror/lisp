@@ -7,5 +7,5 @@ LICENSE=BSD
 PROPERTIES=live
 RDEPEND=>=virtual/emacs-23
 SLOT=0
-_eclasses_=elisp	12e33ba725e375a938c5997b692a8667	elisp-common	23f47b2e1de7abf387105eddd1318738	git-r3	6d22636df236df4cc8475f7b7668bdcd
+_eclasses_=elisp	12e33ba725e375a938c5997b692a8667	elisp-common	23f47b2e1de7abf387105eddd1318738	git-r3	7d6c351ee8b1feb12ed8c8b0adae088b
 _md5_=b5b3d791d2359e9c2d03c202d4aa62ca
