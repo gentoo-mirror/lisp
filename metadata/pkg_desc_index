@@ -268,7 +268,7 @@ dev-scheme/guile-gnome-gtksourceview 1.8.0: Guile Scheme code that wraps the GNO
 dev-scheme/guile-lib 0.2.5.1-r1 0.2.6.1: An accumulation place for pure-scheme Guile modules
 dev-scheme/guile-reader 0.6.2: Guile-reader is a simple framework for building readers for GNU Guile.
 dev-scheme/hop 2.1.1 2.2.0 2.3.1 2.4.0: Hop is a higher-order language for programming interactive web applications
-dev-scheme/ikarus 0.0.1 0.0.2 9999: Ikarus is a free optimizing incremental native-code compiler for R6RS Scheme.
+dev-scheme/ikarus 0.0.1 0.0.2: Ikarus is a free optimizing incremental native-code compiler for R6RS Scheme.
 dev-scheme/jazzscheme 999: JazzScheme is an open source programming language based on Scheme.
 dev-scheme/kawa 1.9.90 9999: Kawa, the Java-based Scheme system & Language Framework
 dev-scheme/ksm 0.3.2: KSM-Scheme is a Scheme interpreter that integrates easily with functions and variables defined in C language.
