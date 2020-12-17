@@ -1,6 +1,5 @@
 app-emacs/geiser 9999: Emacs modes for Scheme interaction
 app-emacs/slime 2.21 9999: SLIME, the Superior Lisp Interaction Mode (Extended)
-app-office/texmacs 1.0.7.16-r2: Wysiwyg text processor with high-quality maths
 app-text/lout 3.38: high-level language for document formatting
 app-text/skribe 1.2l-r1: Skribe is a text processor for technical documents written in scheme.
 app-text/skribilo 0.9.1 0.9.2: Skribilo is a free document production tool.
