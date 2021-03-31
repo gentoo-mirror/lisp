@@ -3,9 +3,10 @@ DEPEND=>=virtual/emacs-23 >=dev-vcs/git-1.8.2.1[curl]
 DESCRIPTION=Emacs modes for Scheme interaction
 EAPI=6
 HOMEPAGE=http://www.nongnu.org/geiser/
+INHERIT=elisp git-r3
 LICENSE=BSD
 PROPERTIES=live
 RDEPEND=>=virtual/emacs-23
 SLOT=0
-_eclasses_=elisp	12e33ba725e375a938c5997b692a8667	elisp-common	23f47b2e1de7abf387105eddd1318738	git-r3	3e7ec3d6619213460c85e2aa48398441
+_eclasses_=elisp-common	23f47b2e1de7abf387105eddd1318738	elisp	12e33ba725e375a938c5997b692a8667	git-r3	b8e8c92aa5fe8df7187e466138eb4e52
 _md5_=b5b3d791d2359e9c2d03c202d4aa62ca
