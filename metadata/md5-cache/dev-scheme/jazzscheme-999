@@ -3,6 +3,7 @@ DEPEND=dev-scheme/gambit x11-libs/cairo dev-vcs/git
 DESCRIPTION=JazzScheme is an open source programming language based on Scheme.
 EAPI=0
 HOMEPAGE=http://www.jazzscheme.org/
+INHERIT=git-2
 KEYWORDS=~amd64 ~x86
 LICENSE=|| ( MPL-1.1 GPL-2 )
 PROPERTIES=live

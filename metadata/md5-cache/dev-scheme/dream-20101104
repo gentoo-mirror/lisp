@@ -3,6 +3,7 @@ DEPEND=dev-libs/gmp
 DESCRIPTION=Dream is a scheme interpreter written entirely in x86 machine language, following the R4RS standard.
 EAPI=0
 HOMEPAGE=http://www.stripedgazelle.org/joey/dream.html
+INHERIT=multilib
 KEYWORDS=~x86 ~amd64
 LICENSE=GPL-3
 SLOT=0
