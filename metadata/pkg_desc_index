@@ -3,46 +3,9 @@ app-emacs/slime 2.21 9999: SLIME, the Superior Lisp Interaction Mode (Extended)
 app-text/lout 3.38: high-level language for document formatting
 app-text/skribe 1.2l-r1: Skribe is a text processor for technical documents written in scheme.
 app-text/skribilo 0.9.1 0.9.2: Skribilo is a free document production tool.
-dev-chicken/9pfs 200804142117: A pure Scheme implementation of the 9p networked filesystem protocol.
-dev-chicken/F-operator 200803110916: A facility for creating and deconstructing variant records (from EOPL).
-dev-chicken/advice 200801221415: Allows modifying the behaviour of existing procedures by specifying code that should run before, after or instead of the original procedure.
-dev-chicken/args 200802290956: Chicken-Scheme command-line argument handling, on top of SRFI 37.
-dev-chicken/awk 200801162015: Chicken-Scheme adaptation of the SCSH/PLT 'awk' macro.
-dev-chicken/datatype 200802252118: A facility for creating and deconstructing variant records (from EOPL).
-dev-chicken/doctype 200801162015: Exports strings corresponding to standard XML (XHTML, HTML) doctypes.
-dev-chicken/easyffi 200802130216: Generates bindings from C/C++ declarations.
-dev-chicken/eggdoc 200801162015: An egg documentation tool.
-dev-chicken/environments 200802252118: User defined evaluation environments.
-dev-chicken/iset 200803080329: Integer sets.
-dev-chicken/lazy-ffi 200803230022: A Foreign Function Interface for lazy people, using gcc's libffi.
-dev-chicken/loop 200803250926: Chicken-Scheme adaptation of the Common-Lisp 'LOOP' macro.
-dev-chicken/loopy-loop 200803230022: A generalized iteration form supporting extensible iterator macros, keyword updates, and full recursion.
-dev-chicken/mailbox 200802252118: Thread-safe queues with timeout.
-dev-chicken/make 200803112120: Chicken-Scheme adaptation of the PLT 'make' macro.
-dev-chicken/misc-extn 200803201814: Miscellaneous useful stuff.
-dev-chicken/miscmacros 200803112120: Various useful little macros.
-dev-chicken/numbers 200804020317: Full numeric tower support.
-dev-chicken/pipeline 200803180316: Run multiple subprocesses connected via pipes.
-dev-chicken/pyffi 200801162015: Chicken-Scheme interface to Python
-dev-chicken/readline 200803240316: Chicken-Scheme binding for the GNU readline library.
-dev-chicken/regex-case 200801162015: Provides an easy to use case construct for regular expression matching.
-dev-chicken/regex-literals 200801162015: A reader extension providing precompiled regular expression literals of the form #/[a-z0-9]+/i and #r{^/path/(to)/file$}.
-dev-chicken/riaxpander 200804042118: Explicit renaming macros, syntactic-closures and syntax-rules.
-dev-chicken/runcmd 200801162015: Convenience macros for running shell commands.
-dev-chicken/silex 200803222148: An efficient and powerful lexer generator.
-dev-chicken/ssax 200803150318: Oleg Kiselyov's XML parser.
-dev-chicken/sxml-tools 200801162015: The sxml-tools from the SSAX project.
-dev-chicken/sxml-transforms 200801162015: The SXML transformations (to XML, SXML, and HTML) from the SSAX project.
-dev-chicken/syntactic-closures 200801162015: Hygienic macros with syntactic closures.
-dev-chicken/syntax-case 200803230022: Portable syntax-case macro and module system.
-dev-chicken/tinyclos 200801162015: Chicken-Scheme port of Gregor Kiczales' TinyCLOS object system.
-dev-chicken/unix-sockets 200801162015-r1: Chicken-Scheme interface to UNIX domain sockets.
-dev-chicken/unix-test 9999 200804012117: test(1) equivalence procedures.
-dev-chicken/utf8 200803181518: Unicode support.
 dev-lang/swig 9999: Simplified Wrapper and Interface Generator
 dev-libs/ffcall 2.1: Build foreign function call interfaces in embedded interpreter
 dev-libs/libsigsegv 2.12-r1: Library for handling page faults in user mode
-dev-libs/lightning 1.2: A library that generates assembly language code at run-time.
 dev-lisp/abcl 1.5.0: Armed Bear Common Lisp is a Common Lisp implementation for the JVM.
 dev-lisp/alexandria 20171029 99999999: A collection of portable utilities for Common Lisp
 dev-lisp/anaphora 0.9.4 0.9.6: Anaphoric macro collection for Common Lisp
@@ -263,7 +226,6 @@ dev-scheme/chicken 4.8.0.4 4.8.0.5 4.9.0 4.9.0.1: Chicken is a Scheme interprete
 dev-scheme/dream 20071004 20080228 20090201 20090305 20101104: Dream is a scheme interpreter written entirely in x86 machine language, following the R4RS standard.
 dev-scheme/gambit 4.9.3 9999: Gambit-C is a native Scheme to C compiler and interpreter
 dev-scheme/guile 2.0.14-r4 2.2.6 2.9.4 9999: GNU Ubiquitous Intelligent Language for Extensions
-dev-scheme/guile-gnome-gtksourceview 1.8.0: Guile Scheme code that wraps the GNOME developer platform
 dev-scheme/guile-lib 0.2.5.1-r1 0.2.6.1: An accumulation place for pure-scheme Guile modules
 dev-scheme/guile-reader 0.6.2: Guile-reader is a simple framework for building readers for GNU Guile.
 dev-scheme/hop 2.1.1 2.2.0 2.3.1 2.4.0: Hop is a higher-order language for programming interactive web applications
@@ -278,7 +240,6 @@ dev-scheme/racket 999: Racket is a general-purpose programming language with str
 dev-scheme/rscheme 0.7.3.4_beta7: RScheme is an implementation of the Scheme language, mostly R4RS and R5RS compliant
 dev-scheme/scm 5.5.5-r2: SCM is a Scheme implementation conforming to Revised5 Report on the Algorithmic Language Scheme and the IEEE P1178 specification.
 dev-scheme/snow-generic 1.1.2: A repository of Scheme packages that are portable to several popular implementations of Scheme
-dev-scheme/tinyscheme 1.39-r2: Lightweight scheme interpreter
 virtual/commonlisp 0: Virtual for Common Lisp
 x11-wm/clfswm 1106.2: 100% Common Lisp X11 window manager (based on Tinywm and Stumpwm)
 x11-wm/stumpwm 1.0.1_rc 18.05 9999: Stumpwm is a Window Manager written entirely in Common Lisp.
