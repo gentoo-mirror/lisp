@@ -1,4 +1,4 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -21,7 +21,7 @@ RESTRICT="strip"
 RDEPEND="
 	>=dev-libs/boehm-gc-7.2:=[threads?]
 	>=dev-libs/gmp-4.2:=
-	virtual/libffi:=
+	dev-libs/libffi:=
 	>=dev-libs/libltdl-1.5.6:=
 	>=dev-libs/libunistring-0.9.3:0=
 	sys-libs/ncurses:0=

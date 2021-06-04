@@ -1,4 +1,4 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -12,7 +12,7 @@ SRC_URI="mirror://gnu-alpha/guile/${P}.tar.gz"
 
 LICENSE="LGPL-3+"
 SLOT="3.0"
-KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sh ~sparc ~x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos"
+KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos"
 IUSE="debug debug-malloc +deprecated +networking +regex +threads" # upstream recommended +networking
 REQUIRED_USE="regex" # workaround for bug 596322
 RESTRICT="strip"
@@ -20,7 +20,7 @@ RESTRICT="strip"
 RDEPEND="
 	>=dev-libs/boehm-gc-7.2:=[threads?]
 	>=dev-libs/gmp-4.2:=
-	virtual/libffi:=
+	dev-libs/libffi:=
 	>=dev-libs/libltdl-1.5.6:=
 	>=dev-libs/libunistring-0.9.3:0=
 	sys-libs/ncurses:0=
