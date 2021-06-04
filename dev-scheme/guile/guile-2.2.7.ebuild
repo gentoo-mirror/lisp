@@ -1,4 +1,4 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -12,7 +12,7 @@ SRC_URI="mirror://gnu/guile/${P}.tar.gz"
 
 LICENSE="LGPL-3+"
 SLOT="2.2/2.2-1" # libguile-2.2.so.1 => 2.2-1
-KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sh ~sparc ~x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos"
+KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos"
 IUSE="debug debug-malloc +deprecated +networking +nls +regex +threads" # upstream recommended +networking +nls
 REQUIRED_USE="regex" # workaround for bug 596322
 RESTRICT="strip"
@@ -21,7 +21,7 @@ RDEPEND="
 	!>=dev-scheme/guile-2.2:12
 	>=dev-libs/boehm-gc-7.0:=[threads?]
 	dev-libs/gmp:=
-	virtual/libffi:=
+	dev-libs/libffi:=
 	dev-libs/libltdl:=
 	dev-libs/libunistring:0=
 	sys-libs/ncurses:0=
@@ -34,8 +34,9 @@ BDEPEND="
 
 PATCHES=(
 	"${FILESDIR}/${PN}-2.2.3-gentoo-sandbox.patch"
-	"${FILESDIR}/${P}-configure-ldflags.patch" # bug 590904
-	"${FILESDIR}/${P}-tests-00-repl-server.patch" # bug 629004
+#	"${FILESDIR}/${P}-configure-ldflags.patch" # bug 590904
+	"${FILESDIR}/${P}-stack-up.patch" # bug 747049
+#	"${FILESDIR}/${P}-tests-00-repl-server.patch" # bug 629004
 )
 DOCS=( GUILE-VERSION HACKING README )
 
