@@ -227,7 +227,7 @@ dev-scheme/dream 20071004 20080228 20090201 20090305 20101104: Dream is a scheme
 dev-scheme/gambit 4.9.3 9999: Gambit-C is a native Scheme to C compiler and interpreter
 dev-scheme/guile 2.0.14-r4 2.2.7 2.9.4 9999: GNU Ubiquitous Intelligent Language for Extensions
 dev-scheme/guile-lib 0.2.5.1-r1 0.2.6.1: An accumulation place for pure-scheme Guile modules
-dev-scheme/guile-reader 0.6.2: Guile-reader is a simple framework for building readers for GNU Guile.
+dev-scheme/guile-reader 0.6.3: Guile-reader is a simple framework for building readers for GNU Guile.
 dev-scheme/hop 2.1.1 2.2.0 2.3.1 2.4.0: Hop is a higher-order language for programming interactive web applications
 dev-scheme/ikarus 0.0.1 0.0.2: Ikarus is a free optimizing incremental native-code compiler for R6RS Scheme.
 dev-scheme/jazzscheme 999: JazzScheme is an open source programming language based on Scheme.
