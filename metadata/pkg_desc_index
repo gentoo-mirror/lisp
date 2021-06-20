@@ -231,15 +231,10 @@ dev-scheme/guile-reader 0.6.3: Guile-reader is a simple framework for building r
 dev-scheme/hop 2.1.1 2.2.0 2.3.1 2.4.0: Hop is a higher-order language for programming interactive web applications
 dev-scheme/ikarus 0.0.1 0.0.2: Ikarus is a free optimizing incremental native-code compiler for R6RS Scheme.
 dev-scheme/jazzscheme 999: JazzScheme is an open source programming language based on Scheme.
-dev-scheme/kawa 1.9.90 9999: Kawa, the Java-based Scheme system & Language Framework
 dev-scheme/ksm 0.3.2: KSM-Scheme is a Scheme interpreter that integrates easily with functions and variables defined in C language.
 dev-scheme/mit-scheme-c 9.2: GNU/MIT-Scheme
 dev-scheme/mosh 0.2.2-r1 9999: A Fast R6RS Scheme interpreter.
 dev-scheme/psyntax-r6rs 4: A portable R6RS library and syntax-case system.
-dev-scheme/racket 999: Racket is a general-purpose programming language with strong support for domain-specific languages.
-dev-scheme/rscheme 0.7.3.4_beta7: RScheme is an implementation of the Scheme language, mostly R4RS and R5RS compliant
-dev-scheme/scm 5.5.5-r2: SCM is a Scheme implementation conforming to Revised5 Report on the Algorithmic Language Scheme and the IEEE P1178 specification.
-dev-scheme/snow-generic 1.1.2: A repository of Scheme packages that are portable to several popular implementations of Scheme
 virtual/commonlisp 0: Virtual for Common Lisp
 x11-wm/clfswm 1106.2: 100% Common Lisp X11 window manager (based on Tinywm and Stumpwm)
 x11-wm/stumpwm 1.0.1_rc 18.05 9999: Stumpwm is a Window Manager written entirely in Common Lisp.
