@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst test unpack
+DEPEND=dev-libs/gmp
+DESCRIPTION=Dream is a scheme interpreter written entirely in x86 machine language, following the R4RS standard.
+EAPI=0
+HOMEPAGE=http://www.stripedgazelle.org/joey/dream.html
+INHERIT=multilib
+KEYWORDS=~x86 ~amd64
+LICENSE=GPL-3
+SLOT=0
+SRC_URI=http://www.stripedgazelle.org/cgi-bin/wiki_joey/dream20101104.tar.gz
+_eclasses_=multilib	f8d35c2432bb32c4f1e779c4287b31ec	toolchain-funcs	e867df3870e8ff04a5b94f925be8b06a
+_md5_=8fc378774bc61895a1a6575fd3391398
