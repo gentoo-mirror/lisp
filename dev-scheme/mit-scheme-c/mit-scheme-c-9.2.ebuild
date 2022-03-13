@@ -1,10 +1,9 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
 
-EAPI="5"
+EAPI=8
 
-inherit multilib flag-o-matic #elisp-common
+# inherit multilib flag-o-matic #elisp-common
 
 DESCRIPTION="GNU/MIT-Scheme"
 HOMEPAGE="http://www.swiss.ai.mit.edu/projects/scheme/"
@@ -24,9 +23,8 @@ RDEPEND="app-crypt/mhash
 	sys-libs/gdbm
 	sys-libs/ncurses
 	x11-libs/libX11"
-
-DEPEND="${RDEPEND}
-	doc? ( dev-texlive/texlive-plainextra )"
+DEPEND="${RDEPEND}"
+BDEPEND="doc? ( dev-texlive/texlive-latexextra )"
 
 src_prepare() {
 	sed "s:@for:@+for:" -i \
@@ -67,7 +65,8 @@ src_install() {
 	cd "${S}"/doc
 	doman scheme.1 || die "doman failed"
 	if use doc ; then
-		dohtml index.html || die "dhtml failed"
+		docinto html
+		dodoc index.html || die "dhtml failed"
 		doinfo ref-manual/mit-scheme-ref.info* || die "doinfo failed"
 		dodoc ref-manual/mit-scheme-ref.{pdf,ps} || die "dodoc failed"
 		doinfo user-manual/mit-scheme-user.info || die "doinfo failed"
@@ -78,20 +77,20 @@ src_install() {
 		dodoc imail/mit-scheme-imail.{pdf,ps} || die "dodoc failed"
 
 		cd ref-manual
-		docinto html/mit-scheme-ref
-		dohtml mit-scheme-ref/* || die "dhtml failed"
+		docinto html
+		dodoc -r mit-scheme-ref || die "dhtml failed"
 
 		cd ../user-manual
-		docinto html/mit-scheme-user
-		dohtml mit-scheme-user/* || die "dhtml failed"
+		docinto html
+		dodoc -r mit-scheme-user || die "dhtml failed"
 
 		cd ../sos
-		docinto html/mit-scheme-sos
-		dohtml mit-scheme-sos/* || die "dhtml failed"
+		docinto html
+		dodoc -r mit-scheme-sos || die "dhtml failed"
 
 		cd ../imail
-		docinto html/mit-scheme-imail
-		dohtml mit-scheme-imail/* || die "dhtml failed"
+		docinto html
+		dodoc -r mit-scheme-imail || die "dhtml failed"
 		cd ../
 	fi
 }
