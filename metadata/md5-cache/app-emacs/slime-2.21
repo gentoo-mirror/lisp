@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst postrm prepare setup unpack
-DEPEND=virtual/commonlisp dev-lisp/asdf >=sys-apps/texinfo-5.1 doc? ( virtual/texi2dvi ) >=virtual/emacs-23
+DEPEND=virtual/commonlisp dev-lisp/asdf >=sys-apps/texinfo-5.1 doc? ( virtual/texi2dvi ) >=app-editors/emacs-23.1:*
 DESCRIPTION=SLIME, the Superior Lisp Interaction Mode (Extended)
 EAPI=6
 HOMEPAGE=http://common-lisp.net/project/slime/
@@ -7,9 +7,9 @@ INHERIT=elisp
 IUSE=doc xref
 KEYWORDS=~amd64 ~ppc ~sparc ~x86
 LICENSE=GPL-2 xref? ( xref.lisp )
-RDEPEND=virtual/commonlisp dev-lisp/asdf >=virtual/emacs-23
+RDEPEND=virtual/commonlisp dev-lisp/asdf >=app-editors/emacs-23.1:*
 RESTRICT=test
 SLOT=0
 SRC_URI=https://github.com/slime/slime/archive/v2.21.tar.gz -> slime-2.21.tar.gz
-_eclasses_=elisp-common	23f47b2e1de7abf387105eddd1318738	elisp	12e33ba725e375a938c5997b692a8667
+_eclasses_=eapi7-ver	1a0a60ad07c8b32d2faba2d085dc0f24	elisp-common	cf4fd1b0835b9f3e638724840468064a	elisp	532fa549a4f54b2a3f83b827b272a4a9
 _md5_=cfa0ecee09b801e6edc00e600cac08e1
