@@ -1,4 +1,3 @@
-app-emacs/geiser 9999: Emacs modes for Scheme interaction
 app-emacs/slime 2.21 9999: SLIME, the Superior Lisp Interaction Mode (Extended)
 app-text/lout 3.38: high-level language for document formatting
 app-text/skribe 1.2l-r1: Skribe is a text processor for technical documents written in scheme.

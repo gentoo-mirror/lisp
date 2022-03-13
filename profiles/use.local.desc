@@ -1,0 +1,30 @@
+# This file is deprecated as per GLEP 56 in favor of metadata.xml.
+# Please add your descriptions to your package's metadata.xml ONLY.
+# * generated automatically using pmaint *
+
+app-emacs/slime:xref - Install xref.lisp cross-referencing tool
+dev-lang/swig:ccache - build ccache-swig(a fast compiler cache)
+dev-lisp/clisp:hyperspec - Use local hyperspec instead of online version
+dev-lisp/clisp:svm - Build CLISP with support for the Support Vector Machine module
+dev-lisp/clx:doc - Builds documentation
+dev-lisp/cmucl:source - Include source code for CMUCL in installation
+dev-lisp/ecls:gengc - Use generational garbage collection (experimental)
+dev-lisp/ecls:libatomic - Use dev-libs/libatomic_ops library
+dev-lisp/ecls:precisegc - Use type information during garbage collection (experimental)
+dev-lisp/gcl:ansi - Build a GCL with ANSI support (else build a traditional CLtL1 image)
+dev-lisp/gcl:athena - Build xgcl - an interface to x11-libs/libXaw
+dev-lisp/picolisp:bash-completion - Enable bash-completion support
+dev-lisp/picolisp:doc - Add extra documentation
+dev-lisp/picolisp:examples - Install examples
+dev-lisp/picolisp:src - Install to src
+dev-lisp/sbcl:pax_kernel - Enable if the user plans to run the package under a pax enabled hardened kernel
+dev-scheme/guile:debug-malloc - Include malloc debugging code
+dev-scheme/guile:deprecated - Enable deprecated features
+dev-scheme/guile:networking - Include networking interfaces
+dev-scheme/guile:regex - Include regular expression interfaces
+x11-wm/stumpwm:clisp - Use CLISP for the runtime
+x11-wm/stumpwm:contrib - Install contrib modules
+x11-wm/stumpwm:doc - Include documentation
+x11-wm/stumpwm:ecl - Use SCL for the runtime
+x11-wm/stumpwm:emacs - Add support for GNU Emacs
+x11-wm/stumpwm:sbcl - Use SBCL for the runtime
