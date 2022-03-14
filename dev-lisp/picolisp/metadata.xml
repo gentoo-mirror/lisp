@@ -15,10 +15,10 @@
 	<longdescription lang="en">
 		A fast and lightweight Lisp interpreter, with a focus on databases.
 	</longdescription>
-  <use>
-	  <flag name="bash-completion">Enable bash-completion support</flag>
-	  <flag name="doc">Add extra documentation</flag>
-	  <flag name="examples">Install examples</flag>
-	  <flag name="src">Install to src</flag>
-  </use>
+	<use>
+		<flag name="bash-completion">Enable bash-completion support</flag>
+		<flag name="doc">Add extra documentation</flag>
+		<flag name="examples">Install examples</flag>
+		<flag name="src">Install to src</flag>
+	</use>
 </pkgmetadata>
