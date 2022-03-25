@@ -1,9 +1,9 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
 
-inherit common-lisp-3 elisp-common eutils
+inherit common-lisp-3 elisp-common
 
 MY_PV="version-${PV}"
 
@@ -23,7 +23,7 @@ RDEPEND="dev-lisp/babel
 		dev-lisp/parenscript
 		dev-lisp/parse-number
 		dev-lisp/lift
-		emacs? ( virtual/emacs )"
+		emacs? ( >=app-editors/emacs-23.1:* )"
 
 S="${WORKDIR}/${PN}-${MY_PV}"
 
@@ -34,13 +34,13 @@ src_install() {
 	common-lisp-install-asdf
 
 	if use doc; then
-		insinto /usr/share/doc/${PF}/examples
-		doins -r example/* || die
+		docinto examples
+		dodoc -r example/*
 	fi
 
 	if use emacs; then
-		elisp-install ${PN} closure-template-html-mode.el || die "Cannot install elisp sources"
-		elisp-site-file-install "${FILESDIR}"/${SITEFILE} || die "Cannot install elisp site file"
+		elisp-install ${PN} closure-template-html-mode.el
+		elisp-site-file-install "${FILESDIR}"/${SITEFILE}
 	fi
 
 	dodoc README.markdown
