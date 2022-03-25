@@ -103,7 +103,6 @@ dev-lisp/diff 0.4-r1: DIFF is a Common Lisp library for computing the unified or
 dev-lisp/documentation-template 0.4.4: Prepare HTML documentation for Common Lisp libraries
 dev-lisp/drakma 2.0.4: Drakma is a Common Lisp HTTP client.
 dev-lisp/dynamic-classes 1.0.2: metabang.com's dynamic class utility.
-dev-lisp/ecls 16.1.3: ECL is an embeddable Common Lisp implementation
 dev-lisp/elephant 0.9.1: Elephant is an object database for Common Lisp
 dev-lisp/eos 9999: Eos is a drop-in replacement for the FiveAM Test Framework
 dev-lisp/esrap 9999: ESRAP -- a packrat parser generator for Common Lisp
@@ -117,7 +116,6 @@ dev-lisp/fiveam 1.4.1: FiveAM is a simple regression testing framework designed 
 dev-lisp/flexi-streams 1.0.17 1.0.18: Flexible bivalent streams for Common Lisp
 dev-lisp/flexichain 1.5.1: Flexichain is an API for editable sequences.
 dev-lisp/fsbv 9999: CFFI Add-on: Foreign Structures By Value.
-dev-lisp/gcl 2.6.12: GNU Common Lisp
 dev-lisp/genhash 1.7: Common Lisp library providing support for generic hashtables.
 dev-lisp/graylex 9999: Gray lexer input streams
 dev-lisp/gsd 9999: Grid Structured Data library.
