@@ -1,27 +1,27 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
 
-inherit common-lisp-3 flag-o-matic multilib toolchain-funcs
+inherit common-lisp-3 flag-o-matic toolchain-funcs
 
 DESCRIPTION="A multi-platform SQL interface for Common Lisp"
-HOMEPAGE="http://clsql.kpe.io/
-		http://www.cliki.net/CLSQL"
+HOMEPAGE="https://clsql.kpe.io/
+		https://www.cliki.net/CLSQL"
 SRC_URI="http://files.kpe.io/clsql/${P}.tar.gz"
 
 LICENSE="LLGPL-2.1"
 SLOT="0"
 KEYWORDS="~amd64 ~ppc ~sparc ~x86"
-IUSE="doc examples mysql odbc oracle postgres sqlite"
+IUSE="doc examples mysql odbc postgres sqlite"
 
 RDEPEND="dev-lisp/md5
 	>=dev-lisp/uffi-2.0.0
 	mysql? ( virtual/mysql )
 	odbc? ( dev-db/unixODBC )
-	oracle? ( dev-db/oracle-instantclient-basic )
 	postgres? ( dev-db/postgresql )
 	sqlite? ( dev-db/sqlite:3 )"
+	#oracle? ( dev-db/oracle-instantclient-basic )
 
 src_prepare() {
 	sed -i "s,/usr/lib,/usr/$(get_libdir),g" "${S}"/${PN}-{mysql,uffi}.asd || die
@@ -76,7 +76,8 @@ src_install() {
 	exeinto /usr/$(get_libdir)/${PN} ; doexe uffi/${PN}_uffi.so
 
 	use postgres && install_clsql_postgresql
-	for dbtype in mysql odbc oracle sqlite ; do
+	for dbtype in mysql odbc sqlite #oracle
+	do
 		use ${dbtype} && install_clsql_pkg ${dbtype}
 	done
 
