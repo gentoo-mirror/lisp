@@ -1,4 +1,4 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -6,13 +6,12 @@ EAPI=6
 inherit common-lisp-3
 
 DESCRIPTION="A Common Lisp client implementation of the XMPP."
-HOMEPAGE="http://common-lisp.net/project/cl-xmpp/"
-SRC_URI="http://common-lisp.net/project/${PN}/${P}.tar.gz"
-LICENSE="MIT"
+HOMEPAGE="https://cl-xmpp.common-lisp.dev/"
+SRC_URI="https://cl-xmpp.common-lisp.dev/${P}.tar.gz"
 
+LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~sparc ~x86"
-IUSE=""
+KEYWORDS="~amd64 ~ppc ~x86"
 
 RDEPEND="dev-lisp/usocket
 		 dev-lisp/cxml
