@@ -1,7 +1,5 @@
 app-text
 dev-lang
-dev-libs
 dev-lisp
 dev-scheme
-virtual
 x11-wm

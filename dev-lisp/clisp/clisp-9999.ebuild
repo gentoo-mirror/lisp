@@ -1,4 +1,4 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -14,7 +14,7 @@ EGIT_REPO_URI="https://gitlab.com/gnu-clisp/clisp.git"
 LICENSE="GPL-2"
 SLOT="2/8"
 KEYWORDS=""
-IUSE="hyperspec X berkdb dbus fastcgi gdbm gtk +pcre postgres +readline svm -threads +unicode +zlib"
+IUSE="hyperspec X berkdb dbus fastcgi gdbm gtk +pcre postgres +readline svm threads +unicode +zlib"
 # "jit" disabled ATM
 
 RDEPEND=">=dev-lisp/asdf-2.33-r3
