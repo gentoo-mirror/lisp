@@ -1,4 +1,4 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -8,17 +8,16 @@ inherit common-lisp-3
 MY_P=${PN}_${PV}
 
 DESCRIPTION="The Common Foreign Function Interface (CFFI)"
-HOMEPAGE="http://common-lisp.net/project/cffi/"
-SRC_URI="http://common-lisp.net/project/${PN}/releases/${MY_P}.tar.gz -> ${PN}.tar.gz"
+HOMEPAGE="https://cffi.common-lisp.dev/"
+SRC_URI="http://common-lisp.net/project/${PN}/releases/${MY_P}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~sparc ~x86"
+KEYWORDS="~amd64 ~ppc ~x86"
 IUSE="doc"
 
 DEPEND="doc? ( dev-lisp/sbcl virtual/texi2dvi )"
-RDEPEND="!dev-lisp/cl-${PN}
-		dev-lisp/alexandria
+RDEPEND="dev-lisp/alexandria
 		dev-lisp/babel
 		dev-lisp/trivial-features"
 
@@ -42,7 +41,7 @@ src_install() {
 	if use doc; then
 		doinfo doc/*.info
 		rm doc/{spec,manual}/cffi*
-		insinto /usr/share/doc/${PF}/html
-		doins -r doc/{spec,manual}
+		docinto html
+		dodoc -r doc/{spec,manual}
 	fi
 }
