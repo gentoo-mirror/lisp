@@ -13,7 +13,7 @@ SRC_URI="https://github.com/archimag/${PN}/archive/${MY_PV}.tar.gz -> ${P}.tar.g
 
 LICENSE="LLGPL-2.1"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~sparc ~x86"
+#KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE="doc emacs"
 
 RDEPEND="dev-lisp/babel
