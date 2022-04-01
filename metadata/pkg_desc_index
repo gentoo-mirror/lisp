@@ -18,7 +18,7 @@ dev-lisp/chipz 0.7.4-r1 0.8: A library for decompressing deflate, zlib, and gzip
 dev-lisp/chronicity 0.2.7 0.3.0: A natural language date and time parser for Common Lisp.
 dev-lisp/chunga 1.1.6 1.1.7: Portable chunked streams for Common Lisp
 dev-lisp/cl-base64 3.3.3 3.3.4: Common Lisp package to encode and decode base64 with URI support
-dev-lisp/cl-cairo2 9999: Comon Lisp bindings for the Cairo API
+dev-lisp/cl-cairo2 9999: Common Lisp bindings for the Cairo API
 dev-lisp/cl-charms 9999: A set of CFFI bindings for libcurses (ncurses), a GUI-like console
 dev-lisp/cl-closure-template 0.2.1: Common Lisp implementation of Closure Template from Google
 dev-lisp/cl-colors 9999: Simple color library for Common Lisp
@@ -32,8 +32,6 @@ dev-lisp/cl-fad 0.7.3 0.7.4 0.7.5: CL-FAD is a thin layer atop the Common Lisp's
 dev-lisp/cl-gd 0.6.0: CL-GD is a library for Common Lisp which interfaces to the GD Graphics Library
 dev-lisp/cl-glfw 9999: Set of CFFI bindings for the GLFW OpenGL helper library
 dev-lisp/cl-graph 0.10.2: Graph manipulation utilities for Common Lisp.
-dev-lisp/cl-graphviz 0.1_pre20081112: Common Lisp CFFI-based interface to graphviz.
-dev-lisp/cl-gtk2 0.1.1-r1: A Common Lisp interface to Gtk+.
 dev-lisp/cl-heredoc 9999: Common Lisp reader heredoc dispatcher
 dev-lisp/cl-html-diff 0.1: Common Lisp library for generating a human-readable diff of two HTML documents.
 dev-lisp/cl-html-parse 9999: A portable version of Franz's Opensource HTML Parser
@@ -62,7 +60,7 @@ dev-lisp/cl-routes 0.2.5: Common Lisp re-implementation of the Rails routes syst
 dev-lisp/cl-sasl 0.3.1 0.3.2: SASL client implementation for Common Lisp
 dev-lisp/cl-sendmail 0.5.5: A Common Lisp library for sending email.
 dev-lisp/cl-smtp 9999: A Common Lisp client library for the SMTP network protocol.
-dev-lisp/cl-sqlite 0.2: A CommonLisp interface to the SQLite embedded relational database engine.
+dev-lisp/cl-sqlite 0.2: A CommonLisp interface to the SQLite embedded relational database engine
 dev-lisp/cl-store 0.8.10 9999: Library for serializing and deserializing Common Lisp objects from streams.
 dev-lisp/cl-typegraph 9999: Stand-alone Common Lisp graph typesetting system
 dev-lisp/cl-typesetting 9999: CL-TYPESETTING is a complete typesetting system written in Common Lisp.
