@@ -1,4 +1,4 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -8,14 +8,12 @@ inherit common-lisp-3 toolchain-funcs
 MY_P="v${PV}"
 
 DESCRIPTION="CL-GD is a library for Common Lisp which interfaces to the GD Graphics Library"
-HOMEPAGE="http://weitz.de/cl-gd/
-		http://www.cliki.net/cl-gd/"
+HOMEPAGE="https://edicl.github.io/cl-gd/"
 SRC_URI="https://github.com/edicl/${PN}/archive/${MY_P}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="BSD-2"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~sparc ~x86"
-IUSE=""
+KEYWORDS="~amd64 ~ppc ~x86"
 
 DEPEND=">=media-libs/gd-2.0.28[jpeg,png,xpm]"
 RDEPEND="${DEPEND}

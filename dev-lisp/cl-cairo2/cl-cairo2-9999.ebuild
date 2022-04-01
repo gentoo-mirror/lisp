@@ -5,14 +5,12 @@ EAPI=6
 
 inherit common-lisp-3 git-r3
 
-DESCRIPTION="Comon Lisp bindings for the Cairo API"
-HOMEPAGE="http://cliki.net/cl-cairo2"
+DESCRIPTION="Common Lisp bindings for the Cairo API"
+HOMEPAGE="https://cliki.net/cl-cairo2"
 EGIT_REPO_URI="https://github.com/rpav/cl-cairo2"
 
 LICENSE="Boost-1.0"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~sparc ~x86"
-IUSE=""
 
 RDEPEND="dev-lisp/cffi
 		dev-lisp/cl-utilities
