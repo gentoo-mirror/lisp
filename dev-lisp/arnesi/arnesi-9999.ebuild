@@ -1,4 +1,4 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -11,11 +11,9 @@ EDARCS_REPOSITORY="http://common-lisp.net/project/bese/repos/arnesi_dev/"
 
 LICENSE="BSD"
 SLOT="0"
-IUSE="+slime"
 
 RDEPEND="!dev-lisp/cl-${PN}
 	!dev-lisp/cl-${PN}-darcs
-	slime? ( app-emacs/slime )
 	dev-lisp/cl-ppcre"
 
 src_install() {
