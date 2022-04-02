@@ -1,25 +1,24 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
 
-inherit common-lisp-3 elisp-common eutils
+inherit common-lisp-3 elisp-common
 
 MY_PV="${PV}-imbolc"
 
 DESCRIPTION="McCLIM is a free software implementation of CLIM."
-HOMEPAGE="http://common-lisp.net/project/mcclim
-		http://cliki.net/McCLIM"
-SRC_URI="https://github.com/robert-strandh/McCLIM/archive/${MY_PV}.tar.gz -> ${P}.tar.gz"
+HOMEPAGE="https://mcclim.common-lisp.dev/
+	https://cliki.net/McCLIM"
+SRC_URI="https://github.com/McCLIM/McCLIM/archive/${MY_PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="LLGPL-2.1"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~sparc ~x86"
+KEYWORDS="~amd64 ~ppc ~x86"
 IUSE="emacs doc"
 
 DEPEND="doc? ( virtual/texi2dvi )"
-RDEPEND="!dev-lisp/cl-${PN}
-		dev-lisp/spatial-trees
+RDEPEND="dev-lisp/spatial-trees
 		>=dev-lisp/flexichain-1.5.1
 		dev-lisp/clx
 		dev-lisp/cffi
