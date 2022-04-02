@@ -1,18 +1,17 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
 
 inherit common-lisp-3
 
-DESCRIPTION="A Comm Lisp I/O library."
-HOMEPAGE="http://common-lisp.net/project/iolib/"
-SRC_URI="http://common-lisp.net/project/iolib/files/${P}.tar.gz"
+DESCRIPTION="A Comm Lisp I/O library"
+HOMEPAGE="https://iolib.common-lisp.dev/"
+SRC_URI="https://iolib.common-lisp.dev/files/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~sparc ~x86"
-IUSE=""
+KEYWORDS="~amd64 ~ppc ~x86"
 
 RDEPEND="dev-lisp/alexandria
 		 dev-lisp/cl-ppcre
