@@ -25,7 +25,6 @@ dev-lisp/cl-colors 9999: Simple color library for Common Lisp
 dev-lisp/cl-cont 0.3.7: A code walker that implements delimited continuations in Common Lisp.
 dev-lisp/cl-containers 0.11.5: Adds trees, sparse arrays, and other useful containers to CommonLisp.
 dev-lisp/cl-css 9999: Non-validating, inline CSS generator for Common Lisp
-dev-lisp/cl-darcs 0.2_p20080314-r1: A client for the darcs version control system written in Common Lisp.
 dev-lisp/cl-difflib 0.1 9999: CL-DIFFLIB is a Lisp library for computing differences between sequences.
 dev-lisp/cl-emb 0.4.4: Embedded Common Lisp and template system
 dev-lisp/cl-fad 0.7.3 0.7.4 0.7.5: CL-FAD is a thin layer atop the Common Lisp's standard pathname functions.
@@ -96,7 +95,6 @@ dev-lisp/diff 0.4-r1: DIFF is a Common Lisp library for computing the unified or
 dev-lisp/documentation-template 0.4.4: Prepare HTML documentation for Common Lisp libraries
 dev-lisp/drakma 2.0.4: Drakma is a Common Lisp HTTP client.
 dev-lisp/dynamic-classes 1.0.2: metabang.com's dynamic class utility.
-dev-lisp/elephant 0.9.1: Elephant is an object database for Common Lisp
 dev-lisp/eos 9999: Eos is a drop-in replacement for the FiveAM Test Framework
 dev-lisp/esrap 9999: ESRAP -- a packrat parser generator for Common Lisp
 dev-lisp/external-program 0: A portable Common Lisp library for running external programs from within Lisp
@@ -150,7 +148,7 @@ dev-lisp/moptilities 0.3.13: Provides a compatibility layer for minor MOP implme
 dev-lisp/named-readtables 0.9-r1 9999: A Common Lisp library that provides a namespace for readtables.
 dev-lisp/newlisp 10.7.1: newLISP - a new generation of Lisp!
 dev-lisp/nibbles 0.9 0.12: A library for accessing multibyte integers from octet arrays and streams
-dev-lisp/osicat 0.7.0 9999: Lightweight operating system interface for Common Lisp on Unix-platforms.
+dev-lisp/osicat 0.7.0 9999: Lightweight operating system interface for Common Lisp on Unix-platforms
 dev-lisp/parenscript 2.2 2.5 2.6 9999: Parenscript is a small lispy language that can be compiled to JavaScript.
 dev-lisp/parse-js 9999: parse-js is a Common Lisp package for parsing JavaScript
 dev-lisp/parse-number 1.6 1.7: Common Lisp library for parsing any number string
