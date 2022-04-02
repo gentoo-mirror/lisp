@@ -1,4 +1,4 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -6,13 +6,11 @@ EAPI=6
 inherit common-lisp-3 git-r3
 
 DESCRIPTION="Common Lisp interface to the GNU Scientific Library."
-HOMEPAGE="http://common-lisp.net/project/gsll/"
+HOMEPAGE="https://gsll.common-lisp.dev/"
 EGIT_REPO_URI="git://repo.or.cz/gsll.git"
 
 LICENSE="GPL-3 FDL-1.2"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~sparc ~x86"
-IUSE=""
 
 RDEPEND=">=sci-libs/gsl-1.9
 		>=dev-lisp/cffi-0.10.5
@@ -33,6 +31,7 @@ src_install() {
 		ordinary-differential-equations/ physical-constants/ random/ \
 		solve-minimize-fit/ special-functions/ statistics/ tests/ test-unit/
 	common-lisp-install-asdf
-	dohtml documentation/*.{html,css}
 	dodoc documentation/*.text
+	docinto html
+	dodoc documentation/*.{html,css}
 }
