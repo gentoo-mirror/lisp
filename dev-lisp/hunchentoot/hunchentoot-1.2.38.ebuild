@@ -1,17 +1,17 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
 
 inherit common-lisp-3
 
-DESCRIPTION="Hunchentoot is a web server written in Common Lisp."
+DESCRIPTION="Hunchentoot is a web server written in Common Lisp"
 HOMEPAGE="https://github.com/edicl/hunchentoot/"
 SRC_URI="https://github.com/edicl/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="BSD-2"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~sparc ~x86"
+KEYWORDS="~amd64 ~ppc ~x86"
 IUSE="doc"
 
 DEPEND="doc? ( dev-libs/libxslt )"
