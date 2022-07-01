@@ -16,17 +16,21 @@ IUSE="doc" # emacs"
 
 #SITEFILE="50mitscheme-gentoo.el"
 
-RDEPEND="app-crypt/mhash
+RDEPEND="
+	app-crypt/mhash
 	dev-db/postgresql
 	dev-libs/libmcrypt
 	dev-libs/openssl
 	sys-libs/gdbm
 	sys-libs/ncurses
-	x11-libs/libX11"
+	x11-libs/libX11
+"
 DEPEND="${RDEPEND}"
 BDEPEND="doc? ( dev-texlive/texlive-latexextra )"
 
 src_prepare() {
+	default
+
 	sed "s:@for:@+for:" -i \
 		Makefile || die "sed failed"
 	sed "s:make:make -j1:" -i \
@@ -36,34 +40,35 @@ src_prepare() {
 }
 
 src_configure() {
-	if use doc; then
+	if use doc ; then
 		cd "${S}"/doc
 		econf
 	fi
 }
 
 src_compile() {
-	cd "${S}"/src
-	./etc/make-liarc.sh --prefix=/usr --exec-prefix=/usr --libdir=/usr/$(get_libdir) || die "making liar C failed"
+	cd "${S}"/src || die
 
-	if use doc ; then
-		cd "${S}"/doc
-		emake -j1 || die "emake doc failed"
-	fi
-
-	cd ..
+	./etc/make-liarc.sh \
+		--prefix=/usr --exec-prefix=/usr --libdir=/usr/$(get_libdir) ||
+		die "making liar C failed"
 
 #    if use emacs ; then
-#        elisp-compile etc/*.el || die
+#        elisp-compile "${S}"/etc/*.el || die
 #    fi
+
+	use doc && emake -C "${S}"/doc -j1
 }
 
 src_install() {
-	cd "${S}"/src
-	emake DESTDIR="${D}" install || die "make install failed"
+	emake -C "${S}"/src DESTDIR="${D}" install || die "make install failed"
+
+	# elisp
 
 	cd "${S}"/doc
+
 	doman scheme.1 || die "doman failed"
+
 	if use doc ; then
 		docinto html
 		dodoc index.html || die "dhtml failed"
