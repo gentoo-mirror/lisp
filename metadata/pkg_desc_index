@@ -20,7 +20,6 @@ dev-lisp/chunga 1.1.6 1.1.7: Portable chunked streams for Common Lisp
 dev-lisp/cl-base64 3.3.3 3.3.4: Common Lisp package to encode and decode base64 with URI support
 dev-lisp/cl-cairo2 9999: Common Lisp bindings for the Cairo API
 dev-lisp/cl-charms 9999: A set of CFFI bindings for libcurses (ncurses), a GUI-like console
-dev-lisp/cl-closure-template 0.2.1: Common Lisp implementation of Closure Template from Google
 dev-lisp/cl-colors 9999: Simple color library for Common Lisp
 dev-lisp/cl-cont 0.3.7: A code walker that implements delimited continuations in Common Lisp.
 dev-lisp/cl-containers 0.11.5: Adds trees, sparse arrays, and other useful containers to CommonLisp.
@@ -132,7 +131,6 @@ dev-lisp/local-time 1.0.5 1.0.6: LOCAL-TIME is a development library for manipul
 dev-lisp/log5 0.3.2: Log5 is a Common Lisp logging framework.
 dev-lisp/ltk 0.981: LTK is a Common Lisp binding for the Tk graphics toolkit
 dev-lisp/lw-compat 1.0.0: A few utility functions from the LispWorks library
-dev-lisp/mcclim 0.9.7: McCLIM is a free software implementation of CLIM.
 dev-lisp/md5 2.0.1 2.0.3: A fast implementation of MD5 message-digests
 dev-lisp/mel-base 0.8.0-r1: Common Lisp networking library for handling e-mail from Maildir, POP3, IMAP and SMTP
 dev-lisp/meta 9999: A library of macros and functions by Fare Rideau.
@@ -157,7 +155,6 @@ dev-lisp/postmodern 1.18-r1 1.19: A Common Lisp library for interacting with Pos
 dev-lisp/ptester 2.1.2-r1: A Common Lisp test harness based on the Franz, Inc. tester module.
 dev-lisp/puri 1.5.7: Portable URI library for Common Lisp based on the Franz, Inc. :net.uri module.
 dev-lisp/regex 20070506: Common Lisp regular expression compiler/matcher
-dev-lisp/restas 0.1.4: Common Lisp application server
 dev-lisp/rfc2388 1.2 1.5: An implementation of RFC 2388 in Common Lisp
 dev-lisp/rt 20040621-r4: Common Lisp regression tester from MIT
 dev-lisp/s-sysdeps 9999: A Common Lisp abstraction layer over platform dependent functionality.
