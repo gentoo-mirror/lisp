@@ -11,13 +11,16 @@
 # to provide a simple way to write ebuilds with these characteristics.
 
 case ${EAPI} in
-	6) inherit eutils ;;
-	7) ;;
+	6|7) ;;
 	*) die "${ECLASS}: EAPI ${EAPI:-0} not supported" ;;
 esac
 
 if [[ -z ${_COMMON_LISP_3_ECLASS} ]]; then
 _COMMON_LISP_3_ECLASS=1
+
+case ${EAPI} in
+	6) inherit eutils ;;
+esac
 
 # @ECLASS_VARIABLE: CLIMPLEMENTATIONS
 # @DESCRIPTION:
@@ -134,7 +137,7 @@ common-lisp-install-sources() {
 			else
 				# readarray has no -d option in bash-4.2
 				readarray -t files < <(find "${path}" -type f -print \
-											|| die "cannot traverse ${path}" )
+											|| die "cannot traverse ${path}")
 			fi
 			common-lisp-install-sources -t ${ftype} "${files[@]}"
 		else
