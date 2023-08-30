@@ -1,31 +1,33 @@
 # Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 
-inherit common-lisp-3 autotools elisp-common xdg-utils versionator
+inherit common-lisp-3 autotools desktop elisp-common optfeature xdg-utils
 
-DESCRIPTION="Stumpwm is a Window Manager written entirely in Common Lisp."
+MY_COMMIT="fff2508fd54b4035b0d80bafbd75a13f1756130f"
+
+DESCRIPTION="A Window Manager written entirely in Common Lisp"
 HOMEPAGE="https://stumpwm.github.io/"
-SRC_URI="https://github.com/stumpwm/stumpwm/archive/${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/stumpwm/stumpwm/archive/${MY_COMMIT}.tar.gz -> ${PN}-${MY_COMMIT}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="contrib doc emacs"
+IUSE="doc emacs"
 
-RESTRICT="strip mirror"
+S="${WORKDIR}/${PN}-${MY_COMMIT}"
+
+RESTRICT="strip"
 
 RDEPEND="dev-lisp/alexandria
 		dev-lisp/cl-ppcre
 		dev-lisp/clx
 		>=dev-lisp/sbcl-1.3.0
-		emacs? ( >=app-editors/emacs-23.1:* app-emacs/slime )"
-DEPEND="${RDEPEND}
-		sys-apps/texinfo
+		emacs? ( >=app-editors/emacs-23.1:* )"
+DEPEND="${RDEPEND}"
+BDEPEND="sys-apps/texinfo
 		doc? ( virtual/texi2dvi )"
-
-PDEPEND="contrib? ( x11-wm/stumpwm-contrib )"
 
 SITEFILE=70${PN}-gentoo.el
 CLPKGDIR="${CLSOURCEROOT}/${CLPACKAGE}"
@@ -52,7 +54,7 @@ src_configure() {
 }
 
 src_compile() {
-	emake
+	emake -j1
 }
 
 src_install() {
@@ -69,6 +71,7 @@ src_install() {
 
 pkg_postinst() {
 	use emacs && elisp-site-regen
+	optfeature "extension modules" x11-wm/stumpwm-contrib
 }
 
 pkg_postrm() {
